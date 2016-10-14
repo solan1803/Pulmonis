@@ -19,38 +19,38 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="E5i-md-Prg">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mjh-ib-cBJ">
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="jyG-1l-DO9"/>
+                                </constraints>
+                                <state key="normal" title="EMERGENCY ACTION">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="imp-ck-JEB">
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="inhaler" translatesAutoresizingMaskIntoConstraints="NO" id="N8e-wB-1vS"/>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="DWj-A8-VGh">
-                                        <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="imp-ck-JEB">
-                                                <subviews>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="graph" translatesAutoresizingMaskIntoConstraints="NO" id="hRw-yi-o59"/>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="map" translatesAutoresizingMaskIntoConstraints="NO" id="4JP-5X-6h2"/>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="learn" translatesAutoresizingMaskIntoConstraints="NO" id="IJn-VV-WVq"/>
-                                                </subviews>
-                                            </stackView>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mjh-ib-cBJ">
-                                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                <state key="normal" title="EMERGENCY ACTION">
-                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                </state>
-                                            </button>
-                                        </subviews>
-                                        <constraints>
-                                            <constraint firstItem="mjh-ib-cBJ" firstAttribute="width" secondItem="imp-ck-JEB" secondAttribute="width" id="34J-ab-wE2"/>
-                                        </constraints>
-                                    </stackView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="graph" translatesAutoresizingMaskIntoConstraints="NO" id="hRw-yi-o59"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="map" translatesAutoresizingMaskIntoConstraints="NO" id="4JP-5X-6h2"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="learn" translatesAutoresizingMaskIntoConstraints="NO" id="IJn-VV-WVq"/>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="tfS-31-xpT"/>
+                                </constraints>
                             </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="inhaler" translatesAutoresizingMaskIntoConstraints="NO" id="N8e-wB-1vS"/>
                         </subviews>
                         <color key="backgroundColor" red="0.51832914352416992" green="0.89330238103866577" blue="0.99855881929397583" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="E5i-md-Prg" secondAttribute="bottom" constant="8" symbolic="YES" id="Zve-Fo-Kth"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="E5i-md-Prg" secondAttribute="trailing" id="i74-78-YOT"/>
-                            <constraint firstItem="E5i-md-Prg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="pHj-ld-dQk"/>
-                            <constraint firstItem="E5i-md-Prg" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="205" id="vqF-1y-Shb"/>
+                            <constraint firstItem="imp-ck-JEB" firstAttribute="top" secondItem="N8e-wB-1vS" secondAttribute="bottom" constant="60" id="4mm-AB-oEj"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="mjh-ib-cBJ" secondAttribute="leading" id="DSp-Hc-vC2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="mjh-ib-cBJ" secondAttribute="trailing" id="Dgl-jb-jbV"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="mjh-ib-cBJ" secondAttribute="bottom" constant="10" id="Ruq-UU-WUN"/>
+                            <constraint firstItem="N8e-wB-1vS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ZHR-eM-cJt"/>
+                            <constraint firstItem="mjh-ib-cBJ" firstAttribute="top" secondItem="imp-ck-JEB" secondAttribute="bottom" constant="40" id="d2U-x7-Jtn"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="imp-ck-JEB" secondAttribute="trailing" id="ibu-Mn-Xzs"/>
+                            <constraint firstItem="N8e-wB-1vS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mtf-Dc-VIN"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="imp-ck-JEB" secondAttribute="leading" id="rIW-cc-GoI"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Pulmonis" id="inj-gp-5ck"/>
