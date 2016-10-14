@@ -35,6 +35,7 @@ class PulmonisTests: XCTestCase {
     
     func testAddition() {
         XCTAssert(1 + 1 == 2)
+        XCTAssert(2+2 == 4)
     }
     
 }
