@@ -6,8 +6,13 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="LiberationSans-Regular.ttf">
+            <string>LiberationSans</string>
+        </array>
+    </customFonts>
     <scenes>
-        <!--Pulmonis-->
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Pulmonis" customModuleProvider="target" sceneMemberID="viewController">
@@ -29,6 +34,9 @@
                                 <state key="normal" title="EMERGENCY ACTION">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="DR4-el-7g1" kind="show" id="qE7-Ti-74M"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="imp-ck-JEB">
                                 <subviews>
@@ -40,9 +48,9 @@
                                     <constraint firstAttribute="height" constant="100" id="tfS-31-xpT"/>
                                 </constraints>
                             </stackView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Inhaler" translatesAutoresizingMaskIntoConstraints="NO" id="N8e-wB-1vS">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="inhaler2" translatesAutoresizingMaskIntoConstraints="NO" id="N8e-wB-1vS">
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="175" id="GeQ-f9-AMW"/>
+                                    <constraint firstAttribute="height" constant="300" id="zOi-Fd-YVF"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ACTION PLAN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Auf-su-Pwf">
@@ -69,8 +77,18 @@
                                     </label>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PULMONIS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="flx-Jr-AuX">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="VwX-9C-Z9X"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="LiberationSans" family="Liberation Sans" pointSize="31"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <constraints>
+                            <constraint firstItem="flx-Jr-AuX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="A7Q-wH-Cwt"/>
+                            <constraint firstItem="flx-Jr-AuX" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-35" id="Awg-aS-7rg"/>
                             <constraint firstAttribute="leadingMargin" secondItem="mjh-ib-cBJ" secondAttribute="leading" id="DSp-Hc-vC2"/>
                             <constraint firstAttribute="trailingMargin" secondItem="mjh-ib-cBJ" secondAttribute="trailing" id="Dgl-jb-jbV"/>
                             <constraint firstItem="Auf-su-Pwf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Nhz-rf-xv3"/>
@@ -83,24 +101,60 @@
                             <constraint firstItem="xHB-sK-sxF" firstAttribute="width" secondItem="imp-ck-JEB" secondAttribute="width" id="frB-M4-GaZ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="imp-ck-JEB" secondAttribute="trailing" id="ibu-Mn-Xzs"/>
                             <constraint firstItem="OcG-15-ePd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="jIW-7x-AV0"/>
-                            <constraint firstItem="Auf-su-Pwf" firstAttribute="top" secondItem="N8e-wB-1vS" secondAttribute="bottom" constant="-20" id="kHg-50-1He"/>
+                            <constraint firstItem="Auf-su-Pwf" firstAttribute="top" secondItem="N8e-wB-1vS" secondAttribute="bottom" constant="-105" id="kHg-50-1He"/>
                             <constraint firstItem="N8e-wB-1vS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mtf-Dc-VIN"/>
                             <constraint firstAttribute="trailingMargin" secondItem="OcG-15-ePd" secondAttribute="trailing" constant="-16" id="nPv-AA-kB8"/>
                             <constraint firstAttribute="leadingMargin" secondItem="imp-ck-JEB" secondAttribute="leading" id="rIW-cc-GoI"/>
                             <constraint firstItem="xHB-sK-sxF" firstAttribute="top" secondItem="imp-ck-JEB" secondAttribute="bottom" constant="10" id="v6B-Mh-PfC"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Pulmonis" id="inj-gp-5ck"/>
+                    <navigationItem key="navigationItem" id="inj-gp-5ck"/>
+                    <connections>
+                        <outlet property="pulmonisTitle" destination="flx-Jr-AuX" id="pIA-CO-TW7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1076" y="138.98050974512745"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="cSD-nM-PKS">
+            <objects>
+                <viewController id="DR4-el-7g1" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="D7g-7a-rGR"/>
+                        <viewControllerLayoutGuide type="bottom" id="Qm6-Hq-NTv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="e4b-qV-sJn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Shiny Blue" translatesAutoresizingMaskIntoConstraints="NO" id="bdN-Cz-H27"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Inhaler" translatesAutoresizingMaskIntoConstraints="NO" id="1Sz-Hf-Vob">
+                                <frame key="frameInset" minX="67" minY="195" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bdN-Cz-H27" firstAttribute="top" secondItem="D7g-7a-rGR" secondAttribute="bottom" constant="-20" id="Sc5-LA-AXq"/>
+                            <constraint firstItem="bdN-Cz-H27" firstAttribute="leading" secondItem="e4b-qV-sJn" secondAttribute="leading" id="aeM-se-FuG"/>
+                            <constraint firstItem="Qm6-Hq-NTv" firstAttribute="top" secondItem="bdN-Cz-H27" secondAttribute="bottom" id="dfJ-nI-HBK"/>
+                            <constraint firstAttribute="trailing" secondItem="bdN-Cz-H27" secondAttribute="trailing" id="e4T-aT-qlp"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9dF-kz-ZCc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1989" y="222"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="JxU-hw-KFZ">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="EVs-bF-bWK" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="667"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="eWi-Qz-VGj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -119,6 +173,7 @@
         <image name="Inhaler" width="250" height="201"/>
         <image name="Shiny Blue" width="750" height="1334"/>
         <image name="Stats" width="155" height="140"/>
+        <image name="inhaler2" width="566" height="576"/>
         <image name="learn" width="126" height="154"/>
         <image name="map" width="213" height="213"/>
     </resources>
