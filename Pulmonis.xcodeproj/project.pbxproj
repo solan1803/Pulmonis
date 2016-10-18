@@ -14,6 +14,18 @@
 		5BAF07CC1DB11C1B00AF2FD0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BAF07CA1DB11C1B00AF2FD0 /* LaunchScreen.storyboard */; };
 		5BAF07D71DB11C1B00AF2FD0 /* PulmonisTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAF07D61DB11C1B00AF2FD0 /* PulmonisTests.swift */; };
 		5BAF07E21DB11C1B00AF2FD0 /* PulmonisUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAF07E11DB11C1B00AF2FD0 /* PulmonisUITests.swift */; };
+		5BC5360F1DB6761C00231A50 /* LiberationSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5BC5360E1DB6761C00231A50 /* LiberationSans-Bold.ttf */; };
+		5BC536101DB6761C00231A50 /* LiberationSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5BC5360E1DB6761C00231A50 /* LiberationSans-Bold.ttf */; };
+		5BC536111DB6761C00231A50 /* LiberationSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5BC5360E1DB6761C00231A50 /* LiberationSans-Bold.ttf */; };
+		5BC536151DB6762A00231A50 /* LiberationSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5BC536121DB6762A00231A50 /* LiberationSans-BoldItalic.ttf */; };
+		5BC536161DB6762A00231A50 /* LiberationSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5BC536121DB6762A00231A50 /* LiberationSans-BoldItalic.ttf */; };
+		5BC536171DB6762A00231A50 /* LiberationSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5BC536121DB6762A00231A50 /* LiberationSans-BoldItalic.ttf */; };
+		5BC536181DB6762A00231A50 /* LiberationSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5BC536131DB6762A00231A50 /* LiberationSans-Italic.ttf */; };
+		5BC536191DB6762A00231A50 /* LiberationSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5BC536131DB6762A00231A50 /* LiberationSans-Italic.ttf */; };
+		5BC5361A1DB6762A00231A50 /* LiberationSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5BC536131DB6762A00231A50 /* LiberationSans-Italic.ttf */; };
+		5BC5361B1DB6762A00231A50 /* LiberationSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5BC536141DB6762A00231A50 /* LiberationSans-Regular.ttf */; };
+		5BC5361C1DB6762A00231A50 /* LiberationSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5BC536141DB6762A00231A50 /* LiberationSans-Regular.ttf */; };
+		5BC5361D1DB6762A00231A50 /* LiberationSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5BC536141DB6762A00231A50 /* LiberationSans-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +59,10 @@
 		5BAF07DD1DB11C1B00AF2FD0 /* PulmonisUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PulmonisUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BAF07E11DB11C1B00AF2FD0 /* PulmonisUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulmonisUITests.swift; sourceTree = "<group>"; };
 		5BAF07E31DB11C1B00AF2FD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5BC5360E1DB6761C00231A50 /* LiberationSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LiberationSans-Bold.ttf"; sourceTree = "<group>"; };
+		5BC536121DB6762A00231A50 /* LiberationSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LiberationSans-BoldItalic.ttf"; sourceTree = "<group>"; };
+		5BC536131DB6762A00231A50 /* LiberationSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LiberationSans-Italic.ttf"; sourceTree = "<group>"; };
+		5BC536141DB6762A00231A50 /* LiberationSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LiberationSans-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +93,7 @@
 		5BAF07B51DB11C1B00AF2FD0 = {
 			isa = PBXGroup;
 			children = (
+				5BC5360D1DB675AD00231A50 /* Resources */,
 				5BAF07C01DB11C1B00AF2FD0 /* Pulmonis */,
 				5BAF07D51DB11C1B00AF2FD0 /* PulmonisTests */,
 				5BAF07E01DB11C1B00AF2FD0 /* PulmonisUITests */,
@@ -123,6 +140,17 @@
 				5BAF07E31DB11C1B00AF2FD0 /* Info.plist */,
 			);
 			path = PulmonisUITests;
+			sourceTree = "<group>";
+		};
+		5BC5360D1DB675AD00231A50 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5BC5360E1DB6761C00231A50 /* LiberationSans-Bold.ttf */,
+				5BC536121DB6762A00231A50 /* LiberationSans-BoldItalic.ttf */,
+				5BC536131DB6762A00231A50 /* LiberationSans-Italic.ttf */,
+				5BC536141DB6762A00231A50 /* LiberationSans-Regular.ttf */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,9 +263,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BC5361B1DB6762A00231A50 /* LiberationSans-Regular.ttf in Resources */,
 				5BAF07CC1DB11C1B00AF2FD0 /* LaunchScreen.storyboard in Resources */,
 				5BAF07C91DB11C1B00AF2FD0 /* Assets.xcassets in Resources */,
 				5BAF07C71DB11C1B00AF2FD0 /* Main.storyboard in Resources */,
+				5BC536151DB6762A00231A50 /* LiberationSans-BoldItalic.ttf in Resources */,
+				5BC536181DB6762A00231A50 /* LiberationSans-Italic.ttf in Resources */,
+				5BC5360F1DB6761C00231A50 /* LiberationSans-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,6 +277,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BC536101DB6761C00231A50 /* LiberationSans-Bold.ttf in Resources */,
+				5BC536191DB6762A00231A50 /* LiberationSans-Italic.ttf in Resources */,
+				5BC536161DB6762A00231A50 /* LiberationSans-BoldItalic.ttf in Resources */,
+				5BC5361C1DB6762A00231A50 /* LiberationSans-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,6 +288,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BC536111DB6761C00231A50 /* LiberationSans-Bold.ttf in Resources */,
+				5BC5361A1DB6762A00231A50 /* LiberationSans-Italic.ttf in Resources */,
+				5BC536171DB6762A00231A50 /* LiberationSans-BoldItalic.ttf in Resources */,
+				5BC5361D1DB6762A00231A50 /* LiberationSans-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -514,6 +554,7 @@
 				5BAF07E81DB11C1B00AF2FD0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5BAF07E91DB11C1B00AF2FD0 /* Build configuration list for PBXNativeTarget "PulmonisTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +563,7 @@
 				5BAF07EB1DB11C1B00AF2FD0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5BAF07EC1DB11C1B00AF2FD0 /* Build configuration list for PBXNativeTarget "PulmonisUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +572,7 @@
 				5BAF07EE1DB11C1B00AF2FD0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
