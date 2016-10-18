@@ -137,7 +137,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="bdN-Cz-H27" firstAttribute="top" secondItem="D7g-7a-rGR" secondAttribute="bottom" constant="-20" id="Sc5-LA-AXq"/>
+                            <constraint firstItem="bdN-Cz-H27" firstAttribute="top" secondItem="D7g-7a-rGR" secondAttribute="bottom" constant="-64" id="Sc5-LA-AXq"/>
                             <constraint firstItem="bdN-Cz-H27" firstAttribute="leading" secondItem="e4b-qV-sJn" secondAttribute="leading" id="aeM-se-FuG"/>
                             <constraint firstItem="Qm6-Hq-NTv" firstAttribute="top" secondItem="bdN-Cz-H27" secondAttribute="bottom" id="dfJ-nI-HBK"/>
                             <constraint firstAttribute="trailing" secondItem="bdN-Cz-H27" secondAttribute="trailing" id="e4T-aT-qlp"/>
@@ -155,7 +155,7 @@
                     <toolbarItems/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="667"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="eWi-Qz-VGj">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="eWi-Qz-VGj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
