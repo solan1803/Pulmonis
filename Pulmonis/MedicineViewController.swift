@@ -9,14 +9,19 @@
 import UIKit
 
 class MedicineViewController: UIViewController {
-
-    @IBOutlet weak var numOfTabletsLabel: UILabel!
+    
+    @IBOutlet weak var takenButton: UIButton!
+    @IBOutlet weak var notHaveButton: UIButton!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        numOfTabletsLabel.backgroundColor = UIColor(patternImage: UIImage(named: "learn")!)
-
-        // Do any additional setup after loading the view.
+        notHaveButton.layer.cornerRadius = 10
+        notHaveButton.clipsToBounds = true
+        
+        
+        takenButton.layer.cornerRadius = 10
+        takenButton.clipsToBounds = true
     }
 
     override func didReceiveMemoryWarning() {
