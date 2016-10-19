@@ -28,6 +28,9 @@
                                 <state key="normal" title="EMERGENCY ACTION">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="xkh-aJ-lxQ" kind="show" id="ZnZ-nc-o3F"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="imp-ck-JEB">
                                 <subviews>
@@ -196,6 +199,9 @@ has changed.</string>
                                 <state key="normal" title="Next">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="IrU-O9-cuf" kind="show" id="W4x-5N-0R2"/>
+                                </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="How are you currently feeling?" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ia2-TR-c2v">
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -326,6 +332,9 @@ has changed.</string>
                                         <state key="normal" title="Symptoms Experienced">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="buE-VF-ABa" kind="show" id="8aY-NG-3qy"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -352,6 +361,7 @@ has changed.</string>
                     <connections>
                         <outlet property="medicationButton" destination="wOp-2D-tDo" id="VoF-EY-J0O"/>
                         <outlet property="pefButton" destination="wab-5a-ti6" id="QxM-wY-IZl"/>
+                        <outlet property="symptomsButton" destination="Xca-eo-CF7" id="Smg-NR-CPR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="veR-6c-Poh" userLabel="First Responder" sceneMemberID="firstResponder"/>
