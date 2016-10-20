@@ -39,34 +39,33 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="imp-ck-JEB">
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="imp-ck-JEB">
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Stats" translatesAutoresizingMaskIntoConstraints="NO" id="hRw-yi-o59"/>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="map" translatesAutoresizingMaskIntoConstraints="NO" id="4JP-5X-6h2"/>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="learn" translatesAutoresizingMaskIntoConstraints="NO" id="IJn-VV-WVq"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PzP-EB-ghi">
+                                        <inset key="titleEdgeInsets" minX="0.0" minY="140" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="STATS" backgroundImage="Stats">
+                                            <color key="titleColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c92-8A-VcZ">
+                                        <inset key="titleEdgeInsets" minX="0.0" minY="140" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="MAP" backgroundImage="map">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="feH-yK-3yA">
+                                        <inset key="titleEdgeInsets" minX="0.0" minY="140" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="LEARN" backgroundImage="learn">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="FFa-ce-ggd" kind="show" id="GCz-Fc-J7S"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="tfS-31-xpT"/>
                                 </constraints>
-                            </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="41" translatesAutoresizingMaskIntoConstraints="NO" id="xHB-sK-sxF">
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="STATS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MYm-nx-vVa">
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MAP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D19-vX-Uwa">
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LEARN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3XQ-iO-uWJ">
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PULMONIS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="flx-Jr-AuX">
                                 <constraints>
@@ -102,21 +101,18 @@
                             <constraint firstItem="flx-Jr-AuX" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-35" id="Awg-aS-7rg"/>
                             <constraint firstAttribute="leadingMargin" secondItem="mjh-ib-cBJ" secondAttribute="leading" id="DSp-Hc-vC2"/>
                             <constraint firstAttribute="trailingMargin" secondItem="mjh-ib-cBJ" secondAttribute="trailing" id="Dgl-jb-jbV"/>
-                            <constraint firstItem="xHB-sK-sxF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PLh-E8-f6J"/>
                             <constraint firstItem="imp-ck-JEB" firstAttribute="top" secondItem="fOI-C9-n9e" secondAttribute="bottom" id="Qcc-RC-fdX"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="mjh-ib-cBJ" secondAttribute="bottom" constant="10" id="Ruq-UU-WUN"/>
                             <constraint firstItem="OcG-15-ePd" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="THW-6v-VKr"/>
                             <constraint firstItem="fOI-C9-n9e" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="100" id="UtE-Jr-i3A"/>
                             <constraint firstItem="mjh-ib-cBJ" firstAttribute="top" secondItem="imp-ck-JEB" secondAttribute="bottom" constant="40" id="d2U-x7-Jtn"/>
                             <constraint firstItem="OcG-15-ePd" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-64" id="eEJ-h2-G7R"/>
-                            <constraint firstItem="xHB-sK-sxF" firstAttribute="width" secondItem="imp-ck-JEB" secondAttribute="width" id="frB-M4-GaZ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="imp-ck-JEB" secondAttribute="trailing" id="ibu-Mn-Xzs"/>
                             <constraint firstItem="OcG-15-ePd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="jIW-7x-AV0"/>
                             <constraint firstAttribute="trailingMargin" secondItem="OcG-15-ePd" secondAttribute="trailing" constant="-16" id="nPv-AA-kB8"/>
                             <constraint firstAttribute="trailingMargin" secondItem="TEI-4a-AAl" secondAttribute="trailing" constant="-16" id="pYD-Fe-qtf"/>
                             <constraint firstAttribute="leadingMargin" secondItem="imp-ck-JEB" secondAttribute="leading" id="rIW-cc-GoI"/>
                             <constraint firstItem="TEI-4a-AAl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="tjg-0W-FWV"/>
-                            <constraint firstItem="xHB-sK-sxF" firstAttribute="top" secondItem="imp-ck-JEB" secondAttribute="bottom" constant="10" id="v6B-Mh-PfC"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="inj-gp-5ck"/>
@@ -173,9 +169,6 @@
                                 <state key="normal" title="Next">
                                     <color key="titleColor" red="0.2253868579864502" green="0.83328109979629517" blue="0.50258815288543701" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
-                                <connections>
-                                    <segue destination="FFa-ce-ggd" kind="show" id="c0p-VV-7y1"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -199,7 +192,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9dF-kz-ZCc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1988" y="221.73913043478262"/>
+            <point key="canvasLocation" x="2034" y="-410"/>
         </scene>
         <!--LEARN-->
         <scene sceneID="yqk-ro-XWH">
@@ -397,7 +390,7 @@
                     <toolbarItems/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="667"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="eWi-Qz-VGj">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="eWi-Qz-VGj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
