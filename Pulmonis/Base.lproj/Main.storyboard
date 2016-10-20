@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -34,9 +35,6 @@
                                 <state key="normal" title="EMERGENCY ACTION">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
-                                <connections>
-                                    <segue destination="DR4-el-7g1" kind="show" id="qE7-Ti-74M"/>
-                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="imp-ck-JEB">
                                 <subviews>
@@ -48,16 +46,6 @@
                                     <constraint firstAttribute="height" constant="100" id="tfS-31-xpT"/>
                                 </constraints>
                             </stackView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="inhaler2" translatesAutoresizingMaskIntoConstraints="NO" id="N8e-wB-1vS">
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="300" id="zOi-Fd-YVF"/>
-                                </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ACTION PLAN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Auf-su-Pwf">
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="36"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="41" translatesAutoresizingMaskIntoConstraints="NO" id="xHB-sK-sxF">
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="STATS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MYm-nx-vVa">
@@ -90,25 +78,37 @@
                                     <constraint firstAttribute="height" constant="76" id="u6I-Hd-Ymx"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fOI-C9-n9e">
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="fOI-C9-n9e" secondAttribute="height" multiplier="300:300" id="zZc-rx-iZN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="32"/>
+                                <inset key="titleEdgeInsets" minX="0.0" minY="150" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="ACTION PLAN" backgroundImage="inhaler2">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="DR4-el-7g1" kind="show" id="z3J-W3-P2H"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <constraints>
+                            <constraint firstItem="fOI-C9-n9e" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2lJ-cm-h7W"/>
                             <constraint firstItem="TEI-4a-AAl" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="9yE-IG-hBN"/>
                             <constraint firstItem="flx-Jr-AuX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="A7Q-wH-Cwt"/>
                             <constraint firstItem="flx-Jr-AuX" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-35" id="Awg-aS-7rg"/>
                             <constraint firstAttribute="leadingMargin" secondItem="mjh-ib-cBJ" secondAttribute="leading" id="DSp-Hc-vC2"/>
                             <constraint firstAttribute="trailingMargin" secondItem="mjh-ib-cBJ" secondAttribute="trailing" id="Dgl-jb-jbV"/>
-                            <constraint firstItem="Auf-su-Pwf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Nhz-rf-xv3"/>
                             <constraint firstItem="xHB-sK-sxF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PLh-E8-f6J"/>
+                            <constraint firstItem="imp-ck-JEB" firstAttribute="top" secondItem="fOI-C9-n9e" secondAttribute="bottom" id="Qcc-RC-fdX"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="mjh-ib-cBJ" secondAttribute="bottom" constant="10" id="Ruq-UU-WUN"/>
                             <constraint firstItem="OcG-15-ePd" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="THW-6v-VKr"/>
+                            <constraint firstItem="fOI-C9-n9e" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="100" id="UtE-Jr-i3A"/>
                             <constraint firstItem="mjh-ib-cBJ" firstAttribute="top" secondItem="imp-ck-JEB" secondAttribute="bottom" constant="40" id="d2U-x7-Jtn"/>
                             <constraint firstItem="OcG-15-ePd" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-64" id="eEJ-h2-G7R"/>
-                            <constraint firstItem="imp-ck-JEB" firstAttribute="top" secondItem="Auf-su-Pwf" secondAttribute="bottom" constant="60" id="eih-kC-ZSL"/>
                             <constraint firstItem="xHB-sK-sxF" firstAttribute="width" secondItem="imp-ck-JEB" secondAttribute="width" id="frB-M4-GaZ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="imp-ck-JEB" secondAttribute="trailing" id="ibu-Mn-Xzs"/>
                             <constraint firstItem="OcG-15-ePd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="jIW-7x-AV0"/>
-                            <constraint firstItem="Auf-su-Pwf" firstAttribute="top" secondItem="N8e-wB-1vS" secondAttribute="bottom" constant="-105" id="kHg-50-1He"/>
-                            <constraint firstItem="N8e-wB-1vS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mtf-Dc-VIN"/>
                             <constraint firstAttribute="trailingMargin" secondItem="OcG-15-ePd" secondAttribute="trailing" constant="-16" id="nPv-AA-kB8"/>
                             <constraint firstAttribute="trailingMargin" secondItem="TEI-4a-AAl" secondAttribute="trailing" constant="-16" id="pYD-Fe-qtf"/>
                             <constraint firstAttribute="leadingMargin" secondItem="imp-ck-JEB" secondAttribute="leading" id="rIW-cc-GoI"/>
@@ -123,7 +123,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1076" y="138.98050974512745"/>
+            <point key="canvasLocation" x="1194" y="152"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="cSD-nM-PKS">
@@ -200,6 +200,8 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="EVs-bF-bWK" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="667"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="eWi-Qz-VGj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
