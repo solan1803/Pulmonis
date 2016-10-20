@@ -8,6 +8,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="LiberationSans-Bold.ttf">
+            <string>LiberationSans-Bold</string>
+        </array>
         <array key="LiberationSans-Regular.ttf">
             <string>LiberationSans</string>
         </array>
@@ -170,6 +173,9 @@
                                 <state key="normal" title="Next">
                                     <color key="titleColor" red="0.2253868579864502" green="0.83328109979629517" blue="0.50258815288543701" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="FFa-ce-ggd" kind="show" id="c0p-VV-7y1"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -195,13 +201,200 @@
             </objects>
             <point key="canvasLocation" x="1988" y="221.73913043478262"/>
         </scene>
+        <!--LEARN-->
+        <scene sceneID="yqk-ro-XWH">
+            <objects>
+                <tableViewController title="LEARN" id="FFa-ce-ggd" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" sectionIndexMinimumDisplayRowCount="5" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="8wW-iC-qXd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <sections>
+                            <tableViewSection id="Af7-i0-Vfa">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="136" id="emJ-A7-1f6">
+                                        <rect key="frame" x="0.0" y="64" width="375" height="136"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="emJ-A7-1f6" id="nVL-5D-trn">
+                                            <frame key="frameInset" width="375" height="135"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="1hS-CD-2z5">
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="General Knowledge" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l5r-hY-Kbo">
+                                                            <fontDescription key="fontDescription" name="LiberationSans-Bold" family="Liberation Sans" pointSize="21"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Learn more about Asthma in general. Find out what it really is and what the treatment does." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XI7-u7-Bzk">
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="learn_book" translatesAutoresizingMaskIntoConstraints="NO" id="Wjk-O5-xiE"/>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Wjk-O5-xiE" firstAttribute="top" secondItem="nVL-5D-trn" secondAttribute="topMargin" constant="5" id="MhF-Re-jMJ"/>
+                                                <constraint firstItem="1hS-CD-2z5" firstAttribute="leading" secondItem="nVL-5D-trn" secondAttribute="leadingMargin" constant="100" id="YcF-Jh-CBc"/>
+                                                <constraint firstAttribute="leadingMargin" secondItem="Wjk-O5-xiE" secondAttribute="leading" constant="30" id="dWc-M1-Oj5"/>
+                                                <constraint firstItem="Wjk-O5-xiE" firstAttribute="centerY" secondItem="nVL-5D-trn" secondAttribute="centerY" id="eBg-Ul-jWB"/>
+                                                <constraint firstItem="1hS-CD-2z5" firstAttribute="top" secondItem="nVL-5D-trn" secondAttribute="topMargin" constant="13" id="iaN-tr-vc2"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="1hS-CD-2z5" secondAttribute="trailing" id="ix8-ga-iRK"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="136" id="XX3-cl-4KV">
+                                        <rect key="frame" x="0.0" y="200" width="375" height="136"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XX3-cl-4KV" id="huT-Sr-juN">
+                                            <frame key="frameInset" width="375" height="135"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="learn_lungs" translatesAutoresizingMaskIntoConstraints="NO" id="PxQ-A6-EwH"/>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="bNQ-am-kFF">
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Breathing Exercises" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RaB-ms-H3d">
+                                                            <fontDescription key="fontDescription" name="LiberationSans-Bold" family="Liberation Sans" pointSize="21"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A few simple exercises to help you breathe correctly. Sit back, relax and aerate your lungs." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hn1-yh-QhS">
+                                                            <fontDescription key="fontDescription" name="LiberationSans" family="Liberation Sans" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="bNQ-am-kFF" firstAttribute="leading" secondItem="huT-Sr-juN" secondAttribute="leadingMargin" constant="100" id="Jwa-aF-u4V"/>
+                                                <constraint firstItem="PxQ-A6-EwH" firstAttribute="centerY" secondItem="huT-Sr-juN" secondAttribute="centerY" id="ab1-mD-YAg"/>
+                                                <constraint firstItem="bNQ-am-kFF" firstAttribute="top" secondItem="huT-Sr-juN" secondAttribute="topMargin" constant="13" id="eZ4-uG-6VA"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="bNQ-am-kFF" secondAttribute="trailing" id="gh5-YO-Rvi"/>
+                                                <constraint firstItem="bNQ-am-kFF" firstAttribute="leading" secondItem="PxQ-A6-EwH" secondAttribute="trailing" constant="5" id="juA-JK-N0X"/>
+                                                <constraint firstItem="PxQ-A6-EwH" firstAttribute="leading" secondItem="huT-Sr-juN" secondAttribute="leadingMargin" id="pzJ-aF-KJd"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="136" id="G23-8k-s6E">
+                                        <rect key="frame" x="0.0" y="336" width="375" height="136"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="G23-8k-s6E" id="iQn-dl-QdO">
+                                            <frame key="frameInset" width="375" height="135"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="As4-gX-0uO">
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Inhaler Technique" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bHV-lL-gKn">
+                                                            <fontDescription key="fontDescription" name="LiberationSans-Bold" family="Liberation Sans" pointSize="21"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Learn how to properly use your inhaler through this simple and illustrated tutorial." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ca-nZ-pMN">
+                                                            <fontDescription key="fontDescription" name="LiberationSans" family="Liberation Sans" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Inhaler" translatesAutoresizingMaskIntoConstraints="NO" id="h7o-7j-26y"/>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="As4-gX-0uO" firstAttribute="leading" secondItem="h7o-7j-26y" secondAttribute="trailing" constant="5" id="HpY-26-QH6"/>
+                                                <constraint firstItem="As4-gX-0uO" firstAttribute="leading" secondItem="iQn-dl-QdO" secondAttribute="leadingMargin" constant="100" id="MpN-yW-VLZ"/>
+                                                <constraint firstItem="h7o-7j-26y" firstAttribute="leading" secondItem="iQn-dl-QdO" secondAttribute="leadingMargin" id="UfQ-fL-RCk"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="As4-gX-0uO" secondAttribute="trailing" id="ZS2-55-u3j"/>
+                                                <constraint firstItem="As4-gX-0uO" firstAttribute="top" secondItem="iQn-dl-QdO" secondAttribute="topMargin" constant="13" id="k2C-VF-bjG"/>
+                                                <constraint firstItem="h7o-7j-26y" firstAttribute="centerY" secondItem="iQn-dl-QdO" secondAttribute="centerY" id="uyv-nV-lcv"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="136" id="da3-pE-Ar4">
+                                        <rect key="frame" x="0.0" y="472" width="375" height="136"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="da3-pE-Ar4" id="ceg-IC-RMC">
+                                            <frame key="frameInset" width="375" height="135"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="FvR-Zr-V06">
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How to use Pulmonis" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qCb-hq-0Qr">
+                                                            <fontDescription key="fontDescription" name="LiberationSans-Bold" family="Liberation Sans" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Learn how to use the app and all its useful functionalities to improve your asthma." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aNZ-xe-ryg">
+                                                            <fontDescription key="fontDescription" name="LiberationSans" family="Liberation Sans" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="question_mark" translatesAutoresizingMaskIntoConstraints="NO" id="IKd-U9-fSk"/>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="FvR-Zr-V06" firstAttribute="leading" secondItem="ceg-IC-RMC" secondAttribute="leadingMargin" constant="100" id="1mV-Un-1Lf"/>
+                                                <constraint firstItem="FvR-Zr-V06" firstAttribute="leading" secondItem="IKd-U9-fSk" secondAttribute="trailing" constant="5" id="5K6-OP-Zha"/>
+                                                <constraint firstItem="FvR-Zr-V06" firstAttribute="top" secondItem="ceg-IC-RMC" secondAttribute="topMargin" constant="13" id="I7P-XP-ZUz"/>
+                                                <constraint firstItem="IKd-U9-fSk" firstAttribute="centerY" secondItem="ceg-IC-RMC" secondAttribute="centerY" id="f4B-RH-Obp"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="FvR-Zr-V06" secondAttribute="trailing" id="fZf-bu-sot"/>
+                                                <constraint firstAttribute="leadingMargin" secondItem="IKd-U9-fSk" secondAttribute="leading" id="fih-Mp-4pj"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="136" id="clV-Xk-CbZ">
+                                        <rect key="frame" x="0.0" y="608" width="375" height="136"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="clV-Xk-CbZ" id="Q97-OR-zid">
+                                            <frame key="frameInset" width="375" height="135"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ekD-JH-CAP">
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pulmonis For Doctors" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vwn-aH-0rV">
+                                                            <fontDescription key="fontDescription" name="LiberationSans-Bold" family="Liberation Sans" pointSize="21"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="As a doctor, learn how to use the app to help improve your patients asthma." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8pA-qe-KAJ">
+                                                            <fontDescription key="fontDescription" name="LiberationSans" family="Liberation Sans" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pill" translatesAutoresizingMaskIntoConstraints="NO" id="ZL0-G8-dt3"/>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="ZL0-G8-dt3" firstAttribute="leading" secondItem="Q97-OR-zid" secondAttribute="leadingMargin" id="KpT-1b-hgN"/>
+                                                <constraint firstItem="ekD-JH-CAP" firstAttribute="leading" secondItem="ZL0-G8-dt3" secondAttribute="trailing" constant="5" id="LFH-cC-Nk8"/>
+                                                <constraint firstItem="ekD-JH-CAP" firstAttribute="top" secondItem="Q97-OR-zid" secondAttribute="topMargin" constant="13" id="cM7-Bj-Qc6"/>
+                                                <constraint firstItem="ZL0-G8-dt3" firstAttribute="centerY" secondItem="Q97-OR-zid" secondAttribute="centerY" id="hEs-bV-lJr"/>
+                                                <constraint firstItem="ekD-JH-CAP" firstAttribute="leading" secondItem="Q97-OR-zid" secondAttribute="leadingMargin" constant="100" id="o0k-zi-6IZ"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="ekD-JH-CAP" secondAttribute="trailing" id="yoZ-yz-mjE"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="FFa-ce-ggd" id="rZS-bZ-vUL"/>
+                            <outlet property="delegate" destination="FFa-ce-ggd" id="H46-BD-xrJ"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8jS-Q9-YIT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2864.8000000000002" y="750.67466266866575"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="JxU-hw-KFZ">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="EVs-bF-bWK" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="375" height="667"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="eWi-Qz-VGj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -222,7 +415,11 @@
         <image name="Stats" width="155" height="140"/>
         <image name="inhaler2" width="566" height="576"/>
         <image name="learn" width="126" height="154"/>
+        <image name="learn_book" width="155" height="191"/>
+        <image name="learn_lungs" width="176" height="155"/>
         <image name="map" width="213" height="213"/>
+        <image name="pill" width="139" height="141"/>
+        <image name="question_mark" width="162" height="166"/>
         <image name="tasks" width="750" height="152"/>
     </resources>
 </document>
