@@ -85,8 +85,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tasks" translatesAutoresizingMaskIntoConstraints="NO" id="TEI-4a-AAl">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="76" id="u6I-Hd-Ymx"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <constraints>
+                            <constraint firstItem="TEI-4a-AAl" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="9yE-IG-hBN"/>
                             <constraint firstItem="flx-Jr-AuX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="A7Q-wH-Cwt"/>
                             <constraint firstItem="flx-Jr-AuX" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-35" id="Awg-aS-7rg"/>
                             <constraint firstAttribute="leadingMargin" secondItem="mjh-ib-cBJ" secondAttribute="leading" id="DSp-Hc-vC2"/>
@@ -104,7 +110,9 @@
                             <constraint firstItem="Auf-su-Pwf" firstAttribute="top" secondItem="N8e-wB-1vS" secondAttribute="bottom" constant="-105" id="kHg-50-1He"/>
                             <constraint firstItem="N8e-wB-1vS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mtf-Dc-VIN"/>
                             <constraint firstAttribute="trailingMargin" secondItem="OcG-15-ePd" secondAttribute="trailing" constant="-16" id="nPv-AA-kB8"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="TEI-4a-AAl" secondAttribute="trailing" constant="-16" id="pYD-Fe-qtf"/>
                             <constraint firstAttribute="leadingMargin" secondItem="imp-ck-JEB" secondAttribute="leading" id="rIW-cc-GoI"/>
+                            <constraint firstItem="TEI-4a-AAl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="tjg-0W-FWV"/>
                             <constraint firstItem="xHB-sK-sxF" firstAttribute="top" secondItem="imp-ck-JEB" secondAttribute="bottom" constant="10" id="v6B-Mh-PfC"/>
                         </constraints>
                     </view>
@@ -213,5 +221,6 @@
         <image name="inhaler2" width="566" height="576"/>
         <image name="learn" width="126" height="154"/>
         <image name="map" width="213" height="213"/>
+        <image name="tasks" width="750" height="152"/>
     </resources>
 </document>
