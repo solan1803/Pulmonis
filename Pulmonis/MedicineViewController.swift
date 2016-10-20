@@ -12,6 +12,7 @@ class MedicineViewController: UIViewController {
     
     @IBOutlet weak var takenButton: UIButton!
     @IBOutlet weak var notHaveButton: UIButton!
+    @IBOutlet weak var textView: UITextView!
     
     
     override func viewDidLoad() {
@@ -22,6 +23,15 @@ class MedicineViewController: UIViewController {
         
         takenButton.layer.cornerRadius = 10
         takenButton.clipsToBounds = true
+        
+        /*
+        let fixedWidth = textView.frame.size.width
+        textView.sizeThatFits(CGSize(width: fixedWidth, height: CGFloat.greatestFiniteMagnitude))
+        let newSize = textView.sizeThatFits(CGSize(width: fixedWidth, height: CGFloat.greatestFiniteMagnitude))
+        var newFrame = textView.frame
+        newFrame.size = CGSize(width: max(newSize.width, fixedWidth), height: newSize.height)
+        textView.frame = newFrame;
+        */
     }
 
     override func didReceiveMemoryWarning() {
