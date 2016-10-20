@@ -497,7 +497,7 @@
                                         <rect key="frame" x="0.0" y="64" width="375" height="136"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wfM-ga-Hef" id="kaO-UZ-20J">
-                                            <frame key="frameInset" width="375" height="135"/>
+                                            <frame key="frameInset" width="375" height="135.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="7RK-Uy-iua">
@@ -530,7 +530,7 @@
                                         <rect key="frame" x="0.0" y="200" width="375" height="136"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="BqO-Nt-2fa" id="552-VI-8CO">
-                                            <frame key="frameInset" width="375" height="135"/>
+                                            <frame key="frameInset" width="375" height="135.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="learn_lungs" translatesAutoresizingMaskIntoConstraints="NO" id="BPm-OJ-i5O"/>
@@ -563,7 +563,7 @@
                                         <rect key="frame" x="0.0" y="336" width="375" height="136"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="EU7-t0-kPR" id="QIz-BW-i5i">
-                                            <frame key="frameInset" width="375" height="135"/>
+                                            <frame key="frameInset" width="375" height="135.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="cyj-cp-qoM">
@@ -596,7 +596,7 @@
                                         <rect key="frame" x="0.0" y="472" width="375" height="136"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="W94-RM-2DH" id="nJO-Ox-R5g">
-                                            <frame key="frameInset" width="375" height="135"/>
+                                            <frame key="frameInset" width="375" height="135.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="JbB-0Z-qkI">
@@ -629,7 +629,7 @@
                                         <rect key="frame" x="0.0" y="608" width="375" height="136"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Xnc-nW-xbC" id="h5G-1a-dZV">
-                                            <frame key="frameInset" width="375" height="135"/>
+                                            <frame key="frameInset" width="375" height="135.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="cMU-i3-UKT">
@@ -676,7 +676,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bSo-aD-37K" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="NVJ-1M-QAZ">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="NVJ-1M-QAZ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
