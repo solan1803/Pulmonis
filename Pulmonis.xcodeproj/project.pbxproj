@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		280CC1CA1DB903CE00C85DC2 /* Karow's Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 280CC1C91DB903CE00C85DC2 /* Karow's Storyboard.storyboard */; };
 		2899A93C1DB4FE03004306DF /* SymptomsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2899A93B1DB4FE03004306DF /* SymptomsViewController.swift */; };
 		2899A9411DB519D6004306DF /* MedicineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2899A93F1DB519D6004306DF /* MedicineViewController.swift */; };
 		28E486301DB672A500C3C87E /* StatsStartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E4862F1DB672A500C3C87E /* StatsStartViewController.swift */; };
@@ -50,7 +49,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		280CC1C91DB903CE00C85DC2 /* Karow's Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = "Karow's Storyboard.storyboard"; path = "../Karow's Storyboard.storyboard"; sourceTree = "<group>"; };
 		2899A93B1DB4FE03004306DF /* SymptomsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SymptomsViewController.swift; sourceTree = "<group>"; };
 		2899A93F1DB519D6004306DF /* MedicineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicineViewController.swift; sourceTree = "<group>"; };
 		28E4862F1DB672A500C3C87E /* StatsStartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatsStartViewController.swift; sourceTree = "<group>"; };
@@ -125,7 +123,6 @@
 				5BAF07C11DB11C1B00AF2FD0 /* AppDelegate.swift */,
 				5BAF07C31DB11C1B00AF2FD0 /* ViewController.swift */,
 				5BAF07C51DB11C1B00AF2FD0 /* Main.storyboard */,
-				280CC1C91DB903CE00C85DC2 /* Karow's Storyboard.storyboard */,
 				28E4862F1DB672A500C3C87E /* StatsStartViewController.swift */,
 				2899A93F1DB519D6004306DF /* MedicineViewController.swift */,
 				2899A93B1DB4FE03004306DF /* SymptomsViewController.swift */,
