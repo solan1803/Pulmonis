@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Symptoms-->
+        <scene sceneID="HKj-Va-G1Q">
+            <objects>
+                <viewController id="UAv-kB-UkB" customClass="SymptomsViewController" customModule="Pulmonis" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nYP-3g-Kv1"/>
+                        <viewControllerLayoutGuide type="bottom" id="dqv-oR-Gk4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="L6b-hi-csA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Shiny Blue" translatesAutoresizingMaskIntoConstraints="NO" id="8XG-Jo-dnt"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IDe-JG-hAX">
+                                <color key="backgroundColor" red="0.001422772068" green="0.4256876409" blue="0.55088329319999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="K09-jN-jw8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="How are you currently feeling?" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Jbj-2s-n7j">
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Jbj-2s-n7j" secondAttribute="height" multiplier="3:1" id="vad-ES-8mC"/>
+                                </constraints>
+                                <color key="textColor" red="0.001422772068" green="0.4256876409" blue="0.55088329319999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="vqX-gh-fdm">
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eTI-oc-oie">
+                                        <color key="backgroundColor" red="0.001422772068" green="0.4256876409" blue="0.55088329319999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
+                                        <state key="normal" title="No symptoms">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xdB-bV-9ea">
+                                        <color key="backgroundColor" red="0.001422772068" green="0.4256876409" blue="0.55088329319999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
+                                        <state key="normal" title="Breathless">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="lnL-Hy-2qR">
+                                        <color key="backgroundColor" red="0.001422772068" green="0.4256876409" blue="0.55088329319999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
+                                        <state key="normal" title="Using inhaler more often than usual">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="vqX-gh-fdm" firstAttribute="leading" secondItem="L6b-hi-csA" secondAttribute="leading" constant="35" id="3eS-xQ-apC"/>
+                            <constraint firstAttribute="bottom" secondItem="8XG-Jo-dnt" secondAttribute="bottom" id="Pt6-EQ-r0i"/>
+                            <constraint firstItem="IDe-JG-hAX" firstAttribute="top" secondItem="vqX-gh-fdm" secondAttribute="bottom" constant="30" id="Qal-R3-hm2"/>
+                            <constraint firstItem="8XG-Jo-dnt" firstAttribute="top" secondItem="L6b-hi-csA" secondAttribute="top" id="XMp-a5-nCO"/>
+                            <constraint firstItem="vqX-gh-fdm" firstAttribute="top" secondItem="Jbj-2s-n7j" secondAttribute="bottom" constant="30" id="dUX-4L-KjT"/>
+                            <constraint firstItem="Jbj-2s-n7j" firstAttribute="leading" secondItem="L6b-hi-csA" secondAttribute="leadingMargin" constant="30" id="deH-kP-7ld"/>
+                            <constraint firstAttribute="trailing" secondItem="Jbj-2s-n7j" secondAttribute="trailing" constant="30" id="eFh-dD-3KP"/>
+                            <constraint firstItem="IDe-JG-hAX" firstAttribute="centerX" secondItem="L6b-hi-csA" secondAttribute="centerX" id="ikj-Fo-Bir"/>
+                            <constraint firstItem="8XG-Jo-dnt" firstAttribute="leading" secondItem="L6b-hi-csA" secondAttribute="leading" id="kCT-A8-l15"/>
+                            <constraint firstAttribute="trailing" secondItem="vqX-gh-fdm" secondAttribute="trailing" constant="35" id="opR-na-6U2"/>
+                            <constraint firstItem="Jbj-2s-n7j" firstAttribute="top" secondItem="nYP-3g-Kv1" secondAttribute="bottom" constant="40" id="wSL-yl-qFQ"/>
+                            <constraint firstItem="dqv-oR-Gk4" firstAttribute="top" secondItem="IDe-JG-hAX" secondAttribute="bottom" constant="25" id="xil-WX-qd4"/>
+                            <constraint firstAttribute="trailing" secondItem="8XG-Jo-dnt" secondAttribute="trailing" id="zWA-XZ-Jba"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Symptoms" id="3iR-IV-gB0"/>
+                    <connections>
+                        <outlet property="breathlessButton" destination="xdB-bV-9ea" id="5c0-YS-dJe"/>
+                        <outlet property="inhalerButton" destination="lnL-Hy-2qR" id="fvx-fo-hT9"/>
+                        <outlet property="nextButton" destination="IDe-JG-hAX" id="iGa-bt-fyv"/>
+                        <outlet property="symptomsButton" destination="eTI-oc-oie" id="9l6-Wl-mh4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zz3-Wp-v5u" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="76" y="129"/>
+        </scene>
+        <!--Medicine-->
+        <scene sceneID="hGv-Ff-gsY">
+            <objects>
+                <viewController id="sDT-T9-Fp5" userLabel="Medicine" customClass="MedicineViewController" customModule="Pulmonis" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Hfk-qV-hXI"/>
+                        <viewControllerLayoutGuide type="bottom" id="H89-d7-t0O"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Tpi-vC-Upt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Shiny Blue" translatesAutoresizingMaskIntoConstraints="NO" id="jUB-rf-XW6"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="1TJ-9t-dlM">
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your astham status has changed." textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="k72-bD-PxM">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="UZF-F7-7Un"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
+                                        <color key="textColor" red="0.001422772068" green="0.4256876409" blue="0.55088329319999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="751" text="It looks like you have been prescribed steroid tablets." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c2k-U4-Dnr">
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
+                                        <color key="textColor" red="0.001422772068" green="0.4256876409" blue="0.55088329319999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Take them now." textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="Hd9-GM-wJi">
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                        <color key="textColor" red="0.001422772068" green="0.4256876409" blue="0.55088329319999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="700" verticalCompressionResistancePriority="700" image="drugs" translatesAutoresizingMaskIntoConstraints="NO" id="uxO-bO-sdG">
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="uxO-bO-sdG" secondAttribute="height" multiplier="884:452" id="Ooi-Pc-IAl"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" text="2 Tablets" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kgq-Mf-nS1">
+                                <color key="backgroundColor" red="0.001422772068" green="0.4256876409" blue="0.55088329319999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="44L-MF-Ld9"/>
+                                    <constraint firstAttribute="width" secondItem="kgq-Mf-nS1" secondAttribute="height" multiplier="4:1" id="oaN-5Z-LrK"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="8QV-H2-dco">
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="800" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="2gp-OH-BPD">
+                                        <color key="backgroundColor" red="0.001422772068" green="0.4256876409" blue="0.55088329319999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="30" id="AWE-J8-AcN"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="I do not have this">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ztb-o8-rus">
+                                        <color key="backgroundColor" red="0.001422772068" green="0.4256876409" blue="0.55088329319999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="30" id="lct-F2-JBR"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="Taken">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="H89-d7-t0O" firstAttribute="top" secondItem="1TJ-9t-dlM" secondAttribute="bottom" constant="150" id="1Tf-4D-ugf"/>
+                            <constraint firstItem="H89-d7-t0O" firstAttribute="top" secondItem="8QV-H2-dco" secondAttribute="bottom" constant="10" id="2Rv-ad-g3W"/>
+                            <constraint firstItem="H89-d7-t0O" firstAttribute="top" secondItem="jUB-rf-XW6" secondAttribute="bottom" id="6F0-En-kZZ"/>
+                            <constraint firstItem="1TJ-9t-dlM" firstAttribute="leading" secondItem="Tpi-vC-Upt" secondAttribute="leading" constant="15" id="75b-vv-63x"/>
+                            <constraint firstAttribute="trailing" secondItem="jUB-rf-XW6" secondAttribute="trailing" id="8sP-TI-8AY"/>
+                            <constraint firstAttribute="trailing" secondItem="1TJ-9t-dlM" secondAttribute="trailing" constant="15" id="S6p-fy-mZy"/>
+                            <constraint firstItem="kgq-Mf-nS1" firstAttribute="top" secondItem="1TJ-9t-dlM" secondAttribute="bottom" id="XR4-p3-8QQ"/>
+                            <constraint firstItem="8QV-H2-dco" firstAttribute="leading" secondItem="Tpi-vC-Upt" secondAttribute="leading" constant="10" id="YJq-G3-aq8"/>
+                            <constraint firstItem="jUB-rf-XW6" firstAttribute="top" secondItem="Tpi-vC-Upt" secondAttribute="top" id="YLc-EN-dSz"/>
+                            <constraint firstItem="1TJ-9t-dlM" firstAttribute="top" secondItem="Hfk-qV-hXI" secondAttribute="bottom" id="aIa-Ug-w9C"/>
+                            <constraint firstItem="jUB-rf-XW6" firstAttribute="leading" secondItem="Tpi-vC-Upt" secondAttribute="leading" id="vFv-6R-Xa9"/>
+                            <constraint firstItem="kgq-Mf-nS1" firstAttribute="centerX" secondItem="Tpi-vC-Upt" secondAttribute="centerX" id="wkS-UJ-5fM"/>
+                            <constraint firstAttribute="trailing" secondItem="8QV-H2-dco" secondAttribute="trailing" constant="10" id="zEV-qS-zf8"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Medicine" id="ixe-h2-gJX"/>
+                    <connections>
+                        <outlet property="notHaveButton" destination="2gp-OH-BPD" id="oOB-M2-NPf"/>
+                        <outlet property="takenButton" destination="Ztb-o8-rus" id="GiZ-tm-MME"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8au-cz-k9n" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1810" y="116"/>
+        </scene>
+        <!--Statistics Selection-->
+        <scene sceneID="uEd-ic-Dyr">
+            <objects>
+                <viewController id="oZk-OE-aHw" customClass="StatsStartViewController" customModule="Pulmonis" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4zF-xT-fG3"/>
+                        <viewControllerLayoutGuide type="bottom" id="057-mJ-ora"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="JbJ-Bx-iOx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Shiny Blue" translatesAutoresizingMaskIntoConstraints="NO" id="yT5-Y6-hPc"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="6D4-Uc-LzB">
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Pulmonis records your medical data to allow better monitoring by the doctor" translatesAutoresizingMaskIntoConstraints="NO" id="4Yi-b9-gGW">
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <color key="textColor" red="0.001422772068" green="0.4256876409" blue="0.55088329319999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Please note that all data is perfectly crypted and protected" translatesAutoresizingMaskIntoConstraints="NO" id="Aic-yw-nlN">
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <color key="textColor" red="0.001422772068" green="0.4256876409" blue="0.55088329319999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="RMk-UJ-yEO"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="f6A-YU-jVM">
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="How are you today?" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="OAf-NL-4U0">
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <color key="textColor" red="0.001422772068" green="0.4256876409" blue="0.55088329319999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="beO-h7-3uk">
+                                        <color key="backgroundColor" red="0.001422772068" green="0.4256876409" blue="0.55088329319999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
+                                        <state key="normal" title="Medication use">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6V9-sX-D8Z">
+                                        <color key="backgroundColor" red="0.001422772068" green="0.4256876409" blue="0.55088329319999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
+                                        <state key="normal" title="PEF values">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="btn-GD-bDr">
+                                        <color key="backgroundColor" red="0.001422772068" green="0.4256876409" blue="0.55088329319999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
+                                        <state key="normal" title="Symptoms experienced">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="6D4-Uc-LzB" firstAttribute="leading" secondItem="JbJ-Bx-iOx" secondAttribute="leading" constant="10" id="95w-HQ-hHY"/>
+                            <constraint firstItem="yT5-Y6-hPc" firstAttribute="top" secondItem="4zF-xT-fG3" secondAttribute="bottom" id="BKG-dN-Vij"/>
+                            <constraint firstItem="057-mJ-ora" firstAttribute="top" secondItem="yT5-Y6-hPc" secondAttribute="bottom" id="CVC-Jy-cod"/>
+                            <constraint firstItem="057-mJ-ora" firstAttribute="top" secondItem="6D4-Uc-LzB" secondAttribute="bottom" id="GdX-rw-npq"/>
+                            <constraint firstAttribute="trailing" secondItem="f6A-YU-jVM" secondAttribute="trailing" constant="40" id="HCp-PH-Mje"/>
+                            <constraint firstAttribute="trailing" secondItem="yT5-Y6-hPc" secondAttribute="trailing" id="MvD-mr-Z3l"/>
+                            <constraint firstItem="6D4-Uc-LzB" firstAttribute="top" secondItem="f6A-YU-jVM" secondAttribute="bottom" constant="15" id="Rg3-ID-BQx"/>
+                            <constraint firstItem="yT5-Y6-hPc" firstAttribute="leading" secondItem="JbJ-Bx-iOx" secondAttribute="leading" id="blU-LU-EBr"/>
+                            <constraint firstItem="f6A-YU-jVM" firstAttribute="leading" secondItem="JbJ-Bx-iOx" secondAttribute="leading" constant="40" id="qtg-1w-tYL"/>
+                            <constraint firstAttribute="trailing" secondItem="6D4-Uc-LzB" secondAttribute="trailing" constant="10" id="uI1-Nr-Aao"/>
+                            <constraint firstItem="f6A-YU-jVM" firstAttribute="top" secondItem="4zF-xT-fG3" secondAttribute="bottom" constant="40" id="whr-fG-FXo"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Statistics Selection" id="ciK-uC-Fiw"/>
+                    <connections>
+                        <outlet property="medicationButton" destination="beO-h7-3uk" id="ZHr-E6-FhE"/>
+                        <outlet property="pefButton" destination="6V9-sX-D8Z" id="5A5-3w-IMQ"/>
+                        <outlet property="symptomsButton" destination="btn-GD-bDr" id="xD1-YP-mnk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jpL-8T-IDx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="959" y="128"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="rBs-e1-slJ">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xcH-7K-zUo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="U4F-pv-kQu" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="OWI-6G-bKW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="-622" y="116"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Shiny Blue" width="750" height="1334"/>
+        <image name="drugs" width="884" height="452"/>
+    </resources>
+</document>
