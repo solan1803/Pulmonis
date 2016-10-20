@@ -28,9 +28,6 @@
                                 <state key="normal" title="EMERGENCY ACTION">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
-                                <connections>
-                                    <segue destination="xkh-aJ-lxQ" kind="show" id="ZnZ-nc-o3F"/>
-                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="imp-ck-JEB">
                                 <subviews>
@@ -64,49 +61,72 @@
             <point key="canvasLocation" x="1076" y="138.98050974512745"/>
         </scene>
         <!--Medicine-->
-        <scene sceneID="76x-SQ-U4T">
+        <scene sceneID="Wgb-hj-6En">
             <objects>
-                <viewController title="Medicine" id="buE-VF-ABa" customClass="MedicineViewController" customModule="Pulmonis" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="yA9-tc-evb" userLabel="Medicine" customClass="MedicineViewController" customModule="Pulmonis" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Xpg-qC-fPG"/>
-                        <viewControllerLayoutGuide type="bottom" id="kW3-CO-gpA"/>
+                        <viewControllerLayoutGuide type="top" id="r8k-Su-y5M"/>
+                        <viewControllerLayoutGuide type="bottom" id="2rR-Y7-ify"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="nip-Ib-Nvw">
+                    <view key="view" contentMode="scaleToFill" id="O84-r5-3Fg">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Shiny Blue" translatesAutoresizingMaskIntoConstraints="NO" id="FPR-Fz-amv"/>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oaG-fk-cFe">
-                                <string key="text">Your asthma status 
-has changed.</string>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
-                                <color key="textColor" red="0.001422772068" green="0.4256876409" blue="0.55088329319999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="It looks like you have prescribed steroid tablets." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yv0-6j-h9d">
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
-                                <color key="textColor" red="0.001422772068" green="0.4256876409" blue="0.55088329319999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Take them now." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x9b-3s-0R8">
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="46" id="eAn-9o-06A"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
-                                <color key="textColor" red="0.001422772068" green="0.4256876409" blue="0.55088329319999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="AkO-pi-70c">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Shiny Blue" translatesAutoresizingMaskIntoConstraints="NO" id="CTt-IJ-hbo"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="RaB-zS-J41">
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="800" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="qgL-L1-dZA">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your astham status has changed." textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="UYc-AX-jpI">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="Xsj-vu-lah"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
+                                        <color key="textColor" red="0.001422772068" green="0.4256876409" blue="0.55088329319999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="751" text="It looks like you have been prescribed steroid tablets." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RmN-LA-SyB">
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
+                                        <color key="textColor" red="0.001422772068" green="0.4256876409" blue="0.55088329319999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Take them now." textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="rwU-HR-Ah1">
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                        <color key="textColor" red="0.001422772068" green="0.4256876409" blue="0.55088329319999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="700" verticalCompressionResistancePriority="700" image="drugs" translatesAutoresizingMaskIntoConstraints="NO" id="X48-is-9AV">
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="X48-is-9AV" secondAttribute="height" multiplier="884:452" id="heE-Li-2ze"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" text="2 Tablets" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RUW-Cw-bjs">
+                                <color key="backgroundColor" red="0.001422772068" green="0.4256876409" blue="0.55088329319999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="RUW-Cw-bjs" secondAttribute="height" multiplier="4:1" id="94u-Ob-Zky"/>
+                                    <constraint firstAttribute="width" constant="130" id="Ymc-61-Jz1"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="hYw-ac-fLx">
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="800" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="e9v-5F-2Js">
                                         <color key="backgroundColor" red="0.001422772068" green="0.4256876409" blue="0.55088329319999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="30" id="ZDA-xk-tbu"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                         <state key="normal" title="I do not have this">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i1F-UM-FTh">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Su-ev-tm4">
                                         <color key="backgroundColor" red="0.001422772068" green="0.4256876409" blue="0.55088329319999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="30" id="koy-Ww-VwA"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                         <state key="normal" title="Taken">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -114,50 +134,33 @@ has changed.</string>
                                     </button>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="nFe-4v-90L">
-                                <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="700" verticalCompressionResistancePriority="700" image="drugs" translatesAutoresizingMaskIntoConstraints="NO" id="S8g-di-izE"/>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="2 Tablets" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FTs-sy-w6T">
-                                        <color key="backgroundColor" red="0.001422772068" green="0.4256876409" blue="0.55088329319999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                </subviews>
-                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="AkO-pi-70c" firstAttribute="leading" secondItem="nip-Ib-Nvw" secondAttribute="leading" constant="20" id="50G-LP-1bA"/>
-                            <constraint firstItem="oaG-fk-cFe" firstAttribute="top" secondItem="Xpg-qC-fPG" secondAttribute="bottom" constant="40" id="5tN-h3-dha"/>
-                            <constraint firstAttribute="trailing" secondItem="oaG-fk-cFe" secondAttribute="trailing" constant="30" id="6lM-cT-D7s"/>
-                            <constraint firstItem="x9b-3s-0R8" firstAttribute="top" secondItem="Yv0-6j-h9d" secondAttribute="bottom" constant="25" id="8O0-qP-yWv"/>
-                            <constraint firstAttribute="trailing" secondItem="AkO-pi-70c" secondAttribute="trailing" constant="20" id="GSg-dt-Tjy"/>
-                            <constraint firstAttribute="trailing" secondItem="nFe-4v-90L" secondAttribute="trailing" constant="20" id="HIX-Vq-SAv"/>
-                            <constraint firstItem="nFe-4v-90L" firstAttribute="top" secondItem="x9b-3s-0R8" secondAttribute="bottom" constant="10" id="L18-Hj-ECp"/>
-                            <constraint firstAttribute="trailing" secondItem="FPR-Fz-amv" secondAttribute="trailing" id="OVZ-yq-kO4"/>
-                            <constraint firstItem="x9b-3s-0R8" firstAttribute="trailing" secondItem="Yv0-6j-h9d" secondAttribute="trailing" id="PV9-p7-UY0"/>
-                            <constraint firstItem="kW3-CO-gpA" firstAttribute="top" secondItem="FPR-Fz-amv" secondAttribute="bottom" id="Pf0-C0-szO"/>
-                            <constraint firstItem="FPR-Fz-amv" firstAttribute="top" secondItem="Xpg-qC-fPG" secondAttribute="bottom" id="QWP-5L-bUy"/>
-                            <constraint firstItem="Yv0-6j-h9d" firstAttribute="top" secondItem="oaG-fk-cFe" secondAttribute="bottom" constant="30" id="ZMv-SG-P1L"/>
-                            <constraint firstItem="x9b-3s-0R8" firstAttribute="leading" secondItem="Yv0-6j-h9d" secondAttribute="leading" id="d8N-zO-Uyz"/>
-                            <constraint firstItem="kW3-CO-gpA" firstAttribute="top" secondItem="AkO-pi-70c" secondAttribute="bottom" constant="15" id="iA2-cf-C5A"/>
-                            <constraint firstItem="Yv0-6j-h9d" firstAttribute="leading" secondItem="nip-Ib-Nvw" secondAttribute="leading" constant="30" id="jfZ-ho-SnD"/>
-                            <constraint firstAttribute="bottom" secondItem="nFe-4v-90L" secondAttribute="bottom" constant="70" id="jgE-o5-dNw"/>
-                            <constraint firstItem="oaG-fk-cFe" firstAttribute="leading" secondItem="nip-Ib-Nvw" secondAttribute="leading" constant="30" id="mvg-Jt-Y50"/>
-                            <constraint firstItem="nFe-4v-90L" firstAttribute="leading" secondItem="nip-Ib-Nvw" secondAttribute="leading" constant="20" id="ofk-0K-brJ"/>
-                            <constraint firstItem="FPR-Fz-amv" firstAttribute="leading" secondItem="nip-Ib-Nvw" secondAttribute="leading" id="srK-Dk-f6m"/>
-                            <constraint firstAttribute="trailing" secondItem="Yv0-6j-h9d" secondAttribute="trailing" constant="30" id="wXN-xj-TKu"/>
+                            <constraint firstItem="CTt-IJ-hbo" firstAttribute="top" secondItem="O84-r5-3Fg" secondAttribute="top" id="1a3-TU-0yU"/>
+                            <constraint firstAttribute="trailing" secondItem="hYw-ac-fLx" secondAttribute="trailing" constant="10" id="3AP-ja-XWE"/>
+                            <constraint firstItem="2rR-Y7-ify" firstAttribute="top" secondItem="RaB-zS-J41" secondAttribute="bottom" constant="150" id="9JG-mg-cwc"/>
+                            <constraint firstItem="RUW-Cw-bjs" firstAttribute="centerX" secondItem="O84-r5-3Fg" secondAttribute="centerX" id="B8o-CW-NX1"/>
+                            <constraint firstItem="RaB-zS-J41" firstAttribute="leading" secondItem="O84-r5-3Fg" secondAttribute="leading" constant="15" id="Ihe-lq-4m9"/>
+                            <constraint firstItem="2rR-Y7-ify" firstAttribute="top" secondItem="CTt-IJ-hbo" secondAttribute="bottom" id="RCM-AZ-8XT"/>
+                            <constraint firstItem="RaB-zS-J41" firstAttribute="top" secondItem="r8k-Su-y5M" secondAttribute="bottom" id="Wsr-w9-Wco"/>
+                            <constraint firstAttribute="trailing" secondItem="RaB-zS-J41" secondAttribute="trailing" constant="15" id="X4W-aP-DAC"/>
+                            <constraint firstItem="RUW-Cw-bjs" firstAttribute="top" secondItem="RaB-zS-J41" secondAttribute="bottom" id="YCJ-1P-Eda"/>
+                            <constraint firstItem="2rR-Y7-ify" firstAttribute="top" secondItem="hYw-ac-fLx" secondAttribute="bottom" constant="10" id="dpf-V7-xOm"/>
+                            <constraint firstAttribute="trailing" secondItem="CTt-IJ-hbo" secondAttribute="trailing" id="hWP-CO-Duz"/>
+                            <constraint firstItem="CTt-IJ-hbo" firstAttribute="leading" secondItem="O84-r5-3Fg" secondAttribute="leading" id="lcf-z1-tva"/>
+                            <constraint firstItem="hYw-ac-fLx" firstAttribute="leading" secondItem="O84-r5-3Fg" secondAttribute="leading" constant="10" id="yWI-tx-mLR"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Medicine" id="WAx-RB-Rpa"/>
                     <connections>
-                        <outlet property="notHaveButton" destination="qgL-L1-dZA" id="xXl-JZ-oln"/>
-                        <outlet property="takenButton" destination="i1F-UM-FTh" id="Lu1-K3-eaG"/>
+                        <outlet property="notHaveButton" destination="e9v-5F-2Js" id="qQD-6s-vp5"/>
+                        <outlet property="takenButton" destination="7Su-ev-tm4" id="8lG-zf-r7O"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="QXY-Vr-S2Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gzs-Uq-YLh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3514" y="150"/>
+            <point key="canvasLocation" x="3523" y="138"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="JxU-hw-KFZ">
@@ -199,9 +202,6 @@ has changed.</string>
                                 <state key="normal" title="Next">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <segue destination="IrU-O9-cuf" kind="show" id="W4x-5N-0R2"/>
-                                </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="How are you currently feeling?" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ia2-TR-c2v">
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -212,12 +212,12 @@ has changed.</string>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="D2g-Nq-jph">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="D2g-Nq-jph">
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nOl-m2-kU9">
                                         <color key="backgroundColor" red="0.001422772068" green="0.4256876409" blue="0.55088329319999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
-                                        <state key="normal" title="No Symptoms">
+                                        <state key="normal" title="No symptoms">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
@@ -280,11 +280,6 @@ has changed.</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Shiny Blue" translatesAutoresizingMaskIntoConstraints="NO" id="vnI-Qa-Zrp"/>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stats_logo" translatesAutoresizingMaskIntoConstraints="NO" id="XzP-b9-gEi">
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="XzP-b9-gEi" secondAttribute="height" multiplier="124:152" id="oEV-mX-D80"/>
-                                </constraints>
-                            </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="EYU-tw-agD">
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Pulmonis records your medical data to allow better monitoring by the doctor" translatesAutoresizingMaskIntoConstraints="NO" id="Z8S-tR-AGa">
@@ -304,7 +299,7 @@ has changed.</string>
                                     <constraint firstAttribute="height" constant="130" id="WBG-XS-e4d"/>
                                 </constraints>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="DbT-Zg-ZOv">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="DbT-Zg-ZOv">
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="How are you today?" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="3a7-kq-SqN">
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -315,26 +310,23 @@ has changed.</string>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wOp-2D-tDo">
                                         <color key="backgroundColor" red="0.001422772068" green="0.4256876409" blue="0.55088329319999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
-                                        <state key="normal" title="Medication Use">
+                                        <state key="normal" title="Medication use">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wab-5a-ti6">
                                         <color key="backgroundColor" red="0.001422772068" green="0.4256876409" blue="0.55088329319999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
-                                        <state key="normal" title="PEF Values">
+                                        <state key="normal" title="PEF values">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xca-eo-CF7">
                                         <color key="backgroundColor" red="0.001422772068" green="0.4256876409" blue="0.55088329319999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
-                                        <state key="normal" title="Symptoms Experienced">
+                                        <state key="normal" title="Symptoms experienced">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
-                                        <connections>
-                                            <segue destination="buE-VF-ABa" kind="show" id="8aY-NG-3qy"/>
-                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -342,19 +334,16 @@ has changed.</string>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="hX9-8O-QX6" firstAttribute="top" secondItem="EYU-tw-agD" secondAttribute="bottom" id="00q-8b-fiU"/>
-                            <constraint firstItem="XzP-b9-gEi" firstAttribute="top" secondItem="hDC-Eo-Aan" secondAttribute="bottom" constant="20" id="KZ5-VN-CpP"/>
                             <constraint firstAttribute="trailing" secondItem="vnI-Qa-Zrp" secondAttribute="trailing" id="NEF-43-fH6"/>
                             <constraint firstAttribute="trailing" secondItem="EYU-tw-agD" secondAttribute="trailing" constant="10" id="P6f-7h-aoe"/>
                             <constraint firstItem="DbT-Zg-ZOv" firstAttribute="leading" secondItem="Lvw-4X-pU6" secondAttribute="leading" constant="40" id="YQr-X7-rMH"/>
-                            <constraint firstItem="XzP-b9-gEi" firstAttribute="leading" secondItem="Lvw-4X-pU6" secondAttribute="leading" constant="140" id="a7P-wT-EAe"/>
-                            <constraint firstItem="DbT-Zg-ZOv" firstAttribute="top" secondItem="XzP-b9-gEi" secondAttribute="bottom" constant="10" id="aw4-6F-IIo"/>
                             <constraint firstItem="EYU-tw-agD" firstAttribute="top" secondItem="DbT-Zg-ZOv" secondAttribute="bottom" constant="15" id="bfk-zK-HIi"/>
                             <constraint firstItem="vnI-Qa-Zrp" firstAttribute="top" secondItem="hDC-Eo-Aan" secondAttribute="bottom" id="dHh-0p-nCq"/>
                             <constraint firstAttribute="trailing" secondItem="DbT-Zg-ZOv" secondAttribute="trailing" constant="40" id="lLg-37-yst"/>
+                            <constraint firstItem="DbT-Zg-ZOv" firstAttribute="top" secondItem="hDC-Eo-Aan" secondAttribute="bottom" constant="40" id="r58-lL-lmR"/>
                             <constraint firstItem="EYU-tw-agD" firstAttribute="leading" secondItem="Lvw-4X-pU6" secondAttribute="leading" constant="10" id="wFt-QW-9aD"/>
                             <constraint firstItem="hX9-8O-QX6" firstAttribute="top" secondItem="vnI-Qa-Zrp" secondAttribute="bottom" id="x5G-jv-T63"/>
                             <constraint firstItem="vnI-Qa-Zrp" firstAttribute="leading" secondItem="Lvw-4X-pU6" secondAttribute="leading" id="xrf-65-wFT"/>
-                            <constraint firstAttribute="trailing" secondItem="XzP-b9-gEi" secondAttribute="trailing" constant="140" id="yYJ-bf-xi2"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Statistics Selection" id="U3e-8n-2PX"/>
@@ -376,6 +365,5 @@ has changed.</string>
         <image name="inhaler" width="256" height="256"/>
         <image name="learn" width="1666" height="2400"/>
         <image name="map" width="800" height="800"/>
-        <image name="stats_logo" width="124" height="152"/>
     </resources>
 </document>
