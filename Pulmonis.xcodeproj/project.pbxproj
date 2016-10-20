@@ -129,6 +129,7 @@
 				5BAF07C81DB11C1B00AF2FD0 /* Assets.xcassets */,
 				5BAF07CA1DB11C1B00AF2FD0 /* LaunchScreen.storyboard */,
 				5BAF07CD1DB11C1B00AF2FD0 /* Info.plist */,
+				5B0DEF791DB8F1FC006ECFCE /* LearnTableViewController.swift */,
 			);
 			path = Pulmonis;
 			sourceTree = "<group>";
@@ -272,6 +273,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B0DEF7E1DB91D50006ECFCE /* StoryboardSolanAdrian.storyboard in Resources */,
 				5BC5361B1DB6762A00231A50 /* LiberationSans-Regular.ttf in Resources */,
 				5BAF07CC1DB11C1B00AF2FD0 /* LaunchScreen.storyboard in Resources */,
 				5BAF07C91DB11C1B00AF2FD0 /* Assets.xcassets in Resources */,
