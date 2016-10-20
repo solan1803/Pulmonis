@@ -12,7 +12,6 @@ class MedicineViewController: UIViewController {
     
     @IBOutlet weak var takenButton: UIButton!
     @IBOutlet weak var notHaveButton: UIButton!
-    @IBOutlet weak var textView: UITextView!
     
     
     override func viewDidLoad() {
