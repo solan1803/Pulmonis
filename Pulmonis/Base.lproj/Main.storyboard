@@ -497,10 +497,10 @@
                                         <rect key="frame" x="0.0" y="64" width="375" height="136"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wfM-ga-Hef" id="kaO-UZ-20J">
-                                            <frame key="frameInset" width="375" height="135"/>
+                                            <frame key="frameInset" width="375" height="135.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="7RK-Uy-iua">
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7RK-Uy-iua">
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="General Knowledge" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yv9-5D-oIi">
                                                             <fontDescription key="fontDescription" name="LiberationSans-Bold" family="Liberation Sans" pointSize="21"/>
@@ -520,6 +520,7 @@
                                                 <constraint firstItem="kpq-Gh-tGd" firstAttribute="centerY" secondItem="kaO-UZ-20J" secondAttribute="centerY" id="8qz-NE-XoA"/>
                                                 <constraint firstItem="kpq-Gh-tGd" firstAttribute="top" secondItem="kaO-UZ-20J" secondAttribute="topMargin" constant="5" id="GLB-2U-6Tk"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="7RK-Uy-iua" secondAttribute="trailing" id="JEC-mN-nUD"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="7RK-Uy-iua" secondAttribute="bottom" id="Ve3-cq-4RT"/>
                                                 <constraint firstAttribute="leadingMargin" secondItem="kpq-Gh-tGd" secondAttribute="leading" constant="30" id="fsj-V3-U3P"/>
                                                 <constraint firstItem="7RK-Uy-iua" firstAttribute="leading" secondItem="kaO-UZ-20J" secondAttribute="leadingMargin" constant="100" id="n1J-RP-xbg"/>
                                                 <constraint firstItem="7RK-Uy-iua" firstAttribute="top" secondItem="kaO-UZ-20J" secondAttribute="topMargin" constant="13" id="qkV-tQ-gLB"/>
@@ -530,11 +531,11 @@
                                         <rect key="frame" x="0.0" y="200" width="375" height="136"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="BqO-Nt-2fa" id="552-VI-8CO">
-                                            <frame key="frameInset" width="375" height="135"/>
+                                            <frame key="frameInset" width="375" height="135.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="learn_lungs" translatesAutoresizingMaskIntoConstraints="NO" id="BPm-OJ-i5O"/>
-                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="hdd-2R-icN">
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hdd-2R-icN">
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Breathing Exercises" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7LG-kd-pTk">
                                                             <fontDescription key="fontDescription" name="LiberationSans-Bold" family="Liberation Sans" pointSize="21"/>
@@ -551,9 +552,10 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="BPm-OJ-i5O" firstAttribute="centerY" secondItem="552-VI-8CO" secondAttribute="centerY" id="9nF-Kg-EdN"/>
+                                                <constraint firstItem="hdd-2R-icN" firstAttribute="leading" secondItem="BPm-OJ-i5O" secondAttribute="trailing" constant="5" id="AB6-eT-khy"/>
                                                 <constraint firstItem="hdd-2R-icN" firstAttribute="top" secondItem="552-VI-8CO" secondAttribute="topMargin" constant="13" id="ES5-1g-ftf"/>
-                                                <constraint firstItem="hdd-2R-icN" firstAttribute="leading" secondItem="BPm-OJ-i5O" secondAttribute="trailing" constant="5" id="Izg-FI-h2N"/>
                                                 <constraint firstItem="hdd-2R-icN" firstAttribute="leading" secondItem="552-VI-8CO" secondAttribute="leadingMargin" constant="100" id="boR-i7-eTC"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="hdd-2R-icN" secondAttribute="bottom" id="koG-Xn-U49"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="hdd-2R-icN" secondAttribute="trailing" id="u0K-kX-qC1"/>
                                                 <constraint firstItem="BPm-OJ-i5O" firstAttribute="leading" secondItem="552-VI-8CO" secondAttribute="leadingMargin" id="yQk-mo-fp6"/>
                                             </constraints>
@@ -563,10 +565,10 @@
                                         <rect key="frame" x="0.0" y="336" width="375" height="136"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="EU7-t0-kPR" id="QIz-BW-i5i">
-                                            <frame key="frameInset" width="375" height="135"/>
+                                            <frame key="frameInset" width="375" height="135.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="cyj-cp-qoM">
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="top" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cyj-cp-qoM">
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Inhaler Technique" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7g6-oc-wX7">
                                                             <fontDescription key="fontDescription" name="LiberationSans-Bold" family="Liberation Sans" pointSize="21"/>
@@ -589,6 +591,7 @@
                                                 <constraint firstItem="cyj-cp-qoM" firstAttribute="leading" secondItem="t1r-FA-5Mg" secondAttribute="trailing" constant="5" id="G9s-fD-tY2"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="cyj-cp-qoM" secondAttribute="trailing" id="VQa-4s-YxM"/>
                                                 <constraint firstItem="cyj-cp-qoM" firstAttribute="top" secondItem="QIz-BW-i5i" secondAttribute="topMargin" constant="13" id="X8k-rb-LXI"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="cyj-cp-qoM" secondAttribute="bottom" id="fTo-I1-vSX"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -596,10 +599,10 @@
                                         <rect key="frame" x="0.0" y="472" width="375" height="136"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="W94-RM-2DH" id="nJO-Ox-R5g">
-                                            <frame key="frameInset" width="375" height="135"/>
+                                            <frame key="frameInset" width="375" height="135.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="JbB-0Z-qkI">
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JbB-0Z-qkI">
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How to use Pulmonis" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="369-e4-EFI">
                                                             <fontDescription key="fontDescription" name="LiberationSans-Bold" family="Liberation Sans" pointSize="21"/>
@@ -620,6 +623,7 @@
                                                 <constraint firstAttribute="trailingMargin" secondItem="JbB-0Z-qkI" secondAttribute="trailing" id="IRz-mO-jW6"/>
                                                 <constraint firstItem="JbB-0Z-qkI" firstAttribute="leading" secondItem="nJO-Ox-R5g" secondAttribute="leadingMargin" constant="100" id="SJb-YY-Mwz"/>
                                                 <constraint firstAttribute="leadingMargin" secondItem="rsD-HG-Jbk" secondAttribute="leading" id="V8a-dY-loH"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="JbB-0Z-qkI" secondAttribute="bottom" id="a7H-nN-huz"/>
                                                 <constraint firstItem="JbB-0Z-qkI" firstAttribute="top" secondItem="nJO-Ox-R5g" secondAttribute="topMargin" constant="13" id="e7F-GT-rfy"/>
                                                 <constraint firstItem="rsD-HG-Jbk" firstAttribute="centerY" secondItem="nJO-Ox-R5g" secondAttribute="centerY" id="ww5-If-mee"/>
                                             </constraints>
@@ -629,10 +633,10 @@
                                         <rect key="frame" x="0.0" y="608" width="375" height="136"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Xnc-nW-xbC" id="h5G-1a-dZV">
-                                            <frame key="frameInset" width="375" height="135"/>
+                                            <frame key="frameInset" width="375" height="135.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="cMU-i3-UKT">
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cMU-i3-UKT">
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pulmonis For Doctors" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yHd-FP-CNc">
                                                             <fontDescription key="fontDescription" name="LiberationSans-Bold" family="Liberation Sans" pointSize="21"/>
@@ -653,6 +657,7 @@
                                                 <constraint firstItem="Cf1-CC-ccx" firstAttribute="centerY" secondItem="h5G-1a-dZV" secondAttribute="centerY" id="94j-IP-YCl"/>
                                                 <constraint firstItem="cMU-i3-UKT" firstAttribute="top" secondItem="h5G-1a-dZV" secondAttribute="topMargin" constant="13" id="BEA-FI-bdc"/>
                                                 <constraint firstItem="cMU-i3-UKT" firstAttribute="leading" secondItem="Cf1-CC-ccx" secondAttribute="trailing" constant="5" id="dC3-5H-V5h"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="cMU-i3-UKT" secondAttribute="bottom" id="e7T-2v-Caj"/>
                                                 <constraint firstItem="cMU-i3-UKT" firstAttribute="leading" secondItem="h5G-1a-dZV" secondAttribute="leadingMargin" constant="100" id="plh-Rm-4KZ"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="cMU-i3-UKT" secondAttribute="trailing" id="r5r-dc-XK5"/>
                                             </constraints>
