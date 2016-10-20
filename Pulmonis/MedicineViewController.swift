@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MedicineViewController: UIViewController {
+class MedicineViewController: UIViewController, UIPopoverPresentationControllerDelegate {
     
     @IBOutlet weak var takenButton: UIButton!
     @IBOutlet weak var notHaveButton: UIButton!
@@ -38,15 +38,33 @@ class MedicineViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func showNotePopover(_ sender: AnyObject) {
+        self.performSegue(withIdentifier: "notePopover", sender: self)
+    }
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        if (segue.identifier == "notePopover") {
+            let vc = segue.destination
+            let controller = vc.popoverPresentationController
+            controller?.delegate = self
+            controller?.sourceView = self.view;
+            controller?.permittedArrowDirections = UIPopoverArrowDirection(rawValue:0)
+            controller?.sourceRect = CGRect(x: (self.view.bounds).midX, y: (self.view.bounds).midY, width: 0, height: 0)
+            //(x: (self.view.bounds), y: (self.view.bounds),0,0)
+            
+            
+        }
     }
-    */
+    
+    func adaptivePresentationStyle(for controller: UIPresentationController) -> UIModalPresentationStyle {
+        return .none
+    }
+ 
 
 }

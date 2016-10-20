@@ -180,16 +180,31 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="76A-98-QzC">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="gw3-Ei-b6q"/>
+                                    <constraint firstAttribute="width" constant="50" id="yAQ-2j-V8b"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="exclamation_mark"/>
+                                <connections>
+                                    <action selector="showNotePopover:" destination="GXV-Wy-FtZ" eventType="touchUpInside" id="xcs-5Z-Xgm"/>
+                                    <segue destination="Afe-MZ-g2N" kind="popoverPresentation" identifier="notePopover" popoverAnchorView="76A-98-QzC" id="k96-kX-hD5">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="UCl-rj-ohs" secondAttribute="trailing" constant="15" id="0fA-uL-XUm"/>
+                            <constraint firstItem="76A-98-QzC" firstAttribute="top" secondItem="z5N-mO-wLE" secondAttribute="bottom" constant="15" id="1uM-A5-98v"/>
                             <constraint firstItem="UCl-rj-ohs" firstAttribute="leading" secondItem="lcN-bD-sXY" secondAttribute="leading" constant="15" id="3f0-tp-3Tg"/>
                             <constraint firstItem="UCl-rj-ohs" firstAttribute="top" secondItem="2gS-dF-HJb" secondAttribute="bottom" id="EOI-38-gT6"/>
                             <constraint firstItem="GM3-Vd-2C3" firstAttribute="leading" secondItem="lcN-bD-sXY" secondAttribute="leading" id="KuO-Ge-qVv"/>
                             <constraint firstItem="GM3-Vd-2C3" firstAttribute="top" secondItem="lcN-bD-sXY" secondAttribute="top" id="NiR-Ar-BhU"/>
                             <constraint firstItem="z5N-mO-wLE" firstAttribute="top" secondItem="UCl-rj-ohs" secondAttribute="bottom" id="O5D-LD-GMp"/>
                             <constraint firstItem="z5N-mO-wLE" firstAttribute="centerX" secondItem="lcN-bD-sXY" secondAttribute="centerX" id="SZt-tt-E5M"/>
+                            <constraint firstItem="76A-98-QzC" firstAttribute="centerX" secondItem="lcN-bD-sXY" secondAttribute="centerX" id="a1I-h3-Lq3"/>
                             <constraint firstItem="fFz-en-jER" firstAttribute="leading" secondItem="lcN-bD-sXY" secondAttribute="leading" constant="10" id="a86-c2-9OM"/>
                             <constraint firstAttribute="trailing" secondItem="fFz-en-jER" secondAttribute="trailing" constant="10" id="b4Z-aP-9bT"/>
                             <constraint firstItem="3Rk-wm-Bd9" firstAttribute="top" secondItem="fFz-en-jER" secondAttribute="bottom" constant="10" id="ffi-yb-WJx"/>
@@ -207,6 +222,80 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uSh-ab-toq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4672.8000000000002" y="338.68065967016497"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Qqz-vf-mkO">
+            <objects>
+                <viewController id="Afe-MZ-g2N" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="K9C-jp-A4W"/>
+                        <viewControllerLayoutGuide type="bottom" id="arc-Dl-Ite"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pzO-P9-P85">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="GP9-Tn-mVp">
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="3V1-NW-q8l">
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="exclamation_mark" translatesAutoresizingMaskIntoConstraints="NO" id="oTG-Fk-VFx"/>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="cPT-tW-fSQ">
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1. " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nuz-N7-qG4">
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I will be reminding you to take the tablets every other day for 10 days or until you are better." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="454-Wl-bIJ">
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="74" id="xmt-gs-L5Q"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="DcJ-jU-vPg">
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q1K-Sk-m85">
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="20" id="Q3k-DL-II4"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You must have an appointment with your GP or asthma nurse in the next 24 hours." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vzg-Nb-C0T">
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="71" id="Aof-DN-1gI"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="GP9-Tn-mVp" secondAttribute="trailing" constant="10" id="0pd-MS-8fh"/>
+                            <constraint firstItem="GP9-Tn-mVp" firstAttribute="centerX" secondItem="pzO-P9-P85" secondAttribute="centerX" id="b18-DJ-RuJ"/>
+                            <constraint firstItem="GP9-Tn-mVp" firstAttribute="leading" secondItem="pzO-P9-P85" secondAttribute="leadingMargin" constant="10" id="kP1-R1-G41"/>
+                            <constraint firstItem="GP9-Tn-mVp" firstAttribute="centerY" secondItem="pzO-P9-P85" secondAttribute="centerY" id="p5q-3M-JNC"/>
+                            <constraint firstItem="GP9-Tn-mVp" firstAttribute="top" secondItem="K9C-jp-A4W" secondAttribute="bottom" constant="100" id="q3F-eg-3eB"/>
+                            <constraint firstItem="arc-Dl-Ite" firstAttribute="top" secondItem="GP9-Tn-mVp" secondAttribute="bottom" constant="120" id="yIm-1H-Dcr"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nBc-cQ-XKF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5581.6000000000004" y="339.58020989505252"/>
         </scene>
         <!--Statistics Selection-->
         <scene sceneID="JKM-bp-gem">
@@ -700,6 +789,7 @@
         <image name="Shiny Blue" width="750" height="1334"/>
         <image name="Stats" width="155" height="140"/>
         <image name="drugs" width="884" height="452"/>
+        <image name="exclamation_mark" width="165" height="165"/>
         <image name="inhaler2" width="566" height="576"/>
         <image name="learn" width="126" height="154"/>
         <image name="learn_book" width="155" height="191"/>
