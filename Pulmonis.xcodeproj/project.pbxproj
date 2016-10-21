@@ -15,6 +15,7 @@
 		5BAF07D71DB11C1B00AF2FD0 /* PulmonisTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAF07D61DB11C1B00AF2FD0 /* PulmonisTests.swift */; };
 		5BAF07E21DB11C1B00AF2FD0 /* PulmonisUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAF07E11DB11C1B00AF2FD0 /* PulmonisUITests.swift */; };
 		71987C5B1DB678B300248AE1 /* EmergencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71987C5A1DB678B300248AE1 /* EmergencyViewController.swift */; };
+		719D0C7A1DBA2C6E008F5F97 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 719D0C791DBA2C6E008F5F97 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		5BAF07E11DB11C1B00AF2FD0 /* PulmonisUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulmonisUITests.swift; sourceTree = "<group>"; };
 		5BAF07E31DB11C1B00AF2FD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		71987C5A1DB678B300248AE1 /* EmergencyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmergencyViewController.swift; sourceTree = "<group>"; };
+		719D0C791DBA2C6E008F5F97 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				5BAF07C81DB11C1B00AF2FD0 /* Assets.xcassets */,
 				5BAF07CA1DB11C1B00AF2FD0 /* LaunchScreen.storyboard */,
 				5BAF07CD1DB11C1B00AF2FD0 /* Info.plist */,
+				719D0C791DBA2C6E008F5F97 /* Main.storyboard */,
 			);
 			path = Pulmonis;
 			sourceTree = "<group>";
@@ -241,6 +244,7 @@
 				5BAF07CC1DB11C1B00AF2FD0 /* LaunchScreen.storyboard in Resources */,
 				5BAF07C91DB11C1B00AF2FD0 /* Assets.xcassets in Resources */,
 				5BAF07C71DB11C1B00AF2FD0 /* Emergency.storyboard in Resources */,
+				719D0C7A1DBA2C6E008F5F97 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
