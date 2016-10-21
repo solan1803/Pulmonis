@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="81W-KB-j82">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Pulmonis-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Pulmonis" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mjh-ib-cBJ">
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="jyG-1l-DO9"/>
+                                </constraints>
+                                <state key="normal" title="EMERGENCY ACTION">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="imp-ck-JEB">
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="graph" translatesAutoresizingMaskIntoConstraints="NO" id="hRw-yi-o59"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="map" translatesAutoresizingMaskIntoConstraints="NO" id="4JP-5X-6h2"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="learn" translatesAutoresizingMaskIntoConstraints="NO" id="IJn-VV-WVq"/>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="tfS-31-xpT"/>
+                                </constraints>
+                            </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="inhaler" translatesAutoresizingMaskIntoConstraints="NO" id="N8e-wB-1vS"/>
+                        </subviews>
+                        <color key="backgroundColor" red="0.51832914352416992" green="0.89330238103866577" blue="0.99855881929397583" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="imp-ck-JEB" firstAttribute="top" secondItem="N8e-wB-1vS" secondAttribute="bottom" constant="60" id="4mm-AB-oEj"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="mjh-ib-cBJ" secondAttribute="leading" id="DSp-Hc-vC2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="mjh-ib-cBJ" secondAttribute="trailing" id="Dgl-jb-jbV"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="mjh-ib-cBJ" secondAttribute="bottom" constant="10" id="Ruq-UU-WUN"/>
+                            <constraint firstItem="N8e-wB-1vS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ZHR-eM-cJt"/>
+                            <constraint firstItem="mjh-ib-cBJ" firstAttribute="top" secondItem="imp-ck-JEB" secondAttribute="bottom" constant="40" id="d2U-x7-Jtn"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="imp-ck-JEB" secondAttribute="trailing" id="ibu-Mn-Xzs"/>
+                            <constraint firstItem="N8e-wB-1vS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mtf-Dc-VIN"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="imp-ck-JEB" secondAttribute="leading" id="rIW-cc-GoI"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Pulmonis" id="inj-gp-5ck"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="645" y="112"/>
+        </scene>
+        <!--Emergency 1-->
+        <scene sceneID="Cpb-vV-wGt">
+            <objects>
+                <viewController id="8Jz-Z3-Kvt" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="a2s-S6-CE9"/>
+                        <viewControllerLayoutGuide type="bottom" id="G12-sO-ZxB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Off-ls-YGM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Emergency 1" translatesAutoresizingMaskIntoConstraints="NO" id="zDK-NC-mpl"/>
+                            <button opaque="NO" contentMode="scaleAspectFit" verticalCompressionResistancePriority="749" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="egY-w4-Upn" userLabel="nextScreenButton">
+                                <frame key="frameInset" minX="31" minY="522" width="258" height="26"/>
+                                <color key="backgroundColor" red="0.023529411760000001" green="0.2274509804" blue="0.30196078430000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="40" id="vgX-ct-0hz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title=" Next ">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="B3Q-O5-YHB" kind="show" id="bUL-Ac-Hsz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="zDK-NC-mpl" firstAttribute="top" secondItem="a2s-S6-CE9" secondAttribute="bottom" id="0cQ-VL-Nh4"/>
+                            <constraint firstItem="egY-w4-Upn" firstAttribute="leading" secondItem="Off-ls-YGM" secondAttribute="leadingMargin" constant="15" id="DKb-ZH-rvG"/>
+                            <constraint firstItem="zDK-NC-mpl" firstAttribute="leading" secondItem="Off-ls-YGM" secondAttribute="leading" id="PsQ-fO-0nt"/>
+                            <constraint firstItem="G12-sO-ZxB" firstAttribute="top" secondItem="egY-w4-Upn" secondAttribute="bottom" constant="10" id="WHN-KS-lW6"/>
+                            <constraint firstItem="G12-sO-ZxB" firstAttribute="top" secondItem="zDK-NC-mpl" secondAttribute="bottom" id="hUZ-ct-WO7"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="egY-w4-Upn" secondAttribute="trailing" constant="15" id="qQ9-Ys-F44"/>
+                            <constraint firstAttribute="trailing" secondItem="zDK-NC-mpl" secondAttribute="trailing" id="stc-Nd-g5x"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Emergency 1" id="odE-KH-T0L"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8er-Ga-dG4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3021" y="135"/>
+        </scene>
+        <!--Emergency 2-->
+        <scene sceneID="9Tn-ab-t4t">
+            <objects>
+                <viewController id="B3Q-O5-YHB" customClass="EmergencyViewController" customModule="Pulmonis" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="DTU-Sh-WMV"/>
+                        <viewControllerLayoutGuide type="bottom" id="rjf-DO-nBQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="OHo-l4-nH1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Shiny Blue" translatesAutoresizingMaskIntoConstraints="NO" id="5w3-Dd-EEr"/>
+                            <stackView autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="3Fm-cN-rGR" userLabel="topStackView">
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="1000" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="JBr-bV-uXq" userLabel="headerStackView">
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="1000" verticalCompressionResistancePriority="751" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YEV-pC-2VY" userLabel="headerLabel">
+                                                <attributedString key="attributedText">
+                                                    <fragment content="Use your blue inhaler">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.023529411760000001" green="0.2274509804" blue="0.30196078430000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="36" name=".SFNSDisplay-Regular"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="999" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="sD7-Sf-NTQ" userLabel="sentenceLabel">
+                                                <attributedString key="attributedText">
+                                                    <fragment content="Follow the instructions until you feel better">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.023529411760000001" green="0.2274509804" blue="0.30196078430000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="27" name=".SFNSDisplay-Regular"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" image="emergency face" translatesAutoresizingMaskIntoConstraints="NO" id="TP4-nX-mcB" userLabel="emergencyFaceImageView">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="250" id="VvH-EA-5ph"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Lox-ME-WbB" userLabel="footerStackView">
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="snS-G8-XQk" userLabel="instructionStackView">
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="green circle" translatesAutoresizingMaskIntoConstraints="NO" id="PCw-Md-C6w">
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="35" id="9mv-hj-64N"/>
+                                                            <constraint firstAttribute="width" constant="35" id="qnE-nc-aZi"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="TNg-sd-hyK" userLabel="instructionLabel">
+                                                        <attributedString key="attributedText">
+                                                            <fragment content="Push inhaler and breathe in">
+                                                                <attributes>
+                                                                    <color key="NSColor" red="0.023529411760000001" green="0.2274509804" blue="0.30196078430000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    <font key="NSFont" metaFont="system" size="24"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                        </attributedString>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15 seconds remaining" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="scz-NF-6uo" userLabel="timerLabel">
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleAspectFit" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gwg-2Z-mtN" userLabel="nextScreenButton">
+                                        <color key="backgroundColor" red="0.023529411760000001" green="0.2274509804" blue="0.30196078430000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="40" id="ssE-Zh-B1M"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title=" Next ">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="69G-mO-ZLU" kind="show" id="n9s-lo-q7z"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="TP4-nX-mcB" firstAttribute="leading" secondItem="3Fm-cN-rGR" secondAttribute="leading" id="2x6-zG-dzG"/>
+                                    <constraint firstItem="TP4-nX-mcB" firstAttribute="centerY" secondItem="3Fm-cN-rGR" secondAttribute="centerY" id="jjD-Uj-wKB"/>
+                                    <constraint firstAttribute="trailing" secondItem="TP4-nX-mcB" secondAttribute="trailing" id="rU6-hQ-HwZ"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="rjf-DO-nBQ" firstAttribute="top" secondItem="5w3-Dd-EEr" secondAttribute="bottom" id="4DX-Cu-hQH"/>
+                            <constraint firstItem="rjf-DO-nBQ" firstAttribute="top" secondItem="3Fm-cN-rGR" secondAttribute="bottom" constant="15" id="GV4-Xq-hVj"/>
+                            <constraint firstAttribute="trailing" secondItem="5w3-Dd-EEr" secondAttribute="trailing" id="Ku6-3B-Qhz"/>
+                            <constraint firstItem="5w3-Dd-EEr" firstAttribute="top" secondItem="DTU-Sh-WMV" secondAttribute="bottom" id="LSx-v3-Pci"/>
+                            <constraint firstItem="3Fm-cN-rGR" firstAttribute="top" secondItem="DTU-Sh-WMV" secondAttribute="bottom" constant="15" id="MiA-Lw-Nwh"/>
+                            <constraint firstItem="3Fm-cN-rGR" firstAttribute="leading" secondItem="OHo-l4-nH1" secondAttribute="leadingMargin" constant="15" id="X5C-aI-ls4"/>
+                            <constraint firstItem="5w3-Dd-EEr" firstAttribute="leading" secondItem="OHo-l4-nH1" secondAttribute="leading" id="c0V-kX-tGY"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3Fm-cN-rGR" secondAttribute="trailing" constant="15" id="c8M-XT-0B0"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Emergency 2" id="wMM-dY-hj8"/>
+                    <connections>
+                        <outlet property="headerLabel" destination="YEV-pC-2VY" id="DLx-eZ-gKe"/>
+                        <outlet property="instructionLabel" destination="TNg-sd-hyK" id="MZe-qv-qoX"/>
+                        <outlet property="nextButton" destination="gwg-2Z-mtN" id="uiy-s9-d2F"/>
+                        <outlet property="sentenceLabel" destination="sD7-Sf-NTQ" id="JaE-Xh-a2w"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5s1-0L-429" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4066.875" y="136.26760563380282"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="JxU-hw-KFZ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="EVs-bF-bWK" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="eWi-Qz-VGj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Dzp-rv-I56"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hxy-F3-PCY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+        <!--Emergency2-->
+        <scene sceneID="OUj-Ua-yh4">
+            <objects>
+                <viewController id="69G-mO-ZLU" userLabel="Emergency2" customClass="EmergencyViewController" customModule="Pulmonis" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1bL-Tk-oYu"/>
+                        <viewControllerLayoutGuide type="bottom" id="VqH-9i-iZV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mFv-BF-bYD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Shiny Blue" translatesAutoresizingMaskIntoConstraints="NO" id="pjU-q6-1gI"/>
+                            <stackView autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="0hc-nn-K5i" userLabel="topStackView">
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="1000" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="pcs-OB-rsd" userLabel="headerStackView">
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="1000" verticalCompressionResistancePriority="751" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DA7-TP-pel" userLabel="headerLabel">
+                                                <attributedString key="attributedText">
+                                                    <fragment content="Use your blue inhaler">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.023529411760000001" green="0.2274509804" blue="0.30196078430000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="36" name=".SFNSDisplay-Regular"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="999" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="atU-oc-7L5" userLabel="sentenceLabel">
+                                                <attributedString key="attributedText">
+                                                    <fragment content="Follow the instructions until you feel better">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.023529411760000001" green="0.2274509804" blue="0.30196078430000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="27" name=".SFNSDisplay-Regular"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" image="Emergency 2" translatesAutoresizingMaskIntoConstraints="NO" id="CM5-Ra-SHR" userLabel="emergencyFaceImageView">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="250" id="SiX-TN-WJE"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="cht-b5-MUs" userLabel="footerStackView">
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="sbL-ZU-49J" userLabel="instructionStackView">
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="red circle-2" translatesAutoresizingMaskIntoConstraints="NO" id="MNw-mq-U7Y">
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="35" id="8Mj-F4-V3J"/>
+                                                            <constraint firstAttribute="height" constant="35" id="bRw-oK-l57"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="rxh-hd-aQL" userLabel="instructionLabel">
+                                                        <attributedString key="attributedText">
+                                                            <fragment content="Breathe outside inhaler">
+                                                                <attributes>
+                                                                    <color key="NSColor" red="0.023529411760000001" green="0.2274509804" blue="0.30196078430000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    <font key="NSFont" metaFont="system" size="24"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                        </attributedString>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="45 seconds remaining" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xkB-bi-BuJ" userLabel="timerLabel">
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleAspectFit" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QSy-kO-5Lm" userLabel="nextScreenButton">
+                                        <color key="backgroundColor" red="0.023529411760000001" green="0.2274509804" blue="0.30196078430000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="40" id="Q49-0P-VvY"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title=" Next ">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="CM5-Ra-SHR" firstAttribute="centerY" secondItem="0hc-nn-K5i" secondAttribute="centerY" id="4WE-1S-3lU"/>
+                                    <constraint firstAttribute="trailing" secondItem="CM5-Ra-SHR" secondAttribute="trailing" id="Atp-Sg-A3o"/>
+                                    <constraint firstItem="CM5-Ra-SHR" firstAttribute="leading" secondItem="0hc-nn-K5i" secondAttribute="leading" id="cl7-Td-csx"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="0hc-nn-K5i" firstAttribute="leading" secondItem="mFv-BF-bYD" secondAttribute="leadingMargin" constant="15" id="CXG-Wi-Wyf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="0hc-nn-K5i" secondAttribute="trailing" constant="15" id="Lwk-X8-LUd"/>
+                            <constraint firstItem="pjU-q6-1gI" firstAttribute="leading" secondItem="mFv-BF-bYD" secondAttribute="leading" id="Y1T-YP-PeX"/>
+                            <constraint firstItem="VqH-9i-iZV" firstAttribute="top" secondItem="0hc-nn-K5i" secondAttribute="bottom" constant="15" id="Ybn-8O-54g"/>
+                            <constraint firstAttribute="trailing" secondItem="pjU-q6-1gI" secondAttribute="trailing" id="iE2-js-nF9"/>
+                            <constraint firstItem="pjU-q6-1gI" firstAttribute="top" secondItem="1bL-Tk-oYu" secondAttribute="bottom" id="lYt-vU-6aF"/>
+                            <constraint firstItem="VqH-9i-iZV" firstAttribute="top" secondItem="pjU-q6-1gI" secondAttribute="bottom" id="yDl-xc-VWV"/>
+                            <constraint firstItem="0hc-nn-K5i" firstAttribute="top" secondItem="1bL-Tk-oYu" secondAttribute="bottom" constant="15" id="zmK-KS-vvb"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Emergency 3" id="Ir1-vA-khd"/>
+                    <connections>
+                        <outlet property="headerLabel" destination="DA7-TP-pel" id="pPM-5T-7QM"/>
+                        <outlet property="instructionLabel" destination="rxh-hd-aQL" id="8JV-M9-OQv"/>
+                        <outlet property="nextButton" destination="QSy-kO-5Lm" id="5Hj-DJ-YK4"/>
+                        <outlet property="sentenceLabel" destination="atU-oc-7L5" id="OYi-pz-FXR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MiC-4k-tLX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5124" y="135"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="N3L-SL-P79">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="81W-KB-j82" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="IKh-pl-Bec">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="8Jz-Z3-Kvt" kind="relationship" relationship="rootViewController" id="Cfn-wn-8a0"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bzd-fY-E8Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1706.25" y="137.32394366197184"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Emergency 1" width="750" height="1334"/>
+        <image name="Emergency 2" width="682" height="474"/>
+        <image name="Shiny Blue" width="750" height="1334"/>
+        <image name="emergency face" width="682" height="474"/>
+        <image name="graph" width="300" height="260"/>
+        <image name="green circle" width="84" height="84"/>
+        <image name="inhaler" width="256" height="256"/>
+        <image name="learn" width="1666" height="2400"/>
+        <image name="map" width="800" height="800"/>
+        <image name="red circle-2" width="84" height="84"/>
+    </resources>
+</document>
