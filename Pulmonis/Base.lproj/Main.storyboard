@@ -38,9 +38,6 @@
                                 <state key="normal" title="Next">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <segue destination="y6E-f8-cIC" kind="show" id="S47-mo-3LO"/>
-                                </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="How are you currently feeling?" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="aNC-23-sr0">
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -104,7 +101,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pkm-9a-gib" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1980" y="338.68065967016497"/>
+            <point key="canvasLocation" x="2535" y="1191"/>
         </scene>
         <!--Medicine-->
         <scene sceneID="cPs-a1-EgG">
@@ -221,7 +218,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uSh-ab-toq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4672.8000000000002" y="338.68065967016497"/>
+            <point key="canvasLocation" x="4319" y="514"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Qqz-vf-mkO">
@@ -295,7 +292,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nBc-cQ-XKF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5581.6000000000004" y="339.58020989505252"/>
+            <point key="canvasLocation" x="5228" y="515"/>
         </scene>
         <!--Statistics Selection-->
         <scene sceneID="JKM-bp-gem">
@@ -343,9 +340,6 @@
                                         <state key="normal" title="Medication use">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
-                                        <connections>
-                                            <segue destination="GXV-Wy-FtZ" kind="show" id="j0U-Fc-mf2"/>
-                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S2w-Sb-p2c">
                                         <color key="backgroundColor" red="0.001422772068" green="0.4256876409" blue="0.55088329319999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -388,7 +382,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0f2-Rd-Sa8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3776.8000000000002" y="338.68065967016497"/>
+            <point key="canvasLocation" x="223" y="1191"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="nyg-YQ-gF6">
@@ -423,6 +417,9 @@
                                         <state key="normal" title="STATS" backgroundImage="Stats">
                                             <color key="titleColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="pu3-mV-sIh" kind="show" id="3xY-hH-oTL"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h5t-3t-9hi">
                                         <inset key="titleEdgeInsets" minX="0.0" minY="140" maxX="0.0" maxY="0.0"/>
@@ -467,7 +464,7 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="vZY-py-lV9" kind="show" id="FVT-b4-4SG"/>
+                                    <segue destination="4bQ-HG-G2b" kind="show" id="TPz-ME-chm"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -547,7 +544,7 @@
                                     <color key="titleColor" red="0.225386858" green="0.83328109979999998" blue="0.50258815290000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="pu3-mV-sIh" kind="show" id="dQ2-cM-5IH"/>
+                                    <segue destination="GXV-Wy-FtZ" kind="show" id="zee-ry-L3w"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -572,7 +569,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yLR-uU-fo8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2868" y="338.68065967016497"/>
+            <point key="canvasLocation" x="3212" y="515"/>
         </scene>
         <!--LEARN-->
         <scene sceneID="JJ1-Bo-rr0">
@@ -618,6 +615,9 @@
                                                 <constraint firstItem="7RK-Uy-iua" firstAttribute="top" secondItem="kaO-UZ-20J" secondAttribute="topMargin" constant="13" id="qkV-tQ-gLB"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="vZY-py-lV9" kind="show" id="0KW-Xk-BF5"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="136" id="BqO-Nt-2fa">
                                         <rect key="frame" x="0.0" y="200" width="375" height="136"/>
@@ -766,14 +766,14 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WBH-2K-BN1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1078" y="1146"/>
+            <point key="canvasLocation" x="1596" y="1192"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="DEu-t8-vb9">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bSo-aD-37K" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="NVJ-1M-QAZ">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="NVJ-1M-QAZ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -829,7 +829,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8er-Ga-dG4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2191" y="-583"/>
+            <point key="canvasLocation" x="1108" y="1991"/>
         </scene>
         <!--Emergency 2-->
         <scene sceneID="9Tn-ab-t4t">
@@ -952,7 +952,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5s1-0L-429" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3730" y="-583"/>
+            <point key="canvasLocation" x="2076" y="1991"/>
         </scene>
         <!--Emergency2-->
         <scene sceneID="OUj-Ua-yh4">
@@ -1073,7 +1073,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MiC-4k-tLX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5094" y="-583"/>
+            <point key="canvasLocation" x="3041" y="1991"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="EG5-W7-RZc">
@@ -1158,7 +1158,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZPA-TE-DC5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2978" y="1601"/>
+            <point key="canvasLocation" x="3212" y="-288"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="un8-y4-Fbd">
@@ -1183,6 +1183,9 @@
                                 <state key="normal" title="Peak Flow" backgroundImage="PeakFlowMeter">
                                     <color key="titleColor" red="0.1202454641" green="0.4030750394" blue="0.48271960019999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="MNa-PN-uGx" kind="show" id="EH7-d4-6pG"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dTs-Xx-zAG">
                                 <constraints>
@@ -1194,6 +1197,9 @@
                                 <state key="normal" title="Support" backgroundImage="Inhaler">
                                     <color key="titleColor" red="0.1202454641" green="0.4030750394" blue="0.48271960019999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="y6E-f8-cIC" kind="show" id="vp8-gq-nko"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1211,7 +1217,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TAU-zp-lsr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4158" y="1478"/>
+            <point key="canvasLocation" x="1988" y="339"/>
         </scene>
     </scenes>
     <resources>
