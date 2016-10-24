@@ -291,6 +291,7 @@
 				5BAF07C91DB11C1B00AF2FD0 /* Assets.xcassets in Resources */,
 				5BAF07C71DB11C1B00AF2FD0 /* Main.storyboard in Resources */,
 				5B6B434B1DBE84680071AC66 /* solan_adrian_storyboard.storyboard in Resources */,
+				5BAF07C71DB11C1B00AF2FD0 /* Emergency.storyboard in Resources */,
 				5BC536151DB6762A00231A50 /* LiberationSans-BoldItalic.ttf in Resources */,
 				5BC536181DB6762A00231A50 /* LiberationSans-Italic.ttf in Resources */,
 				5BC5360F1DB6761C00231A50 /* LiberationSans-Bold.ttf in Resources */,
