@@ -592,7 +592,7 @@
                                         <rect key="frame" x="0.0" y="64" width="320" height="136"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wfM-ga-Hef" id="kaO-UZ-20J">
-                                            <frame key="frameInset" width="320" height="135"/>
+                                            <frame key="frameInset" width="320" height="135.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7RK-Uy-iua">
@@ -626,7 +626,7 @@
                                         <rect key="frame" x="0.0" y="200" width="320" height="136"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="BqO-Nt-2fa" id="552-VI-8CO">
-                                            <frame key="frameInset" width="320" height="135"/>
+                                            <frame key="frameInset" width="320" height="135.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="learn_lungs" translatesAutoresizingMaskIntoConstraints="NO" id="BPm-OJ-i5O"/>
@@ -660,7 +660,7 @@
                                         <rect key="frame" x="0.0" y="336" width="320" height="136"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="EU7-t0-kPR" id="QIz-BW-i5i">
-                                            <frame key="frameInset" width="320" height="135"/>
+                                            <frame key="frameInset" width="320" height="135.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="top" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cyj-cp-qoM">
@@ -694,7 +694,7 @@
                                         <rect key="frame" x="0.0" y="472" width="320" height="136"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="W94-RM-2DH" id="nJO-Ox-R5g">
-                                            <frame key="frameInset" width="320" height="135"/>
+                                            <frame key="frameInset" width="320" height="135.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JbB-0Z-qkI">
@@ -728,7 +728,7 @@
                                         <rect key="frame" x="0.0" y="608" width="320" height="136"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Xnc-nW-xbC" id="h5G-1a-dZV">
-                                            <frame key="frameInset" width="320" height="135"/>
+                                            <frame key="frameInset" width="320" height="135.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cMU-i3-UKT">
@@ -832,7 +832,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Shiny Blue" translatesAutoresizingMaskIntoConstraints="NO" id="jG5-CY-t1T"/>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pick a section:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6uV-BK-818">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pick a section to edit:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6uV-BK-818">
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
                                 <color key="textColor" red="0.001422772068" green="0.4256876409" blue="0.55088329319999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -911,7 +911,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="CCw-cx-i5J">
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My preventer inhaler (insert name/colour):" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1vw-LR-BG8">
-                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
                                                         <color key="textColor" red="0.001422772068" green="0.4256876409" blue="0.55088329319999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -1027,6 +1027,7 @@
                             <constraint firstItem="cnD-Pk-i88" firstAttribute="centerX" secondItem="kK0-eO-FcH" secondAttribute="centerX" id="F20-BK-7iV"/>
                             <constraint firstItem="waH-Fb-CC4" firstAttribute="centerX" secondItem="kK0-eO-FcH" secondAttribute="centerX" id="bJh-qN-zma"/>
                             <constraint firstItem="UWd-Y7-lCM" firstAttribute="top" secondItem="ccS-bS-vyy" secondAttribute="bottom" id="bY5-rp-WZc"/>
+                            <constraint firstItem="waH-Fb-CC4" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Vfu-Ms-G5X" secondAttribute="bottom" constant="40" id="qGg-Fz-YHi"/>
                             <constraint firstItem="Vfu-Ms-G5X" firstAttribute="centerX" secondItem="kK0-eO-FcH" secondAttribute="centerX" id="v0q-4Q-hNw"/>
                             <constraint firstAttribute="trailing" secondItem="ccS-bS-vyy" secondAttribute="trailing" id="vYV-cH-zj8"/>
                             <constraint firstItem="Vfu-Ms-G5X" firstAttribute="top" secondItem="cnD-Pk-i88" secondAttribute="bottom" constant="50" id="vic-mX-7X5"/>
@@ -1058,7 +1059,10 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="hQ1-Lm-c1g">
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My reliever inhaler (insert name/colour):" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pdm-g6-yaK">
-                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="65" id="eN8-Qf-FBI"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
                                                         <color key="textColor" red="0.001422772068" green="0.4256876409" blue="0.55088329319999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -1077,6 +1081,9 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="LxZ-9z-f7V">
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I take my reliever inhaler only if I need to" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YeB-dq-CGP">
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="46" id="dlG-pt-1gI"/>
+                                                </constraints>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
                                                 <color key="textColor" red="0.001422772068" green="0.4256876409" blue="0.55088329319999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -1117,7 +1124,10 @@
                                                         </constraints>
                                                     </stackView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="inhaler if any of these things happen:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fBS-Cq-K9z">
-                                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="22" id="lgw-A9-C79"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                         <color key="textColor" red="0.001422772068" green="0.4256876409" blue="0.55088329319999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -1126,11 +1136,17 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="G6t-S9-1h0">
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="• I'm wheezing" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aWY-0n-WSj">
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="23" id="O48-qc-Cn7"/>
+                                                        </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                                         <color key="textColor" red="0.001422772068" green="0.4256876409" blue="0.55088329319999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="• My chest feels tight" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J1E-if-HQQ">
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="23" id="R5k-os-xYt"/>
+                                                        </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                                         <color key="textColor" red="0.001422772068" green="0.4256876409" blue="0.55088329319999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -1141,17 +1157,26 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="• I'm coughing." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FXt-Y7-QDx">
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="23" id="esV-yD-SEq"/>
+                                                        </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                                         <color key="textColor" red="0.001422772068" green="0.4256876409" blue="0.55088329319999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="92" id="fn7-Y5-uPG"/>
+                                                </constraints>
                                             </stackView>
                                         </subviews>
                                     </stackView>
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Every day asthma care:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1cQ-6S-6hB">
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="31.5" id="6AM-TJ-AEm"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
                                 <color key="textColor" red="0.001422772068" green="0.4256876409" blue="0.55088329319999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -1175,6 +1200,7 @@
                             <constraint firstAttribute="bottom" secondItem="E2f-ax-GGn" secondAttribute="bottom" id="Ds3-f5-XyS"/>
                             <constraint firstItem="c9c-W2-EdR" firstAttribute="top" secondItem="uFB-hn-Oor" secondAttribute="bottom" constant="20" id="FDH-BK-eQq"/>
                             <constraint firstItem="Vmu-NR-DMc" firstAttribute="centerX" secondItem="xVq-rN-4Lh" secondAttribute="centerX" id="H6H-br-G3d"/>
+                            <constraint firstItem="uFB-hn-Oor" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Vmu-NR-DMc" secondAttribute="bottom" constant="5" id="PGM-iy-gtY"/>
                             <constraint firstAttribute="trailing" secondItem="E2f-ax-GGn" secondAttribute="trailing" id="UjK-12-ISW"/>
                             <constraint firstItem="Vmu-NR-DMc" firstAttribute="top" secondItem="1cQ-6S-6hB" secondAttribute="bottom" constant="50" id="cY8-3W-pqT"/>
                             <constraint firstItem="1cQ-6S-6hB" firstAttribute="top" secondItem="j7w-py-Zqj" secondAttribute="bottom" constant="20" id="dRh-QE-pbT"/>
@@ -1224,18 +1250,35 @@
                                     </textView>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eO4-Y8-aFv">
+                                <color key="backgroundColor" red="0.001422772068" green="0.4256876409" blue="0.55088329319999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="DMW-je-Tza"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <state key="normal" title="Save">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="QhQ-lG-E4e" kind="show" id="mRW-Ga-vxJ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="heM-AW-eRx" firstAttribute="top" secondItem="OWc-eU-4gm" secondAttribute="bottom" id="1gs-Ky-0Me"/>
                             <constraint firstItem="1tv-O1-SHj" firstAttribute="top" secondItem="Hxf-OJ-2bQ" secondAttribute="bottom" constant="20" id="5ge-3M-GEf"/>
+                            <constraint firstItem="faY-xA-Uan" firstAttribute="centerX" secondItem="d61-TR-oR9" secondAttribute="centerX" id="G3Z-61-Cg0"/>
                             <constraint firstAttribute="trailing" secondItem="OWc-eU-4gm" secondAttribute="trailing" id="Iom-sS-G8t"/>
                             <constraint firstItem="OWc-eU-4gm" firstAttribute="top" secondItem="Hxf-OJ-2bQ" secondAttribute="bottom" id="Jvd-wV-UfY"/>
+                            <constraint firstItem="eO4-Y8-aFv" firstAttribute="top" relation="greaterThanOrEqual" secondItem="faY-xA-Uan" secondAttribute="bottom" constant="50" id="Q07-o9-TlE"/>
                             <constraint firstItem="faY-xA-Uan" firstAttribute="top" secondItem="1tv-O1-SHj" secondAttribute="bottom" constant="50" id="S8c-wc-Omj"/>
                             <constraint firstItem="1tv-O1-SHj" firstAttribute="centerX" secondItem="d61-TR-oR9" secondAttribute="centerX" id="SNQ-GL-0af"/>
+                            <constraint firstItem="eO4-Y8-aFv" firstAttribute="centerX" secondItem="d61-TR-oR9" secondAttribute="centerX" id="eOP-Y0-9Ny"/>
                             <constraint firstItem="OWc-eU-4gm" firstAttribute="leading" secondItem="d61-TR-oR9" secondAttribute="leading" id="nbN-Xd-hVN"/>
                             <constraint firstAttribute="trailing" secondItem="faY-xA-Uan" secondAttribute="trailing" constant="20" id="qJM-3u-EI6"/>
                             <constraint firstItem="faY-xA-Uan" firstAttribute="leading" secondItem="d61-TR-oR9" secondAttribute="leading" constant="20" id="qvf-Tw-PG0"/>
+                            <constraint firstItem="heM-AW-eRx" firstAttribute="top" secondItem="eO4-Y8-aFv" secondAttribute="bottom" constant="20" id="xk0-w9-Nvr"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -1571,4 +1614,7 @@
         <image name="red circle-2" width="84" height="84"/>
         <image name="tasks" width="750" height="152"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="mRW-Ga-vxJ"/>
+    </inferredMetricsTieBreakers>
 </document>
