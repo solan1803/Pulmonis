@@ -33,4 +33,14 @@ class PulmonisUITests: XCTestCase {
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
     
+    func testlearnUITest() {
+        
+        let app = XCUIApplication()
+        app.buttons["LEARN"].tap()
+        app.tables.staticTexts["Learn more about Asthma in general. Find out what it really is and what the treatment does."].tap()
+        app.navigationBars["Symptoms"].buttons["LEARN"].tap()
+        app.navigationBars["LEARN"].children(matching: .button).matching(identifier: "Back").element(boundBy: 0).tap()
+        
+    }
+    
 }
