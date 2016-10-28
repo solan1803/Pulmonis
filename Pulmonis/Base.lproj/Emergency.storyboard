@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="81W-KB-j82">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="8Jz-Z3-Kvt">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -10,7 +10,7 @@
         <!--Emergency 1-->
         <scene sceneID="Cpb-vV-wGt">
             <objects>
-                <viewController id="8Jz-Z3-Kvt" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="EmergencyOne" id="8Jz-Z3-Kvt" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="a2s-S6-CE9"/>
                         <viewControllerLayoutGuide type="bottom" id="G12-sO-ZxB"/>
@@ -20,8 +20,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Emergency 1" translatesAutoresizingMaskIntoConstraints="NO" id="zDK-NC-mpl"/>
-                            <button opaque="NO" contentMode="scaleAspectFit" verticalCompressionResistancePriority="749" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="egY-w4-Upn" userLabel="nextScreenButton">
-                                <frame key="frameInset" minX="31" minY="522" width="258" height="26"/>
+                            <button opaque="NO" contentMode="scaleAspectFit" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="egY-w4-Upn" userLabel="nextScreenButton">
                                 <color key="backgroundColor" red="0.023529411760000001" green="0.2274509804" blue="0.30196078430000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="lessThanOrEqual" constant="40" id="vgX-ct-0hz"/>
@@ -74,7 +73,7 @@
                                                     <fragment content="Use your blue inhaler">
                                                         <attributes>
                                                             <color key="NSColor" red="0.023529411760000001" green="0.2274509804" blue="0.30196078430000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                            <font key="NSFont" size="36" name=".SFNSDisplay-Regular"/>
+                                                            <font key="NSFont" size="36" name=".SFNSDisplay"/>
                                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                         </attributes>
                                                     </fragment>
@@ -86,7 +85,7 @@
                                                     <fragment content="Follow the instructions until you feel better">
                                                         <attributes>
                                                             <color key="NSColor" red="0.023529411760000001" green="0.2274509804" blue="0.30196078430000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                            <font key="NSFont" size="27" name=".SFNSDisplay-Regular"/>
+                                                            <font key="NSFont" size="27" name=".SFNSDisplay"/>
                                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                         </attributes>
                                                     </fragment>
@@ -197,7 +196,7 @@
                                                     <fragment content="Use your blue inhaler">
                                                         <attributes>
                                                             <color key="NSColor" red="0.023529411760000001" green="0.2274509804" blue="0.30196078430000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                            <font key="NSFont" size="36" name=".SFNSDisplay-Regular"/>
+                                                            <font key="NSFont" size="36" name=".SFNSDisplay"/>
                                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                         </attributes>
                                                     </fragment>
@@ -209,7 +208,7 @@
                                                     <fragment content="Follow the instructions until you feel better">
                                                         <attributes>
                                                             <color key="NSColor" red="0.023529411760000001" green="0.2274509804" blue="0.30196078430000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                            <font key="NSFont" size="27" name=".SFNSDisplay-Regular"/>
+                                                            <font key="NSFont" size="27" name=".SFNSDisplay"/>
                                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                         </attributes>
                                                     </fragment>
@@ -295,24 +294,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MiC-4k-tLX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5124" y="135"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="N3L-SL-P79">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="81W-KB-j82" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="IKh-pl-Bec">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="8Jz-Z3-Kvt" kind="relationship" relationship="rootViewController" id="Cfn-wn-8a0"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="bzd-fY-E8Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1706.25" y="137.32394366197184"/>
         </scene>
     </scenes>
     <resources>
