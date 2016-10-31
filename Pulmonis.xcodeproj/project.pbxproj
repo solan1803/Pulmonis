@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2834399E1DC2195900857437 /* Plist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2834399D1DC2195900857437 /* Plist.swift */; };
 		2899A93C1DB4FE03004306DF /* SymptomsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2899A93B1DB4FE03004306DF /* SymptomsViewController.swift */; };
 		2899A9411DB519D6004306DF /* MedicineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2899A93F1DB519D6004306DF /* MedicineViewController.swift */; };
+		28CC5CAA1DC772E8009A7BE9 /* GreenSection.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28CC5CA91DC772E8009A7BE9 /* GreenSection.storyboard */; };
 		28E486301DB672A500C3C87E /* StatsStartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E4862F1DB672A500C3C87E /* StatsStartViewController.swift */; };
 		5B0DEF7A1DB8F1FC006ECFCE /* LearnTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0DEF791DB8F1FC006ECFCE /* LearnTableViewController.swift */; };
 		5B6B434F1DC38E770071AC66 /* Learn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B6B434E1DC38E770071AC66 /* Learn.storyboard */; };
@@ -55,8 +57,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2834399D1DC2195900857437 /* Plist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Plist.swift; sourceTree = "<group>"; };
 		2899A93B1DB4FE03004306DF /* SymptomsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SymptomsViewController.swift; sourceTree = "<group>"; };
 		2899A93F1DB519D6004306DF /* MedicineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicineViewController.swift; sourceTree = "<group>"; };
+		28CC5CA91DC772E8009A7BE9 /* GreenSection.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = GreenSection.storyboard; sourceTree = "<group>"; };
 		28E4862F1DB672A500C3C87E /* StatsStartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatsStartViewController.swift; sourceTree = "<group>"; };
 		5B0DEF791DB8F1FC006ECFCE /* LearnTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LearnTableViewController.swift; sourceTree = "<group>"; };
 		5B6B434E1DC38E770071AC66 /* Learn.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Learn.storyboard; sourceTree = "<group>"; };
@@ -296,6 +300,7 @@
 				719D0C7F1DBA2E66008F5F97 /* Main.storyboard in Resources */,
 				5BAF07CC1DB11C1B00AF2FD0 /* LaunchScreen.storyboard in Resources */,
 				5BAF07C91DB11C1B00AF2FD0 /* Assets.xcassets in Resources */,
+				28CC5CAA1DC772E8009A7BE9 /* GreenSection.storyboard in Resources */,
 				5BAF07C71DB11C1B00AF2FD0 /* Emergency.storyboard in Resources */,
 				5BAF07C71DB11C1B00AF2FD0 /* Emergency.storyboard in Resources */,
 				5BC536151DB6762A00231A50 /* LiberationSans-BoldItalic.ttf in Resources */,
@@ -337,6 +342,7 @@
 			files = (
 				28E486301DB672A500C3C87E /* StatsStartViewController.swift in Sources */,
 				2899A9411DB519D6004306DF /* MedicineViewController.swift in Sources */,
+				2834399E1DC2195900857437 /* Plist.swift in Sources */,
 				5BAF07C41DB11C1B00AF2FD0 /* ViewController.swift in Sources */,
 				5BAF07C21DB11C1B00AF2FD0 /* AppDelegate.swift in Sources */,
 				2899A93C1DB4FE03004306DF /* SymptomsViewController.swift in Sources */,
