@@ -12,6 +12,7 @@
 		2899A9411DB519D6004306DF /* MedicineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2899A93F1DB519D6004306DF /* MedicineViewController.swift */; };
 		28CC5CAA1DC772E8009A7BE9 /* GreenSection.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28CC5CA91DC772E8009A7BE9 /* GreenSection.storyboard */; };
 		28CC5CAC1DC77625009A7BE9 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28CC5CAB1DC77625009A7BE9 /* Settings.storyboard */; };
+		28CC5CAD1DC777E4009A7BE9 /* Emergency.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BAF07C51DB11C1B00AF2FD0 /* Emergency.storyboard */; };
 		28E486301DB672A500C3C87E /* StatsStartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E4862F1DB672A500C3C87E /* StatsStartViewController.swift */; };
 		5B0DEF7A1DB8F1FC006ECFCE /* LearnTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0DEF791DB8F1FC006ECFCE /* LearnTableViewController.swift */; };
 		5B6B434F1DC38E770071AC66 /* Learn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B6B434E1DC38E770071AC66 /* Learn.storyboard */; };
@@ -19,7 +20,6 @@
 		5B6B43531DC390400071AC66 /* ActionPlan.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B6B43521DC390400071AC66 /* ActionPlan.storyboard */; };
 		5BAF07C21DB11C1B00AF2FD0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAF07C11DB11C1B00AF2FD0 /* AppDelegate.swift */; };
 		5BAF07C41DB11C1B00AF2FD0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAF07C31DB11C1B00AF2FD0 /* ViewController.swift */; };
-		5BAF07C71DB11C1B00AF2FD0 /* Emergency.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BAF07C51DB11C1B00AF2FD0 /* Emergency.storyboard */; };
 		5BAF07C91DB11C1B00AF2FD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BAF07C81DB11C1B00AF2FD0 /* Assets.xcassets */; };
 		5BAF07CC1DB11C1B00AF2FD0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BAF07CA1DB11C1B00AF2FD0 /* LaunchScreen.storyboard */; };
 		5BAF07D71DB11C1B00AF2FD0 /* PulmonisTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAF07D61DB11C1B00AF2FD0 /* PulmonisTests.swift */; };
@@ -252,7 +252,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "Manivannan Solan";
 				TargetAttributes = {
 					5BAF07BD1DB11C1B00AF2FD0 = {
@@ -306,14 +306,12 @@
 				5BAF07CC1DB11C1B00AF2FD0 /* LaunchScreen.storyboard in Resources */,
 				5BAF07C91DB11C1B00AF2FD0 /* Assets.xcassets in Resources */,
 				28CC5CAA1DC772E8009A7BE9 /* GreenSection.storyboard in Resources */,
-				5BAF07C71DB11C1B00AF2FD0 /* Emergency.storyboard in Resources */,
-				5BAF07C71DB11C1B00AF2FD0 /* Emergency.storyboard in Resources */,
+				28CC5CAD1DC777E4009A7BE9 /* Emergency.storyboard in Resources */,
 				28CC5CAC1DC77625009A7BE9 /* Settings.storyboard in Resources */,
 				5BC536151DB6762A00231A50 /* LiberationSans-BoldItalic.ttf in Resources */,
 				5B6B43511DC38F6A0071AC66 /* Statistics.storyboard in Resources */,
 				5BC536181DB6762A00231A50 /* LiberationSans-Italic.ttf in Resources */,
 				5BC5360F1DB6761C00231A50 /* LiberationSans-Bold.ttf in Resources */,
-				5BAF07C71DB11C1B00AF2FD0 /* Emergency.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,6 +433,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -485,6 +484,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
