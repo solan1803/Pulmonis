@@ -12,7 +12,7 @@
         <!--Green1-->
         <scene sceneID="RYY-yn-3Ya">
             <objects>
-                <viewController storyboardIdentifier="Green1" id="kBQ-L7-T0R" userLabel="Green1" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Green1" id="kBQ-L7-T0R" userLabel="Green1" customClass="Green1" customModule="Pulmonis" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="tax-r4-Bl9"/>
                         <viewControllerLayoutGuide type="bottom" id="Ac0-fH-aoG"/>
@@ -178,6 +178,11 @@
                             <constraint firstItem="rDt-50-DQ8" firstAttribute="top" secondItem="tax-r4-Bl9" secondAttribute="bottom" constant="20" id="mWc-Vz-xKV"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="gPreventerInhalerColour" destination="8lx-FI-buA" id="xiX-iq-EM8"/>
+                        <outlet property="gPuffsMorning" destination="aSG-l2-RHB" id="GO1-cb-GbP"/>
+                        <outlet property="gPuffsNight" destination="nlG-hp-GG5" id="znW-yF-45o"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wG2-IS-Mvj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
