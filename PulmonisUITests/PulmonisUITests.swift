@@ -54,4 +54,17 @@ class PulmonisUITests: XCTestCase {
         
     }
     
+    func testGreenSection() {
+        
+        let app = XCUIApplication()
+        app.buttons["MAP"].tap()
+        app.buttons["Doctor"].tap()
+        app.buttons["Green"].tap()
+        
+        let nextButton = app.buttons["Next"]
+        nextButton.tap()
+        nextButton.tap()
+        
+    }
+    
 }
