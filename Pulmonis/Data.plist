@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>gPreventerInhalerColour</key>
-	<string></string>
+	<string>0</string>
 	<key>gPuffsMorning</key>
 	<integer>0</integer>
 	<key>gPuffsNight</key>
