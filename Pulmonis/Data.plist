@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>gPreventerInhalerColour</key>
+	<string></string>
+	<key>gPuffsMorning</key>
+	<integer>0</integer>
+	<key>gPuffsNight</key>
+	<integer>0</integer>
+	<key>gRelieverInhalerColour</key>
+	<string></string>
+	<key>gPuffsReliever</key>
+	<integer>0</integer>
+	<key>gOtherMedicine</key>
+	<string></string>
+	<key>yWeeklyRelieverUses</key>
+	<integer>0</integer>
+	<key>yMinimumPeakFlow</key>
+	<integer>0</integer>
+	<key>yIncreasedPreventerDosage</key>
+	<integer>0</integer>
+	<key>yIncreasedPreventerFrequency</key>
+	<integer>0</integer>
+	<key>yIncreasedRelieverFrequency</key>
+	<integer>0</integer>
+	<key>yTabletDosage</key>
+	<integer>0</integer>
+	<key>yTabletDuration</key>
+	<integer>0</integer>
+	<key>rRelieverFrequencyLimit</key>
+	<integer>0</integer>
+	<key>rMinimumPeakFlow</key>
+	<integer>0</integer>
+</dict>
+</plist>
