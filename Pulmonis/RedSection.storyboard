@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Qbl-Yz-CZf">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="9vJ-og-ArP">
+            <objects>
+                <viewController storyboardIdentifier="Red1" id="Qbl-Yz-CZf" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="F2q-3Z-vuI"/>
+                        <viewControllerLayoutGuide type="bottom" id="98Z-K4-UyT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="EY6-ww-QWR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Shiny Blue" translatesAutoresizingMaskIntoConstraints="NO" id="vw6-ba-8ol"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="In an asthma attack:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h8q-LC-h3m">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="ePl-H4-8hL">
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My reliever inhaler is not working or I need" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fvu-8h-xdz">
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
+                                        <color key="textColor" red="0.001422772068" green="0.4256876409" blue="0.55088329319999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="qhb-nM-lw8">
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="it more than every " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="8rO-BH-P9x">
+                                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                                <color key="textColor" red="0.001422772068" green="0.4256876409" blue="0.55088329319999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WWD-sD-N5U">
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="acw-vo-Hhd"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text=" hours" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="uSO-Ax-e36">
+                                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                                <color key="textColor" red="0.001422772068" green="0.4256876409" blue="0.55088329319999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I find it difficult to walk or talk." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hb7-y4-csi">
+                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                        <color key="textColor" red="0.001422772068" green="0.4256876409" blue="0.55088329319999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I find it difficult to breathe" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q04-Sc-kmi">
+                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                        <color key="textColor" red="0.001422772068" green="0.4256876409" blue="0.55088329319999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I am wheezing a lot or I have a very tight chest or I am coughing a lot" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fcw-YO-hGg">
+                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                        <color key="textColor" red="0.001422772068" green="0.4256876409" blue="0.55088329319999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NjA-DA-VAl">
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My peak flow is below " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="n87-NQ-O3D">
+                                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                                <color key="textColor" red="0.001422772068" green="0.4256876409" blue="0.55088329319999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="500" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ItU-3z-IhS">
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="50" id="DWR-Iu-2wg"/>
+                                                    <constraint firstAttribute="height" constant="30" id="QgF-r8-I58"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="hb7-y4-csi" firstAttribute="leading" secondItem="ePl-H4-8hL" secondAttribute="leading" id="4ZX-GW-crl"/>
+                                    <constraint firstAttribute="trailing" secondItem="fvu-8h-xdz" secondAttribute="trailing" id="70K-GV-QXU"/>
+                                    <constraint firstItem="NjA-DA-VAl" firstAttribute="leading" secondItem="ePl-H4-8hL" secondAttribute="leading" id="9EH-zL-lV1"/>
+                                    <constraint firstAttribute="height" constant="350" id="9n6-ZD-433"/>
+                                    <constraint firstAttribute="trailing" secondItem="hb7-y4-csi" secondAttribute="trailing" id="9tm-BQ-mTS"/>
+                                    <constraint firstAttribute="trailing" secondItem="q04-Sc-kmi" secondAttribute="trailing" id="IGc-ek-Ckb"/>
+                                    <constraint firstAttribute="trailing" secondItem="NjA-DA-VAl" secondAttribute="trailing" id="KFY-cr-Bz5"/>
+                                    <constraint firstItem="qhb-nM-lw8" firstAttribute="leading" secondItem="ePl-H4-8hL" secondAttribute="leading" id="NoI-kI-MjE"/>
+                                    <constraint firstAttribute="trailing" secondItem="qhb-nM-lw8" secondAttribute="trailing" id="iHd-h4-ZRZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="Fcw-YO-hGg" secondAttribute="trailing" id="qfm-R7-BPS"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cfl-gI-hCv">
+                                <color key="backgroundColor" red="0.001422772068" green="0.4256876409" blue="0.55088329319999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="UBe-x9-Wcr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="s37-Nt-i2I" kind="show" id="nd8-wW-cbg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="vw6-ba-8ol" secondAttribute="trailing" id="3Q4-bk-kAv"/>
+                            <constraint firstItem="ePl-H4-8hL" firstAttribute="top" secondItem="h8q-LC-h3m" secondAttribute="bottom" constant="15" id="AHl-z8-7UV"/>
+                            <constraint firstItem="vw6-ba-8ol" firstAttribute="leading" secondItem="EY6-ww-QWR" secondAttribute="leading" id="MO6-eO-wL1"/>
+                            <constraint firstAttribute="trailing" secondItem="ePl-H4-8hL" secondAttribute="trailing" constant="15" id="N7j-lF-1Fb"/>
+                            <constraint firstItem="h8q-LC-h3m" firstAttribute="top" secondItem="F2q-3Z-vuI" secondAttribute="bottom" constant="20" id="R3Q-Ta-6VL"/>
+                            <constraint firstItem="h8q-LC-h3m" firstAttribute="centerX" secondItem="EY6-ww-QWR" secondAttribute="centerX" id="YDd-Pb-V5Z"/>
+                            <constraint firstItem="ePl-H4-8hL" firstAttribute="leading" secondItem="EY6-ww-QWR" secondAttribute="leading" constant="15" id="erv-oG-TmF"/>
+                            <constraint firstAttribute="bottom" secondItem="vw6-ba-8ol" secondAttribute="bottom" id="ghR-IH-dSh"/>
+                            <constraint firstItem="98Z-K4-UyT" firstAttribute="top" secondItem="Cfl-gI-hCv" secondAttribute="bottom" constant="20" id="i6D-9U-tbA"/>
+                            <constraint firstItem="Cfl-gI-hCv" firstAttribute="centerX" secondItem="EY6-ww-QWR" secondAttribute="centerX" id="inD-dz-xHE"/>
+                            <constraint firstItem="vw6-ba-8ol" firstAttribute="top" secondItem="F2q-3Z-vuI" secondAttribute="bottom" id="v3q-NG-BKh"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hse-Xa-iaw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4225" y="1874"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="cEh-VJ-SKZ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Settings" referencedIdentifier="Settings" id="s37-Nt-i2I" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wqz-Uv-byE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5045" y="2049"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Shiny Blue" width="750" height="1334"/>
+    </resources>
+</document>
