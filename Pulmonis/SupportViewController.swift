@@ -1,5 +1,5 @@
 //
-//  PeakFlowViewController.swift
+//  SupportViewController.swift
 //  Pulmonis
 //
 //  Created by Manivannan Solan on 01/11/2016.
@@ -9,7 +9,7 @@
 import UIKit
 import CoreData
 
-class PeakFlowViewController: UIViewController {
+class SupportViewController: UIViewController {
 
     // MARK: Model
     
@@ -21,8 +21,7 @@ class PeakFlowViewController: UIViewController {
     var managedObjectContext: NSManagedObjectContext? =
         (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     
-    
-    @IBOutlet weak var peakFlowTextField: UITextField!
+    @IBOutlet weak var supportTextField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,23 +30,27 @@ class PeakFlowViewController: UIViewController {
         NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillHide), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
         // Do any additional setup after loading the view.
     }
-    
-   
 
-    @IBAction func savePeakFlow(_ sender: UIButton) {
-        print("INSIDE SAVEPEAKFLOW METHOD")
-        if let peak_record = NSEntityDescription.insertNewObject(forEntityName: "PeakFlowTable", into: managedObjectContext!) as? PeakFlowTable {
-            peak_record.date = NSDate()
-            let text = (peakFlowTextField.text! as NSString).integerValue
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+    @IBAction func saveSupportValue(_ sender: UIButton) {
+        
+        print("INSIDE SAVESUPPORTVALUE METHOD")
+        if let support_record = NSEntityDescription.insertNewObject(forEntityName: "SupportRecord", into: managedObjectContext!) as? SupportRecord {
+            support_record.date = NSDate()
+            let text = (supportTextField.text! as NSString).integerValue
             let val = Int16(text)
-            peak_record.value = val
+            support_record.value = val
         }
         do {
             try managedObjectContext?.save()
         } catch let error {
             print(error)
         }
-        let request: NSFetchRequest<PeakFlowTable> = PeakFlowTable.fetchRequest()
+        let request: NSFetchRequest<SupportRecord> = SupportRecord.fetchRequest()
         let result = try? managedObjectContext!.fetch(request)
         
         for r in result! {
@@ -57,12 +60,8 @@ class PeakFlowViewController: UIViewController {
             print(r.value)
         }
         
+        
     }
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
 
     /*
     // MARK: - Navigation
@@ -74,34 +73,4 @@ class PeakFlowViewController: UIViewController {
     }
     */
 
-    
-}
-
-extension UIViewController {
-    func hideKeyboardWhenTappedAround() {
-        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
-        view.addGestureRecognizer(tap)
-    }
-    
-    func dismissKeyboard() {
-        view.endEditing(true)
-    }
-    
-    func keyboardWillShow(notification: NSNotification) {
-        
-        if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
-            if self.view.frame.origin.y == 0{
-                self.view.frame.origin.y -= keyboardSize.height
-            }
-        }
-        
-    }
-    
-    func keyboardWillHide(notification: NSNotification) {
-        if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
-            if self.view.frame.origin.y != 0{
-                self.view.frame.origin.y += keyboardSize.height
-            }
-        }
-    }
 }
