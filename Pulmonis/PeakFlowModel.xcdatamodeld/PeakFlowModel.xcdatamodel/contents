@@ -4,6 +4,12 @@
         <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
         <attribute name="value" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
     </entity>
+    <entity name="PendingTask" representedClassName=".PendingTask" syncable="YES">
+        <attribute name="date_created" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="message" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="reminder_time" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
     <entity name="SupportRecord" representedClassName=".SupportRecord" syncable="YES">
         <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
         <attribute name="value" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
@@ -11,5 +17,6 @@
     <elements>
         <element name="PeakFlowTable" positionX="-54" positionY="-9" width="128" height="73"/>
         <element name="SupportRecord" positionX="-117" positionY="128" width="128" height="73"/>
+        <element name="PendingTask" positionX="-396" positionY="54" width="128" height="103"/>
     </elements>
 </model>

@@ -7,8 +7,19 @@
 //
 
 import UIKit
+import CoreData
 
 class MedicineViewController: UIViewController, UIPopoverPresentationControllerDelegate {
+    
+    // MARK: Model
+    
+    // if this is nil, then we simply don't update the database
+    // having this default to the AppDelegate's context is a little bit of "demo cheat"
+    // probably it would be better to subclass TweetTableViewController
+    // and set this var in that subclass and then use that subclass in our storyboard
+    // (the only purpose of that subclass would be to pick what database we're using)
+    var managedObjectContext: NSManagedObjectContext? =
+        (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     
     @IBOutlet weak var takenButton: UIButton!
     @IBOutlet weak var notHaveButton: UIButton!
@@ -42,6 +53,34 @@ class MedicineViewController: UIViewController, UIPopoverPresentationControllerD
         self.performSegue(withIdentifier: "notePopover", sender: self)
     }
 
+    @IBAction func addMedicineNotification(_ sender: UIButton) {
+        print("INSIDE ADD_MEDICINE_NOTIFICATION METHOD")
+        if let task = NSEntityDescription.insertNewObject(forEntityName: "PendingTask", into: managedObjectContext!) as? PendingTask {
+            task.date_created = NSDate()
+            task.message = "Please remember to take your prednisolone tablets."
+            task.type = "medicine"
+            task.reminder_time = NSDate().addingTimeInterval(60.0 * 60.0)
+            
+        }
+        do {
+            try managedObjectContext?.save()
+        } catch let error {
+            print(error)
+        }
+        let request: NSFetchRequest<PendingTask> = PendingTask.fetchRequest()
+        let result = try? managedObjectContext!.fetch(request)
+        print("Printing all pending tasks")
+        for r in result! {
+            print("DATE CREATED: ")
+            print(r.date_created!)
+            print("MESSAGE: ")
+            print(r.message!)
+            print("REMINDER TIME: ")
+            print(r.reminder_time!)
+            print("TYPE: ")
+            print(r.type!)
+        }
+    }
     
     // MARK: - Navigation
 
