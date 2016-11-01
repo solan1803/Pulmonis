@@ -280,10 +280,10 @@
             </objects>
             <point key="canvasLocation" x="3212" y="515"/>
         </scene>
-        <!--View Controller-->
+        <!--Peak Flow View Controller-->
         <scene sceneID="FhW-wY-3gO">
             <objects>
-                <viewController id="oeC-Pe-cKC" sceneMemberID="viewController">
+                <viewController id="oeC-Pe-cKC" customClass="PeakFlowViewController" customModule="Pulmonis" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="CCB-fH-3FO"/>
                         <viewControllerLayoutGuide type="bottom" id="MTI-St-cBZ"/>
@@ -326,6 +326,9 @@
                                 <state key="normal" title="Next">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="savePeakFlow:" destination="oeC-Pe-cKC" eventType="touchUpInside" id="DZn-Yf-j2B"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="L/min" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="naz-kT-02d">
                                 <constraints>
