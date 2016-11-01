@@ -207,10 +207,10 @@
             </objects>
             <point key="canvasLocation" x="5228" y="515"/>
         </scene>
-        <!--View Controller-->
+        <!--Support View Controller-->
         <scene sceneID="GBU-Z8-aq7">
             <objects>
-                <viewController id="Z6G-0c-4j3" sceneMemberID="viewController">
+                <viewController id="Z6G-0c-4j3" customClass="SupportViewController" customModule="Pulmonis" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="3jv-VO-xfq"/>
                         <viewControllerLayoutGuide type="bottom" id="JfR-ZA-DZ6"/>
@@ -253,6 +253,7 @@
                                     <color key="titleColor" red="0.225386858" green="0.83328109979999998" blue="0.50258815290000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="saveSupportValue:" destination="Z6G-0c-4j3" eventType="touchUpInside" id="pg2-2G-cvQ"/>
                                     <segue destination="35l-sH-b77" kind="show" id="f0F-BM-58H"/>
                                 </connections>
                             </button>
@@ -275,6 +276,9 @@
                             <constraint firstAttribute="trailingMargin" secondItem="Vf9-4s-cAo" secondAttribute="trailing" constant="20" id="zD4-m6-UBo"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="supportTextField" destination="y2N-qn-4hh" id="pqy-J2-jma"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Imr-Mq-rlk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -363,6 +367,9 @@
                             <constraint firstItem="4YP-35-pkv" firstAttribute="centerX" secondItem="SOm-OA-o9D" secondAttribute="centerX" id="vVZ-Fg-Csg"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="peakFlowTextField" destination="WLx-d7-Seq" id="mVf-eI-MgV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2yb-QP-ObV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
