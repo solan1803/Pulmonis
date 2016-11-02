@@ -79,9 +79,6 @@
                                         <state key="normal" title="MAP" backgroundImage="map">
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
-                                        <connections>
-                                            <segue destination="xZa-kq-6e3" kind="show" id="lye-Tw-9tP"/>
-                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rtm-Cd-qQP">
                                         <inset key="titleEdgeInsets" minX="0.0" minY="140" maxX="0.0" maxY="0.0"/>
@@ -149,9 +146,16 @@
                             <constraint firstAttribute="trailingMargin" secondItem="BDU-GI-cu7" secondAttribute="trailing" id="muj-hG-rxP"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="q1o-ZR-DcC"/>
+                    <navigationItem key="navigationItem" id="q1o-ZR-DcC">
+                        <barButtonItem key="rightBarButtonItem" title="&quot;\u26ED&quot;" id="dch-pu-gyW">
+                            <connections>
+                                <segue destination="xZa-kq-6e3" kind="show" id="9FP-kx-1b7"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="pulmonisTitle" destination="3oF-OR-ngj" id="xRL-Tt-5gy"/>
+                        <outlet property="settingsBarItem" destination="dch-pu-gyW" id="DZx-Vz-k7q"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oUG-ya-nGi" sceneMemberID="firstResponder"/>
@@ -187,9 +191,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bSo-aD-37K" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="375" height="667"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="NVJ-1M-QAZ">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="NVJ-1M-QAZ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>

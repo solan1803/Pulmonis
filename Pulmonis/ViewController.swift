@@ -20,8 +20,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var learnImage: UIImageView!
     @IBOutlet weak var pulmonisTitle: UILabel!
 
+    @IBOutlet weak var settingsBarItem: UIBarButtonItem!
     override func viewDidLoad() {
         super.viewDidLoad()
+        settingsBarItem.title = NSString(string: "\u{2699}") as String//NSString("\u26ED");
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
         self.navigationController?.navigationBar.shadowImage = UIImage()
         self.navigationController?.navigationBar.isTranslucent = true
