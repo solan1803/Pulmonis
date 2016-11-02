@@ -48,7 +48,8 @@ class PulmonisUITests: XCTestCase {
         let app = XCUIApplication()
         app.buttons["ACTION PLAN"].tap()
         app.buttons["Support"].tap()
-        app.buttons["Next"].tap()
+        // Need to be able to write tests for core data.
+//        app.buttons["Next"].tap()
         
         
         
@@ -57,7 +58,7 @@ class PulmonisUITests: XCTestCase {
     func testGreenSection() {
         
         let app = XCUIApplication()
-        app.buttons["MAP"].tap()
+        app.navigationBars["Pulmonis.View"].buttons["⚙"].tap()
         app.buttons["Doctor"].tap()
         app.buttons["Green"].tap()
         
@@ -71,7 +72,7 @@ class PulmonisUITests: XCTestCase {
     
         
         let app = XCUIApplication()
-        app.buttons["MAP"].tap()
+        app.navigationBars["Pulmonis.View"].buttons["⚙"].tap()
         app.buttons["Doctor"].tap()
         app.buttons["Orange"].tap()
         
