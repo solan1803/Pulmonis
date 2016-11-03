@@ -8,13 +8,11 @@
 
 import UIKit
 
-class Green2ViewController: UIViewController {
+class Green2ViewController: ListedViewController {
 
     @IBOutlet weak var gRelieverInhalerColour: UITextField!
     @IBOutlet weak var gPuffsReliever: UITextField!
-    
-    var green1: Green1ViewController?
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -22,17 +20,8 @@ class Green2ViewController: UIViewController {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let destViewController3: Green3ViewController = segue.destination as! Green3ViewController
-        
-        destViewController3.green1 = green1
-        destViewController3.green2 = self
-    }
-
     
     @IBAction func next2(_ sender: Any) {
         if allFieldsFilled() {
@@ -45,14 +34,24 @@ class Green2ViewController: UIViewController {
             (gPuffsReliever.text?.isEmpty)!)
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    override func saveInputToPList() {
+        if let plist = Plist(name: "PatientData") {
+            
+            let dict = plist.getMutablePlistFile()!
+            
+            dict["gRelieverInhalerColour"] = self.gRelieverInhalerColour.text
+            dict["gPuffsReliever"] = self.gPuffsReliever.text
+            
+            do {
+                try plist.addValuesToPlistFile(dictionary: dict)
+            } catch {
+                print(error)
+            }
+            
+        } else {
+            print("Unable to get Plist")
+        }
     }
-    */
+
 
 }

@@ -445,7 +445,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="save:" destination="BJx-YG-NSs" eventType="touchUpInside" id="qKf-bf-B99"/>
+                                    <segue destination="ICP-r7-fTb" kind="show" id="WFb-Jb-fNm"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -468,7 +468,6 @@
                     </view>
                     <connections>
                         <outlet property="gOtherMedicine" destination="Dqj-S2-1C0" id="xTI-59-Ea3"/>
-                        <segue destination="ICP-r7-fTb" kind="show" identifier="segueSave" id="HC0-5o-l5v"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ret-vO-hy9" userLabel="First Responder" sceneMemberID="firstResponder"/>
