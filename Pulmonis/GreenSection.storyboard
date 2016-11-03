@@ -12,7 +12,7 @@
         <!--Green1-->
         <scene sceneID="RYY-yn-3Ya">
             <objects>
-                <viewController storyboardIdentifier="Green1" id="kBQ-L7-T0R" userLabel="Green1" customClass="Green1" customModule="Pulmonis" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Green1" id="kBQ-L7-T0R" userLabel="Green1" customClass="Green1ViewController" customModule="Pulmonis" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="tax-r4-Bl9"/>
                         <viewControllerLayoutGuide type="bottom" id="Ac0-fH-aoG"/>
@@ -90,7 +90,7 @@
                                                                 </constraints>
                                                                 <nil key="textColor"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                                <textInputTraits key="textInputTraits"/>
+                                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                             </textField>
                                                         </subviews>
                                                     </stackView>
@@ -128,7 +128,7 @@
                                                                 </constraints>
                                                                 <nil key="textColor"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                                <textInputTraits key="textInputTraits"/>
+                                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                             </textField>
                                                         </subviews>
                                                     </stackView>
@@ -159,7 +159,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="LHr-Up-6oK" kind="show" id="Hmy-tb-n1q"/>
+                                    <action selector="next1:" destination="kBQ-L7-T0R" eventType="touchUpInside" id="2EH-Wd-kP2"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -179,9 +179,10 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="gPreventerInhalerColour" destination="8lx-FI-buA" id="xiX-iq-EM8"/>
-                        <outlet property="gPuffsMorning" destination="aSG-l2-RHB" id="GO1-cb-GbP"/>
-                        <outlet property="gPuffsNight" destination="nlG-hp-GG5" id="znW-yF-45o"/>
+                        <outlet property="gPreventerInhalerColour" destination="8lx-FI-buA" id="pyP-Wb-960"/>
+                        <outlet property="gPuffsMorning" destination="aSG-l2-RHB" id="MFr-RE-iiy"/>
+                        <outlet property="gPuffsNight" destination="nlG-hp-GG5" id="QeJ-Bn-9h8"/>
+                        <segue destination="LHr-Up-6oK" kind="show" identifier="segueGreen1" id="ZWR-6o-3WA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wG2-IS-Mvj" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -191,7 +192,7 @@
         <!--Green2-->
         <scene sceneID="lbv-GC-Ebm">
             <objects>
-                <viewController id="LHr-Up-6oK" userLabel="Green2" sceneMemberID="viewController">
+                <viewController id="LHr-Up-6oK" userLabel="Green2" customClass="Green2ViewController" customModule="Pulmonis" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="8Kd-64-Qzy"/>
                         <viewControllerLayoutGuide type="bottom" id="lEy-Pm-Q0I"/>
@@ -272,7 +273,7 @@
                                                                         </constraints>
                                                                         <nil key="textColor"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                                        <textInputTraits key="textInputTraits"/>
+                                                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                                     </textField>
                                                                 </subviews>
                                                             </stackView>
@@ -363,7 +364,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="BJx-YG-NSs" kind="show" id="PJr-DJ-csW"/>
+                                    <action selector="next2:" destination="LHr-Up-6oK" eventType="touchUpInside" id="TL0-er-dbk"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -382,6 +383,11 @@
                             <constraint firstItem="q4j-es-fBF" firstAttribute="top" secondItem="SJJ-yb-j60" secondAttribute="bottom" constant="50" id="xpY-x7-lgE"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="gPuffsReliever" destination="iy1-89-QL0" id="m50-XT-Hrs"/>
+                        <outlet property="gRelieverInhalerColour" destination="xSS-bD-bsA" id="HLG-m7-0d6"/>
+                        <segue destination="BJx-YG-NSs" kind="show" identifier="segueGreen2" id="UcA-GL-BZq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GQG-PT-Kal" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -390,7 +396,7 @@
         <!--Green3-->
         <scene sceneID="xr7-eM-lBc">
             <objects>
-                <viewController id="BJx-YG-NSs" userLabel="Green3" sceneMemberID="viewController">
+                <viewController id="BJx-YG-NSs" userLabel="Green3" customClass="Green3ViewController" customModule="Pulmonis" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="8xg-Bi-7J9"/>
                         <viewControllerLayoutGuide type="bottom" id="kf5-3h-qND"/>
@@ -439,7 +445,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="ICP-r7-fTb" kind="show" id="MNs-jf-usW"/>
+                                    <action selector="save:" destination="BJx-YG-NSs" eventType="touchUpInside" id="qKf-bf-B99"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -460,6 +466,10 @@
                             <constraint firstItem="a79-U4-gaz" firstAttribute="centerX" secondItem="FSF-KS-o8i" secondAttribute="centerX" id="jp7-wP-0HE"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="gOtherMedicine" destination="Dqj-S2-1C0" id="xTI-59-Ea3"/>
+                        <segue destination="ICP-r7-fTb" kind="show" identifier="segueSave" id="HC0-5o-l5v"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ret-vO-hy9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
