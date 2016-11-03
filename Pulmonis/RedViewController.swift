@@ -1,21 +1,23 @@
 //
-//  Green3ViewController.swift
+//  RedViewController.swift
 //  Pulmonis
 //
-//  Created by Karow Maruf on 02/11/2016.
+//  Created by Karow Maruf on 03/11/2016.
 //  Copyright © 2016 Manivannan Solan. All rights reserved.
 //
 
 import UIKit
 
-class Green3ViewController: ListedViewController {
-    
-    @IBOutlet weak var gOtherMedicine: UITextView!
+class RedViewController: ListedViewController {
 
+    @IBOutlet weak var rRelieverFrequencyLimit: UITextField!
+    @IBOutlet weak var rMinimumPeakFlow: UITextField!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-
+        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
@@ -23,12 +25,26 @@ class Green3ViewController: ListedViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func save(_ sender: Any) {
+        if allFieldsFilled() {
+            controllers.append(self)
+            saveList()
+            performSegue(withIdentifier: "save", sender: nil)
+        }
+    }
+    
+    func allFieldsFilled() -> Bool {
+        return !((rRelieverFrequencyLimit.text?.isEmpty)! ||
+            (rMinimumPeakFlow.text?.isEmpty)!)
+    }
+    
     override func saveInputToPList() {
         if let plist = Plist(name: "PatientData") {
             
             let dict = plist.getMutablePlistFile()!
             
-            dict["gOtherMedicine"] = self.gOtherMedicine.text
+            dict["rRelieverFrequencyLimit"] = self.rRelieverFrequencyLimit.text
+            dict["rMinimumPeakFlow"] = self.rMinimumPeakFlow.text
             
             do {
                 try plist.addValuesToPlistFile(dictionary: dict)
@@ -36,18 +52,16 @@ class Green3ViewController: ListedViewController {
                 print(error)
             }
             
+            print(plist.getValuesInPlistFile() ?? "FAILLLUREEE")
             
         } else {
             print("Unable to get Plist")
         }
     }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        controllers.append(self)
-        saveList();
-    }
-    
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        //Intentionally empty
+    }
     
     /*
     // MARK: - Navigation

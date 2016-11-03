@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Green1ViewController: UIViewController {
+class Green1ViewController: ListedViewController {
 
     @IBOutlet weak var gPreventerInhalerColour: UITextField!
     @IBOutlet weak var gPuffsMorning: UITextField!
@@ -26,17 +26,16 @@ class Green1ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    /*
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let destViewController2: Green2ViewController = segue.destination as! Green2ViewController
     
         destViewController2.green1 = self
-        /*
-        destViewController2.gPreventerInhalerColour = gPreventerInhalerColour.text!
-        destViewController2.gPuffsMorning = Int(gPuffsMorning.text!)!
-        destViewController2.gPuffsNight = Int(gPuffsNight.text!)!
-        */
+
     }
-    
+    */
+ 
+ 
     @IBAction func next1(_ sender: Any) {
         if allFieldsFilled() {
             performSegue(withIdentifier: "segueGreen1", sender: nil)
@@ -49,6 +48,27 @@ class Green1ViewController: UIViewController {
                (gPuffsNight.text?.isEmpty)!)
     }
     
+    override func saveInputToPList() {
+        if let plist = Plist(name: "PatientData") {
+            
+            let dict = plist.getMutablePlistFile()!
+
+            
+            dict["gPreventerInhalerColour"] = self.gPreventerInhalerColour.text
+            dict["gPuffsMorning"] = self.gPuffsMorning.text
+            dict["gPuffsNight"] = self.gPuffsNight.text
+            
+            
+            do {
+                try plist.addValuesToPlistFile(dictionary: dict)
+            } catch {
+                print(error)
+            }
+            
+        } else {
+            print("Unable to get Plist")
+        }
+    }
     
     /*
     // MARK: - Navigation

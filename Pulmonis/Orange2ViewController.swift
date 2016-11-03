@@ -1,21 +1,24 @@
 //
-//  Green3ViewController.swift
+//  Orange2ViewController.swift
 //  Pulmonis
 //
-//  Created by Karow Maruf on 02/11/2016.
+//  Created by Karow Maruf on 03/11/2016.
 //  Copyright © 2016 Manivannan Solan. All rights reserved.
 //
 
 import UIKit
 
-class Green3ViewController: ListedViewController {
-    
-    @IBOutlet weak var gOtherMedicine: UITextView!
+class Orange2ViewController: ListedViewController {
 
+    @IBOutlet weak var oIncreasedPreventerDosage: UITextField!
+    @IBOutlet weak var oIncreasedPreventerFrequency: UITextField!
+    @IBOutlet weak var oIncreasedRelieverFrequency: UITextField!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-
+        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
@@ -23,12 +26,26 @@ class Green3ViewController: ListedViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func next2(_ sender: Any) {
+        if allFieldsFilled() {
+            performSegue(withIdentifier: "segueOrange2", sender: nil)
+        }
+    }
+    
+    func allFieldsFilled() -> Bool {
+        return !((oIncreasedPreventerDosage.text?.isEmpty)! ||
+            (oIncreasedPreventerFrequency.text?.isEmpty)! ||
+            (oIncreasedRelieverFrequency.text?.isEmpty)!)
+    }
+    
     override func saveInputToPList() {
         if let plist = Plist(name: "PatientData") {
             
             let dict = plist.getMutablePlistFile()!
             
-            dict["gOtherMedicine"] = self.gOtherMedicine.text
+            dict["oIncreasedPreventerDosage"] = self.oIncreasedPreventerDosage.text
+            dict["oIncreasedPreventerFrequency"] = self.oIncreasedPreventerFrequency.text
+            dict["oIncreasedRelieverFrequency"] = self.oIncreasedRelieverFrequency.text
             
             do {
                 try plist.addValuesToPlistFile(dictionary: dict)
@@ -41,13 +58,6 @@ class Green3ViewController: ListedViewController {
             print("Unable to get Plist")
         }
     }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        controllers.append(self)
-        saveList();
-    }
-    
-
     
     /*
     // MARK: - Navigation
