@@ -79,9 +79,35 @@ class PulmonisUITests: XCTestCase {
         let nextButton = app.buttons["Next"]
         nextButton.tap()
         nextButton.tap()
-        
-        
     
     }
+    
+    func testPendingTasksTable() {
+        
+        let app = XCUIApplication()
+        let tasksButton = app.buttons["tasks"]
+        tasksButton.tap()
+        app.navigationBars["Pending Tasks"].children(matching: .button).matching(identifier: "Back").element(boundBy: 0).tap()
+        app.buttons["ACTION PLAN"].tap()
+        app.buttons["Support"].tap()
+        app.buttons["Next"].tap()
+        app.buttons["I do not have this"].tap()
+        app.navigationBars["Medicine"].children(matching: .button).matching(identifier: "Back").element(boundBy: 0).tap()
+        app.navigationBars["Pulmonis.SupportView"].children(matching: .button).matching(identifier: "Back").element(boundBy: 0).tap()
+        app.navigationBars["UIView"].children(matching: .button).matching(identifier: "Back").element(boundBy: 0).tap()
+        tasksButton.tap()
+        
+    }
+    
+    func testPeakFlow() {
+        
+        let app = XCUIApplication()
+        app.buttons["ACTION PLAN"].tap()
+        app.buttons["Peak Flow"].tap()
+        app.otherElements.containing(.navigationBar, identifier:"Pulmonis.PeakFlowView").children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .textField).element.tap()
+        app.images["Shiny Blue"].tap()
+        
+    }
+    
     
 }
