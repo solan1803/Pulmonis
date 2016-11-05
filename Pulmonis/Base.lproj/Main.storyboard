@@ -88,9 +88,6 @@
                                         <state key="normal" title="MAP" backgroundImage="map">
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
-                                        <connections>
-                                            <segue destination="xZa-kq-6e3" kind="show" id="lye-Tw-9tP"/>
-                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rtm-Cd-qQP">
                                         <rect key="frame" x="252" y="0.0" width="91" height="100"/>
@@ -108,7 +105,7 @@
                                 </constraints>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PULMONIS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3oF-OR-ngj">
-                                <rect key="frame" x="107" y="29" width="162" height="35"/>
+                                <rect key="frame" x="107.5" y="29" width="161" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="IHk-th-zGi"/>
                                 </constraints>
@@ -190,7 +187,7 @@
                     <toolbarItems/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="667"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="NVJ-1M-QAZ">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="NVJ-1M-QAZ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>

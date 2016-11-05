@@ -11,11 +11,14 @@ import UIKit
 class Green3ViewController: ListedViewController {
     
     @IBOutlet weak var gOtherMedicine: UITextView!
+    @IBOutlet weak var saveButton: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-
+        saveButton.layer.cornerRadius = 10
+        saveButton.clipsToBounds = true
+        
     }
 
     override func didReceiveMemoryWarning() {
