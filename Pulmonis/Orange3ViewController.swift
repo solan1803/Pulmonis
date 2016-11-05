@@ -13,11 +13,15 @@ class Orange3ViewController: ListedViewController {
     @IBOutlet weak var oTabletDosage: UITextField!
     @IBOutlet weak var oTabletDosageFiveMg: UITextField!
     @IBOutlet weak var oTabletDuration: UITextField!
+    @IBOutlet weak var saveButton: UIButton!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        saveButton.layer.cornerRadius = 10
+        saveButton.clipsToBounds = true
+        
         // Do any additional setup after loading the view.
     }
 
@@ -59,7 +63,7 @@ class Orange3ViewController: ListedViewController {
                 print(error)
             }
             
-            print(plist.getValuesInPlistFile() ?? "FAILLLUREEE")
+            //print(plist.getValuesInPlistFile() ?? "FAILLLUREEE")
             
         } else {
             print("Unable to get Plist")

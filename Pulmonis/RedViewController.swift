@@ -12,11 +12,15 @@ class RedViewController: ListedViewController {
 
     @IBOutlet weak var rRelieverFrequencyLimit: UITextField!
     @IBOutlet weak var rMinimumPeakFlow: UITextField!
+    @IBOutlet weak var saveButton: UIButton!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        saveButton.layer.cornerRadius = 10
+        saveButton.clipsToBounds = true
+        
         // Do any additional setup after loading the view.
     }
 

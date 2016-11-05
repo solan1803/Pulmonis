@@ -21,7 +21,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Shiny Blue" translatesAutoresizingMaskIntoConstraints="NO" id="vw6-ba-8ol">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="vw6-ba-8ol">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="In an asthma attack:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h8q-LC-h3m">
@@ -120,7 +120,7 @@
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cfl-gI-hCv">
                                 <rect key="frame" x="153" y="609" width="70" height="38"/>
-                                <color key="backgroundColor" red="0.001422772068" green="0.4256876409" blue="0.55088329319999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.69006246329999998" green="0.1237351671" blue="0.17300373320000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="70" id="UBe-x9-Wcr"/>
                                 </constraints>
@@ -151,6 +151,7 @@
                     <connections>
                         <outlet property="rMinimumPeakFlow" destination="ItU-3z-IhS" id="3go-H7-K4A"/>
                         <outlet property="rRelieverFrequencyLimit" destination="WWD-sD-N5U" id="wQz-RI-Xpf"/>
+                        <outlet property="saveButton" destination="Cfl-gI-hCv" id="mGJ-5u-n5n"/>
                         <segue destination="s37-Nt-i2I" kind="show" identifier="save" id="Neh-BZ-Xv0"/>
                     </connections>
                 </viewController>
@@ -168,6 +169,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Shiny Blue" width="750" height="1334"/>
+        <image name="Background" width="750" height="1334"/>
     </resources>
 </document>

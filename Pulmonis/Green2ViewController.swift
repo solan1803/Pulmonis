@@ -12,9 +12,13 @@ class Green2ViewController: ListedViewController {
 
     @IBOutlet weak var gRelieverInhalerColour: UITextField!
     @IBOutlet weak var gPuffsReliever: UITextField!
+    @IBOutlet weak var nextButton: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        nextButton.layer.cornerRadius = 10
+        nextButton.clipsToBounds = true
         
     }
 
