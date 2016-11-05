@@ -197,6 +197,7 @@
 				719D0C7D1DBA2E66008F5F97 /* Main.storyboard */,
 				5B82CAD51DC9139C003930FB /* PendingTasks.storyboard */,
 				5B82CAD71DC91527003930FB /* TaskTableViewCell.swift */,
+				28A6D0DC1DCBB7C5003B9CDC /* PatientData.plist */,
 				5B6B43521DC390400071AC66 /* ActionPlan.storyboard */,
 				5B82CABF1DC8ECE4003930FB /* SupportViewController.swift */,
 				5B82CA951DC8C14B003930FB /* PeakFlowViewController.swift */,
@@ -424,6 +425,9 @@
 			files = (
 				5B82CADA1DC918C1003930FB /* PendingTasksTableViewController.swift in Sources */,
 				5B82CABA1DC8CA85003930FB /* PeakFlowModel.xcdatamodeld in Sources */,
+				28A6D0D11DCB552A003B9CDC /* ListedViewController.swift in Sources */,
+				28A6D0D31DCBA5C6003B9CDC /* Orange1ViewController.swift in Sources */,
+				288F9C481DCA063D00EE6A99 /* Green3ViewController.swift in Sources */,
 				28E486301DB672A500C3C87E /* StatsStartViewController.swift in Sources */,
 				5B82CAD81DC91527003930FB /* TaskTableViewCell.swift in Sources */,
 				5B82CAC01DC8ECE4003930FB /* SupportViewController.swift in Sources */,
@@ -432,6 +436,8 @@
 				2834399E1DC2195900857437 /* Plist.swift in Sources */,
 				5B82CAC41DC8EE07003930FB /* SupportRecord+CoreDataProperties.swift in Sources */,
 				5B82CAD31DC912CB003930FB /* PendingTask+CoreDataClass.swift in Sources */,
+				288F9C441DCA062300EE6A99 /* Green1ViewController.swift in Sources */,
+				28A6D0D51DCBA5D1003B9CDC /* Orange2ViewController.swift in Sources */,
 				5BAF07C41DB11C1B00AF2FD0 /* ViewController.swift in Sources */,
 				5BAF07C21DB11C1B00AF2FD0 /* AppDelegate.swift in Sources */,
 				2899A93C1DB4FE03004306DF /* SymptomsViewController.swift in Sources */,
@@ -445,6 +451,7 @@
 				5B82CABE1DC8CAF1003930FB /* PeakFlowTable+CoreDataProperties.swift in Sources */,
 				5B82CABD1DC8CAF1003930FB /* PeakFlowTable+CoreDataClass.swift in Sources */,
 				5B82CA961DC8C14B003930FB /* PeakFlowViewController.swift in Sources */,
+				28A6D0D71DCBA5DC003B9CDC /* Orange3ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
