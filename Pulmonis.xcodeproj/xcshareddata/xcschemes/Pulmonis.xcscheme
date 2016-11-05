@@ -48,6 +48,11 @@
                BlueprintName = "PulmonisUITests"
                ReferencedContainer = "container:Pulmonis.xcodeproj">
             </BuildableReference>
+            <SkippedTests>
+               <Test
+                  Identifier = "PulmonisUITests/testGreenSection2()">
+               </Test>
+            </SkippedTests>
          </TestableReference>
       </Testables>
       <MacroExpansion>
