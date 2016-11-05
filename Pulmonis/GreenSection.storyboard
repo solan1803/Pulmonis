@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="kBQ-L7-T0R">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -12,26 +12,26 @@
         <!--Green1-->
         <scene sceneID="RYY-yn-3Ya">
             <objects>
-                <viewController storyboardIdentifier="Green1" id="kBQ-L7-T0R" userLabel="Green1" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Green1" id="kBQ-L7-T0R" userLabel="Green1" customClass="Green1ViewController" customModule="Pulmonis" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="tax-r4-Bl9"/>
                         <viewControllerLayoutGuide type="bottom" id="Ac0-fH-aoG"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="u9d-D6-ajg">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Shiny Blue" translatesAutoresizingMaskIntoConstraints="NO" id="fuc-yX-HDw">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="fuc-yX-HDw">
+                                <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Every day asthma care:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rDt-50-DQ8">
-                                <rect key="frame" x="44" y="40" width="288" height="31.5"/>
+                                <rect key="frame" x="16" y="40" width="288" height="31.5"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
-                                <color key="textColor" red="0.001422772068" green="0.4256876409" blue="0.55088329319999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.0" green="0.59709531069999999" blue="0.28522098060000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="FvS-vk-ZaF">
-                                <rect key="frame" x="43" y="121.5" width="290" height="265"/>
+                                <rect key="frame" x="15" y="121.5" width="290" height="265"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="70" translatesAutoresizingMaskIntoConstraints="NO" id="vEZ-mJ-DTU">
                                         <rect key="frame" x="0.0" y="0.0" width="290" height="64.5"/>
@@ -90,7 +90,7 @@
                                                                 </constraints>
                                                                 <nil key="textColor"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                                <textInputTraits key="textInputTraits"/>
+                                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                             </textField>
                                                         </subviews>
                                                     </stackView>
@@ -128,7 +128,7 @@
                                                                 </constraints>
                                                                 <nil key="textColor"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                                <textInputTraits key="textInputTraits"/>
+                                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                             </textField>
                                                         </subviews>
                                                     </stackView>
@@ -149,8 +149,8 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PhQ-q0-wGf">
-                                <rect key="frame" x="153" y="609" width="70" height="38"/>
-                                <color key="backgroundColor" red="0.001422772068" green="0.4256876409" blue="0.55088329319999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="125" y="510" width="70" height="38"/>
+                                <color key="backgroundColor" red="0.0" green="0.59709531069999999" blue="0.28522098060000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="70" id="EmR-h9-vPi"/>
                                 </constraints>
@@ -159,7 +159,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="LHr-Up-6oK" kind="show" id="Hmy-tb-n1q"/>
+                                    <action selector="next1:" destination="kBQ-L7-T0R" eventType="touchUpInside" id="2EH-Wd-kP2"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -178,6 +178,13 @@
                             <constraint firstItem="rDt-50-DQ8" firstAttribute="top" secondItem="tax-r4-Bl9" secondAttribute="bottom" constant="20" id="mWc-Vz-xKV"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="gPreventerInhalerColour" destination="8lx-FI-buA" id="pyP-Wb-960"/>
+                        <outlet property="gPuffsMorning" destination="aSG-l2-RHB" id="MFr-RE-iiy"/>
+                        <outlet property="gPuffsNight" destination="nlG-hp-GG5" id="QeJ-Bn-9h8"/>
+                        <outlet property="nextButton" destination="PhQ-q0-wGf" id="ET9-Nh-WK3"/>
+                        <segue destination="LHr-Up-6oK" kind="show" identifier="segueGreen1" id="ZWR-6o-3WA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wG2-IS-Mvj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -186,20 +193,20 @@
         <!--Green2-->
         <scene sceneID="lbv-GC-Ebm">
             <objects>
-                <viewController id="LHr-Up-6oK" userLabel="Green2" sceneMemberID="viewController">
+                <viewController id="LHr-Up-6oK" userLabel="Green2" customClass="Green2ViewController" customModule="Pulmonis" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="8Kd-64-Qzy"/>
                         <viewControllerLayoutGuide type="bottom" id="lEy-Pm-Q0I"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="XBL-Xa-Z23">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Shiny Blue" translatesAutoresizingMaskIntoConstraints="NO" id="obZ-Ls-jKY">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="obZ-Ls-jKY">
+                                <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="q4j-es-fBF">
-                                <rect key="frame" x="38" y="122" width="300" height="301"/>
+                                <rect key="frame" x="10" y="122" width="300" height="301"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="70" translatesAutoresizingMaskIntoConstraints="NO" id="HRw-S2-l1c">
                                         <rect key="frame" x="0.0" y="0.0" width="300" height="65"/>
@@ -267,7 +274,7 @@
                                                                         </constraints>
                                                                         <nil key="textColor"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                                        <textInputTraits key="textInputTraits"/>
+                                                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                                     </textField>
                                                                 </subviews>
                                                             </stackView>
@@ -339,17 +346,17 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Every day asthma care:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SJJ-yb-j60">
-                                <rect key="frame" x="44" y="40" width="288" height="32"/>
+                                <rect key="frame" x="16" y="40" width="288" height="32"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="31.5" id="dUf-8a-ACU"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
-                                <color key="textColor" red="0.001422772068" green="0.4256876409" blue="0.55088329319999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.0" green="0.59709531069999999" blue="0.28522098060000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="htD-8g-TuU">
-                                <rect key="frame" x="153" y="609" width="70" height="38"/>
-                                <color key="backgroundColor" red="0.001422772068" green="0.4256876409" blue="0.55088329319999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="125" y="510" width="70" height="38"/>
+                                <color key="backgroundColor" red="0.0" green="0.59709531069999999" blue="0.28522098060000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="70" id="i7m-iV-Dnw"/>
                                 </constraints>
@@ -358,7 +365,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="BJx-YG-NSs" kind="show" id="PJr-DJ-csW"/>
+                                    <action selector="next2:" destination="LHr-Up-6oK" eventType="touchUpInside" id="TL0-er-dbk"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -377,6 +384,12 @@
                             <constraint firstItem="q4j-es-fBF" firstAttribute="top" secondItem="SJJ-yb-j60" secondAttribute="bottom" constant="50" id="xpY-x7-lgE"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="gPuffsReliever" destination="iy1-89-QL0" id="m50-XT-Hrs"/>
+                        <outlet property="gRelieverInhalerColour" destination="xSS-bD-bsA" id="HLG-m7-0d6"/>
+                        <outlet property="nextButton" destination="htD-8g-TuU" id="622-JC-YLg"/>
+                        <segue destination="BJx-YG-NSs" kind="show" identifier="segueGreen2" id="UcA-GL-BZq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GQG-PT-Kal" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -385,35 +398,35 @@
         <!--Green3-->
         <scene sceneID="xr7-eM-lBc">
             <objects>
-                <viewController id="BJx-YG-NSs" userLabel="Green3" sceneMemberID="viewController">
+                <viewController id="BJx-YG-NSs" userLabel="Green3" customClass="Green3ViewController" customModule="Pulmonis" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="8xg-Bi-7J9"/>
                         <viewControllerLayoutGuide type="bottom" id="kf5-3h-qND"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="FSF-KS-o8i">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Shiny Blue" translatesAutoresizingMaskIntoConstraints="NO" id="Fav-sR-cm1">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="Fav-sR-cm1">
+                                <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Every day asthma care:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a79-U4-gaz">
-                                <rect key="frame" x="44" y="40" width="288" height="31.5"/>
+                                <rect key="frame" x="16" y="40" width="288" height="31.5"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
-                                <color key="textColor" red="0.001422772068" green="0.4256876409" blue="0.55088329319999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.0" green="0.59709531069999999" blue="0.28522098060000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="UDy-E1-3YL">
-                                <rect key="frame" x="20" y="121.5" width="335" height="203"/>
+                                <rect key="frame" x="20" y="121.5" width="280" height="203"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Other medicines I take for my asthma every day:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8gN-cE-gjK">
-                                        <rect key="frame" x="0.0" y="0.0" width="335" height="43"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="280" height="43"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
                                         <color key="textColor" red="0.001422772068" green="0.4256876409" blue="0.55088329319999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Dqj-S2-1C0">
-                                        <rect key="frame" x="0.0" y="53" width="335" height="150"/>
+                                        <rect key="frame" x="0.0" y="53" width="280" height="150"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="150" id="9se-dB-3gc"/>
@@ -424,8 +437,8 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eaw-fh-Eks">
-                                <rect key="frame" x="153" y="609" width="70" height="38"/>
-                                <color key="backgroundColor" red="0.001422772068" green="0.4256876409" blue="0.55088329319999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="125" y="510" width="70" height="38"/>
+                                <color key="backgroundColor" red="0.0" green="0.59709531069999999" blue="0.28522098060000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="70" id="VBB-LM-uRE"/>
                                 </constraints>
@@ -434,7 +447,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="ICP-r7-fTb" kind="show" id="MNs-jf-usW"/>
+                                    <segue destination="ICP-r7-fTb" kind="show" id="WFb-Jb-fNm"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -455,6 +468,10 @@
                             <constraint firstItem="a79-U4-gaz" firstAttribute="centerX" secondItem="FSF-KS-o8i" secondAttribute="centerX" id="jp7-wP-0HE"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="gOtherMedicine" destination="Dqj-S2-1C0" id="xTI-59-Ea3"/>
+                        <outlet property="saveButton" destination="eaw-fh-Eks" id="Ige-3B-C6t"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ret-vO-hy9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -470,6 +487,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Shiny Blue" width="750" height="1334"/>
+        <image name="Background" width="750" height="1334"/>
     </resources>
 </document>
