@@ -13,11 +13,15 @@ class Green1ViewController: ListedViewController {
     @IBOutlet weak var gPreventerInhalerColour: UITextField!
     @IBOutlet weak var gPuffsMorning: UITextField!
     @IBOutlet weak var gPuffsNight: UITextField!
+    @IBOutlet weak var nextButton: UIButton!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        nextButton.layer.cornerRadius = 10
+        nextButton.clipsToBounds = true
+        
         // Do any additional setup after loading the view.
     }
 

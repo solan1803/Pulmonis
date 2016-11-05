@@ -13,11 +13,15 @@ class Orange2ViewController: ListedViewController {
     @IBOutlet weak var oIncreasedPreventerDosage: UITextField!
     @IBOutlet weak var oIncreasedPreventerFrequency: UITextField!
     @IBOutlet weak var oIncreasedRelieverFrequency: UITextField!
+    @IBOutlet weak var nextButton: UIButton!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        nextButton.layer.cornerRadius = 10
+        nextButton.clipsToBounds = true
+        
         // Do any additional setup after loading the view.
     }
 
