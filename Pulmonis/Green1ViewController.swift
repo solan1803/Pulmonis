@@ -22,6 +22,9 @@ class Green1ViewController: ListedViewController {
         nextButton.layer.cornerRadius = 10
         nextButton.clipsToBounds = true
         
+        gPreventerInhalerColour.isAccessibilityElement = true
+        gPuffsMorning.isAccessibilityElement = true
+        gPuffsNight.isAccessibilityElement = true
         // Do any additional setup after loading the view.
     }
 

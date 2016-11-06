@@ -51,7 +51,155 @@ class PulmonisUITests: XCTestCase {
         // Need to be able to write tests for core data.
 //        app.buttons["Next"].tap()
         
+    }
+    
+    func testGreenSectionEmptyFields() {
         
+        let app = XCUIApplication()
+        app.navigationBars["Pulmonis.View"].buttons["⚙"].tap()
+        app.buttons["Doctor"].tap()
+        app.buttons["Green  (Everyday asthma care)"].tap()
+        app.buttons["Next"].tap()
+        
+    }
+    
+    func testGreenSectionNonEmptyFields() {
+        
+        
+        let app = XCUIApplication()
+        app.navigationBars["Pulmonis.View"].buttons["⚙"].tap()
+        app.buttons["Doctor"].tap()
+        app.buttons["Green  (Everyday asthma care)"].tap()
+        
+        let element = app.otherElements.containing(.navigationBar, identifier:"Pulmonis.Green1View").children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element
+        let textField = element.children(matching: .other).element(boundBy: 0).children(matching: .other).element.children(matching: .textField).element
+        textField.tap()
+        textField.typeText("Brown")
+        
+        let element2 = element.children(matching: .other).element(boundBy: 1)
+        let textField2 = element2.children(matching: .other).element(boundBy: 0).children(matching: .other).element.children(matching: .textField).element
+        textField2.tap()
+        textField2.tap()
+        textField2.typeText("1")
+        
+        let textField3 = element2.children(matching: .other).element(boundBy: 1).children(matching: .other).element.children(matching: .textField).element
+        textField3.tap()
+        textField3.tap()
+        textField3.typeText("2")
+        
+        let nextButton = app.buttons["Next"]
+        nextButton.tap()
+        
+        let element3 = app.otherElements.containing(.navigationBar, identifier:"Pulmonis.Green2View").children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element
+        let textField4 = element3.children(matching: .other).element(boundBy: 0).children(matching: .other).element.children(matching: .textField).element
+        textField4.tap()
+        textField4.typeText("Blue")
+        
+        let textField5 = element3.children(matching: .other).element(boundBy: 1).children(matching: .other).element(boundBy: 0).children(matching: .other).element.children(matching: .other).element.children(matching: .textField).element
+        textField5.tap()
+        textField5.tap()
+        textField5.typeText("4")
+        nextButton.tap()
+        
+        let textView = app.otherElements.containing(.navigationBar, identifier:"Pulmonis.Green3View").children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .textView).element
+        textView.tap()
+        textView.typeText("None")
+        app.buttons["Save"].tap()
+        
+        
+    }
+    
+    func testOrangeSectionEmptyFields() {
+        
+        let app = XCUIApplication()
+        app.navigationBars["Pulmonis.View"].buttons["⚙"].tap()
+        app.buttons["Doctor"].tap()
+        app.buttons["Orange (When I feel worse)"].tap()
+        app.buttons["Next"].tap()
+        
+    }
+    
+    func testOrangeSectionNonEmptyFields() {
+        
+        let app = XCUIApplication()
+        app.navigationBars["Pulmonis.View"].buttons["⚙"].tap()
+        app.buttons["Doctor"].tap()
+        app.buttons["Orange (When I feel worse)"].tap()
+        
+        let element = app.otherElements.containing(.navigationBar, identifier:"Pulmonis.Orange1View").children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element
+        let textField = element.children(matching: .other).element(boundBy: 0).children(matching: .textField).element
+        textField.tap()
+        textField.typeText("300")
+        
+        let textField2 = element.children(matching: .other).element(boundBy: 1).children(matching: .textField).element
+        textField2.tap()
+        textField2.tap()
+        textField2.typeText("3")
+        
+        let nextButton = app.buttons["Next"]
+        nextButton.tap()
+        
+        let element2 = app.otherElements.containing(.navigationBar, identifier:"Pulmonis.Orange2View").children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element
+        let textField3 = element2.children(matching: .other).element(boundBy: 0).children(matching: .textField).element
+        textField3.tap()
+        textField3.typeText("4")
+        
+        let textField4 = element2.children(matching: .other).element(boundBy: 1).children(matching: .textField).element
+        textField4.tap()
+        textField4.tap()
+        textField4.typeText("3")
+        
+        let textField5 = element2.children(matching: .other).element(boundBy: 2).children(matching: .textField).element
+        textField5.tap()
+        textField5.tap()
+        textField5.typeText("5")
+        nextButton.tap()
+        
+        let element3 = app.otherElements.containing(.navigationBar, identifier:"Pulmonis.Orange3View").children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element
+        let textField6 = element3.children(matching: .other).element(boundBy: 0).children(matching: .textField).element
+        textField6.tap()
+        textField6.typeText("10")
+        
+        let textField7 = element3.children(matching: .other).element(boundBy: 1).children(matching: .textField).element
+        textField7.tap()
+        textField7.tap()
+        textField7.typeText("2")
+        
+        let textField8 = element3.children(matching: .other).element(boundBy: 2).children(matching: .textField).element
+        textField8.tap()
+        textField8.tap()
+        textField8.typeText("14")
+        app.buttons["Save"].tap()
+        
+    }
+    
+    func testRedSectionEmptyFields() {
+        
+        let app = XCUIApplication()
+        app.navigationBars["Pulmonis.View"].buttons["⚙"].tap()
+        app.buttons["Doctor"].tap()
+        app.buttons["Red (In an asthma attack)"].tap()
+        app.buttons["Save"].tap()
+        
+    }
+    
+    func testRedSectionNonEmptyFields() {
+        
+        let app = XCUIApplication()
+        app.navigationBars["Pulmonis.View"].buttons["⚙"].tap()
+        app.buttons["Doctor"].tap()
+        app.buttons["Red (In an asthma attack)"].tap()
+        
+        let element = app.otherElements.containing(.navigationBar, identifier:"Pulmonis.RedView").children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element
+        let textField = element.children(matching: .other).element(boundBy: 0).children(matching: .textField).element
+        textField.tap()
+        textField.typeText("6")
+        
+        let textField2 = element.children(matching: .other).element(boundBy: 1).children(matching: .textField).element
+        textField2.tap()
+        textField2.tap()
+        textField2.typeText("200")
+        app.buttons["Save"].tap()
         
     }
     
