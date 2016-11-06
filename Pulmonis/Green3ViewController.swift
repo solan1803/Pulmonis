@@ -19,6 +19,7 @@ class Green3ViewController: ListedViewController {
         saveButton.layer.cornerRadius = 10
         saveButton.clipsToBounds = true
         
+        gOtherMedicine.isAccessibilityElement = true
     }
 
     override func didReceiveMemoryWarning() {
