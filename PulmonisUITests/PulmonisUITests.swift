@@ -54,36 +54,5 @@ class PulmonisUITests: XCTestCase {
         
         
     }
-
-
-    func testGreenSectionEmptyFields() {
-        
-        let app = XCUIApplication()
-        app.navigationBars["Pulmonis.View"].buttons["⚙"].tap()
-        app.buttons["Doctor"].tap()
-        app.buttons["Green  (Everyday asthma care)"].tap()
-        app.buttons["Next"].tap()
-        
-    }
-    
-    func testOrangeEmptyFields() {
-        
-        let app = XCUIApplication()
-        app.navigationBars["Pulmonis.View"].buttons["⚙"].tap()
-        app.buttons["Doctor"].tap()
-        app.buttons["Orange (When I feel worse)"].tap()
-        app.buttons["Next"].tap()
-        
-    }
-    
-    func testRedSectionEmptyFields() {
-        
-        let app = XCUIApplication()
-        app.navigationBars["Pulmonis.View"].buttons["⚙"].tap()
-        app.buttons["Doctor"].tap()
-        app.buttons["Red (In an asthma attack)"].tap()
-        app.buttons["Save"].tap()
-        
-    }
     
 }
