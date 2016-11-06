@@ -20,6 +20,9 @@ class Green2ViewController: ListedViewController {
         nextButton.layer.cornerRadius = 10
         nextButton.clipsToBounds = true
         
+        gRelieverInhalerColour.isAccessibilityElement = true
+        
+        gPuffsReliever.isAccessibilityElement = true
     }
 
     override func didReceiveMemoryWarning() {
