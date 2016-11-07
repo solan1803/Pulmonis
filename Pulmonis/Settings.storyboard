@@ -41,7 +41,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="PH1-OI-yok" kind="show" id="Ejw-zW-Frz"/>
+                                    <segue destination="gD6-MR-pqd" kind="show" id="8mf-dL-hHD"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -66,6 +66,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c49-EO-sZq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2279" y="897"/>
+        </scene>
+        <!--DoctorInput-->
+        <scene sceneID="lIw-AV-9mb">
+            <objects>
+                <viewControllerPlaceholder storyboardName="DoctorInput" id="gD6-MR-pqd" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lfK-P9-j9j" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2731" y="434"/>
         </scene>
         <!--Colour Selection-->
         <scene sceneID="M5r-E5-Fq4">
@@ -158,10 +166,10 @@
             </objects>
             <point key="canvasLocation" x="3110" y="908"/>
         </scene>
-        <!--Green1-->
+        <!--tab1-->
         <scene sceneID="oJk-qg-ClC">
             <objects>
-                <viewControllerPlaceholder storyboardName="GreenSection" referencedIdentifier="Green1" id="SxZ-IB-x2z" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="GreenSection" referencedIdentifier="tab1" id="SxZ-IB-x2z" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GmB-SQ-nXd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3817" y="820"/>
