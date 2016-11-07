@@ -26,6 +26,25 @@ class Green1ViewController: ListedViewController {
         gPuffsMorning.isAccessibilityElement = true
         gPuffsNight.isAccessibilityElement = true
         // Do any additional setup after loading the view.
+        
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
+        //let tap2: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
+        
+        //Uncomment the line below if you want the tap not not interfere and cancel other interactions.
+        //tap.cancelsTouchesInView = false
+        
+        view.addGestureRecognizer(tap)
+        
+    }
+    
+    func printStuff() {
+       
+    }
+    
+    override func dismissKeyboard() {
+        //Causes the view (or one of its embedded text fields) to resign the first responder status.
+        print("--------------------printing--------------------")
+        view.endEditing(true)
     }
 
     override func didReceiveMemoryWarning() {
