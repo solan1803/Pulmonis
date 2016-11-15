@@ -10,6 +10,7 @@
 		280C60871DCD531400089C08 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280C60861DCD531400089C08 /* SettingsViewController.swift */; };
 		2833EC801DCDF0C1000D4F7F /* SectionSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2833EC7F1DCDF0C1000D4F7F /* SectionSelectionViewController.swift */; };
 		2834399E1DC2195900857437 /* Plist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2834399D1DC2195900857437 /* Plist.swift */; };
+		287810ED1DD298F00031A7E5 /* DoctorInput.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 287810EC1DD298F00031A7E5 /* DoctorInput.storyboard */; };
 		288F9C441DCA062300EE6A99 /* Green1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288F9C431DCA062300EE6A99 /* Green1ViewController.swift */; };
 		288F9C461DCA063100EE6A99 /* Green2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288F9C451DCA063100EE6A99 /* Green2ViewController.swift */; };
 		288F9C481DCA063D00EE6A99 /* Green3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288F9C471DCA063D00EE6A99 /* Green3ViewController.swift */; };
@@ -86,6 +87,7 @@
 		280C60861DCD531400089C08 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		2833EC7F1DCDF0C1000D4F7F /* SectionSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionSelectionViewController.swift; sourceTree = "<group>"; };
 		2834399D1DC2195900857437 /* Plist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Plist.swift; sourceTree = "<group>"; };
+		287810EC1DD298F00031A7E5 /* DoctorInput.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DoctorInput.storyboard; sourceTree = "<group>"; };
 		288F9C431DCA062300EE6A99 /* Green1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Green1ViewController.swift; sourceTree = "<group>"; };
 		288F9C451DCA063100EE6A99 /* Green2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Green2ViewController.swift; sourceTree = "<group>"; };
 		288F9C471DCA063D00EE6A99 /* Green3ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Green3ViewController.swift; sourceTree = "<group>"; };
@@ -205,6 +207,7 @@
 				5B6B434E1DC38E770071AC66 /* Learn.storyboard */,
 				28A6D0D01DCB552A003B9CDC /* ListedViewController.swift */,
 				28CC5CA91DC772E8009A7BE9 /* GreenSection.storyboard */,
+				287810EC1DD298F00031A7E5 /* DoctorInput.storyboard */,
 				288F9C431DCA062300EE6A99 /* Green1ViewController.swift */,
 				288F9C451DCA063100EE6A99 /* Green2ViewController.swift */,
 				288F9C471DCA063D00EE6A99 /* Green3ViewController.swift */,
@@ -386,6 +389,7 @@
 				5B82CAD61DC9139C003930FB /* PendingTasks.storyboard in Resources */,
 				28CC5CAD1DC777E4009A7BE9 /* Emergency.storyboard in Resources */,
 				28A6D0DD1DCBB7C5003B9CDC /* PatientData.plist in Resources */,
+				287810ED1DD298F00031A7E5 /* DoctorInput.storyboard in Resources */,
 				28CC5CAC1DC77625009A7BE9 /* Settings.storyboard in Resources */,
 				5BC536151DB6762A00231A50 /* LiberationSans-BoldItalic.ttf in Resources */,
 				5B6B43511DC38F6A0071AC66 /* Statistics.storyboard in Resources */,
