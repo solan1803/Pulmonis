@@ -10,9 +10,13 @@ import UIKit
 
 class Yellow3ViewController: ListedViewController {
 
+    @IBOutlet weak var yIncreasedPreventerDosage: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        yIncreasedPreventerDosage.text = ListedViewController.patientData["yIncreasedPreventerDosage"]! as? String
+        
         // Do any additional setup after loading the view.
     }
 
@@ -21,6 +25,17 @@ class Yellow3ViewController: ListedViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        ListedViewController.patientData["yIncreasedPreventerDosage"] = yIncreasedPreventerDosage.text
+    }
+
+    override func willMove(toParentViewController parent: UIViewController?) {
+        super.willMove(toParentViewController: parent)
+
+        if (yIncreasedPreventerDosage != nil) {
+            ListedViewController.patientData["yIncreasedPreventerDosage"] = yIncreasedPreventerDosage.text
+        }
+    }
 
     /*
     // MARK: - Navigation
