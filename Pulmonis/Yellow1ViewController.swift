@@ -10,9 +10,13 @@ import UIKit
 
 class Yellow1ViewController: ListedViewController {
 
+    @IBOutlet weak var yWeeklyRelieverUses: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        yWeeklyRelieverUses.text = ListedViewController.patientData["yWeeklyRelieverUses"]! as? String
+        
         // Do any additional setup after loading the view.
     }
 
@@ -21,6 +25,17 @@ class Yellow1ViewController: ListedViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        ListedViewController.patientData["yWeeklyRelieverUses"] = yWeeklyRelieverUses.text
+    }
+    
+    override func willMove(toParentViewController parent: UIViewController?) {
+        super.willMove(toParentViewController: parent)
+
+        if (yWeeklyRelieverUses != nil) {
+            ListedViewController.patientData["yWeeklyRelieverUses"] = yWeeklyRelieverUses.text
+        }
+    }
 
     /*
     // MARK: - Navigation

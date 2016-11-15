@@ -15,9 +15,7 @@ class Green2ViewController: ListedViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("--------------------------")
-        print(ListedViewController.patientData)
-        print("--------------------------")
+        gPuffsMorning.text = ListedViewController.patientData["gPuffsMorning"]! as? String
         // Do any additional setup after loading the view.
     }
 
@@ -28,6 +26,14 @@ class Green2ViewController: ListedViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         ListedViewController.patientData["gPuffsMorning"] = gPuffsMorning.text
+    }
+    
+    override func willMove(toParentViewController parent: UIViewController?) {
+        super.willMove(toParentViewController: parent)
+        
+        if (gPuffsMorning != nil) {
+            ListedViewController.patientData["gPuffsMorning"] = gPuffsMorning.text
+        }
     }
     
     

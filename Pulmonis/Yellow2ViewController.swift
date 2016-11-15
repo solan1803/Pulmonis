@@ -10,9 +10,13 @@ import UIKit
 
 class Yellow2ViewController: ListedViewController {
 
+    @IBOutlet weak var yMinimumPeakFlow: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        yMinimumPeakFlow.text = ListedViewController.patientData["yMinimumPeakFlow"]! as? String
+        
         // Do any additional setup after loading the view.
     }
 
@@ -21,7 +25,18 @@ class Yellow2ViewController: ListedViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        ListedViewController.patientData["yMinimumPeakFlow"] = yMinimumPeakFlow.text
+    }
 
+    override func willMove(toParentViewController parent: UIViewController?) {
+        super.willMove(toParentViewController: parent)
+
+        if (yMinimumPeakFlow != nil) {
+            ListedViewController.patientData["yMinimumPeakFlow"] = yMinimumPeakFlow.text
+        }
+    }
+    
     /*
     // MARK: - Navigation
 
