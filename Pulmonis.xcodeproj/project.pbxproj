@@ -63,6 +63,8 @@
 		719018941DC78CEA000E8F59 /* RedSection.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 719018931DC78CEA000E8F59 /* RedSection.storyboard */; };
 		71987C5B1DB678B300248AE1 /* EmergencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71987C5A1DB678B300248AE1 /* EmergencyViewController.swift */; };
 		719D0C7F1DBA2E66008F5F97 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 719D0C7D1DBA2E66008F5F97 /* Main.storyboard */; };
+		71B786EF1DDB721000D1358B /* SymptomActionPlan.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71B786EE1DDB721000D1358B /* SymptomActionPlan.storyboard */; };
+		71B786F11DDB829800D1358B /* SymptomActionPlanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B786F01DDB829800D1358B /* SymptomActionPlanViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -137,6 +139,8 @@
 		719018931DC78CEA000E8F59 /* RedSection.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RedSection.storyboard; sourceTree = "<group>"; };
 		71987C5A1DB678B300248AE1 /* EmergencyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmergencyViewController.swift; sourceTree = "<group>"; };
 		719D0C7E1DBA2E66008F5F97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Pulmonis/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		71B786EE1DDB721000D1358B /* SymptomActionPlan.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SymptomActionPlan.storyboard; sourceTree = "<group>"; };
+		71B786F01DDB829800D1358B /* SymptomActionPlanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SymptomActionPlanViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,6 +199,8 @@
 				5B82CABB1DC8CAF1003930FB /* PeakFlowTable+CoreDataClass.swift */,
 				5B82CABC1DC8CAF1003930FB /* PeakFlowTable+CoreDataProperties.swift */,
 				719D0C7D1DBA2E66008F5F97 /* Main.storyboard */,
+				71B786EE1DDB721000D1358B /* SymptomActionPlan.storyboard */,
+				71B786F01DDB829800D1358B /* SymptomActionPlanViewController.swift */,
 				5B82CAD51DC9139C003930FB /* PendingTasks.storyboard */,
 				5B82CAD71DC91527003930FB /* TaskTableViewCell.swift */,
 				28A6D0DC1DCBB7C5003B9CDC /* PatientData.plist */,
@@ -387,6 +393,7 @@
 				28CC5CAD1DC777E4009A7BE9 /* Emergency.storyboard in Resources */,
 				28A6D0DD1DCBB7C5003B9CDC /* PatientData.plist in Resources */,
 				28CC5CAC1DC77625009A7BE9 /* Settings.storyboard in Resources */,
+				71B786EF1DDB721000D1358B /* SymptomActionPlan.storyboard in Resources */,
 				5BC536151DB6762A00231A50 /* LiberationSans-BoldItalic.ttf in Resources */,
 				5B6B43511DC38F6A0071AC66 /* Statistics.storyboard in Resources */,
 				5BC536181DB6762A00231A50 /* LiberationSans-Italic.ttf in Resources */,
@@ -442,6 +449,7 @@
 				5BAF07C21DB11C1B00AF2FD0 /* AppDelegate.swift in Sources */,
 				2899A93C1DB4FE03004306DF /* SymptomsViewController.swift in Sources */,
 				288F9C461DCA063100EE6A99 /* Green2ViewController.swift in Sources */,
+				71B786F11DDB829800D1358B /* SymptomActionPlanViewController.swift in Sources */,
 				280C60871DCD531400089C08 /* SettingsViewController.swift in Sources */,
 				28A6D0DB1DCBB2E9003B9CDC /* RedViewController.swift in Sources */,
 				5B0DEF7A1DB8F1FC006ECFCE /* LearnTableViewController.swift in Sources */,

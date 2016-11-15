@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="bSo-aD-37K">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="bSo-aD-37K">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -95,7 +95,6 @@
                                 </constraints>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PULMONIS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3oF-OR-ngj">
-                                <rect key="frame" x="107.5" y="29" width="161" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="IHk-th-zGi"/>
                                 </constraints>
@@ -113,7 +112,7 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="RSg-VA-7Q0" kind="show" id="Eg7-mx-OL1"/>
+                                    <segue destination="sCv-nT-Wq1" kind="show" id="EPz-eo-Hds"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="17S-Mh-WTL">
@@ -177,7 +176,7 @@
                 <viewControllerPlaceholder storyboardName="ActionPlan" referencedIdentifier="PeakOrSupport" id="RSg-VA-7Q0" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lbo-Ia-RLk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1990" y="350"/>
+            <point key="canvasLocation" x="2081" y="497"/>
         </scene>
         <!--Settings-->
         <scene sceneID="VNc-Sq-C8K">
@@ -187,6 +186,14 @@
             </objects>
             <point key="canvasLocation" x="1779" y="582"/>
         </scene>
+        <!--SymptomActionPlan-->
+        <scene sceneID="IsM-H3-jTr">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SymptomActionPlan" referencedIdentifier="SymptomActionPlan" id="sCv-nT-Wq1" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tF8-Jq-lQr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1988" y="355"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="DEu-t8-vb9">
             <objects>
@@ -194,7 +201,7 @@
                     <toolbarItems/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="667"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="NVJ-1M-QAZ">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="NVJ-1M-QAZ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
