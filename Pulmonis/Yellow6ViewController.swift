@@ -1,5 +1,5 @@
 //
-//  Green2ViewController.swift
+//  Yellow6ViewController.swift
 //  Pulmonis
 //
 //  Created by Karow Maruf on 15/11/2016.
@@ -8,16 +8,11 @@
 
 import UIKit
 
-class Green2ViewController: ListedViewController {
+class Yellow6ViewController: ListedViewController {
 
-    
-    @IBOutlet weak var gPuffsMorning: UITextField!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("--------------------------")
-        print(ListedViewController.patientData)
-        print("--------------------------")
+
         // Do any additional setup after loading the view.
     }
 
@@ -26,11 +21,7 @@ class Green2ViewController: ListedViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        ListedViewController.patientData["gPuffsMorning"] = gPuffsMorning.text
-    }
-    
-    
+
     /*
     // MARK: - Navigation
 
