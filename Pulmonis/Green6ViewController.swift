@@ -10,9 +10,13 @@ import UIKit
 
 class Green6ViewController: ListedViewController {
 
+    @IBOutlet weak var gOtherMedicine: UITextView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        gOtherMedicine.text = ListedViewController.patientData["gOtherMedicine"]! as? String
+        
         // Do any additional setup after loading the view.
     }
 
@@ -21,7 +25,18 @@ class Green6ViewController: ListedViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        ListedViewController.patientData["gOtherMedicine"] = gOtherMedicine.text
+    }
+    
+    override func willMove(toParentViewController parent: UIViewController?) {
+        super.willMove(toParentViewController: parent)
+        
+        if (gOtherMedicine != nil) {
+            ListedViewController.patientData["gOtherMedicine"] = gOtherMedicine.text
+        }
+    }
+    
     /*
     // MARK: - Navigation
 

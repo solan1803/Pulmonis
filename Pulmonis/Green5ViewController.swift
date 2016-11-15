@@ -10,9 +10,13 @@ import UIKit
 
 class Green5ViewController: ListedViewController {
 
+    @IBOutlet weak var gPuffsReliever: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        gPuffsReliever.text = ListedViewController.patientData["gPuffsReliever"]! as? String
+        
         // Do any additional setup after loading the view.
     }
 
@@ -21,6 +25,17 @@ class Green5ViewController: ListedViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        ListedViewController.patientData["gPuffsReliever"] = gPuffsReliever.text
+    }
+    
+    override func willMove(toParentViewController parent: UIViewController?) {
+        super.willMove(toParentViewController: parent)
+        
+        if (gPuffsReliever != nil) {
+            ListedViewController.patientData["gPuffsReliever"] = gPuffsReliever.text
+        }
+    }
 
     /*
     // MARK: - Navigation

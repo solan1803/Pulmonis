@@ -10,9 +10,13 @@ import UIKit
 
 class Yellow6ViewController: ListedViewController {
 
+    @IBOutlet weak var yTabletDosage: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        yTabletDosage.text = ListedViewController.patientData["yTabletDosage"]! as? String
+        
         // Do any additional setup after loading the view.
     }
 
@@ -21,7 +25,18 @@ class Yellow6ViewController: ListedViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        ListedViewController.patientData["yTabletDosage"] = yTabletDosage.text
+    }
 
+    override func willMove(toParentViewController parent: UIViewController?) {
+        super.willMove(toParentViewController: parent)
+
+        if (yTabletDosage != nil) {
+            ListedViewController.patientData["yTabletDosage"] = yTabletDosage.text
+        }
+    }
+    
     /*
     // MARK: - Navigation
 

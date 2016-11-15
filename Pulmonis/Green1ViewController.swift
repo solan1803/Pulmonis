@@ -15,10 +15,19 @@ class Green1ViewController: ListedViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("--------------------------")
-        print(ListedViewController.patientData)
-        print("--------------------------")
-        // Do any additional setup after loading the view.
+        
+        if let plist = Plist(name: "PatientData") {
+            
+            let dict = plist.getMutablePlistFile()!
+            
+            ListedViewController.patientData = dict
+            
+        }
+        
+        gPreventerInhalerColour.text = ListedViewController.patientData["gPreventerInhalerColour"]! as? String
+        //print(ListedViewController.patientData)
+        
+        
     }
 
     override func didReceiveMemoryWarning() {

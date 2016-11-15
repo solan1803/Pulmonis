@@ -15,7 +15,7 @@ class Green3ViewController: ListedViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        gPuffsNight.text = ListedViewController.patientData["gPuffsNight"]! as? String
         // Do any additional setup after loading the view.
     }
 
@@ -24,7 +24,22 @@ class Green3ViewController: ListedViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        ListedViewController.patientData["gPuffsNight"] = gPuffsNight.text
+    }
 
+    override func willMove(toParentViewController parent: UIViewController?) {
+        super.willMove(toParentViewController: parent)
+        
+        
+        
+        if (gPuffsNight != nil) {
+            ListedViewController.patientData["gPuffsNight"] = gPuffsNight.text
+            
+            
+        }
+    }
+    
     /*
     // MARK: - Navigation
 

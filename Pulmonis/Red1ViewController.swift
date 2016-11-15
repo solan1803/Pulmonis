@@ -10,9 +10,13 @@ import UIKit
 
 class Red1ViewController: ListedViewController {
 
+    @IBOutlet weak var rRelieverFrequencyLimit: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        rRelieverFrequencyLimit.text = ListedViewController.patientData["rRelieverFrequencyLimit"]! as? String
+        
         // Do any additional setup after loading the view.
     }
 
@@ -21,7 +25,18 @@ class Red1ViewController: ListedViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        ListedViewController.patientData["rRelieverFrequencyLimit"] = rRelieverFrequencyLimit.text
+    }
 
+    override func willMove(toParentViewController parent: UIViewController?) {
+        super.willMove(toParentViewController: parent)
+        
+        if (rRelieverFrequencyLimit != nil) {
+            ListedViewController.patientData["rRelieverFrequencyLimit"] = rRelieverFrequencyLimit.text
+        }
+    }
+    
     /*
     // MARK: - Navigation
 

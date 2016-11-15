@@ -336,7 +336,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="sKJ-o6-nJg"/>
                     <connections>
-                        <segue destination="liN-wl-WIg" kind="show" identifier="B3" id="hSP-4Y-8t5"/>
+                        <outlet property="gRelieverInhalerColour" destination="unQ-BT-gbd" id="oS3-CL-BUO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eYf-sg-jTG" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -424,7 +424,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="CGk-nF-0mj"/>
                     <connections>
-                        <segue destination="XRk-EF-KgB" kind="show" identifier="B4" id="Fv0-Q8-j8a"/>
+                        <outlet property="gPuffsReliever" destination="Zah-zK-rgT" id="C0C-Pl-02I"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MMs-hc-aop" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -507,7 +507,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="y6i-pl-t3y"/>
                     <connections>
-                        <segue destination="17Z-pT-vec" kind="show" identifier="B5" id="Yp9-gT-QyM"/>
+                        <outlet property="gOtherMedicine" destination="fDr-Lf-4th" id="SvR-Q2-b5c"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mp0-Wj-Gl1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -592,7 +592,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="usF-c6-xdV"/>
                     <connections>
-                        <segue destination="pU1-Zx-zlr" kind="show" identifier="B6" id="fHQ-Jk-aWh"/>
+                        <outlet property="yWeeklyRelieverUses" destination="VHg-Pj-WFS" id="iWg-e5-eFA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g0A-dm-q0o" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -671,7 +671,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="GLx-kK-L74"/>
                     <connections>
-                        <segue destination="WqO-zZ-NAn" kind="show" identifier="B7" id="lBx-kz-Cs6"/>
+                        <outlet property="yMinimumPeakFlow" destination="ptT-lB-QdF" id="oBF-95-Yg9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n12-NY-BbG" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -764,7 +764,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="KtA-QW-ANw"/>
                     <connections>
-                        <segue destination="fkb-Jf-hgu" kind="show" identifier="B8" id="zVr-35-PfB"/>
+                        <outlet property="yIncreasedPreventerDosage" destination="8k9-yP-dh5" id="tXD-fG-TED"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lwa-Dc-15D" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -858,7 +858,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="Jf3-eq-GXo"/>
                     <connections>
-                        <segue destination="OCm-vL-rOP" kind="show" identifier="B9" id="ezt-6y-Fsf"/>
+                        <outlet property="yIncreasedPreventerFrequency" destination="wuV-yP-3Cp" id="kLU-xS-Jmz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1CN-6j-Ic6" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -951,7 +951,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="Z8m-lN-w8g"/>
                     <connections>
-                        <segue destination="q9O-jC-hFS" kind="show" identifier="B11" id="bgz-lW-fis"/>
+                        <outlet property="yTabletDosage" destination="tgo-9y-ePq" id="6IS-oE-1Ps"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K6U-sH-t5R" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1044,7 +1044,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="eCN-EV-ekn"/>
                     <connections>
-                        <segue destination="RG9-Ur-nHQ" kind="show" identifier="B12" id="5cw-ph-f8F"/>
+                        <outlet property="yTabletDuration" destination="n2l-fb-2rI" id="PeD-Nx-D6T"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Fb-DM-mj1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1137,7 +1137,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="rst-eJ-kdv"/>
                     <connections>
-                        <segue destination="12g-N1-V3a" kind="show" identifier="B13" id="xxl-pe-Xjw"/>
+                        <outlet property="rRelieverFrequencyLimit" destination="bMg-bJ-CLn" id="PaY-7v-ekg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TOd-db-G7I" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1201,14 +1201,30 @@
                                     </textField>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mcq-4E-8CI">
+                                <rect key="frame" x="169.66666666666666" y="235" width="75" height="42"/>
+                                <color key="backgroundColor" red="0.001422772068" green="0.4256876409" blue="0.55088329319999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="0FU-xF-c0L"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <state key="normal" title="Save">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="save:" destination="cjU-eZ-0Nt" eventType="touchUpInside" id="OO3-HS-S6p"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="tPG-gb-esw" firstAttribute="centerX" secondItem="FK3-zq-509" secondAttribute="centerX" id="3jd-g1-egN"/>
+                            <constraint firstItem="mcq-4E-8CI" firstAttribute="centerX" secondItem="FK3-zq-509" secondAttribute="centerX" id="LPv-Ta-1vE"/>
                             <constraint firstItem="h8K-kF-6uD" firstAttribute="centerX" secondItem="FK3-zq-509" secondAttribute="centerX" id="ND7-Rc-ji2"/>
                             <constraint firstItem="tPG-gb-esw" firstAttribute="top" secondItem="h8K-kF-6uD" secondAttribute="bottom" constant="20" id="S8n-zZ-3sZ"/>
                             <constraint firstItem="h8K-kF-6uD" firstAttribute="top" secondItem="ZZo-7U-YwU" secondAttribute="bottom" constant="5" id="vFz-k4-a2L"/>
+                            <constraint firstItem="mcq-4E-8CI" firstAttribute="top" secondItem="tPG-gb-esw" secondAttribute="bottom" constant="50" id="wog-kM-gfi"/>
                         </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="2hr-3y-EZS" appends="YES" id="mw1-SC-uID"/>
@@ -1216,13 +1232,22 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="hNA-H4-KQI"/>
                     <connections>
-                        <segue destination="S2I-w7-rjb" kind="show" identifier="B14" id="nix-Ge-uLl"/>
+                        <outlet property="rMinimumPeakFlow" destination="vwK-gg-lql" id="y1a-X4-tUD"/>
+                        <segue destination="AeQ-Vn-If2" kind="show" identifier="save" id="4Ky-5a-XDF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yBA-yJ-tv1" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <swipeGestureRecognizer direction="right" id="2hr-3y-EZS"/>
             </objects>
-            <point key="canvasLocation" x="7688" y="4608"/>
+            <point key="canvasLocation" x="7686.9565217391309" y="4607.608695652174"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="TRJ-aa-TLX">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Settings" id="AeQ-Vn-If2" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X63-mH-hOJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8355" y="4546"/>
         </scene>
         <!--Item-->
         <scene sceneID="Rtk-LH-Q1n">
@@ -1301,7 +1326,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="LCl-fM-WqB"/>
                     <connections>
-                        <segue destination="fUs-Xt-EzG" kind="show" identifier="B10" id="8DV-3H-FMa"/>
+                        <outlet property="yIncreasedRelieverFrequency" destination="ez8-4P-yLa" id="BOa-xg-S7A"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3rc-py-oLm" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1319,18 +1344,4 @@
         <image name="red" width="675" height="623"/>
         <image name="yellow" width="728" height="728"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="lBx-kz-Cs6"/>
-        <segue reference="zVr-35-PfB"/>
-        <segue reference="ezt-6y-Fsf"/>
-        <segue reference="8DV-3H-FMa"/>
-        <segue reference="bgz-lW-fis"/>
-        <segue reference="5cw-ph-f8F"/>
-        <segue reference="xxl-pe-Xjw"/>
-        <segue reference="5if-gC-mpA"/>
-        <segue reference="fHQ-Jk-aWh"/>
-        <segue reference="Yp9-gT-QyM"/>
-        <segue reference="b8K-lQ-alF"/>
-        <segue reference="Ahq-z6-ZPh"/>
-    </inferredMetricsTieBreakers>
 </document>

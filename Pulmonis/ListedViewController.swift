@@ -11,29 +11,13 @@ import UIKit
 class ListedViewController: UIViewController {
 
     var controllers = [ListedViewController]()
-    static var patientData = [String: Any]()
+    static var patientData: NSMutableDictionary!   //[String: Any]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        /*
-        let recognizerLeft: UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: Selector(("swipeLeft:")))
-        recognizerLeft.direction = .left
-        self.view .addGestureRecognizer(recognizerLeft)
-        
-        let recognizerRight: UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: Selector(("swipeRight:")))
-        recognizerRight.direction = .right
-        self.view .addGestureRecognizer(recognizerRight)
-        */
         // Do any additional setup after loading the view.
     }
-    
-    func swipeLeft(recognizer : UISwipeGestureRecognizer) {
-        // To be implemented by subclasses
-    }
-    
-    func swipeRight(recognizer : UISwipeGestureRecognizer) {
-        // To be implemented by subclasses
-    }
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
