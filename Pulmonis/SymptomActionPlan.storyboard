@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Symptom Action Plan View Controller-->
+        <scene sceneID="vU0-JE-KuD">
+            <objects>
+                <viewController storyboardIdentifier="SymptomActionPlan" id="P08-NX-xEx" customClass="SymptomActionPlanViewController" customModule="Pulmonis" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Jsl-mM-XXM"/>
+                        <viewControllerLayoutGuide type="bottom" id="IaP-dP-Ycp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rdn-NC-gu4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Shiny Blue" translatesAutoresizingMaskIntoConstraints="NO" id="1p2-nx-MV9"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="ige-0I-QyM">
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What symptoms are you experiencing?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="aAg-xQ-ySg">
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="kWB-bJ-ZGP">
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="KnJ-se-B9d">
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NYf-Zm-QVc">
+                                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                                        <state key="normal">
+                                                            <attributedString key="attributedTitle">
+                                                                <fragment content="Wheezing">
+                                                                    <attributes>
+                                                                        <font key="NSFont" size="20" name=".AppleSystemUIFont"/>
+                                                                    </attributes>
+                                                                </fragment>
+                                                            </attributedString>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="nextColour:" destination="P08-NX-xEx" eventType="touchUpInside" id="pvi-TZ-9Sb"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="09H-TQ-1y4">
+                                                        <state key="normal">
+                                                            <attributedString key="attributedTitle">
+                                                                <fragment content="Chest Tightness">
+                                                                    <attributes>
+                                                                        <font key="NSFont" size="20" name=".AppleSystemUIFont"/>
+                                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                    </attributes>
+                                                                </fragment>
+                                                            </attributedString>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="nextColour:" destination="P08-NX-xEx" eventType="touchUpInside" id="9mm-0G-hTY"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="zTs-zr-1XL">
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3yK-Y4-0rj">
+                                                        <state key="normal">
+                                                            <attributedString key="attributedTitle">
+                                                                <fragment content="Difficulty Breathing">
+                                                                    <attributes>
+                                                                        <font key="NSFont" size="20" name=".AppleSystemUIFont"/>
+                                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                    </attributes>
+                                                                </fragment>
+                                                            </attributedString>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="nextColour:" destination="P08-NX-xEx" eventType="touchUpInside" id="uhr-pD-Ca0"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0BV-SM-WyB">
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <state key="normal" title="Cough"/>
+                                                        <connections>
+                                                            <action selector="nextColour:" destination="P08-NX-xEx" eventType="touchUpInside" id="sbv-62-Biq"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="R4S-AJ-i3c">
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NkS-61-mfk">
+                                                        <state key="normal">
+                                                            <attributedString key="attributedTitle">
+                                                                <fragment content="Waking up  at night">
+                                                                    <attributes>
+                                                                        <font key="NSFont" size="20" name=".AppleSystemUIFont"/>
+                                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                    </attributes>
+                                                                </fragment>
+                                                            </attributedString>
+                                                        </state>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wIA-sO-3gb">
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <state key="normal" title="ADL"/>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="kpI-JP-AqK">
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vp8-YB-BTV">
+                                                        <state key="normal">
+                                                            <attributedString key="attributedTitle">
+                                                                <fragment content="Difficulty talking">
+                                                                    <attributes>
+                                                                        <font key="NSFont" size="20" name=".AppleSystemUIFont"/>
+                                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                    </attributes>
+                                                                </fragment>
+                                                            </attributedString>
+                                                        </state>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ccj-Dv-pae">
+                                                        <state key="normal">
+                                                            <attributedString key="attributedTitle">
+                                                                <fragment content="Difficulty walking">
+                                                                    <attributes>
+                                                                        <font key="NSFont" size="20" name=".AppleSystemUIFont"/>
+                                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                    </attributes>
+                                                                </fragment>
+                                                            </attributedString>
+                                                        </state>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="KnJ-se-B9d" firstAttribute="centerX" secondItem="kWB-bJ-ZGP" secondAttribute="centerX" id="W1E-Us-vd1"/>
+                                        </constraints>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QoK-5i-Cci" userLabel="NextNoneButton">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="yBc-Rk-hTE"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="None"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="ige-0I-QyM" secondAttribute="trailing" constant="30" id="0LI-2J-XQ7"/>
+                            <constraint firstItem="IaP-dP-Ycp" firstAttribute="top" secondItem="1p2-nx-MV9" secondAttribute="bottom" id="6vN-af-ht0"/>
+                            <constraint firstItem="ige-0I-QyM" firstAttribute="leading" secondItem="rdn-NC-gu4" secondAttribute="leading" constant="30" id="C9e-Mm-zRg"/>
+                            <constraint firstItem="1p2-nx-MV9" firstAttribute="leading" secondItem="rdn-NC-gu4" secondAttribute="leading" id="HON-EO-TLJ"/>
+                            <constraint firstItem="IaP-dP-Ycp" firstAttribute="top" secondItem="ige-0I-QyM" secondAttribute="bottom" constant="15" id="M73-pj-l72"/>
+                            <constraint firstItem="1p2-nx-MV9" firstAttribute="top" secondItem="Jsl-mM-XXM" secondAttribute="bottom" id="QbB-8R-KOn"/>
+                            <constraint firstAttribute="trailing" secondItem="1p2-nx-MV9" secondAttribute="trailing" id="W2y-oo-tDF"/>
+                            <constraint firstItem="ige-0I-QyM" firstAttribute="centerX" secondItem="rdn-NC-gu4" secondAttribute="centerX" id="gHc-OF-vyz"/>
+                            <constraint firstItem="ige-0I-QyM" firstAttribute="top" secondItem="Jsl-mM-XXM" secondAttribute="bottom" constant="50" id="n3x-Ma-alo"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ADLButton" destination="wIA-sO-3gb" id="x7b-jK-ddl"/>
+                        <outlet property="chestTightnessButton" destination="09H-TQ-1y4" id="Gvr-86-N19"/>
+                        <outlet property="coughButton" destination="0BV-SM-WyB" id="omz-L1-KUD"/>
+                        <outlet property="difficultyBreathingButton" destination="3yK-Y4-0rj" id="BvA-Vv-1yM"/>
+                        <outlet property="difficultyTalkingButton" destination="Vp8-YB-BTV" id="zdJ-1n-Oio"/>
+                        <outlet property="difficultyWalkingButton" destination="Ccj-Dv-pae" id="UgA-oX-apW"/>
+                        <outlet property="noneNextButton" destination="QoK-5i-Cci" id="i5e-Yq-Zjt"/>
+                        <outlet property="wakingUpAtNightButton" destination="NkS-61-mfk" id="PfF-21-Mak"/>
+                        <outlet property="wheezingButton" destination="NYf-Zm-QVc" id="JI7-55-JNr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dlG-3f-lSH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-535" y="76"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Shiny Blue" width="750" height="1334"/>
+    </resources>
+</document>
