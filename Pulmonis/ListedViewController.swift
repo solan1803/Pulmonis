@@ -15,21 +15,27 @@ class ListedViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
 
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
-/*
+
+    func saveField() {
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let destViewController: ListedViewController = segue.destination as! ListedViewController
-        controllers.append(self)
-        destViewController.controllers = self.controllers
+        saveField()
     }
-    */
+    
+    override func willMove(toParentViewController parent: UIViewController?) {
+        super.willMove(toParentViewController: parent)
+        
+        saveField()
+        
+    }
+    
     func saveInputToPList() {
         preconditionFailure("This method must be overridden")
     }

@@ -21,12 +21,9 @@ class Green1ViewController: ListedViewController {
             let dict = plist.getMutablePlistFile()!
             
             ListedViewController.patientData = dict
-            
         }
         
         gPreventerInhalerColour.text = ListedViewController.patientData["gPreventerInhalerColour"]! as? String
-        //gPreventerInhalerColour.becomeFirstResponder()
-        
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -36,22 +33,12 @@ class Green1ViewController: ListedViewController {
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        ListedViewController.patientData["gPreventerInhalerColour"] = gPreventerInhalerColour.text
-        gPreventerInhalerColour.becomeFirstResponder()
+    override func saveField() {
+        if (gPreventerInhalerColour != nil) {
+            ListedViewController.patientData["gPreventerInhalerColour"] = gPreventerInhalerColour.text
+        }
     }
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

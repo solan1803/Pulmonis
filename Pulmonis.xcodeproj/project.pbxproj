@@ -14,7 +14,6 @@
 		28787E121DDB6B38000439AD /* PatientData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 28787E111DDB6B38000439AD /* PatientData.plist */; };
 		2899A93C1DB4FE03004306DF /* SymptomsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2899A93B1DB4FE03004306DF /* SymptomsViewController.swift */; };
 		2899A9411DB519D6004306DF /* MedicineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2899A93F1DB519D6004306DF /* MedicineViewController.swift */; };
-		28A336C21DDB4746005D8626 /* DoctorsInputPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A336C11DDB4746005D8626 /* DoctorsInputPageViewController.swift */; };
 		28A336C61DDB582C005D8626 /* Green1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A336C51DDB582C005D8626 /* Green1ViewController.swift */; };
 		28A336C81DDB5850005D8626 /* Green2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A336C71DDB5850005D8626 /* Green2ViewController.swift */; };
 		28A336CA1DDB585C005D8626 /* Green3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A336C91DDB585C005D8626 /* Green3ViewController.swift */; };
@@ -105,7 +104,6 @@
 		28787E111DDB6B38000439AD /* PatientData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PatientData.plist; sourceTree = "<group>"; };
 		2899A93B1DB4FE03004306DF /* SymptomsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SymptomsViewController.swift; sourceTree = "<group>"; };
 		2899A93F1DB519D6004306DF /* MedicineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicineViewController.swift; sourceTree = "<group>"; };
-		28A336C11DDB4746005D8626 /* DoctorsInputPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoctorsInputPageViewController.swift; sourceTree = "<group>"; };
 		28A336C51DDB582C005D8626 /* Green1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Green1ViewController.swift; sourceTree = "<group>"; };
 		28A336C71DDB5850005D8626 /* Green2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Green2ViewController.swift; sourceTree = "<group>"; };
 		28A336C91DDB585C005D8626 /* Green3ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Green3ViewController.swift; sourceTree = "<group>"; };
@@ -252,7 +250,6 @@
 				28A336CB1DDB586C005D8626 /* Green4ViewController.swift */,
 				28A336CD1DDB5877005D8626 /* Green5ViewController.swift */,
 				28A336CF1DDB5881005D8626 /* Green6ViewController.swift */,
-				28A336C11DDB4746005D8626 /* DoctorsInputPageViewController.swift */,
 				28CC5CAB1DC77625009A7BE9 /* Settings.storyboard */,
 				2833EC7F1DCDF0C1000D4F7F /* SectionSelectionViewController.swift */,
 				280C60861DCD531400089C08 /* SettingsViewController.swift */,
@@ -497,7 +494,6 @@
 				28A336D61DDB58E7005D8626 /* Yellow3ViewController.swift in Sources */,
 				28A336D41DDB58E0005D8626 /* Yellow2ViewController.swift in Sources */,
 				28A336DE1DDB590B005D8626 /* Red1ViewController.swift in Sources */,
-				28A336C21DDB4746005D8626 /* DoctorsInputPageViewController.swift in Sources */,
 				28A336C61DDB582C005D8626 /* Green1ViewController.swift in Sources */,
 				280C60871DCD531400089C08 /* SettingsViewController.swift in Sources */,
 				28A6D0DB1DCBB2E9003B9CDC /* RedViewController.swift in Sources */,
