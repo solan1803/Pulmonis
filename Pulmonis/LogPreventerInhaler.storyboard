@@ -31,7 +31,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="HGF-Fn-SAZ">
-                                <rect key="frame" x="28" y="170" width="320" height="327.5"/>
+                                <rect key="frame" x="27.5" y="170" width="320" height="327.5"/>
                                 <subviews>
                                     <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Mls-b1-k9p">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="216"/>
@@ -64,6 +64,9 @@
                                         <state key="normal" title="Save">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="confirmLogPreventer:" destination="uGI-ee-Iy6" eventType="touchUpInside" id="Lnc-Ju-Yhg"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -74,6 +77,9 @@
                             <constraint firstItem="HGF-Fn-SAZ" firstAttribute="centerX" secondItem="o4B-9n-C23" secondAttribute="centerX" id="5Fn-Dk-AyW"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="logPreventerTextField" destination="pTp-cL-kx6" id="ZFp-Ja-lVx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hOM-S3-lY6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
