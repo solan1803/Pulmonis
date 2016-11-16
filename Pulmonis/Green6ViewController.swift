@@ -17,9 +17,14 @@ class Green6ViewController: ListedViewController {
 
         gOtherMedicine.text = ListedViewController.patientData["gOtherMedicine"]! as? String
         
-        // Do any additional setup after loading the view.
+        view.endEditing(false)
     }
 
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(_ : animated)
+        gOtherMedicine.becomeFirstResponder()
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

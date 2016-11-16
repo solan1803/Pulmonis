@@ -16,9 +16,14 @@ class Green3ViewController: ListedViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         gPuffsNight.text = ListedViewController.patientData["gPuffsNight"]! as? String
-        // Do any additional setup after loading the view.
+        
     }
 
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(_ : animated)
+        gPuffsNight.becomeFirstResponder()
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
