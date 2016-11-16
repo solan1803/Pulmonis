@@ -16,8 +16,12 @@ class Yellow5ViewController: ListedViewController {
         super.viewDidLoad()
 
         yIncreasedRelieverFrequency.text = ListedViewController.patientData["yIncreasedRelieverFrequency"]! as? String
-        
-        // Do any additional setup after loading the view.
+
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(_ : animated)
+        yIncreasedRelieverFrequency.becomeFirstResponder()
     }
 
     override func didReceiveMemoryWarning() {

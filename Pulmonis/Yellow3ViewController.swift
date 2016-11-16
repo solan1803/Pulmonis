@@ -16,10 +16,15 @@ class Yellow3ViewController: ListedViewController {
         super.viewDidLoad()
 
         yIncreasedPreventerDosage.text = ListedViewController.patientData["yIncreasedPreventerDosage"]! as? String
-        
-        // Do any additional setup after loading the view.
+
     }
 
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(_ : animated)
+        yIncreasedPreventerDosage.becomeFirstResponder()
+    }
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

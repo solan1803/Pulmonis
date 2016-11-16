@@ -16,10 +16,14 @@ class Yellow1ViewController: ListedViewController {
         super.viewDidLoad()
 
         yWeeklyRelieverUses.text = ListedViewController.patientData["yWeeklyRelieverUses"]! as? String
-        
-        // Do any additional setup after loading the view.
+
     }
 
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(_ : animated)
+        yWeeklyRelieverUses.becomeFirstResponder()
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

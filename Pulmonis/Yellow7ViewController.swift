@@ -17,7 +17,11 @@ class Yellow7ViewController: ListedViewController {
 
         yTabletDuration.text = ListedViewController.patientData["yTabletDuration"]! as? String
         
-        // Do any additional setup after loading the view.
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(_ : animated)
+        yTabletDuration.becomeFirstResponder()
     }
 
     override func didReceiveMemoryWarning() {

@@ -16,8 +16,12 @@ class Yellow6ViewController: ListedViewController {
         super.viewDidLoad()
 
         yTabletDosage.text = ListedViewController.patientData["yTabletDosage"]! as? String
-        
-        // Do any additional setup after loading the view.
+
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(_ : animated)
+        yTabletDosage.becomeFirstResponder()
     }
 
     override func didReceiveMemoryWarning() {

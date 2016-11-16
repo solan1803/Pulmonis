@@ -16,7 +16,12 @@ class Green2ViewController: ListedViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         gPuffsMorning.text = ListedViewController.patientData["gPuffsMorning"]! as? String
-        // Do any additional setup after loading the view.
+        //self.gPuffsMorning.becomeFirstResponder()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(_ : animated)
+        gPuffsMorning.becomeFirstResponder()
     }
 
     override func didReceiveMemoryWarning() {
@@ -30,7 +35,6 @@ class Green2ViewController: ListedViewController {
     
     override func willMove(toParentViewController parent: UIViewController?) {
         super.willMove(toParentViewController: parent)
-        
         if (gPuffsMorning != nil) {
             ListedViewController.patientData["gPuffsMorning"] = gPuffsMorning.text
         }
