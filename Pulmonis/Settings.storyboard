@@ -41,7 +41,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="PH1-OI-yok" kind="show" id="6B3-Wn-5U2"/>
+                                    <segue destination="PP4-85-Vn2" kind="show" id="MND-hb-dt4"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -109,7 +109,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <segue destination="B55-XJ-qRK" kind="show" id="UAb-vc-fV5"/>
+                                            <segue destination="Prf-fj-yx7" kind="show" id="5HL-6w-Sie"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Auy-Md-Vy0">
