@@ -10,6 +10,7 @@ import UIKit
 
 class LogRelieverInhalerViewController: UIViewController {
 
+    @IBOutlet weak var logRelieverTextField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
         self.hideKeyboardWhenTappedAround()
@@ -24,6 +25,21 @@ class LogRelieverInhalerViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func confirmRelieverInhaler(_ sender: UIButton) {
+        let usage = logRelieverTextField.text!
+        let refreshAlert = UIAlertController(title: "Save data", message: "Are you sure \(usage)?", preferredStyle: UIAlertControllerStyle.alert)
+        
+        refreshAlert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action: UIAlertAction!) in
+            print("Handle Ok logic here")
+            self.dismiss(animated: true, completion: nil)
+        }))
+        
+        refreshAlert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: { (action: UIAlertAction!) in
+            print("Handle Cancel Logic here")
+        }))
+        
+        present(refreshAlert, animated: true, completion: nil)
+    }
 
     /*
     // MARK: - Navigation
