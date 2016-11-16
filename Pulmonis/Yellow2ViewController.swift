@@ -17,8 +17,13 @@ class Yellow2ViewController: ListedViewController {
 
         yMinimumPeakFlow.text = ListedViewController.patientData["yMinimumPeakFlow"]! as? String
         
-        // Do any additional setup after loading the view.
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(_ : animated)
+        yMinimumPeakFlow.becomeFirstResponder()
+    }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

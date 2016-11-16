@@ -25,11 +25,15 @@ class Green1ViewController: ListedViewController {
         }
         
         gPreventerInhalerColour.text = ListedViewController.patientData["gPreventerInhalerColour"]! as? String
-        //print(ListedViewController.patientData)
-        
+        //gPreventerInhalerColour.becomeFirstResponder()
         
     }
-
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(_ : animated)
+        gPreventerInhalerColour.becomeFirstResponder()
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -37,6 +41,7 @@ class Green1ViewController: ListedViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         ListedViewController.patientData["gPreventerInhalerColour"] = gPreventerInhalerColour.text
+        gPreventerInhalerColour.becomeFirstResponder()
     }
     
     /*

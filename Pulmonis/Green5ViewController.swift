@@ -17,7 +17,11 @@ class Green5ViewController: ListedViewController {
 
         gPuffsReliever.text = ListedViewController.patientData["gPuffsReliever"]! as? String
         
-        // Do any additional setup after loading the view.
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(_ : animated)
+        gPuffsReliever.becomeFirstResponder()
     }
 
     override func didReceiveMemoryWarning() {
