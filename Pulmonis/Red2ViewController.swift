@@ -16,7 +16,6 @@ class Red2ViewController: ListedViewController {
         super.viewDidLoad()
         
         rMinimumPeakFlow.text = ListedViewController.patientData["rMinimumPeakFlow"]! as? String
-        
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -27,17 +26,8 @@ class Red2ViewController: ListedViewController {
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
-    
-    override func willMove(toParentViewController parent: UIViewController?) {
-        super.willMove(toParentViewController: parent)
-        
-        if (rMinimumPeakFlow != nil) {
-            ListedViewController.patientData["rMinimumPeakFlow"] = rMinimumPeakFlow.text
-        }
-    }
-    
+
     @IBAction func save(_ sender: Any) {
         
         ListedViewController.patientData["rMinimumPeakFlow"] = rMinimumPeakFlow.text
@@ -57,6 +47,10 @@ class Red2ViewController: ListedViewController {
         performSegue(withIdentifier: "save", sender: nil)
     }
     
-
+    override func saveField() {
+        if (rMinimumPeakFlow != nil) {
+            ListedViewController.patientData["rMinimumPeakFlow"] = rMinimumPeakFlow.text
+        }
+    }
 
 }

@@ -16,7 +16,6 @@ class Yellow1ViewController: ListedViewController {
         super.viewDidLoad()
 
         yWeeklyRelieverUses.text = ListedViewController.patientData["yWeeklyRelieverUses"]! as? String
-
     }
 
     override func viewDidAppear(_ animated: Bool) {
@@ -26,29 +25,12 @@ class Yellow1ViewController: ListedViewController {
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        ListedViewController.patientData["yWeeklyRelieverUses"] = yWeeklyRelieverUses.text
-    }
-    
-    override func willMove(toParentViewController parent: UIViewController?) {
-        super.willMove(toParentViewController: parent)
-
+    override func saveField() {
         if (yWeeklyRelieverUses != nil) {
             ListedViewController.patientData["yWeeklyRelieverUses"] = yWeeklyRelieverUses.text
         }
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
