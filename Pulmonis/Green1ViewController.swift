@@ -2,7 +2,7 @@
 //  Green1ViewController.swift
 //  Pulmonis
 //
-//  Created by Karow Maruf on 02/11/2016.
+//  Created by Karow Maruf on 15/11/2016.
 //  Copyright © 2016 Manivannan Solan. All rights reserved.
 //
 
@@ -10,17 +10,11 @@ import UIKit
 
 class Green1ViewController: ListedViewController {
 
-    @IBOutlet weak var gPreventerInhalerColour: UITextField!
-    @IBOutlet weak var gPuffsMorning: UITextField!
-    @IBOutlet weak var gPuffsNight: UITextField!
-    @IBOutlet weak var nextButton: UIButton!
     
+    @IBOutlet weak var gPreventerInhalerColour: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        nextButton.layer.cornerRadius = 10
-        nextButton.clipsToBounds = true
         
         gPreventerInhalerColour.isAccessibilityElement = true
         gPuffsMorning.isAccessibilityElement = true
@@ -78,32 +72,26 @@ class Green1ViewController: ListedViewController {
         if let plist = Plist(name: "PatientData") {
             
             let dict = plist.getMutablePlistFile()!
-
             
-            dict["gPreventerInhalerColour"] = self.gPreventerInhalerColour.text
-            dict["gPuffsMorning"] = self.gPuffsMorning.text
-            dict["gPuffsNight"] = self.gPuffsNight.text
-            
-            
-            do {
-                try plist.addValuesToPlistFile(dictionary: dict)
-            } catch {
-                print(error)
-            }
-            
-        } else {
-            print("Unable to get Plist")
+            ListedViewController.patientData = dict
         }
+        
+        gPreventerInhalerColour.text = ListedViewController.patientData["gPreventerInhalerColour"]! as? String
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(_ : animated)
+        gPreventerInhalerColour.becomeFirstResponder()
     }
-    */
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
+    
+    override func saveField() {
+        if (gPreventerInhalerColour != nil) {
+            ListedViewController.patientData["gPreventerInhalerColour"] = gPreventerInhalerColour.text
+        }
+    }
 
 }

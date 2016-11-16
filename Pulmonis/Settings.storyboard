@@ -67,6 +67,14 @@
             </objects>
             <point key="canvasLocation" x="2279" y="897"/>
         </scene>
+        <!--DoctorInput-->
+        <scene sceneID="e3s-t5-6cY">
+            <objects>
+                <viewControllerPlaceholder storyboardName="DoctorInput" id="PP4-85-Vn2" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W86-6l-ATF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2767" y="403"/>
+        </scene>
         <!--Colour Selection-->
         <scene sceneID="M5r-E5-Fq4">
             <objects>
@@ -157,6 +165,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9J2-Km-tgH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3110" y="908"/>
+        </scene>
+        <!--DoctorInput-->
+        <scene sceneID="hgm-y9-Udm">
+            <objects>
+                <viewControllerPlaceholder storyboardName="DoctorInput" id="Prf-fj-yx7" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fcs-hh-Qtr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3834" y="715"/>
         </scene>
         <!--Green1-->
         <scene sceneID="dNz-id-VYv">
