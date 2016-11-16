@@ -34,7 +34,6 @@
 		28A6D0D51DCBA5D1003B9CDC /* Orange2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A6D0D41DCBA5D1003B9CDC /* Orange2ViewController.swift */; };
 		28A6D0D71DCBA5DC003B9CDC /* Orange3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A6D0D61DCBA5DC003B9CDC /* Orange3ViewController.swift */; };
 		28A6D0DB1DCBB2E9003B9CDC /* RedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A6D0DA1DCBB2E9003B9CDC /* RedViewController.swift */; };
-		28A6D0DD1DCBB7C5003B9CDC /* PatientDataOld.plist in Resources */ = {isa = PBXBuildFile; fileRef = 28A6D0DC1DCBB7C5003B9CDC /* PatientDataOld.plist */; };
 		28CC5CAA1DC772E8009A7BE9 /* GreenSection.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28CC5CA91DC772E8009A7BE9 /* GreenSection.storyboard */; };
 		28CC5CAC1DC77625009A7BE9 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28CC5CAB1DC77625009A7BE9 /* Settings.storyboard */; };
 		28CC5CAD1DC777E4009A7BE9 /* Emergency.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BAF07C51DB11C1B00AF2FD0 /* Emergency.storyboard */; };
@@ -124,7 +123,6 @@
 		28A6D0D41DCBA5D1003B9CDC /* Orange2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Orange2ViewController.swift; sourceTree = "<group>"; };
 		28A6D0D61DCBA5DC003B9CDC /* Orange3ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Orange3ViewController.swift; sourceTree = "<group>"; };
 		28A6D0DA1DCBB2E9003B9CDC /* RedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedViewController.swift; sourceTree = "<group>"; };
-		28A6D0DC1DCBB7C5003B9CDC /* PatientDataOld.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PatientDataOld.plist; sourceTree = "<group>"; };
 		28CC5CA91DC772E8009A7BE9 /* GreenSection.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = GreenSection.storyboard; sourceTree = "<group>"; };
 		28CC5CAB1DC77625009A7BE9 /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
 		28E4862F1DB672A500C3C87E /* StatsStartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatsStartViewController.swift; sourceTree = "<group>"; };
@@ -225,7 +223,6 @@
 				719D0C7D1DBA2E66008F5F97 /* Main.storyboard */,
 				5B82CAD51DC9139C003930FB /* PendingTasks.storyboard */,
 				5B82CAD71DC91527003930FB /* TaskTableViewCell.swift */,
-				28A6D0DC1DCBB7C5003B9CDC /* PatientDataOld.plist */,
 				28787E111DDB6B38000439AD /* PatientData.plist */,
 				5B6B43521DC390400071AC66 /* ActionPlan.storyboard */,
 				5B82CABF1DC8ECE4003930FB /* SupportViewController.swift */,
@@ -428,7 +425,6 @@
 				28CC5CAA1DC772E8009A7BE9 /* GreenSection.storyboard in Resources */,
 				5B82CAD61DC9139C003930FB /* PendingTasks.storyboard in Resources */,
 				28CC5CAD1DC777E4009A7BE9 /* Emergency.storyboard in Resources */,
-				28A6D0DD1DCBB7C5003B9CDC /* PatientDataOld.plist in Resources */,
 				280551A01DDB6262001E99C6 /* DoctorInput.storyboard in Resources */,
 				28CC5CAC1DC77625009A7BE9 /* Settings.storyboard in Resources */,
 				5BC536151DB6762A00231A50 /* LiberationSans-BoldItalic.ttf in Resources */,
