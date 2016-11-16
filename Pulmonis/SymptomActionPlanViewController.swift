@@ -20,6 +20,8 @@ class SymptomActionPlanViewController: UIViewController {
     @IBOutlet weak var difficultyWalkingButton: UIButton!
     @IBOutlet weak var noneNextButton: UIButton!
     
+    lazy var sumOfIndices : Int = 0
+    
     // transparent, green, orange, red
     var colourHexCodes: [String] = ["#FFFFFF00", "#00A752FF", "#FFC221FF", "#C51426FF"]
     
@@ -28,6 +30,12 @@ class SymptomActionPlanViewController: UIViewController {
          UIColor(red: 0, green: 167/255, blue: 82/255, alpha: 255/255),
          UIColor(red: 255/255, green: 194/255, blue: 33/255, alpha: 255/255),
          UIColor(red: 197/255, green: 20/255, blue: 38/255, alpha: 255/255)]
+    
+    var buttonTextColours: [UIColor] =
+        [UIColor(red:(0/255.0), green:(113.0/255.0), blue:(255.0/255.0), alpha:1),
+         UIColor.white,
+         UIColor.black,
+         UIColor.white]
     
     override func viewDidLoad() {
 
@@ -53,9 +61,57 @@ class SymptomActionPlanViewController: UIViewController {
                 break
             }
         }
-        sender.backgroundColor = buttonColours[(currentColourIndex + 1) % buttonColours.count]
+        let nextColourIndex : Int = (currentColourIndex + 1) % buttonColours.count
+        sumOfIndices -= currentColourIndex
+        sumOfIndices += nextColourIndex
+        switchNoneNext()
+        sender.titleLabel?.textColor = buttonTextColours[nextColourIndex]
+        sender.backgroundColor = buttonColours[nextColourIndex]
        }
-
+    
+    
+    @IBAction func switchColourOrange(_ sender: UIButton) {
+        var nextColourIndex : Int = 0;
+        
+        if (sender.backgroundColor == nil || sender.backgroundColor!.isEqual(buttonColours[0])) {
+            nextColourIndex = 2
+            sumOfIndices += nextColourIndex
+        } else {
+            nextColourIndex = 0
+            sumOfIndices -= 2
+        }
+        switchNoneNext()
+        sender.titleLabel?.textColor = buttonTextColours[nextColourIndex]
+        sender.backgroundColor = buttonColours[nextColourIndex]
+    }
+    
+    
+    @IBAction func switchColourRed(_ sender: UIButton) {
+        var nextColourIndex : Int = 0;
+        
+        if (sender.backgroundColor == nil || sender.backgroundColor!.isEqual(buttonColours[0])) {
+            nextColourIndex = 3
+            sumOfIndices += nextColourIndex
+        } else {
+            nextColourIndex = 0
+            sumOfIndices -= 3
+        }
+        switchNoneNext()
+        sender.titleLabel?.textColor = buttonTextColours[nextColourIndex]
+        sender.backgroundColor = buttonColours[nextColourIndex]
+    }
+    
+    func switchNoneNext() {
+        if (sumOfIndices == 0) {
+            noneNextButton.setTitle("None", for: .normal)
+            noneNextButton.setAttributedTitle(NSAttributedString.init(string: "None"), for: .normal)
+        } else {
+            noneNextButton.setTitle("Next", for: .normal)
+            noneNextButton.setAttributedTitle(NSAttributedString.init(string: "Next"), for: .normal)
+        }
+    }
+    
+    
     /*
     // MARK: - Navigation
 
