@@ -19,7 +19,6 @@ class Green1ViewController: ListedViewController {
         if let plist = Plist(name: "PatientData") {
             
             let dict = plist.getMutablePlistFile()!
-            
             ListedViewController.patientData = dict
         }
         
