@@ -401,7 +401,7 @@
 				TargetAttributes = {
 					5BAF07BD1DB11C1B00AF2FD0 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = 24U6GRLF64;
+						DevelopmentTeam = X2YRCXRG35;
 						ProvisioningStyle = Automatic;
 					};
 					5BAF07D11DB11C1B00AF2FD0 = {
@@ -707,7 +707,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 24U6GRLF64;
+				DEVELOPMENT_TEAM = X2YRCXRG35;
 				INFOPLIST_FILE = Pulmonis/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.stanford.msolan.Pulmonis;
@@ -721,7 +721,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 24U6GRLF64;
+				DEVELOPMENT_TEAM = X2YRCXRG35;
 				INFOPLIST_FILE = Pulmonis/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.stanford.msolan.Pulmonis;
