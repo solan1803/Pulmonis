@@ -22,6 +22,10 @@ class Orange3ViewController: ListedViewController {
         saveButton.layer.cornerRadius = 10
         saveButton.clipsToBounds = true
         
+        oTabletDosage.isAccessibilityElement = true
+        oTabletDosageFiveMg.isAccessibilityElement = true
+        oTabletDuration.isAccessibilityElement = true
+        
         // Do any additional setup after loading the view.
     }
 

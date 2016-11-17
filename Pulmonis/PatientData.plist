@@ -14,19 +14,19 @@
 	<integer>0</integer>
 	<key>gOtherMedicine</key>
 	<string></string>
-	<key>oWeeklyRelieverUses</key>
+	<key>yWeeklyRelieverUses</key>
 	<integer>0</integer>
-	<key>oMinimumPeakFlow</key>
+	<key>yMinimumPeakFlow</key>
 	<integer>0</integer>
-	<key>oIncreasedPreventerDosage</key>
+	<key>yIncreasedPreventerDosage</key>
 	<integer>0</integer>
-	<key>oIncreasedPreventerFrequency</key>
+	<key>yIncreasedPreventerFrequency</key>
 	<integer>0</integer>
-	<key>oIncreasedRelieverFrequency</key>
+	<key>yIncreasedRelieverFrequency</key>
 	<integer>0</integer>
-	<key>oTabletDosage</key>
+	<key>yTabletDosage</key>
 	<integer>0</integer>
-	<key>oTabletDuration</key>
+	<key>yTabletDuration</key>
 	<integer>0</integer>
 	<key>rRelieverFrequencyLimit</key>
 	<integer>0</integer>

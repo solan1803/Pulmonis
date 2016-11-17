@@ -1,5 +1,5 @@
 //
-//  Green3ViewController.swift
+//  Yellow6ViewController.swift
 //  Pulmonis
 //
 //  Created by Karow Maruf on 15/11/2016.
@@ -8,29 +8,28 @@
 
 import UIKit
 
-class Green3ViewController: ListedViewController {
+class Yellow6ViewController: ListedViewController {
 
-    
-    @IBOutlet weak var gPuffsNight: UITextField!
+    @IBOutlet weak var yTabletDosage: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        gPuffsNight.text = ListedViewController.patientData["gPuffsNight"]! as? String
-    }
 
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(_ : animated)
-        gPuffsNight.becomeFirstResponder()
+        yTabletDosage.text = ListedViewController.patientData["yTabletDosage"]! as? String
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(_ : animated)
+        yTabletDosage.becomeFirstResponder()
     }
 
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
+    
     override func saveField() {
-        if (gPuffsNight != nil) {
-            ListedViewController.patientData["gPuffsNight"] = gPuffsNight.text
+        if (yTabletDosage != nil) {
+            ListedViewController.patientData["yTabletDosage"] = yTabletDosage.text
         }
     }
 

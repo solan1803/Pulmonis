@@ -33,16 +33,6 @@ class PulmonisUITests: XCTestCase {
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
     
-    func testlearnUI() {
-        
-        let app = XCUIApplication()
-        app.buttons["LEARN"].tap()
-        app.tables.staticTexts["Learn more about Asthma in general. Find out what it really is and what the treatment does."].tap()
-        app.navigationBars["Symptoms"].buttons["LEARN"].tap()
-        app.navigationBars["LEARN"].children(matching: .button).matching(identifier: "Back").element(boundBy: 0).tap()
-        
-    }
-    
     func testMedicineUI() {
         
         let app = XCUIApplication()
@@ -50,30 +40,6 @@ class PulmonisUITests: XCTestCase {
         app.buttons["Support"].tap()
         // Need to be able to write tests for core data.
 //        app.buttons["Next"].tap()
-        
-        
-        
-    }
-    
-    func testGreenSection() {
-        
-        
-        let app = XCUIApplication()
-        app.navigationBars["Pulmonis.View"].buttons["⚙"].tap()
-        app.buttons["Doctor"].tap()
-        app.buttons["Green  (Everyday asthma care)"].tap()
-        
-        
-        
-    }
-    
-    func testOrangeSection() {
-        
-        let app = XCUIApplication()
-        app.navigationBars["Pulmonis.View"].buttons["⚙"].tap()
-        app.buttons["Doctor"].tap()
-        app.buttons["Orange (When I feel worse)"].tap()
-        
         
     }
     
