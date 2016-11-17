@@ -21,6 +21,9 @@ class RedViewController: ListedViewController {
         saveButton.layer.cornerRadius = 10
         saveButton.clipsToBounds = true
         
+        rRelieverFrequencyLimit.isAccessibilityElement = true
+        rMinimumPeakFlow.isAccessibilityElement = true
+        
         // Do any additional setup after loading the view.
     }
 

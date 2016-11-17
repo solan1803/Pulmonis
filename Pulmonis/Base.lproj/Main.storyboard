@@ -2,7 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="bSo-aD-37K">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -13,22 +13,6 @@
         </array>
     </customFonts>
     <scenes>
-        <!--LearnTable-->
-        <scene sceneID="609-3P-i7I">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Learn" referencedIdentifier="LearnTable" id="13p-16-wkG" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Fl6-JA-fRQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1458" y="996"/>
-        </scene>
-        <!--HowAreYou-->
-        <scene sceneID="K3F-VG-1gW">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Statistics" referencedIdentifier="HowAreYou" id="Wgv-RP-0Jo" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="2B9-Ve-xM0" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="654" y="996"/>
-        </scene>
         <!--EmergencyOne-->
         <scene sceneID="ELy-Wn-SV6">
             <objects>
@@ -49,8 +33,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Shiny Blue" translatesAutoresizingMaskIntoConstraints="NO" id="F55-EC-c30"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Shiny Blue" translatesAutoresizingMaskIntoConstraints="NO" id="F55-EC-c30">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BDU-GI-cu7">
+                                <rect key="frame" x="16" y="607" width="343" height="50"/>
                                 <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="LVt-3R-Hcj"/>
@@ -63,37 +50,6 @@
                                     <segue destination="5lE-Zi-9aS" kind="show" id="67Z-XI-6S0"/>
                                 </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="fj6-ez-r9L">
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yGf-NZ-m8w">
-                                        <inset key="titleEdgeInsets" minX="0.0" minY="140" maxX="0.0" maxY="0.0"/>
-                                        <state key="normal" title="STATS" backgroundImage="Stats">
-                                            <color key="titleColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                                        </state>
-                                        <connections>
-                                            <segue destination="Wgv-RP-0Jo" kind="show" id="o2e-EG-jrq"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h5t-3t-9hi">
-                                        <inset key="titleEdgeInsets" minX="0.0" minY="140" maxX="0.0" maxY="0.0"/>
-                                        <state key="normal" title="MAP" backgroundImage="map">
-                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rtm-Cd-qQP">
-                                        <inset key="titleEdgeInsets" minX="0.0" minY="140" maxX="0.0" maxY="0.0"/>
-                                        <state key="normal" title="LEARN" backgroundImage="learn">
-                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                        <connections>
-                                            <segue destination="13p-16-wkG" kind="show" id="bME-R0-iE3"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="fhZ-fq-HNv"/>
-                                </constraints>
-                            </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PULMONIS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3oF-OR-ngj">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="IHk-th-zGi"/>
@@ -103,12 +59,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CMl-ee-M7l">
+                                <rect key="frame" x="41" y="294" width="293" height="293"/>
+                                <color key="backgroundColor" red="0.80964227609999995" green="0.96228170189999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="CMl-ee-M7l" secondAttribute="height" multiplier="300:300" id="G9k-AZ-lg8"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="32"/>
-                                <inset key="titleEdgeInsets" minX="0.0" minY="150" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" title="ACTION PLAN" backgroundImage="inhaler2">
+                                <state key="normal" title="ACTION PLAN">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
@@ -116,6 +73,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="17S-Mh-WTL">
+                                <rect key="frame" x="0.0" y="64" width="375" height="76"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="76" id="Oaa-X3-fFq"/>
                                 </constraints>
@@ -124,19 +82,63 @@
                                     <segue destination="p7L-Z9-l1b" kind="show" id="cef-dL-bTc"/>
                                 </connections>
                             </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="hsq-YJ-fdR">
+                                <rect key="frame" x="43.5" y="170" width="288" height="114"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="583-rx-l8d">
+                                        <rect key="frame" x="0.0" y="0.0" width="114" height="114"/>
+                                        <color key="backgroundColor" red="0.80964227609999995" green="0.96228170189999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="583-rx-l8d" secondAttribute="height" multiplier="1:1" id="OOt-P8-Z7h"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="LiberationSans" family="Liberation Sans" pointSize="17"/>
+                                        <state key="normal">
+                                            <string key="title">Log 
+Preventer 
+Inhaler</string>
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="showLogPreventerInhalerPopover:" destination="T3R-rO-qLj" eventType="touchUpInside" id="Ekt-U2-Njt"/>
+                                            <segue destination="eB8-Qv-MJ9" kind="popoverPresentation" identifier="logPreventerInhalerPopover" popoverAnchorView="583-rx-l8d" id="C7o-CC-9EI">
+                                                <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                            </segue>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="RLD-ew-hTq">
+                                        <rect key="frame" x="174" y="0.0" width="114" height="114"/>
+                                        <color key="backgroundColor" red="0.80964227609999995" green="0.96228170189999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="RLD-ew-hTq" secondAttribute="height" multiplier="1:1" id="1FX-VU-1cn"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="LiberationSans" family="Liberation Sans" pointSize="17"/>
+                                        <state key="normal">
+                                            <string key="title">Log 
+Reliever 
+Inhaler</string>
+                                            <color key="titleColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="showLogRelieverInhalerPopover:" destination="T3R-rO-qLj" eventType="touchUpInside" id="MrC-w6-FZ3"/>
+                                            <segue destination="gm9-0w-Ads" kind="popoverPresentation" identifier="logRelieverInhalerPopover" popoverAnchorView="RLD-ew-hTq" id="V67-7k-eH7">
+                                                <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                            </segue>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <constraints>
                             <constraint firstItem="CMl-ee-M7l" firstAttribute="centerX" secondItem="X75-H7-bDr" secondAttribute="centerX" id="4XB-ao-ffQ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="F55-EC-c30" secondAttribute="trailing" constant="-16" id="4hz-Qc-w3l"/>
                             <constraint firstItem="F55-EC-c30" firstAttribute="bottom" secondItem="bUB-t2-xNe" secondAttribute="top" id="55O-2v-Nn0"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="fj6-ez-r9L" secondAttribute="leading" id="Bkq-Tz-4Hf"/>
-                            <constraint firstItem="CMl-ee-M7l" firstAttribute="top" secondItem="SqF-rv-mhr" secondAttribute="bottom" constant="100" id="HY4-w7-UKS"/>
-                            <constraint firstItem="BDU-GI-cu7" firstAttribute="top" secondItem="fj6-ez-r9L" secondAttribute="bottom" constant="40" id="O3x-jt-6Zp"/>
+                            <constraint firstItem="BDU-GI-cu7" firstAttribute="top" secondItem="CMl-ee-M7l" secondAttribute="bottom" constant="20" id="8tM-cB-flf"/>
+                            <constraint firstItem="CMl-ee-M7l" firstAttribute="top" secondItem="SqF-rv-mhr" secondAttribute="bottom" constant="230" id="HY4-w7-UKS"/>
+                            <constraint firstItem="CMl-ee-M7l" firstAttribute="top" secondItem="hsq-YJ-fdR" secondAttribute="bottom" constant="10" id="OaG-Lw-4uw"/>
+                            <constraint firstItem="hsq-YJ-fdR" firstAttribute="top" secondItem="17S-Mh-WTL" secondAttribute="bottom" constant="30" id="P5E-9J-s8E"/>
                             <constraint firstItem="bUB-t2-xNe" firstAttribute="top" secondItem="BDU-GI-cu7" secondAttribute="bottom" constant="10" id="Psi-aR-9KY"/>
                             <constraint firstAttribute="leadingMargin" secondItem="BDU-GI-cu7" secondAttribute="leading" id="QYX-Ew-bg5"/>
-                            <constraint firstItem="fj6-ez-r9L" firstAttribute="top" secondItem="CMl-ee-M7l" secondAttribute="bottom" id="RZU-BH-L8d"/>
                             <constraint firstItem="17S-Mh-WTL" firstAttribute="leading" secondItem="X75-H7-bDr" secondAttribute="leadingMargin" constant="-16" id="Uj5-uX-HUX"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="fj6-ez-r9L" secondAttribute="trailing" id="V2k-px-dLC"/>
                             <constraint firstAttribute="trailingMargin" secondItem="17S-Mh-WTL" secondAttribute="trailing" constant="-16" id="W2a-fM-hbj"/>
                             <constraint firstItem="3oF-OR-ngj" firstAttribute="top" secondItem="SqF-rv-mhr" secondAttribute="bottom" constant="-35" id="i2D-43-kRs"/>
                             <constraint firstItem="F55-EC-c30" firstAttribute="leading" secondItem="X75-H7-bDr" secondAttribute="leading" id="iNu-lX-iJV"/>
@@ -144,6 +146,7 @@
                             <constraint firstItem="3oF-OR-ngj" firstAttribute="centerX" secondItem="X75-H7-bDr" secondAttribute="centerX" id="lgB-nl-NcQ"/>
                             <constraint firstItem="F55-EC-c30" firstAttribute="top" secondItem="SqF-rv-mhr" secondAttribute="bottom" constant="-64" id="mTj-wY-wgX"/>
                             <constraint firstAttribute="trailingMargin" secondItem="BDU-GI-cu7" secondAttribute="trailing" id="muj-hG-rxP"/>
+                            <constraint firstItem="hsq-YJ-fdR" firstAttribute="centerX" secondItem="X75-H7-bDr" secondAttribute="centerX" id="y7X-hv-1kf"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="q1o-ZR-DcC">
@@ -154,6 +157,8 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="logPreventerInhaler" destination="583-rx-l8d" id="xTu-CT-Nmk"/>
+                        <outlet property="logRelieverInhaler" destination="RLD-ew-hTq" id="NLv-KH-3NV"/>
                         <outlet property="pulmonisTitle" destination="3oF-OR-ngj" id="xRL-Tt-5gy"/>
                         <outlet property="settingsBarItem" destination="dch-pu-gyW" id="DZx-Vz-k7q"/>
                     </connections>
@@ -161,6 +166,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oUG-ya-nGi" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1108" y="338.68065967016497"/>
+        </scene>
+        <!--LogPreventer-->
+        <scene sceneID="yGn-yA-UJ6">
+            <objects>
+                <viewControllerPlaceholder storyboardName="LogPreventerInhaler" referencedIdentifier="LogPreventer" id="eB8-Qv-MJ9" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yhZ-Qh-iaq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="786" y="-107"/>
+        </scene>
+        <!--LogReliever-->
+        <scene sceneID="yos-by-LHc">
+            <objects>
+                <viewControllerPlaceholder storyboardName="LogRelieverInhaler" referencedIdentifier="LogReliever" id="gm9-0w-Ads" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nga-gR-ENf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1591" y="-63"/>
         </scene>
         <!--PendingTaskTable-->
         <scene sceneID="bcL-Qs-2qk">
@@ -217,10 +238,6 @@
     </scenes>
     <resources>
         <image name="Shiny Blue" width="750" height="1334"/>
-        <image name="Stats" width="155" height="140"/>
-        <image name="inhaler2" width="566" height="576"/>
-        <image name="learn" width="126" height="154"/>
-        <image name="map" width="213" height="213"/>
         <image name="tasks" width="750" height="152"/>
     </resources>
 </document>

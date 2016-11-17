@@ -22,6 +22,10 @@ class Orange2ViewController: ListedViewController {
         nextButton.layer.cornerRadius = 10
         nextButton.clipsToBounds = true
         
+        oIncreasedPreventerDosage.isAccessibilityElement = true
+        oIncreasedPreventerFrequency.isAccessibilityElement = true
+        oIncreasedRelieverFrequency.isAccessibilityElement = true
+        
         // Do any additional setup after loading the view.
     }
 

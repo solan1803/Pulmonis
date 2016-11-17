@@ -21,6 +21,8 @@ class Orange1ViewController: ListedViewController {
         nextButton.layer.cornerRadius = 10
         nextButton.clipsToBounds = true
         
+        oWeeklyRelieverUses.isAccessibilityElement = true
+        oMinimumPeakFlow.isAccessibilityElement = true
         // Do any additional setup after loading the view.
     }
 
