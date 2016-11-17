@@ -15,12 +15,11 @@ class Red1ViewController: ListedViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let myColor : UIColor = UIColor( red: 197/255, green: 20/255, blue:38/255, alpha: 1.0 )
         rRelieverFrequencyLimit.layer.masksToBounds = true
-        rRelieverFrequencyLimit.layer.borderColor = myColor.cgColor
+        rRelieverFrequencyLimit.layer.borderColor = Colours.red.cgColor
         rRelieverFrequencyLimit.layer.borderWidth = 2.0
 
-        rRelieverFrequencyLimit.text = ListedViewController.patientData["rRelieverFrequencyLimit"]! as? String
+        rRelieverFrequencyLimit.text = ListedViewController.patientData[rRelieverFrequencyLimitStr]! as? String
     }
 
     override func viewDidAppear(_ animated: Bool) {
@@ -34,7 +33,7 @@ class Red1ViewController: ListedViewController {
     
     override func saveField() {
         if (rRelieverFrequencyLimit != nil) {
-            ListedViewController.patientData["rRelieverFrequencyLimit"] = rRelieverFrequencyLimit.text
+            ListedViewController.patientData[rRelieverFrequencyLimitStr] = rRelieverFrequencyLimit.text
         }
     }
 
