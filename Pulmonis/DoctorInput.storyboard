@@ -11,7 +11,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--Page 1 of 15-->
         <scene sceneID="dEA-io-o4e">
             <objects>
                 <viewController id="11L-OX-iYx" customClass="Green1ViewController" customModule="Pulmonis" customModuleProvider="target" sceneMemberID="viewController">
@@ -24,7 +24,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="BKn-57-nGE">
-                                <rect key="frame" x="58.333333333333343" y="25" width="298.33333333333337" height="70"/>
+                                <rect key="frame" x="58" y="25" width="298.33333333333331" height="70"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="green" translatesAutoresizingMaskIntoConstraints="NO" id="scr-Cx-0Bq">
                                         <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
@@ -35,7 +35,7 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Every day asthma care:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.59999999999999998" translatesAutoresizingMaskIntoConstraints="NO" id="XDd-fC-O0H">
-                                        <rect key="frame" x="75.000000000000014" y="23" width="223.33333333333337" height="24"/>
+                                        <rect key="frame" x="75" y="23" width="223.33333333333331" height="24"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                         <color key="textColor" red="0.0" green="0.59709531069999999" blue="0.28522098060000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -43,10 +43,10 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="sxO-Gu-ubF">
-                                <rect key="frame" x="85.333333333333343" y="115" width="244.66666666666666" height="100"/>
+                                <rect key="frame" x="84.666666666666686" y="115" width="244.66666666666663" height="100"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xuU-Ek-hKG">
-                                        <rect key="frame" x="0.0" y="0.0" width="244.66666666666669" height="60"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xuU-Ek-hKG">
+                                        <rect key="frame" x="0.0" y="0.0" width="244.66666666666663" height="60"/>
                                         <string key="text">My preventer inhaler 
 (insert name/colour):</string>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
@@ -54,7 +54,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ap7-Ig-mFX">
-                                        <rect key="frame" x="47.333333333333329" y="70" width="150.00000000000006" height="30"/>
+                                        <rect key="frame" x="47.333333333333329" y="70" width="150" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="150" id="4IE-SO-aSc"/>
                                         </constraints>
@@ -78,6 +78,7 @@
                         </connections>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="xy4-Nw-tnc"/>
+                    <navigationItem key="navigationItem" title="Page 1 of 15" id="4ls-K3-4Eo"/>
                     <connections>
                         <outlet property="gPreventerInhalerColour" destination="ap7-Ig-mFX" id="juw-EO-jgj"/>
                     </connections>
@@ -91,7 +92,7 @@
             </objects>
             <point key="canvasLocation" x="6603" y="2843"/>
         </scene>
-        <!--Item-->
+        <!--Page 2 of 15-->
         <scene sceneID="99t-4H-Ei3">
             <objects>
                 <viewController id="0LF-lO-Sr2" customClass="Green2ViewController" customModule="Pulmonis" customModuleProvider="target" sceneMemberID="viewController">
@@ -104,7 +105,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="J6I-6X-AiT">
-                                <rect key="frame" x="58" y="25" width="298.33333333333331" height="70"/>
+                                <rect key="frame" x="58" y="25" width="299" height="70"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="green" translatesAutoresizingMaskIntoConstraints="NO" id="8mp-fs-CjY">
                                         <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
@@ -115,7 +116,7 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Every day asthma care:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.60000002384185791" translatesAutoresizingMaskIntoConstraints="NO" id="fxO-iv-JfQ">
-                                        <rect key="frame" x="75" y="23" width="223.33333333333331" height="24"/>
+                                        <rect key="frame" x="75" y="23" width="224" height="24"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                         <color key="textColor" red="0.0" green="0.59709531069999999" blue="0.28522098060000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -123,10 +124,10 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="xUv-Y8-kJv">
-                                <rect key="frame" x="78.333333333333314" y="115" width="257.33333333333337" height="110"/>
+                                <rect key="frame" x="78" y="115" width="258" height="110"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I take " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BrV-Nj-LB3">
-                                        <rect key="frame" x="88.666666666666686" y="0.0" width="80" height="30"/>
+                                        <rect key="frame" x="89" y="0.0" width="80" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="80" id="wgO-Ei-mDZ"/>
                                         </constraints>
@@ -135,7 +136,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hWO-r5-Av0">
-                                        <rect key="frame" x="103.66666666666669" y="40" width="50" height="30"/>
+                                        <rect key="frame" x="104" y="40" width="50" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="Ck1-o0-r0A"/>
                                             <constraint firstAttribute="width" constant="50" id="NgG-72-nPf"/>
@@ -145,7 +146,7 @@
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" puff(s) in the morning" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="njk-Fo-JdR">
-                                        <rect key="frame" x="0.0" y="80" width="257.33333333333337" height="30"/>
+                                        <rect key="frame" x="0.0" y="80" width="258" height="30"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
                                         <color key="textColor" red="0.001422772068" green="0.4256876409" blue="0.55088329319999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -166,6 +167,7 @@
                         </connections>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="Z3V-YB-2h3"/>
+                    <navigationItem key="navigationItem" title="Page 2 of 15" id="A55-D9-dr8"/>
                     <connections>
                         <outlet property="gPuffsMorning" destination="hWO-r5-Av0" id="9dM-Di-eTW"/>
                     </connections>
@@ -179,7 +181,7 @@
             </objects>
             <point key="canvasLocation" x="7448" y="2843"/>
         </scene>
-        <!--Item-->
+        <!--Page 3 of 15-->
         <scene sceneID="3au-ei-h81">
             <objects>
                 <viewController id="liN-wl-WIg" customClass="Green3ViewController" customModule="Pulmonis" customModuleProvider="target" sceneMemberID="viewController">
@@ -192,7 +194,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Fis-Cy-yIA">
-                                <rect key="frame" x="58.333333333333343" y="25" width="298.33333333333337" height="70"/>
+                                <rect key="frame" x="58" y="25" width="299" height="70"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="green" translatesAutoresizingMaskIntoConstraints="NO" id="7xQ-46-SfN">
                                         <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
@@ -203,7 +205,7 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Every day asthma care:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.60000002384185791" translatesAutoresizingMaskIntoConstraints="NO" id="zCY-Zd-MEA">
-                                        <rect key="frame" x="75.000000000000014" y="23" width="223.33333333333337" height="24"/>
+                                        <rect key="frame" x="75" y="23" width="224" height="24"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                         <color key="textColor" red="0.0" green="0.59709531069999999" blue="0.28522098060000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -211,10 +213,10 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="InB-1i-dz2">
-                                <rect key="frame" x="118.33333333333334" y="115" width="178.66666666666666" height="110"/>
+                                <rect key="frame" x="118" y="115" width="179" height="110"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I take " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IWm-L2-zWr">
-                                        <rect key="frame" x="49.333333333333329" y="0.0" width="79.999999999999986" height="30"/>
+                                        <rect key="frame" x="49" y="0.0" width="80" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="80" id="QaW-lA-RNK"/>
                                         </constraints>
@@ -223,7 +225,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="t5c-sr-nt9">
-                                        <rect key="frame" x="64.333333333333329" y="40" width="50" height="30"/>
+                                        <rect key="frame" x="64" y="40" width="50" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="50" id="3AR-lf-lIR"/>
                                             <constraint firstAttribute="height" constant="30" id="IZ4-E8-kj8"/>
@@ -233,7 +235,7 @@
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" puff(s) at night" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hBF-8D-VnQ">
-                                        <rect key="frame" x="0.0" y="80" width="178.66666666666669" height="30"/>
+                                        <rect key="frame" x="0.0" y="80" width="179" height="30"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
                                         <color key="textColor" red="0.001422772068" green="0.4256876409" blue="0.55088329319999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -254,6 +256,7 @@
                         </connections>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="43O-Q4-Hr5"/>
+                    <navigationItem key="navigationItem" title="Page 3 of 15" id="U24-0t-Kxt"/>
                     <value key="contentSizeForViewInPopover" type="size" width="414" height="736"/>
                     <connections>
                         <outlet property="gPuffsNight" destination="t5c-sr-nt9" id="GFz-qg-FDB"/>
@@ -268,7 +271,7 @@
             </objects>
             <point key="canvasLocation" x="8264" y="2843"/>
         </scene>
-        <!--Item-->
+        <!--Page 4 of 15-->
         <scene sceneID="DVc-iT-0PR">
             <objects>
                 <viewController id="XRk-EF-KgB" customClass="Green4ViewController" customModule="Pulmonis" customModuleProvider="target" sceneMemberID="viewController">
@@ -281,7 +284,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="diL-8w-D6S">
-                                <rect key="frame" x="58.333333333333343" y="25" width="298.33333333333337" height="70"/>
+                                <rect key="frame" x="58" y="25" width="299" height="70"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="green" translatesAutoresizingMaskIntoConstraints="NO" id="3uC-KS-Iua">
                                         <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
@@ -292,7 +295,7 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Every day asthma care:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.60000002384185791" translatesAutoresizingMaskIntoConstraints="NO" id="t16-uy-OHI">
-                                        <rect key="frame" x="75.000000000000014" y="23" width="223.33333333333337" height="24"/>
+                                        <rect key="frame" x="75" y="23" width="224" height="24"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                         <color key="textColor" red="0.0" green="0.59709531069999999" blue="0.28522098060000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -302,7 +305,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Kid-8i-w9u">
                                 <rect key="frame" x="86" y="115" width="243" height="100"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P6c-Zv-obP">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P6c-Zv-obP">
                                         <rect key="frame" x="0.0" y="0.0" width="243" height="60"/>
                                         <string key="text">My reliever inhaler 
 (insert name/colour):</string>
@@ -311,7 +314,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="unQ-BT-gbd">
-                                        <rect key="frame" x="46.666666666666657" y="70" width="150.00000000000003" height="30"/>
+                                        <rect key="frame" x="46" y="70" width="150" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="150" id="oNf-pg-fNT"/>
                                         </constraints>
@@ -335,6 +338,7 @@
                         </connections>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="sKJ-o6-nJg"/>
+                    <navigationItem key="navigationItem" title="Page 4 of 15" id="Y2G-Uz-te2"/>
                     <connections>
                         <outlet property="gRelieverInhalerColour" destination="unQ-BT-gbd" id="oS3-CL-BUO"/>
                     </connections>
@@ -348,7 +352,7 @@
             </objects>
             <point key="canvasLocation" x="9077" y="2852"/>
         </scene>
-        <!--Item-->
+        <!--Page 5 of 15-->
         <scene sceneID="BeB-rh-rfo">
             <objects>
                 <viewController id="17Z-pT-vec" customClass="Green5ViewController" customModule="Pulmonis" customModuleProvider="target" sceneMemberID="viewController">
@@ -401,7 +405,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                     </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" puff(s) of my reliever" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YbX-Ha-j9G">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" puff(s) of my reliever" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YbX-Ha-j9G">
                                         <rect key="frame" x="0.0" y="80" width="247" height="30"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
                                         <color key="textColor" red="0.001422772068" green="0.4256876409" blue="0.55088329319999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -423,6 +427,7 @@
                         </connections>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="CGk-nF-0mj"/>
+                    <navigationItem key="navigationItem" title="Page 5 of 15" id="e9D-RB-XdE"/>
                     <connections>
                         <outlet property="gPuffsReliever" destination="Zah-zK-rgT" id="C0C-Pl-02I"/>
                     </connections>
@@ -436,7 +441,7 @@
             </objects>
             <point key="canvasLocation" x="9871" y="2852"/>
         </scene>
-        <!--Item-->
+        <!--Page 6 of 15-->
         <scene sceneID="vR1-Ec-oHj">
             <objects>
                 <viewController id="pU1-Zx-zlr" customClass="Green6ViewController" customModule="Pulmonis" customModuleProvider="target" sceneMemberID="viewController">
@@ -449,7 +454,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Nbv-Ox-fAj">
-                                <rect key="frame" x="58.333333333333343" y="25" width="298.33333333333337" height="70"/>
+                                <rect key="frame" x="58" y="25" width="299" height="70"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="green" translatesAutoresizingMaskIntoConstraints="NO" id="xkj-jB-XOR">
                                         <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
@@ -460,7 +465,7 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Every day asthma care:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.60000002384185791" translatesAutoresizingMaskIntoConstraints="NO" id="3l0-8l-CWj">
-                                        <rect key="frame" x="75.000000000000014" y="23" width="223.33333333333337" height="24"/>
+                                        <rect key="frame" x="75" y="23" width="224" height="24"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                         <color key="textColor" red="0.0" green="0.59709531069999999" blue="0.28522098060000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -468,12 +473,11 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Si2-2a-GpT">
-                                <rect key="frame" x="62" y="115" width="290" height="220"/>
+                                <rect key="frame" x="62" y="115" width="290" height="207"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Other medicines I take for my asthma every day:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w6p-mO-poM">
-                                        <rect key="frame" x="0.0" y="0.0" width="290" height="110"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Other medicines I take for my asthma every day:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w6p-mO-poM">
+                                        <rect key="frame" x="0.0" y="0.0" width="290" height="97"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="110" id="oUl-8P-MDe"/>
                                             <constraint firstAttribute="width" constant="290" id="q3L-Nv-ckp"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="27"/>
@@ -481,7 +485,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="fDr-Lf-4th">
-                                        <rect key="frame" x="5" y="120" width="280" height="100"/>
+                                        <rect key="frame" x="5" y="107" width="280" height="100"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="280" id="b9x-M8-RxV"/>
@@ -506,6 +510,7 @@
                         </connections>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="y6i-pl-t3y"/>
+                    <navigationItem key="navigationItem" title="Page 6 of 15" id="hic-yM-kX1"/>
                     <connections>
                         <outlet property="gOtherMedicine" destination="fDr-Lf-4th" id="SvR-Q2-b5c"/>
                     </connections>
@@ -519,7 +524,7 @@
             </objects>
             <point key="canvasLocation" x="10638" y="2852"/>
         </scene>
-        <!--Item-->
+        <!--Page 7 of 15-->
         <scene sceneID="VY1-Eb-Av2">
             <objects>
                 <viewController id="WqO-zZ-NAn" customClass="Yellow1ViewController" customModule="Pulmonis" customModuleProvider="target" sceneMemberID="viewController">
@@ -532,10 +537,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="AM7-Zo-6Yh">
-                                <rect key="frame" x="81.333333333333314" y="25" width="251.33333333333337" height="70"/>
+                                <rect key="frame" x="81" y="25" width="252" height="70"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yellow" translatesAutoresizingMaskIntoConstraints="NO" id="4gX-dT-lAw">
-                                        <rect key="frame" x="0.0" y="0.0" width="70.000000000000014" height="70"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="4gX-dT-lAw" secondAttribute="height" multiplier="1:1" id="P7d-mf-q0c"/>
                                             <constraint firstAttribute="width" constant="70" id="da1-59-frb"/>
@@ -543,7 +548,7 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="When I feel worse:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.60000002384185791" translatesAutoresizingMaskIntoConstraints="NO" id="ipE-Bi-g9D">
-                                        <rect key="frame" x="75.000000000000014" y="23" width="176.33333333333337" height="24"/>
+                                        <rect key="frame" x="75" y="23" width="177" height="24"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                         <color key="textColor" red="1" green="0.76154690980911255" blue="0.12216267734766006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -551,16 +556,16 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="tWu-hA-tkd">
-                                <rect key="frame" x="81.333333333333343" y="115" width="251.66666666666666" height="110"/>
+                                <rect key="frame" x="81" y="115" width="252" height="110"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I am using my reliever" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7D9-bF-fgD">
-                                        <rect key="frame" x="0.0" y="0.0" width="251.66666666666669" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="252" height="30"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
                                         <color key="textColor" red="0.001422772068" green="0.4256876409" blue="0.55088329319999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VHg-Pj-WFS">
-                                        <rect key="frame" x="101.00000000000001" y="40" width="49.999999999999986" height="30"/>
+                                        <rect key="frame" x="101" y="40" width="50" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="B2I-Uv-IpC"/>
                                             <constraint firstAttribute="width" constant="50" id="RVM-qp-w4e"/>
@@ -570,7 +575,7 @@
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="times a week or more" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BvE-O3-scN">
-                                        <rect key="frame" x="2.3333333333333428" y="80" width="247.33333333333331" height="30"/>
+                                        <rect key="frame" x="2" y="80" width="248" height="30"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
                                         <color key="textColor" red="0.001422772068" green="0.4256876409" blue="0.55088329319999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -591,6 +596,7 @@
                         </connections>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="usF-c6-xdV"/>
+                    <navigationItem key="navigationItem" title="Page 7 of 15" id="c36-Rg-XKi"/>
                     <connections>
                         <outlet property="yWeeklyRelieverUses" destination="VHg-Pj-WFS" id="iWg-e5-eFA"/>
                     </connections>
@@ -604,7 +610,7 @@
             </objects>
             <point key="canvasLocation" x="10638" y="3650"/>
         </scene>
-        <!--Item-->
+        <!--Page 8 of 15-->
         <scene sceneID="BMV-iT-Vwc">
             <objects>
                 <viewController id="fkb-Jf-hgu" customClass="Yellow2ViewController" customModule="Pulmonis" customModuleProvider="target" sceneMemberID="viewController">
@@ -617,10 +623,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="vJc-lq-Jpw">
-                                <rect key="frame" x="81.333333333333314" y="25" width="251.33333333333337" height="70"/>
+                                <rect key="frame" x="81" y="25" width="252" height="70"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yellow" translatesAutoresizingMaskIntoConstraints="NO" id="LBn-1X-bdF">
-                                        <rect key="frame" x="0.0" y="0.0" width="70.000000000000014" height="70"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="70" id="1DP-J6-SgA"/>
                                             <constraint firstAttribute="width" secondItem="LBn-1X-bdF" secondAttribute="height" multiplier="1:1" id="Xmr-b1-lHp"/>
@@ -628,7 +634,7 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="When I feel worse:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.60000002384185791" translatesAutoresizingMaskIntoConstraints="NO" id="kVK-c6-vln">
-                                        <rect key="frame" x="75.000000000000014" y="23" width="176.33333333333337" height="24"/>
+                                        <rect key="frame" x="75" y="23" width="177" height="24"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                         <color key="textColor" red="1" green="0.76154690979999995" blue="0.12216267729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -645,7 +651,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ptT-lB-QdF">
-                                        <rect key="frame" x="126.66666666666666" y="40" width="50" height="30"/>
+                                        <rect key="frame" x="126" y="40" width="50" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="6Qj-7X-bbn"/>
                                             <constraint firstAttribute="width" constant="50" id="xQV-CC-dxD"/>
@@ -670,6 +676,7 @@
                         </connections>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="GLx-kK-L74"/>
+                    <navigationItem key="navigationItem" title="Page 8 of 15" id="J1U-Cj-jax"/>
                     <connections>
                         <outlet property="yMinimumPeakFlow" destination="ptT-lB-QdF" id="oBF-95-Yg9"/>
                     </connections>
@@ -683,7 +690,7 @@
             </objects>
             <point key="canvasLocation" x="9870" y="3650"/>
         </scene>
-        <!--Item-->
+        <!--Page 9 of 15-->
         <scene sceneID="WMs-17-V14">
             <objects>
                 <viewController id="OCm-vL-rOP" customClass="Yellow3ViewController" customModule="Pulmonis" customModuleProvider="target" sceneMemberID="viewController">
@@ -715,12 +722,11 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="1yb-TD-XXS">
-                                <rect key="frame" x="95.333333333333314" y="115" width="223.33333333333337" height="145"/>
+                                <rect key="frame" x="95.333333333333314" y="115" width="223.33333333333337" height="140"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Increase preventer inhaler dosage to" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="72b-zP-7Uk">
-                                        <rect key="frame" x="0.0" y="0.0" width="223.33333333333337" height="65"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Increase preventer inhaler dosage to" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="72b-zP-7Uk">
+                                        <rect key="frame" x="0.0" y="0.0" width="223.33333333333337" height="60"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="65" id="WyN-M9-G7S"/>
                                             <constraint firstAttribute="width" relation="lessThanOrEqual" constant="300" id="aOZ-uf-xFX"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
@@ -728,7 +734,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8k9-yP-dh5">
-                                        <rect key="frame" x="86.666666666666671" y="75" width="50.000000000000014" height="30"/>
+                                        <rect key="frame" x="86.666666666666671" y="70" width="50.000000000000014" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="KWN-02-dHu"/>
                                             <constraint firstAttribute="width" constant="50" id="j0c-Qf-iWj"/>
@@ -738,7 +744,7 @@
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="puffs ..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rjY-w9-LBW">
-                                        <rect key="frame" x="61.666666666666671" y="115" width="100.00000000000001" height="30"/>
+                                        <rect key="frame" x="61.666666666666671" y="110" width="100.00000000000001" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="gVI-Qw-7Lr"/>
                                             <constraint firstAttribute="width" constant="100" id="st7-W0-npm"/>
@@ -763,6 +769,7 @@
                         </connections>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="KtA-QW-ANw"/>
+                    <navigationItem key="navigationItem" title="Page 9 of 15" id="efH-mq-zfu"/>
                     <connections>
                         <outlet property="yIncreasedPreventerDosage" destination="8k9-yP-dh5" id="tXD-fG-TED"/>
                     </connections>
@@ -776,7 +783,7 @@
             </objects>
             <point key="canvasLocation" x="9077" y="3650"/>
         </scene>
-        <!--Item-->
+        <!--Page 10 of 15-->
         <scene sceneID="DbG-hG-T5S">
             <objects>
                 <viewController id="fUs-Xt-EzG" customClass="Yellow4ViewController" customModule="Pulmonis" customModuleProvider="target" sceneMemberID="viewController">
@@ -789,10 +796,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="u7T-bf-Ui9">
-                                <rect key="frame" x="81.333333333333314" y="25" width="251.33333333333337" height="70"/>
+                                <rect key="frame" x="81" y="25" width="252" height="70"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yellow" translatesAutoresizingMaskIntoConstraints="NO" id="uZr-bN-OSy">
-                                        <rect key="frame" x="0.0" y="0.0" width="70.000000000000014" height="70"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="uZr-bN-OSy" secondAttribute="height" multiplier="1:1" id="G1f-WW-TqH"/>
                                             <constraint firstAttribute="height" constant="70" id="T13-1z-zoM"/>
@@ -800,7 +807,7 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="When I feel worse:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.60000002384185791" translatesAutoresizingMaskIntoConstraints="NO" id="LUC-4h-va9">
-                                        <rect key="frame" x="75.000000000000014" y="23" width="176.33333333333337" height="24"/>
+                                        <rect key="frame" x="75" y="23" width="177" height="24"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                         <color key="textColor" red="1" green="0.76154690979999995" blue="0.12216267729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -831,7 +838,7 @@
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="times a day" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Th-Yj-iTV">
-                                        <rect key="frame" x="90.333333333333329" y="80" width="133.33333333333337" height="30"/>
+                                        <rect key="frame" x="90" y="80" width="134" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="hAv-Rr-4ZN"/>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="lv0-NV-76I"/>
@@ -857,6 +864,7 @@
                         </connections>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="Jf3-eq-GXo"/>
+                    <navigationItem key="navigationItem" title="Page 10 of 15" id="wsp-CJ-91g"/>
                     <connections>
                         <outlet property="yIncreasedPreventerFrequency" destination="wuV-yP-3Cp" id="kLU-xS-Jmz"/>
                     </connections>
@@ -870,7 +878,7 @@
             </objects>
             <point key="canvasLocation" x="8317" y="3650"/>
         </scene>
-        <!--Item-->
+        <!--Page 12 of 15-->
         <scene sceneID="qIe-Di-1dS">
             <objects>
                 <viewController id="RG9-Ur-nHQ" customClass="Yellow6ViewController" customModule="Pulmonis" customModuleProvider="target" sceneMemberID="viewController">
@@ -883,10 +891,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="T9s-c9-Qjj">
-                                <rect key="frame" x="81.333333333333314" y="25" width="251.33333333333337" height="70"/>
+                                <rect key="frame" x="81" y="25" width="252" height="70"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yellow" translatesAutoresizingMaskIntoConstraints="NO" id="Vwc-Vz-OKs">
-                                        <rect key="frame" x="0.0" y="0.0" width="70.000000000000014" height="70"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="70" id="1gf-Tq-s8r"/>
                                             <constraint firstAttribute="width" secondItem="Vwc-Vz-OKs" secondAttribute="height" multiplier="1:1" id="83P-ui-LLa"/>
@@ -894,7 +902,7 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="When I feel worse:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.60000002384185791" translatesAutoresizingMaskIntoConstraints="NO" id="W42-3F-TDo">
-                                        <rect key="frame" x="75.000000000000014" y="23" width="176.33333333333337" height="24"/>
+                                        <rect key="frame" x="75" y="23" width="177" height="24"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                         <color key="textColor" red="1" green="0.76154690979999995" blue="0.12216267729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -950,6 +958,7 @@
                         </connections>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="Z8m-lN-w8g"/>
+                    <navigationItem key="navigationItem" title="Page 12 of 15" id="e1G-yV-osm"/>
                     <connections>
                         <outlet property="yTabletDosage" destination="tgo-9y-ePq" id="6IS-oE-1Ps"/>
                     </connections>
@@ -963,7 +972,7 @@
             </objects>
             <point key="canvasLocation" x="6809" y="3650"/>
         </scene>
-        <!--Item-->
+        <!--Page 13 of 15-->
         <scene sceneID="GQP-Qf-6DE">
             <objects>
                 <viewController id="12g-N1-V3a" customClass="Yellow7ViewController" customModule="Pulmonis" customModuleProvider="target" sceneMemberID="viewController">
@@ -976,10 +985,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="3ja-rC-3x2">
-                                <rect key="frame" x="81.333333333333314" y="25" width="251.33333333333337" height="70"/>
+                                <rect key="frame" x="81" y="25" width="252" height="70"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yellow" translatesAutoresizingMaskIntoConstraints="NO" id="34f-y9-V5K">
-                                        <rect key="frame" x="0.0" y="0.0" width="70.000000000000014" height="70"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="70" id="Wa1-mz-fP1"/>
                                             <constraint firstAttribute="width" secondItem="34f-y9-V5K" secondAttribute="height" multiplier="1:1" id="jfV-De-fbG"/>
@@ -987,7 +996,7 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="When I feel worse:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.60000002384185791" translatesAutoresizingMaskIntoConstraints="NO" id="rnZ-i3-Bbn">
-                                        <rect key="frame" x="75.000000000000014" y="23" width="176.33333333333337" height="24"/>
+                                        <rect key="frame" x="75" y="23" width="177" height="24"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                         <color key="textColor" red="1" green="0.76154690979999995" blue="0.12216267729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -1043,6 +1052,7 @@
                         </connections>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="eCN-EV-ekn"/>
+                    <navigationItem key="navigationItem" title="Page 13 of 15" id="pyy-wG-vpp"/>
                     <connections>
                         <outlet property="yTabletDuration" destination="n2l-fb-2rI" id="PeD-Nx-D6T"/>
                     </connections>
@@ -1056,7 +1066,7 @@
             </objects>
             <point key="canvasLocation" x="6019" y="3650"/>
         </scene>
-        <!--Item-->
+        <!--Page 14 of 15-->
         <scene sceneID="W1b-xr-zCf">
             <objects>
                 <viewController id="S2I-w7-rjb" customClass="Red1ViewController" customModule="Pulmonis" customModuleProvider="target" sceneMemberID="viewController">
@@ -1088,20 +1098,19 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="rD5-R3-DBD">
-                                <rect key="frame" x="88" y="115" width="238" height="172"/>
+                                <rect key="frame" x="88" y="115" width="238" height="169.66666666666669"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reliever inhaler is not helping or I need it more than every" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fk7-Xg-psE">
-                                        <rect key="frame" x="0.0" y="0.0" width="238" height="92"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="238" height="89.666666666666657"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="238" id="9TB-7v-CF1"/>
-                                            <constraint firstAttribute="height" constant="92" id="NqC-xT-rS1"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
                                         <color key="textColor" red="0.001422772068" green="0.4256876409" blue="0.55088329319999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bMg-bJ-CLn">
-                                        <rect key="frame" x="94" y="102" width="50" height="30"/>
+                                        <rect key="frame" x="94" y="99.666666666666657" width="50" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="50" id="YXc-hw-BBB"/>
                                             <constraint firstAttribute="height" constant="30" id="i2p-k6-cMo"/>
@@ -1111,7 +1120,7 @@
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="hours" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GXg-v2-MJ0">
-                                        <rect key="frame" x="74" y="142" width="90" height="30"/>
+                                        <rect key="frame" x="74" y="139.66666666666669" width="90" height="30.000000000000028"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="euf-bC-YXU"/>
                                             <constraint firstAttribute="width" constant="90" id="ztX-wP-wKS"/>
@@ -1136,6 +1145,7 @@
                         </connections>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="rst-eJ-kdv"/>
+                    <navigationItem key="navigationItem" title="Page 14 of 15" id="dWK-QA-4Bz"/>
                     <connections>
                         <outlet property="rRelieverFrequencyLimit" destination="bMg-bJ-CLn" id="PaY-7v-ekg"/>
                     </connections>
@@ -1149,7 +1159,7 @@
             </objects>
             <point key="canvasLocation" x="6603" y="4608"/>
         </scene>
-        <!--Item-->
+        <!--Page 15 of 15-->
         <scene sceneID="ypH-Lr-DfE">
             <objects>
                 <viewController id="cjU-eZ-0Nt" customClass="Red2ViewController" customModule="Pulmonis" customModuleProvider="target" sceneMemberID="viewController">
@@ -1162,10 +1172,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="h8K-kF-6uD">
-                                <rect key="frame" x="75.333333333333343" y="25" width="263.66666666666663" height="70"/>
+                                <rect key="frame" x="75" y="25" width="264" height="70"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="red" translatesAutoresizingMaskIntoConstraints="NO" id="DYa-LK-H4L">
-                                        <rect key="frame" x="0.0" y="0.0" width="70.000000000000014" height="70"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="DYa-LK-H4L" secondAttribute="height" multiplier="1:1" id="Ib9-Ik-hwF"/>
                                             <constraint firstAttribute="width" constant="70" id="uk4-sX-ISO"/>
@@ -1173,7 +1183,7 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="In an asthma attack" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.60000002384185791" translatesAutoresizingMaskIntoConstraints="NO" id="iPd-Xi-1pp">
-                                        <rect key="frame" x="75.000000000000014" y="23" width="188.66666666666669" height="24"/>
+                                        <rect key="frame" x="75" y="23" width="189" height="24"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                         <color key="textColor" red="0.76943558450000005" green="0.10840258749999999" blue="0.14934694770000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -1190,7 +1200,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vwK-gg-lql">
-                                        <rect key="frame" x="126.66666666666666" y="40" width="50" height="30"/>
+                                        <rect key="frame" x="126" y="40" width="50" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="50" id="2zB-PG-52k"/>
                                             <constraint firstAttribute="height" constant="30" id="TtA-a3-7PB"/>
@@ -1231,6 +1241,7 @@
                         </connections>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="hNA-H4-KQI"/>
+                    <navigationItem key="navigationItem" title="Page 15 of 15" id="6Mc-bQ-bKf"/>
                     <connections>
                         <outlet property="rMinimumPeakFlow" destination="vwK-gg-lql" id="y1a-X4-tUD"/>
                         <segue destination="AeQ-Vn-If2" kind="show" identifier="save" id="4Ky-5a-XDF"/>
@@ -1249,7 +1260,7 @@
             </objects>
             <point key="canvasLocation" x="8355" y="4546"/>
         </scene>
-        <!--Item-->
+        <!--Page 11 of 15-->
         <scene sceneID="Rtk-LH-Q1n">
             <objects>
                 <viewController id="q9O-jC-hFS" customClass="Yellow5ViewController" customModule="Pulmonis" customModuleProvider="target" sceneMemberID="viewController">
@@ -1262,10 +1273,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="v73-tF-xXP">
-                                <rect key="frame" x="81.333333333333314" y="25" width="251.33333333333337" height="70"/>
+                                <rect key="frame" x="81" y="25" width="252" height="70"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yellow" translatesAutoresizingMaskIntoConstraints="NO" id="4Ec-9w-sgd">
-                                        <rect key="frame" x="0.0" y="0.0" width="70.000000000000014" height="70"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="70" id="0Sc-2k-mJH"/>
                                             <constraint firstAttribute="width" secondItem="4Ec-9w-sgd" secondAttribute="height" multiplier="1:1" id="did-ug-ZfI"/>
@@ -1273,7 +1284,7 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="When I feel worse:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.60000002384185791" translatesAutoresizingMaskIntoConstraints="NO" id="aBw-LJ-iUG">
-                                        <rect key="frame" x="75.000000000000014" y="23" width="176.33333333333337" height="24"/>
+                                        <rect key="frame" x="75" y="23" width="177" height="24"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                         <color key="textColor" red="1" green="0.76154690979999995" blue="0.12216267729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -1281,19 +1292,16 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Y7k-cW-ZUm">
-                                <rect key="frame" x="50" y="115" width="314" height="110"/>
+                                <rect key="frame" x="35" y="115" width="339" height="50"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Take reliever inhaler up to" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z89-M3-DEo">
-                                        <rect key="frame" x="9" y="0.0" width="296" height="30"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="30" id="ThS-vv-PE6"/>
-                                        </constraints>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Take reliever inhaler up to" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z89-M3-DEo">
+                                        <rect key="frame" x="0.0" y="0.0" width="339" height="0.0"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
                                         <color key="textColor" red="0.001422772068" green="0.4256876409" blue="0.55088329319999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ez8-4P-yLa">
-                                        <rect key="frame" x="132" y="40" width="50" height="30"/>
+                                        <rect key="frame" x="145" y="10" width="50" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="50" id="Cja-Kp-7Fw"/>
                                             <constraint firstAttribute="height" constant="30" id="n3u-ly-Zfk"/>
@@ -1302,8 +1310,8 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                     </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="puffs every four hours" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ndI-Df-DVQ">
-                                        <rect key="frame" x="29" y="80" width="256.33333333333331" height="30"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="puffs every four hours" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ndI-Df-DVQ">
+                                        <rect key="frame" x="0.0" y="50" width="339" height="0.0"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
                                         <color key="textColor" red="0.001422772068" green="0.4256876409" blue="0.55088329319999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -1316,15 +1324,16 @@
                         <constraints>
                             <constraint firstItem="v73-tF-xXP" firstAttribute="centerX" secondItem="kKY-Ll-dIp" secondAttribute="centerX" id="1qL-Si-uoC"/>
                             <constraint firstItem="v73-tF-xXP" firstAttribute="top" secondItem="Nyk-wn-WDr" secondAttribute="bottom" constant="5" id="Hut-vR-xtF"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Y7k-cW-ZUm" secondAttribute="trailing" constant="30" id="j1V-BB-vSK"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Y7k-cW-ZUm" secondAttribute="trailing" constant="20" id="j1V-BB-vSK"/>
                             <constraint firstItem="Y7k-cW-ZUm" firstAttribute="top" secondItem="v73-tF-xXP" secondAttribute="bottom" constant="20" id="naY-8I-hNS"/>
-                            <constraint firstItem="Y7k-cW-ZUm" firstAttribute="leading" secondItem="kKY-Ll-dIp" secondAttribute="leadingMargin" constant="30" id="twH-th-ljq"/>
+                            <constraint firstItem="Y7k-cW-ZUm" firstAttribute="leading" secondItem="kKY-Ll-dIp" secondAttribute="leadingMargin" constant="15" id="twH-th-ljq"/>
                         </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="Qo1-Zp-kcl" appends="YES" id="NiQ-Sh-mu6"/>
                         </connections>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="LCl-fM-WqB"/>
+                    <navigationItem key="navigationItem" title="Page 11 of 15" id="bYP-yM-XfI"/>
                     <connections>
                         <outlet property="yIncreasedRelieverFrequency" destination="ez8-4P-yLa" id="BOa-xg-S7A"/>
                     </connections>
