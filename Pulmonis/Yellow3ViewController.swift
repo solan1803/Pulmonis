@@ -15,6 +15,11 @@ class Yellow3ViewController: ListedViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        let myColor : UIColor = UIColor( red: 255/255, green: 194/255, blue:33/255, alpha: 1.0 )
+        yIncreasedPreventerDosage.layer.masksToBounds = true
+        yIncreasedPreventerDosage.layer.borderColor = myColor.cgColor
+        yIncreasedPreventerDosage.layer.borderWidth = 2.0
+        
         yIncreasedPreventerDosage.text = ListedViewController.patientData["yIncreasedPreventerDosage"]! as? String
 
     }
