@@ -501,6 +501,7 @@
 				28A336CA1DDB585C005D8626 /* Green3ViewController.swift in Sources */,
 				5B82CADA1DC918C1003930FB /* PendingTasksTableViewController.swift in Sources */,
 				28A53A861DDDF64A00595F80 /* ColourFile.swift in Sources */,
+				B2A66DD01DDDE05F00F0A7EC /* SymptomsActionPlanViewController.swift in Sources */,
 				5B82CABA1DC8CA85003930FB /* PeakFlowModel.xcdatamodeld in Sources */,
 				28A336D21DDB58D6005D8626 /* Yellow1ViewController.swift in Sources */,
 				28A6D0D11DCB552A003B9CDC /* ListedViewController.swift in Sources */,
