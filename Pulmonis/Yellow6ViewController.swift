@@ -15,6 +15,11 @@ class Yellow6ViewController: ListedViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        let myColor : UIColor = UIColor( red: 255/255, green: 194/255, blue:33/255, alpha: 1.0 )
+        yTabletDosage.layer.masksToBounds = true
+        yTabletDosage.layer.borderColor = myColor.cgColor
+        yTabletDosage.layer.borderWidth = 2.0
+        
         yTabletDosage.text = ListedViewController.patientData["yTabletDosage"]! as? String
     }
     

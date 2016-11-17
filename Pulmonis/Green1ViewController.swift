@@ -16,6 +16,11 @@ class Green1ViewController: ListedViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let myColor : UIColor = UIColor( red: 0/255, green: 167/255, blue:82/255, alpha: 1.0 )
+        gPreventerInhalerColour.layer.masksToBounds = true
+        gPreventerInhalerColour.layer.borderColor = myColor.cgColor
+        gPreventerInhalerColour.layer.borderWidth = 2.0
+        
         if let plist = Plist(name: "PatientData") {
             
             let dict = plist.getMutablePlistFile()!
