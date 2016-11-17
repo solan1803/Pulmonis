@@ -29,6 +29,8 @@
 		28A336DE1DDB590B005D8626 /* Red1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A336DD1DDB590B005D8626 /* Red1ViewController.swift */; };
 		28A336E01DDB5912005D8626 /* Red2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A336DF1DDB5912005D8626 /* Red2ViewController.swift */; };
 		28A336E21DDB5C79005D8626 /* Yellow7ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A336E11DDB5C79005D8626 /* Yellow7ViewController.swift */; };
+		28A53A861DDDF64A00595F80 /* ColourFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A53A851DDDF64A00595F80 /* ColourFile.swift */; };
+		28A53A881DDDFC7100595F80 /* PatientDataFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A53A871DDDFC7100595F80 /* PatientDataFields.swift */; };
 		28A6D0D11DCB552A003B9CDC /* ListedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A6D0D01DCB552A003B9CDC /* ListedViewController.swift */; };
 		28A6D0D31DCBA5C6003B9CDC /* Orange1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A6D0D21DCBA5C6003B9CDC /* Orange1ViewController.swift */; };
 		28A6D0D51DCBA5D1003B9CDC /* Orange2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A6D0D41DCBA5D1003B9CDC /* Orange2ViewController.swift */; };
@@ -123,6 +125,8 @@
 		28A336DD1DDB590B005D8626 /* Red1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Red1ViewController.swift; sourceTree = "<group>"; };
 		28A336DF1DDB5912005D8626 /* Red2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Red2ViewController.swift; sourceTree = "<group>"; };
 		28A336E11DDB5C79005D8626 /* Yellow7ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Yellow7ViewController.swift; sourceTree = "<group>"; };
+		28A53A851DDDF64A00595F80 /* ColourFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColourFile.swift; sourceTree = "<group>"; };
+		28A53A871DDDFC7100595F80 /* PatientDataFields.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatientDataFields.swift; sourceTree = "<group>"; };
 		28A6D0D01DCB552A003B9CDC /* ListedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListedViewController.swift; sourceTree = "<group>"; };
 		28A6D0D21DCBA5C6003B9CDC /* Orange1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Orange1ViewController.swift; sourceTree = "<group>"; };
 		28A6D0D41DCBA5D1003B9CDC /* Orange2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Orange2ViewController.swift; sourceTree = "<group>"; };
@@ -239,7 +243,6 @@
 				5B82CAD71DC91527003930FB /* TaskTableViewCell.swift */,
 				28787E111DDB6B38000439AD /* PatientData.plist */,
 				5B90876C1DDA7D37001C7F13 /* LogRelieverInhalerViewController.swift */,
-				28A6D0DC1DCBB7C5003B9CDC /* PatientData.plist */,
 				5B6B43521DC390400071AC66 /* ActionPlan.storyboard */,
 				5B82CABF1DC8ECE4003930FB /* SupportViewController.swift */,
 				5B82CA951DC8C14B003930FB /* PeakFlowViewController.swift */,
@@ -248,6 +251,8 @@
 				5B6B434E1DC38E770071AC66 /* Learn.storyboard */,
 				28A6D0D01DCB552A003B9CDC /* ListedViewController.swift */,
 				28CC5CA91DC772E8009A7BE9 /* GreenSection.storyboard */,
+				28A53A851DDDF64A00595F80 /* ColourFile.swift */,
+				28A53A871DDDFC7100595F80 /* PatientDataFields.swift */,
 				28A336D11DDB58D6005D8626 /* Yellow1ViewController.swift */,
 				28A336D31DDB58E0005D8626 /* Yellow2ViewController.swift */,
 				28A336D51DDB58E7005D8626 /* Yellow3ViewController.swift */,
@@ -485,6 +490,7 @@
 				28A336E21DDB5C79005D8626 /* Yellow7ViewController.swift in Sources */,
 				28A336CA1DDB585C005D8626 /* Green3ViewController.swift in Sources */,
 				5B82CADA1DC918C1003930FB /* PendingTasksTableViewController.swift in Sources */,
+				28A53A861DDDF64A00595F80 /* ColourFile.swift in Sources */,
 				5B82CABA1DC8CA85003930FB /* PeakFlowModel.xcdatamodeld in Sources */,
 				28A336D21DDB58D6005D8626 /* Yellow1ViewController.swift in Sources */,
 				28A6D0D11DCB552A003B9CDC /* ListedViewController.swift in Sources */,
@@ -495,6 +501,7 @@
 				5B82CAD81DC91527003930FB /* TaskTableViewCell.swift in Sources */,
 				5B9087691DDA74D9001C7F13 /* LogPreventerInhalerViewController.swift in Sources */,
 				5B82CAC01DC8ECE4003930FB /* SupportViewController.swift in Sources */,
+				28A53A881DDDFC7100595F80 /* PatientDataFields.swift in Sources */,
 				2899A9411DB519D6004306DF /* MedicineViewController.swift in Sources */,
 				2833EC801DCDF0C1000D4F7F /* SectionSelectionViewController.swift in Sources */,
 				28A336CE1DDB5877005D8626 /* Green5ViewController.swift in Sources */,
@@ -503,7 +510,6 @@
 				5B82CAD31DC912CB003930FB /* PendingTask+CoreDataClass.swift in Sources */,
 				28A336CC1DDB586C005D8626 /* Green4ViewController.swift in Sources */,
 				5B90876D1DDA7D37001C7F13 /* LogRelieverInhalerViewController.swift in Sources */,
-				288F9C441DCA062300EE6A99 /* Green1ViewController.swift in Sources */,
 				28A6D0D51DCBA5D1003B9CDC /* Orange2ViewController.swift in Sources */,
 				5BAF07C41DB11C1B00AF2FD0 /* ViewController.swift in Sources */,
 				5BAF07C21DB11C1B00AF2FD0 /* AppDelegate.swift in Sources */,
