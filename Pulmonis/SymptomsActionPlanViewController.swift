@@ -8,8 +8,8 @@
 
 import UIKit
 
-class SymptomActionPlanViewController: UIViewController {
-
+class SymptomActionPlanViewController: UIViewController, UIPopoverPresentationControllerDelegate {
+    
     @IBOutlet weak var wheezingButton: UIButton!
     @IBOutlet weak var chestTightnessButton: UIButton!
     @IBOutlet weak var difficultyBreathingButton: UIButton!
@@ -38,16 +38,83 @@ class SymptomActionPlanViewController: UIViewController {
          UIColor.white]
     
     override func viewDidLoad() {
-
+        
         super.viewDidLoad()
-
+        var shouldDisplayTutorial : Bool = false
+        if let plist = Plist(name: "PatientData") {
+            
+            let dict = plist.getValuesInPlistFile()!
+            
+            shouldDisplayTutorial = !(dict.value(forKey: "hasSeenSymptomsTutorial") as! Bool)
+            
+        } else {
+            print("Unable to get Plist")
+        }
+        
+        if (shouldDisplayTutorial) {
+            self.performSegue(withIdentifier: "symptomActionPlanTutorialPopover", sender: self)
+        }
         // Do any additional setup after loading the view.
     }
+    
+    
+    func addBlur() {
+        let blurEffect = UIBlurEffect(style: UIBlurEffectStyle.dark)
+        let blurEffectView = UIVisualEffectView(effect: blurEffect)
+        //always fill the view
+        blurEffectView.frame = self.view.bounds
+        blurEffectView.alpha = 0.7
+        blurEffectView.tag = 343
+        blurEffectView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        self.view.addSubview(blurEffectView)
+    }
+    
+    func removeBlur() {
+        for subview in self.view.subviews {
+            if (subview.tag == 343) {
+                subview.removeFromSuperview()
+                break
+            }
+        }
+    }
+    
+    internal func popoverPresentationControllerDidDismissPopover(_ popoverPresentationController: UIPopoverPresentationController) {
+        if let plist = Plist(name: "PatientData") {
+            let dict = plist.getMutablePlistFile()!
+            dict["hasSeenSymptomsTutorial"] = true
+            do {
+                try plist.addValuesToPlistFile(dictionary: dict)
+            } catch {
+                print(error)
+            }
+            
+        } else {
+            print("Unable to get Plist")
+        }
+        removeBlur()
+    }
 
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any!) {
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
+        if (segue.identifier == "symptomActionPlanTutorialPopover") {
+            addBlur()
+            let vc = segue.destination
+            let controller = vc.popoverPresentationController
+            controller?.delegate = self
+            controller?.sourceView = self.view;
+            controller?.permittedArrowDirections = UIPopoverArrowDirection(rawValue:0)
+            controller?.sourceRect = CGRect(x: (self.view.bounds).midX, y: (self.view.bounds).midY, width: 0, height: 0)
+        }
+    }
+
     
     @IBAction func nextColour(_ sender: UIButton) {
         var currentColourIndex : Int = 0;
@@ -67,7 +134,7 @@ class SymptomActionPlanViewController: UIViewController {
         switchNoneNext()
         sender.titleLabel?.textColor = buttonTextColours[nextColourIndex]
         sender.backgroundColor = buttonColours[nextColourIndex]
-       }
+    }
     
     
     @IBAction func switchColourOrange(_ sender: UIButton) {
@@ -111,15 +178,19 @@ class SymptomActionPlanViewController: UIViewController {
         }
     }
     
+    func adaptivePresentationStyle(for controller: UIPresentationController) -> UIModalPresentationStyle {
+        return .none
+    }
+    
     
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destinationViewController.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }
