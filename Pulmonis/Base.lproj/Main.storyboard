@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="bSo-aD-37K">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="bSo-aD-37K">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -33,11 +33,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Shiny Blue" translatesAutoresizingMaskIntoConstraints="NO" id="F55-EC-c30">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Shiny Blue" translatesAutoresizingMaskIntoConstraints="NO" id="F55-EC-c30"/>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BDU-GI-cu7">
-                                <rect key="frame" x="16" y="607" width="343" height="50"/>
                                 <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="LVt-3R-Hcj"/>
@@ -59,7 +56,6 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CMl-ee-M7l">
-                                <rect key="frame" x="41" y="294" width="293" height="293"/>
                                 <color key="backgroundColor" red="0.80964227609999995" green="0.96228170189999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="CMl-ee-M7l" secondAttribute="height" multiplier="300:300" id="G9k-AZ-lg8"/>
@@ -69,11 +65,10 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="sCv-nT-Wq1" kind="show" id="EPz-eo-Hds"/>
+                                    <segue destination="RJY-yJ-fVz" kind="show" id="C1B-oJ-sv0"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="17S-Mh-WTL">
-                                <rect key="frame" x="0.0" y="64" width="375" height="76"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="76" id="Oaa-X3-fFq"/>
                                 </constraints>
@@ -83,10 +78,8 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="hsq-YJ-fdR">
-                                <rect key="frame" x="43.5" y="170" width="288" height="114"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="583-rx-l8d">
-                                        <rect key="frame" x="0.0" y="0.0" width="114" height="114"/>
                                         <color key="backgroundColor" red="0.80964227609999995" green="0.96228170189999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="583-rx-l8d" secondAttribute="height" multiplier="1:1" id="OOt-P8-Z7h"/>
@@ -106,7 +99,6 @@ Inhaler</string>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="RLD-ew-hTq">
-                                        <rect key="frame" x="174" y="0.0" width="114" height="114"/>
                                         <color key="backgroundColor" red="0.80964227609999995" green="0.96228170189999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="RLD-ew-hTq" secondAttribute="height" multiplier="1:1" id="1FX-VU-1cn"/>
@@ -191,6 +183,14 @@ Inhaler</string>
             </objects>
             <point key="canvasLocation" x="1743" y="132"/>
         </scene>
+        <!--SymptomActionPlan-->
+        <scene sceneID="nVd-Hu-tKg">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SymptomActionPlan" id="RJY-yJ-fVz" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W16-12-G5U" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2002" y="358"/>
+        </scene>
         <!--PeakOrSupport-->
         <scene sceneID="gQB-M6-v1N">
             <objects>
@@ -207,14 +207,6 @@ Inhaler</string>
             </objects>
             <point key="canvasLocation" x="1779" y="582"/>
         </scene>
-        <!--SymptomActionPlan-->
-        <scene sceneID="IsM-H3-jTr">
-            <objects>
-                <viewControllerPlaceholder storyboardName="SymptomActionPlan" referencedIdentifier="SymptomActionPlan" id="sCv-nT-Wq1" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tF8-Jq-lQr" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1988" y="355"/>
-        </scene>
         <!--Navigation Controller-->
         <scene sceneID="DEu-t8-vb9">
             <objects>
@@ -222,7 +214,7 @@ Inhaler</string>
                     <toolbarItems/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="667"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="NVJ-1M-QAZ">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="NVJ-1M-QAZ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
