@@ -83,6 +83,9 @@
 		719018941DC78CEA000E8F59 /* RedSection.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 719018931DC78CEA000E8F59 /* RedSection.storyboard */; };
 		71987C5B1DB678B300248AE1 /* EmergencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71987C5A1DB678B300248AE1 /* EmergencyViewController.swift */; };
 		719D0C7F1DBA2E66008F5F97 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 719D0C7D1DBA2E66008F5F97 /* Main.storyboard */; };
+		B2A66DD01DDDE05F00F0A7EC /* SymptomsActionPlanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A66DCF1DDDE05F00F0A7EC /* SymptomsActionPlanViewController.swift */; };
+		B2A66DD11DDDE2C300F0A7EC /* SymptomActionPlan.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2A66DCD1DDDE02100F0A7EC /* SymptomActionPlan.storyboard */; };
+		B2A66DD51DDDEEC100F0A7EC /* ActionPlanTutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A66DD41DDDEEC100F0A7EC /* ActionPlanTutorialViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -177,6 +180,9 @@
 		719018931DC78CEA000E8F59 /* RedSection.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RedSection.storyboard; sourceTree = "<group>"; };
 		71987C5A1DB678B300248AE1 /* EmergencyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmergencyViewController.swift; sourceTree = "<group>"; };
 		719D0C7E1DBA2E66008F5F97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Pulmonis/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B2A66DCD1DDDE02100F0A7EC /* SymptomActionPlan.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SymptomActionPlan.storyboard; sourceTree = "<group>"; };
+		B2A66DCF1DDDE05F00F0A7EC /* SymptomsActionPlanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SymptomsActionPlanViewController.swift; sourceTree = "<group>"; };
+		B2A66DD41DDDEEC100F0A7EC /* ActionPlanTutorialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionPlanTutorialViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -255,6 +261,9 @@
 				28A53A871DDDFC7100595F80 /* PatientDataFields.swift */,
 				28A336D11DDB58D6005D8626 /* Yellow1ViewController.swift */,
 				28A336D31DDB58E0005D8626 /* Yellow2ViewController.swift */,
+				B2A66DCD1DDDE02100F0A7EC /* SymptomActionPlan.storyboard */,
+				B2A66DD41DDDEEC100F0A7EC /* ActionPlanTutorialViewController.swift */,
+				B2A66DCF1DDDE05F00F0A7EC /* SymptomsActionPlanViewController.swift */,
 				28A336D51DDB58E7005D8626 /* Yellow3ViewController.swift */,
 				28A336D71DDB58EE005D8626 /* Yellow4ViewController.swift */,
 				28A336D91DDB58F4005D8626 /* Yellow5ViewController.swift */,
@@ -434,6 +443,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2A66DD11DDDE2C300F0A7EC /* SymptomActionPlan.storyboard in Resources */,
 				719018921DC78CBE000E8F59 /* OrangeSection.storyboard in Resources */,
 				5BC5361B1DB6762A00231A50 /* LiberationSans-Regular.ttf in Resources */,
 				5B9087671DDA707F001C7F13 /* LogPreventerInhaler.storyboard in Resources */,
@@ -511,6 +521,7 @@
 				28A336CC1DDB586C005D8626 /* Green4ViewController.swift in Sources */,
 				5B90876D1DDA7D37001C7F13 /* LogRelieverInhalerViewController.swift in Sources */,
 				28A6D0D51DCBA5D1003B9CDC /* Orange2ViewController.swift in Sources */,
+				B2A66DD51DDDEEC100F0A7EC /* ActionPlanTutorialViewController.swift in Sources */,
 				5BAF07C41DB11C1B00AF2FD0 /* ViewController.swift in Sources */,
 				5BAF07C21DB11C1B00AF2FD0 /* AppDelegate.swift in Sources */,
 				2899A93C1DB4FE03004306DF /* SymptomsViewController.swift in Sources */,
