@@ -15,12 +15,11 @@ class Yellow7ViewController: ListedViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let myColor : UIColor = UIColor( red: 255/255, green: 194/255, blue:33/255, alpha: 1.0 )
         yTabletDuration.layer.masksToBounds = true
-        yTabletDuration.layer.borderColor = myColor.cgColor
+        yTabletDuration.layer.borderColor = Colours.yellow.cgColor
         yTabletDuration.layer.borderWidth = 2.0
         
-        yTabletDuration.text = ListedViewController.patientData["yTabletDuration"]! as? String
+        yTabletDuration.text = ListedViewController.patientData[yTabletDurationStr]! as? String
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -34,7 +33,7 @@ class Yellow7ViewController: ListedViewController {
 
     override func saveField() {
         if (yTabletDuration != nil) {
-            ListedViewController.patientData["yTabletDuration"] = yTabletDuration.text
+            ListedViewController.patientData[yTabletDurationStr] = yTabletDuration.text
         }
     }
 

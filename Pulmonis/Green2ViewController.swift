@@ -16,12 +16,11 @@ class Green2ViewController: ListedViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let myColor : UIColor = UIColor( red: 0/255, green: 167/255, blue:82/255, alpha: 1.0 )
         gPuffsMorning.layer.masksToBounds = true
-        gPuffsMorning.layer.borderColor = myColor.cgColor
+        gPuffsMorning.layer.borderColor = Colours.green.cgColor
         gPuffsMorning.layer.borderWidth = 2.0
         
-        gPuffsMorning.text = ListedViewController.patientData["gPuffsMorning"]! as? String
+        gPuffsMorning.text = ListedViewController.patientData[gPuffsMorningStr]! as? String
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -35,7 +34,7 @@ class Green2ViewController: ListedViewController {
     
     override func saveField() {
         if (gPuffsMorning != nil) {
-            ListedViewController.patientData["gPuffsMorning"] = gPuffsMorning.text
+            ListedViewController.patientData[gPuffsMorningStr] = gPuffsMorning.text
         }
     }
 

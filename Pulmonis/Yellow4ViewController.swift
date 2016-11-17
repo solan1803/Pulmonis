@@ -15,12 +15,11 @@ class Yellow4ViewController: ListedViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let myColor : UIColor = UIColor( red: 255/255, green: 194/255, blue:33/255, alpha: 1.0 )
         yIncreasedPreventerFrequency.layer.masksToBounds = true
-        yIncreasedPreventerFrequency.layer.borderColor = myColor.cgColor
+        yIncreasedPreventerFrequency.layer.borderColor = Colours.yellow.cgColor
         yIncreasedPreventerFrequency.layer.borderWidth = 2.0
         
-        yIncreasedPreventerFrequency.text = ListedViewController.patientData["yIncreasedPreventerFrequency"]! as? String
+        yIncreasedPreventerFrequency.text = ListedViewController.patientData[yIncreasedPreventerFrequencyStr]! as? String
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -34,7 +33,7 @@ class Yellow4ViewController: ListedViewController {
     
     override func saveField() {
         if (yIncreasedPreventerFrequency != nil) {
-            ListedViewController.patientData["yIncreasedPreventerFrequency"] = yIncreasedPreventerFrequency.text
+            ListedViewController.patientData[yIncreasedPreventerFrequencyStr] = yIncreasedPreventerFrequency.text
         }
     }
 

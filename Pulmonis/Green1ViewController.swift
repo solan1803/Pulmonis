@@ -16,9 +16,8 @@ class Green1ViewController: ListedViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let myColor : UIColor = UIColor( red: 0/255, green: 167/255, blue:82/255, alpha: 1.0 )
         gPreventerInhalerColour.layer.masksToBounds = true
-        gPreventerInhalerColour.layer.borderColor = myColor.cgColor
+        gPreventerInhalerColour.layer.borderColor = Colours.green.cgColor
         gPreventerInhalerColour.layer.borderWidth = 2.0
         
         if let plist = Plist(name: "PatientData") {
@@ -26,8 +25,8 @@ class Green1ViewController: ListedViewController {
             let dict = plist.getMutablePlistFile()!
             ListedViewController.patientData = dict
         }
-        
-        gPreventerInhalerColour.text = ListedViewController.patientData["gPreventerInhalerColour"]! as? String
+        print(gPreventerInhalerColour)
+        gPreventerInhalerColour.text = ListedViewController.patientData[gPreventerInhalerColourStr]! as? String
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -41,7 +40,7 @@ class Green1ViewController: ListedViewController {
     
     override func saveField() {
         if (gPreventerInhalerColour != nil) {
-            ListedViewController.patientData["gPreventerInhalerColour"] = gPreventerInhalerColour.text
+            ListedViewController.patientData[gPreventerInhalerColourStr] = gPreventerInhalerColour.text
         }
     }
 

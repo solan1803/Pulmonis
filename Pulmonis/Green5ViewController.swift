@@ -15,12 +15,11 @@ class Green5ViewController: ListedViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let myColor : UIColor = UIColor( red: 0/255, green: 167/255, blue:82/255, alpha: 1.0 )
         gPuffsReliever.layer.masksToBounds = true
-        gPuffsReliever.layer.borderColor = myColor.cgColor
+        gPuffsReliever.layer.borderColor = Colours.green.cgColor
         gPuffsReliever.layer.borderWidth = 2.0
         
-        gPuffsReliever.text = ListedViewController.patientData["gPuffsReliever"]! as? String
+        gPuffsReliever.text = ListedViewController.patientData[gPuffsRelieverStr]! as? String
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -34,7 +33,7 @@ class Green5ViewController: ListedViewController {
 
     override func saveField() {
         if (gPuffsReliever != nil) {
-            ListedViewController.patientData["gPuffsReliever"] = gPuffsReliever.text
+            ListedViewController.patientData[gPuffsRelieverStr] = gPuffsReliever.text
         }
     }
 

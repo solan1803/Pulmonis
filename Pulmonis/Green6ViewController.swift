@@ -14,13 +14,12 @@ class Green6ViewController: ListedViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let myColor : UIColor = UIColor( red: 0/255, green: 167/255, blue:82/255, alpha: 1.0 )
+
         gOtherMedicine.layer.masksToBounds = true
-        gOtherMedicine.layer.borderColor = myColor.cgColor
+        gOtherMedicine.layer.borderColor = Colours.green.cgColor
         gOtherMedicine.layer.borderWidth = 2.0
 
-        gOtherMedicine.text = ListedViewController.patientData["gOtherMedicine"]! as? String
+        gOtherMedicine.text = ListedViewController.patientData[gOtherMedicineStr]! as? String
     }
 
     override func viewDidAppear(_ animated: Bool) {
@@ -34,7 +33,7 @@ class Green6ViewController: ListedViewController {
     
     override func saveField() {
         if (gOtherMedicine != nil) {
-            ListedViewController.patientData["gOtherMedicine"] = gOtherMedicine.text
+            ListedViewController.patientData[gOtherMedicineStr] = gOtherMedicine.text
         }
     }
 

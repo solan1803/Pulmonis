@@ -15,12 +15,11 @@ class Green4ViewController: ListedViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let myColor : UIColor = UIColor( red: 0/255, green: 167/255, blue:82/255, alpha: 1.0 )
         gRelieverInhalerColour.layer.masksToBounds = true
-        gRelieverInhalerColour.layer.borderColor = myColor.cgColor
+        gRelieverInhalerColour.layer.borderColor = Colours.green.cgColor
         gRelieverInhalerColour.layer.borderWidth = 2.0
         
-        gRelieverInhalerColour.text = ListedViewController.patientData["gRelieverInhalerColour"]! as? String
+        gRelieverInhalerColour.text = ListedViewController.patientData[gRelieverInhalerColourStr]! as? String
     }
 
     override func viewDidAppear(_ animated: Bool) {
@@ -34,7 +33,7 @@ class Green4ViewController: ListedViewController {
     
     override func saveField() {
         if (gRelieverInhalerColour != nil) {
-            ListedViewController.patientData["gRelieverInhalerColour"] = gRelieverInhalerColour.text
+            ListedViewController.patientData[gRelieverInhalerColourStr] = gRelieverInhalerColour.text
         }
     }
 

@@ -15,12 +15,11 @@ class Red2ViewController: ListedViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let myColor : UIColor = UIColor( red: 197/255, green: 20/255, blue:38/255, alpha: 1.0 )
         rMinimumPeakFlow.layer.masksToBounds = true
-        rMinimumPeakFlow.layer.borderColor = myColor.cgColor
+        rMinimumPeakFlow.layer.borderColor = Colours.red.cgColor
         rMinimumPeakFlow.layer.borderWidth = 2.0
         
-        rMinimumPeakFlow.text = ListedViewController.patientData["rMinimumPeakFlow"]! as? String
+        rMinimumPeakFlow.text = ListedViewController.patientData[rMinimumPeakFlowStr]! as? String
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -35,7 +34,7 @@ class Red2ViewController: ListedViewController {
 
     @IBAction func save(_ sender: Any) {
         
-        ListedViewController.patientData["rMinimumPeakFlow"] = rMinimumPeakFlow.text
+        ListedViewController.patientData[rMinimumPeakFlowStr] = rMinimumPeakFlow.text
         
         if let plist = Plist(name: "PatientData") {
 
@@ -54,7 +53,7 @@ class Red2ViewController: ListedViewController {
     
     override func saveField() {
         if (rMinimumPeakFlow != nil) {
-            ListedViewController.patientData["rMinimumPeakFlow"] = rMinimumPeakFlow.text
+            ListedViewController.patientData[rMinimumPeakFlowStr] = rMinimumPeakFlow.text
         }
     }
 
