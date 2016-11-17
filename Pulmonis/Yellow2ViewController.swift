@@ -15,6 +15,11 @@ class Yellow2ViewController: ListedViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        let myColor : UIColor = UIColor( red: 255/255, green: 194/255, blue:33/255, alpha: 1.0 )
+        yMinimumPeakFlow.layer.masksToBounds = true
+        yMinimumPeakFlow.layer.borderColor = myColor.cgColor
+        yMinimumPeakFlow.layer.borderWidth = 2.0
+        
         yMinimumPeakFlow.text = ListedViewController.patientData["yMinimumPeakFlow"]! as? String
         
     }

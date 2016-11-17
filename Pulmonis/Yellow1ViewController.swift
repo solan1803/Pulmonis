@@ -15,6 +15,12 @@ class Yellow1ViewController: ListedViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        let myColor : UIColor = UIColor( red: 255/255, green: 194/255, blue:33/255, alpha: 1.0 )
+        yWeeklyRelieverUses.layer.masksToBounds = true
+        yWeeklyRelieverUses.layer.borderColor = myColor.cgColor
+        yWeeklyRelieverUses.layer.borderWidth = 2.0
+
+        
         yWeeklyRelieverUses.text = ListedViewController.patientData["yWeeklyRelieverUses"]! as? String
     }
 

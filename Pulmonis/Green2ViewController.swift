@@ -16,6 +16,11 @@ class Green2ViewController: ListedViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let myColor : UIColor = UIColor( red: 0/255, green: 167/255, blue:82/255, alpha: 1.0 )
+        gPuffsMorning.layer.masksToBounds = true
+        gPuffsMorning.layer.borderColor = myColor.cgColor
+        gPuffsMorning.layer.borderWidth = 2.0
+        
         gPuffsMorning.text = ListedViewController.patientData["gPuffsMorning"]! as? String
     }
     
