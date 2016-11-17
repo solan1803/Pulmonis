@@ -1,5 +1,5 @@
 //
-//  Green3ViewController.swift
+//  Yellow2ViewController.swift
 //  Pulmonis
 //
 //  Created by Karow Maruf on 15/11/2016.
@@ -8,29 +8,30 @@
 
 import UIKit
 
-class Green3ViewController: ListedViewController {
+class Yellow2ViewController: ListedViewController {
 
-    
-    @IBOutlet weak var gPuffsNight: UITextField!
+    @IBOutlet weak var yMinimumPeakFlow: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        gPuffsNight.text = ListedViewController.patientData["gPuffsNight"]! as? String
-    }
 
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(_ : animated)
-        gPuffsNight.becomeFirstResponder()
+        yMinimumPeakFlow.text = ListedViewController.patientData["yMinimumPeakFlow"]! as? String
+        
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(_ : animated)
+        yMinimumPeakFlow.becomeFirstResponder()
+    }
+    
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
-
+    
     override func saveField() {
-        if (gPuffsNight != nil) {
-            ListedViewController.patientData["gPuffsNight"] = gPuffsNight.text
+        if (yMinimumPeakFlow != nil) {
+            ListedViewController.patientData["yMinimumPeakFlow"] = yMinimumPeakFlow.text
         }
     }
 
