@@ -56,6 +56,7 @@
 		5B82CAD61DC9139C003930FB /* PendingTasks.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B82CAD51DC9139C003930FB /* PendingTasks.storyboard */; };
 		5B82CAD81DC91527003930FB /* TaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B82CAD71DC91527003930FB /* TaskTableViewCell.swift */; };
 		5B82CADA1DC918C1003930FB /* PendingTasksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B82CAD91DC918C1003930FB /* PendingTasksTableViewController.swift */; };
+		5B88A4E81DEB464800CDD946 /* BLE.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B88A4E71DEB464800CDD946 /* BLE.swift */; };
 		5B9087651DDA64FB001C7F13 /* oldMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B9087641DDA64FB001C7F13 /* oldMain.storyboard */; };
 		5B9087671DDA707F001C7F13 /* LogPreventerInhaler.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B9087661DDA707F001C7F13 /* LogPreventerInhaler.storyboard */; };
 		5B9087691DDA74D9001C7F13 /* LogPreventerInhalerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9087681DDA74D8001C7F13 /* LogPreventerInhalerViewController.swift */; };
@@ -154,6 +155,7 @@
 		5B82CAD51DC9139C003930FB /* PendingTasks.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PendingTasks.storyboard; sourceTree = "<group>"; };
 		5B82CAD71DC91527003930FB /* TaskTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskTableViewCell.swift; sourceTree = "<group>"; };
 		5B82CAD91DC918C1003930FB /* PendingTasksTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PendingTasksTableViewController.swift; sourceTree = "<group>"; };
+		5B88A4E71DEB464800CDD946 /* BLE.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BLE.swift; sourceTree = "<group>"; };
 		5B9087641DDA64FB001C7F13 /* oldMain.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = oldMain.storyboard; sourceTree = "<group>"; };
 		5B9087661DDA707F001C7F13 /* LogPreventerInhaler.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LogPreventerInhaler.storyboard; sourceTree = "<group>"; };
 		5B9087681DDA74D8001C7F13 /* LogPreventerInhalerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogPreventerInhalerViewController.swift; sourceTree = "<group>"; };
@@ -250,6 +252,7 @@
 				28787E111DDB6B38000439AD /* PatientData.plist */,
 				5B90876C1DDA7D37001C7F13 /* LogRelieverInhalerViewController.swift */,
 				5B6B43521DC390400071AC66 /* ActionPlan.storyboard */,
+				5B88A4E71DEB464800CDD946 /* BLE.swift */,
 				5B82CABF1DC8ECE4003930FB /* SupportViewController.swift */,
 				5B82CA951DC8C14B003930FB /* PeakFlowViewController.swift */,
 				2805519F1DDB6262001E99C6 /* DoctorInput.storyboard */,
@@ -504,6 +507,7 @@
 				B2A66DD01DDDE05F00F0A7EC /* SymptomsActionPlanViewController.swift in Sources */,
 				5B82CABA1DC8CA85003930FB /* PeakFlowModel.xcdatamodeld in Sources */,
 				28A336D21DDB58D6005D8626 /* Yellow1ViewController.swift in Sources */,
+				5B88A4E81DEB464800CDD946 /* BLE.swift in Sources */,
 				28A6D0D11DCB552A003B9CDC /* ListedViewController.swift in Sources */,
 				28A6D0D31DCBA5C6003B9CDC /* Orange1ViewController.swift in Sources */,
 				28A336E01DDB5912005D8626 /* Red2ViewController.swift in Sources */,

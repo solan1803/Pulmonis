@@ -9,7 +9,7 @@
 import UIKit
 import CoreData
 
-class PeakFlowViewController: UIViewController {
+class PeakFlowViewController: UIViewController, BLEDelegate {
 
     // MARK: Model
     
@@ -21,11 +21,24 @@ class PeakFlowViewController: UIViewController {
     var managedObjectContext: NSManagedObjectContext? =
         (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     
+    var ble = BLE()
     
     @IBOutlet weak var peakFlowTextField: UITextField!
     
+    @IBOutlet weak var bluetoothValueLabel: UILabel!
+    
+    var bluetoothText : String = "" {
+        didSet(newValue) {
+            print("SETTING BLUETOOTH VALUE")
+            bluetoothValueLabel.text! = newValue
+        }
+    }
+    
+    @IBOutlet weak var connectButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        ble.delegate = self
         self.hideKeyboardWhenTappedAround()
         NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillShow), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillHide), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
@@ -61,6 +74,50 @@ class PeakFlowViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    @IBAction func connectBluetooth(_ sender: UIButton) {
+        print("connectBluetooth")
+        connectButton.setTitle("Connecting...", for: .normal)
+        // find BLE peripherals
+        _ = ble.startScanning(timeout: 2)
+    }
+    
+    // BLE DELEGATE METHODS
+    func bleDidUpdateState(){
+        
+        
+    }
+    
+    func bleDidConnectToPeripheral(){
+        connectButton.setTitle("Connected!", for: .normal)
+        print("->Connected")
+        
+        // send reset
+        let buf = [0x04, 0x00, 0x00]
+        let data = NSData(bytes: buf, length: 3)
+        ble.write(data: data)
+        
+        // Schedule to read RSSI every 1 sec.
+        //        rssiTimer = [NSTimer scheduledTimerWithTimeInterval:(float)1.0 target:self selector:@selector(readRSSITimer:) userInfo:nil repeats:YES];
+        //        var rssiTimer = Timer.scheduledTimer(timeInterval: (1.0), target: self, selector: #selector(readRSSITimer), userInfo: nil, repeats: true)
+    }
+    func bleDidDisconenctFromPeripheral() {
+        print("->DISCONNECTED")
+    }
+    func bleDidReceiveData(data: NSData?) {
+        let length = data?.length
+        print("LENGTH: \(length)")
+        let count = length!/MemoryLayout<UInt8>.size
+        var array = [UInt8](repeating: 0, count: count)
+        data!.getBytes(&array, length:count * MemoryLayout<UInt8>.size)
+        for i in 0 ..< count {
+//            let hex = String(format:"0x%02X", array[i])
+            let dec = String(format:"%02d", array[i])
+            print(dec)
+//            let value = UInt8(hex, radix: 16)
+            bluetoothText = dec
+        }
     }
     
 
