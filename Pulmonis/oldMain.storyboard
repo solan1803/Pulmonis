@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="w2L-io-E6H">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -16,228 +16,240 @@
         </array>
     </customFonts>
     <scenes>
-        <!--LearnTable-->
-        <scene sceneID="B0a-Yq-HhM">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Learn" referencedIdentifier="LearnTable" id="6Db-tv-tFa" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="XsU-S3-bt3" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1458" y="996"/>
-        </scene>
-        <!--HowAreYou-->
-        <scene sceneID="GFo-R5-fTu">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Statistics" referencedIdentifier="HowAreYou" id="SLd-QY-gqZ" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="YOF-3X-mEE" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="654" y="996"/>
-        </scene>
         <!--EmergencyOne-->
-        <scene sceneID="f6w-os-0iO">
+        <scene sceneID="g7C-AF-OhH">
             <objects>
-                <viewControllerPlaceholder storyboardName="Emergency" referencedIdentifier="EmergencyOne" id="04k-94-CJb" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="SV3-UR-9bh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="Emergency" referencedIdentifier="EmergencyOne" id="mUV-Xy-jJQ" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jn2-6E-l2K" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1107" y="996"/>
         </scene>
         <!--View Controller-->
-        <scene sceneID="KLb-yp-8kt">
+        <scene sceneID="eRH-vy-0vD">
             <objects>
-                <viewController id="aXt-oq-zAn" customClass="ViewController" customModule="Pulmonis" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="5ub-xp-Wge" customClass="ViewController" customModule="Pulmonis" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Fjv-PJ-hQv"/>
-                        <viewControllerLayoutGuide type="bottom" id="eBh-Z0-tm1"/>
+                        <viewControllerLayoutGuide type="top" id="mTp-76-FLi"/>
+                        <viewControllerLayoutGuide type="bottom" id="lNJ-mo-qSi"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="D1v-gn-RyU">
+                    <view key="view" contentMode="scaleToFill" id="kgl-gs-SvP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Shiny Blue" translatesAutoresizingMaskIntoConstraints="NO" id="nzW-fj-E3e">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Shiny Blue" translatesAutoresizingMaskIntoConstraints="NO" id="vEA-2F-7pC">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Tq-MJ-wuu">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ql5-fX-Uxe">
                                 <rect key="frame" x="16" y="607" width="343" height="50"/>
                                 <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="gni-Xk-yQg"/>
+                                    <constraint firstAttribute="height" constant="50" id="2ys-OB-LjQ"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="EMERGENCY ACTION">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="04k-94-CJb" kind="show" id="lQf-4p-Bjx">
+                                    <segue destination="mUV-Xy-jJQ" kind="show" id="Sjt-bL-hMR">
                                         <nil key="action"/>
                                     </segue>
                                 </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="eqY-0G-hnx">
-                                <rect key="frame" x="16" y="467" width="343" height="100"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HKh-NH-O9H">
-                                        <rect key="frame" x="0.0" y="0.0" width="91" height="100"/>
-                                        <inset key="titleEdgeInsets" minX="0.0" minY="140" maxX="0.0" maxY="0.0"/>
-                                        <state key="normal" title="STATS" backgroundImage="Stats">
-                                            <color key="titleColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                                        </state>
-                                        <connections>
-                                            <segue destination="SLd-QY-gqZ" kind="show" id="kfS-vB-XpU">
-                                                <nil key="action"/>
-                                            </segue>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aw1-7w-7nk">
-                                        <rect key="frame" x="126" y="0.0" width="91" height="100"/>
-                                        <inset key="titleEdgeInsets" minX="0.0" minY="140" maxX="0.0" maxY="0.0"/>
-                                        <state key="normal" title="MAP" backgroundImage="map">
-                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xEA-B4-Hka">
-                                        <rect key="frame" x="252" y="0.0" width="91" height="100"/>
-                                        <inset key="titleEdgeInsets" minX="0.0" minY="140" maxX="0.0" maxY="0.0"/>
-                                        <state key="normal" title="LEARN" backgroundImage="learn">
-                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                        <connections>
-                                            <segue destination="6Db-tv-tFa" kind="show" id="qFO-Ar-29v">
-                                                <nil key="action"/>
-                                            </segue>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="meo-T9-dz4"/>
-                                </constraints>
-                            </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PULMONIS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2yo-h4-AQp">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PULMONIS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o3y-w3-B7d">
                                 <rect key="frame" x="107" y="29" width="162" height="35"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="35" id="IQe-RC-Lqi"/>
+                                    <constraint firstAttribute="height" constant="35" id="JQM-po-1sn"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="LiberationSans" family="Liberation Sans" pointSize="31"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sSk-6K-uDO">
-                                <rect key="frame" x="36" y="164" width="303" height="303"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GON-tW-5q0">
+                                <rect key="frame" x="41" y="294" width="293" height="293"/>
+                                <color key="backgroundColor" red="0.80964227609999995" green="0.96228170189999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="sSk-6K-uDO" secondAttribute="height" multiplier="300:300" id="fS2-fS-FwZ"/>
+                                    <constraint firstAttribute="width" secondItem="GON-tW-5q0" secondAttribute="height" multiplier="300:300" id="bkD-DT-uGY"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="32"/>
-                                <inset key="titleEdgeInsets" minX="0.0" minY="150" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" title="ACTION PLAN" backgroundImage="inhaler2">
+                                <state key="normal" title="ACTION PLAN">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="L25-MZ-xdo" kind="show" id="o1e-YI-lzN">
+                                    <segue destination="AIj-eV-x6n" kind="show" id="ExA-fd-AEG">
                                         <nil key="action"/>
                                     </segue>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nyQ-rF-Eg9">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dqM-HW-wzj">
                                 <rect key="frame" x="0.0" y="64" width="375" height="76"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="76" id="Ql0-K9-kTW"/>
+                                    <constraint firstAttribute="height" constant="76" id="9E4-uI-yqs"/>
                                 </constraints>
                                 <state key="normal" backgroundImage="tasks"/>
                                 <connections>
-                                    <segue destination="udR-KR-xCw" kind="show" id="ICq-xl-g9J">
+                                    <segue destination="4TO-La-blN" kind="show" id="n9d-Ci-qIz">
                                         <nil key="action"/>
                                     </segue>
                                 </connections>
                             </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="rfY-Hp-tmH">
+                                <rect key="frame" x="44" y="170" width="288" height="114"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="iib-oN-rej">
+                                        <rect key="frame" x="0.0" y="0.0" width="114" height="114"/>
+                                        <color key="backgroundColor" red="0.80964227609999995" green="0.96228170189999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="iib-oN-rej" secondAttribute="height" multiplier="1:1" id="AzF-P1-fLF"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="LiberationSans" family="Liberation Sans" pointSize="17"/>
+                                        <state key="normal">
+                                            <string key="title">Log 
+Preventer 
+Inhaler</string>
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="showLogPreventerInhalerPopover:" destination="5ub-xp-Wge" eventType="touchUpInside" id="xe5-X4-fCC"/>
+                                            <segue destination="QKk-ob-d2B" kind="popoverPresentation" identifier="logPreventerInhalerPopover" popoverAnchorView="iib-oN-rej" id="XK5-l4-776">
+                                                <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                            </segue>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="zUH-V5-OUH">
+                                        <rect key="frame" x="174" y="0.0" width="114" height="114"/>
+                                        <color key="backgroundColor" red="0.80964227609999995" green="0.96228170189999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="zUH-V5-OUH" secondAttribute="height" multiplier="1:1" id="FGi-gm-4wU"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="LiberationSans" family="Liberation Sans" pointSize="17"/>
+                                        <state key="normal">
+                                            <string key="title">Log 
+Reliever 
+Inhaler</string>
+                                            <color key="titleColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="showLogRelieverInhalerPopover:" destination="5ub-xp-Wge" eventType="touchUpInside" id="qhA-tm-b5k"/>
+                                            <segue destination="Blt-OZ-Zlm" kind="popoverPresentation" identifier="logRelieverInhalerPopover" popoverAnchorView="zUH-V5-OUH" id="YYF-lg-Xxu">
+                                                <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                            </segue>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="eqY-0G-hnx" firstAttribute="top" secondItem="sSk-6K-uDO" secondAttribute="bottom" id="0jF-UB-Sbr"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="eqY-0G-hnx" secondAttribute="leading" id="5kY-gu-pKG"/>
-                            <constraint firstItem="nzW-fj-E3e" firstAttribute="leading" secondItem="D1v-gn-RyU" secondAttribute="leading" id="6Fb-Gr-hpj"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="nzW-fj-E3e" secondAttribute="trailing" constant="-16" id="7QR-PN-wwq"/>
-                            <constraint firstItem="nzW-fj-E3e" firstAttribute="bottom" secondItem="eBh-Z0-tm1" secondAttribute="top" id="Ac2-Jg-DQb"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="nyQ-rF-Eg9" secondAttribute="trailing" constant="-16" id="BPX-Ew-Tlq"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="3Tq-MJ-wuu" secondAttribute="leading" id="FM4-fP-nAA"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="eqY-0G-hnx" secondAttribute="trailing" id="Kgo-Wc-sD0"/>
-                            <constraint firstItem="3Tq-MJ-wuu" firstAttribute="top" secondItem="eqY-0G-hnx" secondAttribute="bottom" constant="40" id="Nm5-nt-6y2"/>
-                            <constraint firstItem="2yo-h4-AQp" firstAttribute="top" secondItem="Fjv-PJ-hQv" secondAttribute="bottom" constant="-35" id="R4u-CJ-E0x"/>
-                            <constraint firstItem="2yo-h4-AQp" firstAttribute="centerX" secondItem="D1v-gn-RyU" secondAttribute="centerX" id="VtU-UC-a0e"/>
-                            <constraint firstItem="sSk-6K-uDO" firstAttribute="top" secondItem="Fjv-PJ-hQv" secondAttribute="bottom" constant="100" id="XEv-kI-OO6"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="3Tq-MJ-wuu" secondAttribute="trailing" id="c4f-Eh-95v"/>
-                            <constraint firstItem="sSk-6K-uDO" firstAttribute="centerX" secondItem="D1v-gn-RyU" secondAttribute="centerX" id="ffh-vJ-HeK"/>
-                            <constraint firstItem="nyQ-rF-Eg9" firstAttribute="leading" secondItem="D1v-gn-RyU" secondAttribute="leadingMargin" constant="-16" id="iHi-4I-bPj"/>
-                            <constraint firstItem="nzW-fj-E3e" firstAttribute="top" secondItem="Fjv-PJ-hQv" secondAttribute="bottom" constant="-64" id="kan-fU-PM0"/>
-                            <constraint firstItem="nyQ-rF-Eg9" firstAttribute="top" secondItem="Fjv-PJ-hQv" secondAttribute="bottom" id="le6-CY-WVe"/>
-                            <constraint firstItem="eBh-Z0-tm1" firstAttribute="top" secondItem="3Tq-MJ-wuu" secondAttribute="bottom" constant="10" id="sNy-fo-JxG"/>
+                            <constraint firstItem="GON-tW-5q0" firstAttribute="centerX" secondItem="kgl-gs-SvP" secondAttribute="centerX" id="01B-9C-fmi"/>
+                            <constraint firstItem="vEA-2F-7pC" firstAttribute="bottom" secondItem="lNJ-mo-qSi" secondAttribute="top" id="4Rn-CC-JXM"/>
+                            <constraint firstItem="GON-tW-5q0" firstAttribute="top" secondItem="mTp-76-FLi" secondAttribute="bottom" constant="230" id="6Tx-vH-SL7"/>
+                            <constraint firstItem="lNJ-mo-qSi" firstAttribute="top" secondItem="ql5-fX-Uxe" secondAttribute="bottom" constant="10" id="7Wb-tG-E22"/>
+                            <constraint firstItem="rfY-Hp-tmH" firstAttribute="top" secondItem="dqM-HW-wzj" secondAttribute="bottom" constant="30" id="8hr-QU-vI7"/>
+                            <constraint firstItem="vEA-2F-7pC" firstAttribute="leading" secondItem="kgl-gs-SvP" secondAttribute="leading" id="MkZ-DS-NCM"/>
+                            <constraint firstItem="dqM-HW-wzj" firstAttribute="leading" secondItem="kgl-gs-SvP" secondAttribute="leadingMargin" constant="-16" id="RtY-2k-O96"/>
+                            <constraint firstItem="o3y-w3-B7d" firstAttribute="centerX" secondItem="kgl-gs-SvP" secondAttribute="centerX" id="TfM-zn-fjB"/>
+                            <constraint firstItem="vEA-2F-7pC" firstAttribute="top" secondItem="mTp-76-FLi" secondAttribute="bottom" constant="-64" id="WEf-RT-o3I"/>
+                            <constraint firstItem="o3y-w3-B7d" firstAttribute="top" secondItem="mTp-76-FLi" secondAttribute="bottom" constant="-35" id="aZU-3U-o9s"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ql5-fX-Uxe" secondAttribute="trailing" id="bEE-kw-vpa"/>
+                            <constraint firstItem="rfY-Hp-tmH" firstAttribute="centerX" secondItem="kgl-gs-SvP" secondAttribute="centerX" id="bHp-Cg-O45"/>
+                            <constraint firstItem="ql5-fX-Uxe" firstAttribute="top" secondItem="GON-tW-5q0" secondAttribute="bottom" constant="20" id="clA-FM-3nH"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="ql5-fX-Uxe" secondAttribute="leading" id="ePX-hb-akK"/>
+                            <constraint firstItem="dqM-HW-wzj" firstAttribute="top" secondItem="mTp-76-FLi" secondAttribute="bottom" id="hpO-8U-POF"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="vEA-2F-7pC" secondAttribute="trailing" constant="-16" id="lCK-N6-s7y"/>
+                            <constraint firstItem="GON-tW-5q0" firstAttribute="top" secondItem="rfY-Hp-tmH" secondAttribute="bottom" constant="10" id="ly9-tJ-VPd"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="dqM-HW-wzj" secondAttribute="trailing" constant="-16" id="pgk-gU-8RW"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="40r-jr-2xn">
-                        <barButtonItem key="rightBarButtonItem" title="&quot;\u26ED&quot;" id="d8z-77-wQL">
+                    <navigationItem key="navigationItem" id="4Xw-Ru-bE9">
+                        <barButtonItem key="rightBarButtonItem" title="&quot;\u26ED&quot;" id="wF4-77-Pna">
                             <connections>
-                                <segue destination="J2m-03-C1Y" kind="show" id="bNo-Oh-oEP">
+                                <segue destination="mL3-j6-uzw" kind="show" id="2k5-ul-B3a">
                                     <nil key="action"/>
                                 </segue>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="pulmonisTitle" destination="2yo-h4-AQp" id="mFE-bQ-R6T"/>
-                        <outlet property="settingsBarItem" destination="d8z-77-wQL" id="cyb-eO-gyX"/>
+                        <outlet property="logPreventerInhaler" destination="iib-oN-rej" id="A2a-8B-joW"/>
+                        <outlet property="logRelieverInhaler" destination="zUH-V5-OUH" id="u7X-OS-FxG"/>
+                        <outlet property="pulmonisTitle" destination="o3y-w3-B7d" id="kU9-M0-rDj"/>
+                        <outlet property="settingsBarItem" destination="wF4-77-Pna" id="x21-ho-E46"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="JlM-0O-VBS" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y4T-SK-hCK" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1108" y="338.68065967016497"/>
         </scene>
-        <!--PendingTaskTable-->
-        <scene sceneID="46a-He-fZu">
+        <!--LogPreventer-->
+        <scene sceneID="Hcy-Ke-0wD">
             <objects>
-                <viewControllerPlaceholder storyboardName="PendingTasks" referencedIdentifier="PendingTaskTable" id="udR-KR-xCw" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="KPK-Xi-dUo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="LogPreventerInhaler" referencedIdentifier="LogPreventer" id="QKk-ob-d2B" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qkr-F3-b8T" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="786" y="-107"/>
+        </scene>
+        <!--LogReliever-->
+        <scene sceneID="Taj-RD-MSS">
+            <objects>
+                <viewControllerPlaceholder storyboardName="LogRelieverInhaler" referencedIdentifier="LogReliever" id="Blt-OZ-Zlm" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vij-Ph-S4G" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1591" y="-63"/>
+        </scene>
+        <!--PendingTaskTable-->
+        <scene sceneID="Ow8-xK-BTW">
+            <objects>
+                <viewControllerPlaceholder storyboardName="PendingTasks" referencedIdentifier="PendingTaskTable" id="4TO-La-blN" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V5d-jn-cSL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1743" y="132"/>
         </scene>
-        <!--PeakOrSupport-->
-        <scene sceneID="U7P-bD-7Ru">
+        <!--SymptomActionPlan-->
+        <scene sceneID="4SY-CN-jd4">
             <objects>
-                <viewControllerPlaceholder storyboardName="ActionPlan" referencedIdentifier="PeakOrSupport" id="L25-MZ-xdo" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="saZ-nR-fi8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="SymptomActionPlan" id="AIj-eV-x6n" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fYz-Sv-J5c" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1990" y="350"/>
+            <point key="canvasLocation" x="2002" y="358"/>
+        </scene>
+        <!--PeakOrSupport-->
+        <scene sceneID="kBO-q5-BQN">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ActionPlan" referencedIdentifier="PeakOrSupport" id="FcV-JM-4bj" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GIF-3N-GLP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2081" y="497"/>
         </scene>
         <!--Settings-->
-        <scene sceneID="4jl-4n-yqK">
+        <scene sceneID="2Eb-ot-zwD">
             <objects>
-                <viewControllerPlaceholder storyboardIdentifier="Settings" storyboardName="Settings" referencedIdentifier="Settings" id="J2m-03-C1Y" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="uFi-4o-5LQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardIdentifier="Settings" storyboardName="Settings" referencedIdentifier="Settings" id="mL3-j6-uzw" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zcQ-sY-gnN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1779" y="582"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="NGs-mi-2qC">
+        <scene sceneID="Ioo-nL-lHA">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dqL-HC-cbS" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="w2L-io-E6H" sceneMemberID="viewController">
                     <toolbarItems/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="667"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="kVF-TG-7yW">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="AEb-r5-iJr">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="aXt-oq-zAn" kind="relationship" relationship="rootViewController" id="XSf-iW-Ugx"/>
+                        <segue destination="5ub-xp-Wge" kind="relationship" relationship="rootViewController" id="bTr-BZ-jpO"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="byV-ds-KHz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z4I-8n-8ta" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="168.80000000000001" y="338.68065967016497"/>
         </scene>
     </scenes>
     <resources>
         <image name="Shiny Blue" width="750" height="1334"/>
-        <image name="Stats" width="155" height="140"/>
-        <image name="inhaler2" width="566" height="576"/>
-        <image name="learn" width="126" height="154"/>
-        <image name="map" width="213" height="213"/>
         <image name="tasks" width="750" height="152"/>
     </resources>
 </document>
