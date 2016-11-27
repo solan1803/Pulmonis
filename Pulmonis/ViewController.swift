@@ -33,8 +33,8 @@ class ViewController: UIViewController, UIPopoverPresentationControllerDelegate 
         pulmonisTitle.text = "PULMONIS"
         pulmonisTitle.addTextSpacing(spacing: 3)
         // Do any additional setup after loading the view, typically from a nib.
-        logPreventerInhaler.titleLabel?.textAlignment = NSTextAlignment.center;
-        logRelieverInhaler.titleLabel?.textAlignment = NSTextAlignment.center;
+//        logPreventerInhaler.titleLabel?.textAlignment = NSTextAlignment.center;
+//        logRelieverInhaler.titleLabel?.textAlignment = NSTextAlignment.center;
         
         self.hideKeyboardWhenTappedAround()
         NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillShow), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
