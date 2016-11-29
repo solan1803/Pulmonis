@@ -23,8 +23,8 @@ class PeakFlowViewController: UIViewController, BLEDelegate {
     
     var ble = BLE()
     
-    @IBOutlet weak var peakFlowTextField: UITextField!
     
+    @IBOutlet weak var maxBluetoothValueLabel: UILabel!
     @IBOutlet weak var bluetoothValueLabel: UILabel!
     
     var bluetoothText : String = "" {
@@ -47,30 +47,30 @@ class PeakFlowViewController: UIViewController, BLEDelegate {
     
    
 
-    @IBAction func savePeakFlow(_ sender: UIButton) {
-        print("INSIDE SAVEPEAKFLOW METHOD")
-        if let peak_record = NSEntityDescription.insertNewObject(forEntityName: "PeakFlowTable", into: managedObjectContext!) as? PeakFlowTable {
-            peak_record.date = NSDate()
-            let text = (peakFlowTextField.text! as NSString).integerValue
-            let val = Int16(text)
-            peak_record.value = val
-        }
-        do {
-            try managedObjectContext?.save()
-        } catch let error {
-            print(error)
-        }
-        let request: NSFetchRequest<PeakFlowTable> = PeakFlowTable.fetchRequest()
-        let result = try? managedObjectContext!.fetch(request)
-        
-        for r in result! {
-            print("DATE: ")
-            print(r.date!)
-            print("VALUE: ")
-            print(r.value)
-        }
-        
-    }
+//    @IBAction func savePeakFlow(_ sender: UIButton) {
+//        print("INSIDE SAVEPEAKFLOW METHOD")
+//        if let peak_record = NSEntityDescription.insertNewObject(forEntityName: "PeakFlowTable", into: managedObjectContext!) as? PeakFlowTable {
+//            peak_record.date = NSDate()
+//            let text = (peakFlowTextField.text! as NSString).integerValue
+//            let val = Int16(text)
+//            peak_record.value = val
+//        }
+//        do {
+//            try managedObjectContext?.save()
+//        } catch let error {
+//            print(error)
+//        }
+//        let request: NSFetchRequest<PeakFlowTable> = PeakFlowTable.fetchRequest()
+//        let result = try? managedObjectContext!.fetch(request)
+//        
+//        for r in result! {
+//            print("DATE: ")
+//            print(r.date!)
+//            print("VALUE: ")
+//            print(r.value)
+//        }
+//        
+//    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -105,19 +105,37 @@ class PeakFlowViewController: UIViewController, BLEDelegate {
     func bleDidDisconenctFromPeripheral() {
         print("->DISCONNECTED")
     }
+    
+    var maxPeakFlowValue : Float = 0.0
+    
     func bleDidReceiveData(data: NSData?) {
         let length = data?.length
         print("LENGTH: \(length)")
         let count = length!/MemoryLayout<UInt8>.size
         var array = [UInt8](repeating: 0, count: count)
         data!.getBytes(&array, length:count * MemoryLayout<UInt8>.size)
-        for i in 0 ..< count {
-//            let hex = String(format:"0x%02X", array[i])
-            let dec = String(format:"%02d", array[i])
-            print(dec)
-//            let value = UInt8(hex, radix: 16)
-            bluetoothText = dec
+        for i in stride(from: 0, through: count-1, by: 4) {//= 0; i < count; i+=4 {
+            let arr = Array(array[i...(i+3)])
+            let u32 = UnsafePointer(arr).withMemoryRebound(to: Float.self, capacity: 1) {
+                $0.pointee
+            }
+            print(u32)
+            let f = String(format:"%02f", u32)
+            bluetoothValueLabel.text! = "Running Value: " + f
+            maxPeakFlowValue = max(maxPeakFlowValue, u32)
+            let m = String(format: "%02f", max(maxPeakFlowValue, u32))
+            maxBluetoothValueLabel.text! = "Max Value: " + m
         }
+//        bluetoothText = "h"
+//        let flo = String(format:"%02f", u32)
+//        print(flo)
+//        for i in 0 ..< count {
+//            let hex = String(format:"0x%02X", array[i])
+//            let dec = String(format:"%02d", array[i])
+//            print(dec)
+//            let value = UInt8(hex, radix: 16)
+//            bluetoothText = dec
+//        }
     }
     
 
