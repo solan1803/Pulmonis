@@ -348,21 +348,6 @@
                                 <color key="textColor" red="0.1202454641" green="0.4030750394" blue="0.48271960019999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please record the highest reading" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vCt-k6-Os7">
-                                <rect key="frame" x="51" y="415.5" width="273" height="51.5"/>
-                                <fontDescription key="fontDescription" name="LiberationSans" family="Liberation Sans" pointSize="23"/>
-                                <color key="textColor" red="0.1202454641" green="0.4030750394" blue="0.48271960019999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WLx-d7-Seq">
-                                <rect key="frame" x="137.5" y="517" width="100" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="x29-Yo-PlI"/>
-                                </constraints>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
-                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RG3-BK-cG9">
                                 <rect key="frame" x="112.5" y="587" width="150" height="40"/>
                                 <color key="backgroundColor" red="0.1202454641" green="0.4030750394" blue="0.48271960019999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -376,24 +361,23 @@
                                 </state>
                                 <connections>
                                     <action selector="connectBluetooth:" destination="oeC-Pe-cKC" eventType="touchUpInside" id="rXz-oD-v3e"/>
-                                    <action selector="savePeakFlow:" destination="oeC-Pe-cKC" eventType="touchUpInside" id="DZn-Yf-j2B"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="L/min" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="naz-kT-02d">
-                                <rect key="frame" x="247.5" y="523.5" width="55" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Running Value: 000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zZJ-cF-Ccb">
+                                <rect key="frame" x="12" y="349.5" width="350" height="33.5"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="55" id="h64-h0-a8b"/>
+                                    <constraint firstAttribute="width" constant="350" id="C2J-5S-Vjc"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.1202454641" green="0.4030750394" blue="0.48271960019999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="000" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zZJ-cF-Ccb">
-                                <rect key="frame" x="137" y="341" width="100" height="42"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Max Value: 000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3yI-6Q-ek5">
+                                <rect key="frame" x="12" y="436.5" width="350" height="33.5"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="C2J-5S-Vjc"/>
+                                    <constraint firstAttribute="width" constant="350" id="dxl-h5-ed8"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -401,24 +385,18 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="MTI-St-cBZ" firstAttribute="top" secondItem="RG3-BK-cG9" secondAttribute="bottom" constant="40" id="0Ob-td-1UE"/>
-                            <constraint firstItem="vCt-k6-Os7" firstAttribute="leading" secondItem="SOm-OA-o9D" secondAttribute="leadingMargin" constant="35" id="1TU-kC-XoY"/>
-                            <constraint firstItem="MTI-St-cBZ" firstAttribute="top" secondItem="WLx-d7-Seq" secondAttribute="bottom" constant="120" id="2Gh-3A-O8e"/>
                             <constraint firstItem="zZJ-cF-Ccb" firstAttribute="centerX" secondItem="SOm-OA-o9D" secondAttribute="centerX" id="46h-32-kpk"/>
+                            <constraint firstItem="RG3-BK-cG9" firstAttribute="top" secondItem="zZJ-cF-Ccb" secondAttribute="bottom" constant="204" id="AGv-K5-ss6"/>
                             <constraint firstAttribute="trailingMargin" secondItem="gnB-LJ-TE2" secondAttribute="trailing" constant="-16" id="BfZ-6E-3Lg"/>
-                            <constraint firstItem="MTI-St-cBZ" firstAttribute="top" secondItem="vCt-k6-Os7" secondAttribute="bottom" constant="200" id="FTJ-nL-8em"/>
-                            <constraint firstItem="WLx-d7-Seq" firstAttribute="centerX" secondItem="SOm-OA-o9D" secondAttribute="centerX" id="HPX-4y-CSV"/>
                             <constraint firstItem="MTI-St-cBZ" firstAttribute="top" secondItem="gnB-LJ-TE2" secondAttribute="bottom" id="HWH-XF-SDY"/>
-                            <constraint firstItem="naz-kT-02d" firstAttribute="leading" secondItem="WLx-d7-Seq" secondAttribute="leading" constant="110" id="Hhl-Ua-6re"/>
                             <constraint firstItem="gnB-LJ-TE2" firstAttribute="top" secondItem="SOm-OA-o9D" secondAttribute="topMargin" id="OAe-T4-DVk"/>
+                            <constraint firstItem="3yI-6Q-ek5" firstAttribute="centerX" secondItem="SOm-OA-o9D" secondAttribute="centerX" id="ON0-VM-pAm"/>
+                            <constraint firstItem="RG3-BK-cG9" firstAttribute="top" secondItem="3yI-6Q-ek5" secondAttribute="bottom" constant="117" id="P9d-lH-XYd"/>
                             <constraint firstItem="VqM-Os-ury" firstAttribute="leading" secondItem="SOm-OA-o9D" secondAttribute="leadingMargin" constant="35" id="TLj-nR-uwI"/>
                             <constraint firstItem="RG3-BK-cG9" firstAttribute="centerX" secondItem="SOm-OA-o9D" secondAttribute="centerX" id="ZMX-p1-fad"/>
                             <constraint firstAttribute="trailingMargin" secondItem="VqM-Os-ury" secondAttribute="trailing" constant="35" id="aSK-vy-B52"/>
-                            <constraint firstItem="vCt-k6-Os7" firstAttribute="top" secondItem="zZJ-cF-Ccb" secondAttribute="bottom" constant="32.5" id="bn9-50-zPS"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="vCt-k6-Os7" secondAttribute="trailing" constant="35" id="f1E-1k-gfj"/>
                             <constraint firstItem="4YP-35-pkv" firstAttribute="top" secondItem="CCB-fH-3FO" secondAttribute="bottom" constant="150" id="iZV-6J-NAx"/>
                             <constraint firstItem="gnB-LJ-TE2" firstAttribute="leading" secondItem="SOm-OA-o9D" secondAttribute="leadingMargin" constant="-16" id="lQl-AX-GOQ"/>
-                            <constraint firstItem="MTI-St-cBZ" firstAttribute="top" secondItem="naz-kT-02d" secondAttribute="bottom" constant="123" id="nhF-dg-3VF"/>
-                            <constraint firstItem="vCt-k6-Os7" firstAttribute="centerX" secondItem="SOm-OA-o9D" secondAttribute="centerX" id="rfG-ZI-sus"/>
                             <constraint firstItem="VqM-Os-ury" firstAttribute="centerX" secondItem="SOm-OA-o9D" secondAttribute="centerX" id="tzR-BK-uV9"/>
                             <constraint firstItem="VqM-Os-ury" firstAttribute="top" secondItem="CCB-fH-3FO" secondAttribute="bottom" constant="50" id="vT8-Ge-ax5"/>
                             <constraint firstItem="4YP-35-pkv" firstAttribute="centerX" secondItem="SOm-OA-o9D" secondAttribute="centerX" id="vVZ-Fg-Csg"/>
@@ -427,7 +405,7 @@
                     <connections>
                         <outlet property="bluetoothValueLabel" destination="zZJ-cF-Ccb" id="cQu-tt-PdR"/>
                         <outlet property="connectButton" destination="RG3-BK-cG9" id="DWO-1c-en8"/>
-                        <outlet property="peakFlowTextField" destination="WLx-d7-Seq" id="mVf-eI-MgV"/>
+                        <outlet property="maxBluetoothValueLabel" destination="3yI-6Q-ek5" id="uxc-7E-61s"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2yb-QP-ObV" userLabel="First Responder" sceneMemberID="firstResponder"/>
