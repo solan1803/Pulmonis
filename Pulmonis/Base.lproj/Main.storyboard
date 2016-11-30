@@ -1,11 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="xUS-Tv-YEJ">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="xUS-Tv-YEJ">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -52,11 +49,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Shiny Blue" translatesAutoresizingMaskIntoConstraints="NO" id="lpi-85-31Q">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Shiny Blue" translatesAutoresizingMaskIntoConstraints="NO" id="lpi-85-31Q"/>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WGh-nB-uBm">
-                                <rect key="frame" x="16" y="607" width="343" height="50"/>
                                 <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="Nbf-HS-OBu"/>
@@ -72,10 +66,8 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="f1u-xL-GRZ">
-                                <rect key="frame" x="16" y="467" width="343" height="100"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jTs-mC-rop">
-                                        <rect key="frame" x="0.0" y="0.0" width="91" height="100"/>
                                         <inset key="titleEdgeInsets" minX="0.0" minY="140" maxX="0.0" maxY="0.0"/>
                                         <state key="normal" title="STATS" backgroundImage="Stats">
                                             <color key="titleColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -87,14 +79,12 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9nM-he-Qla">
-                                        <rect key="frame" x="126" y="0.0" width="91" height="100"/>
                                         <inset key="titleEdgeInsets" minX="0.0" minY="140" maxX="0.0" maxY="0.0"/>
                                         <state key="normal" title="MAP" backgroundImage="map">
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mFk-PA-nTh">
-                                        <rect key="frame" x="252" y="0.0" width="91" height="100"/>
                                         <inset key="titleEdgeInsets" minX="0.0" minY="140" maxX="0.0" maxY="0.0"/>
                                         <state key="normal" title="LEARN" backgroundImage="learn">
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -111,7 +101,6 @@
                                 </constraints>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PULMONIS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mlR-EE-ikV">
-                                <rect key="frame" x="107" y="29" width="162" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="L6r-De-eUY"/>
                                 </constraints>
@@ -120,7 +109,6 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9sC-XQ-nQ2">
-                                <rect key="frame" x="36" y="164" width="303" height="303"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="9sC-XQ-nQ2" secondAttribute="height" multiplier="300:300" id="hMi-D2-PSU"/>
                                 </constraints>
@@ -136,7 +124,6 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j2n-6J-GvU">
-                                <rect key="frame" x="0.0" y="64" width="375" height="76"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="76" id="CqA-65-Ut5"/>
                                 </constraints>
@@ -218,7 +205,7 @@
                     <toolbarItems/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="667"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="gc7-QF-kan">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gc7-QF-kan">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>

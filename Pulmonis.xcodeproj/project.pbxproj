@@ -43,7 +43,6 @@
 		5B0DEF7A1DB8F1FC006ECFCE /* LearnTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0DEF791DB8F1FC006ECFCE /* LearnTableViewController.swift */; };
 		5B6B434F1DC38E770071AC66 /* Learn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B6B434E1DC38E770071AC66 /* Learn.storyboard */; };
 		5B6B43511DC38F6A0071AC66 /* Statistics.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B6B43501DC38F6A0071AC66 /* Statistics.storyboard */; };
-		5B6B43531DC390400071AC66 /* ActionPlan.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B6B43521DC390400071AC66 /* ActionPlan.storyboard */; };
 		5B82CA961DC8C14B003930FB /* PeakFlowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B82CA951DC8C14B003930FB /* PeakFlowViewController.swift */; };
 		5B82CABA1DC8CA85003930FB /* PeakFlowModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5B82CAB81DC8CA85003930FB /* PeakFlowModel.xcdatamodeld */; };
 		5B82CABD1DC8CAF1003930FB /* PeakFlowTable+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B82CABB1DC8CAF1003930FB /* PeakFlowTable+CoreDataClass.swift */; };
@@ -80,6 +79,11 @@
 		5BC5361B1DB6762A00231A50 /* LiberationSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5BC536141DB6762A00231A50 /* LiberationSans-Regular.ttf */; };
 		5BC5361C1DB6762A00231A50 /* LiberationSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5BC536141DB6762A00231A50 /* LiberationSans-Regular.ttf */; };
 		5BC5361D1DB6762A00231A50 /* LiberationSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5BC536141DB6762A00231A50 /* LiberationSans-Regular.ttf */; };
+		711210131DEF3803001C597A /* PlotBreath.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 711210121DEF3803001C597A /* PlotBreath.storyboard */; };
+		711210201DEF3A97001C597A /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7112101B1DEF39EE001C597A /* Charts.framework */; };
+		711210211DEF3A97001C597A /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7112101B1DEF39EE001C597A /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		711210261DEF3B0E001C597A /* PlotBreathViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711210251DEF3B0E001C597A /* PlotBreathViewController.swift */; };
+		711210281DEF69ED001C597A /* ActionPlan.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 711210271DEF69ED001C597A /* ActionPlan.storyboard */; };
 		719018921DC78CBE000E8F59 /* OrangeSection.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 719018911DC78CBE000E8F59 /* OrangeSection.storyboard */; };
 		719018941DC78CEA000E8F59 /* RedSection.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 719018931DC78CEA000E8F59 /* RedSection.storyboard */; };
 		71987C5B1DB678B300248AE1 /* EmergencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71987C5A1DB678B300248AE1 /* EmergencyViewController.swift */; };
@@ -104,7 +108,49 @@
 			remoteGlobalIDString = 5BAF07BD1DB11C1B00AF2FD0;
 			remoteInfo = Pulmonis;
 		};
+		7112101A1DEF39EE001C597A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 711210141DEF39EE001C597A /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 06165F241D8110E600722320;
+			remoteInfo = Charts;
+		};
+		7112101C1DEF39EE001C597A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 711210141DEF39EE001C597A /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 06B120D51D811E6200D14B02;
+			remoteInfo = ChartsRealm;
+		};
+		7112101E1DEF39EE001C597A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 711210141DEF39EE001C597A /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 06165F2E1D8110E600722320;
+			remoteInfo = ChartsTests;
+		};
+		711210221DEF3A97001C597A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 711210141DEF39EE001C597A /* Charts.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 06165F231D8110E600722320;
+			remoteInfo = Charts;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		711210241DEF3A97001C597A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				711210211DEF3A97001C597A /* Charts.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		2805519F1DDB6262001E99C6 /* DoctorInput.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DoctorInput.storyboard; sourceTree = "<group>"; };
@@ -142,7 +188,6 @@
 		5B0DEF791DB8F1FC006ECFCE /* LearnTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LearnTableViewController.swift; sourceTree = "<group>"; };
 		5B6B434E1DC38E770071AC66 /* Learn.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Learn.storyboard; sourceTree = "<group>"; };
 		5B6B43501DC38F6A0071AC66 /* Statistics.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Statistics.storyboard; sourceTree = "<group>"; };
-		5B6B43521DC390400071AC66 /* ActionPlan.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ActionPlan.storyboard; sourceTree = "<group>"; };
 		5B82CA951DC8C14B003930FB /* PeakFlowViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeakFlowViewController.swift; sourceTree = "<group>"; };
 		5B82CAB91DC8CA85003930FB /* PeakFlowModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PeakFlowModel.xcdatamodel; sourceTree = "<group>"; };
 		5B82CABB1DC8CAF1003930FB /* PeakFlowTable+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PeakFlowTable+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -178,6 +223,10 @@
 		5BC536121DB6762A00231A50 /* LiberationSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LiberationSans-BoldItalic.ttf"; sourceTree = "<group>"; };
 		5BC536131DB6762A00231A50 /* LiberationSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LiberationSans-Italic.ttf"; sourceTree = "<group>"; };
 		5BC536141DB6762A00231A50 /* LiberationSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LiberationSans-Regular.ttf"; sourceTree = "<group>"; };
+		711210121DEF3803001C597A /* PlotBreath.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PlotBreath.storyboard; sourceTree = "<group>"; };
+		711210141DEF39EE001C597A /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = Charts/Charts.xcodeproj; sourceTree = "<group>"; };
+		711210251DEF3B0E001C597A /* PlotBreathViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlotBreathViewController.swift; sourceTree = "<group>"; };
+		711210271DEF69ED001C597A /* ActionPlan.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = ActionPlan.storyboard; path = "../../../Downloads/Pulmonis-master/Pulmonis/ActionPlan.storyboard"; sourceTree = "<group>"; };
 		719018911DC78CBE000E8F59 /* OrangeSection.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = OrangeSection.storyboard; sourceTree = "<group>"; };
 		719018931DC78CEA000E8F59 /* RedSection.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RedSection.storyboard; sourceTree = "<group>"; };
 		71987C5A1DB678B300248AE1 /* EmergencyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmergencyViewController.swift; sourceTree = "<group>"; };
@@ -192,6 +241,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				711210201DEF3A97001C597A /* Charts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,6 +265,7 @@
 		5BAF07B51DB11C1B00AF2FD0 = {
 			isa = PBXGroup;
 			children = (
+				711210141DEF39EE001C597A /* Charts.xcodeproj */,
 				5BC5360D1DB675AD00231A50 /* Resources */,
 				5BAF07C01DB11C1B00AF2FD0 /* Pulmonis */,
 				5BAF07D51DB11C1B00AF2FD0 /* PulmonisTests */,
@@ -251,10 +302,12 @@
 				5B82CAD71DC91527003930FB /* TaskTableViewCell.swift */,
 				28787E111DDB6B38000439AD /* PatientData.plist */,
 				5B90876C1DDA7D37001C7F13 /* LogRelieverInhalerViewController.swift */,
-				5B6B43521DC390400071AC66 /* ActionPlan.storyboard */,
+				711210121DEF3803001C597A /* PlotBreath.storyboard */,
+				711210251DEF3B0E001C597A /* PlotBreathViewController.swift */,
 				5B88A4E71DEB464800CDD946 /* BLE.swift */,
 				5B82CABF1DC8ECE4003930FB /* SupportViewController.swift */,
 				5B82CA951DC8C14B003930FB /* PeakFlowViewController.swift */,
+				711210271DEF69ED001C597A /* ActionPlan.storyboard */,
 				2805519F1DDB6262001E99C6 /* DoctorInput.storyboard */,
 				5B6B43501DC38F6A0071AC66 /* Statistics.storyboard */,
 				5B6B434E1DC38E770071AC66 /* Learn.storyboard */,
@@ -336,6 +389,16 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
+		711210151DEF39EE001C597A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7112101B1DEF39EE001C597A /* Charts.framework */,
+				7112101D1DEF39EE001C597A /* ChartsRealm.framework */,
+				7112101F1DEF39EE001C597A /* ChartsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -346,10 +409,12 @@
 				5BAF07BA1DB11C1B00AF2FD0 /* Sources */,
 				5BAF07BB1DB11C1B00AF2FD0 /* Frameworks */,
 				5BAF07BC1DB11C1B00AF2FD0 /* Resources */,
+				711210241DEF3A97001C597A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				711210231DEF3A97001C597A /* PBXTargetDependency */,
 			);
 			name = Pulmonis;
 			productName = Pulmonis;
@@ -432,6 +497,12 @@
 			mainGroup = 5BAF07B51DB11C1B00AF2FD0;
 			productRefGroup = 5BAF07BF1DB11C1B00AF2FD0 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 711210151DEF39EE001C597A /* Products */;
+					ProjectRef = 711210141DEF39EE001C597A /* Charts.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				5BAF07BD1DB11C1B00AF2FD0 /* Pulmonis */,
@@ -441,6 +512,30 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		7112101B1DEF39EE001C597A /* Charts.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Charts.framework;
+			remoteRef = 7112101A1DEF39EE001C597A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7112101D1DEF39EE001C597A /* ChartsRealm.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ChartsRealm.framework;
+			remoteRef = 7112101C1DEF39EE001C597A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7112101F1DEF39EE001C597A /* ChartsTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ChartsTests.xctest;
+			remoteRef = 7112101E1DEF39EE001C597A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		5BAF07BC1DB11C1B00AF2FD0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
@@ -449,8 +544,8 @@
 				B2A66DD11DDDE2C300F0A7EC /* SymptomActionPlan.storyboard in Resources */,
 				719018921DC78CBE000E8F59 /* OrangeSection.storyboard in Resources */,
 				5BC5361B1DB6762A00231A50 /* LiberationSans-Regular.ttf in Resources */,
+				711210131DEF3803001C597A /* PlotBreath.storyboard in Resources */,
 				5B9087671DDA707F001C7F13 /* LogPreventerInhaler.storyboard in Resources */,
-				5B6B43531DC390400071AC66 /* ActionPlan.storyboard in Resources */,
 				5B6B434F1DC38E770071AC66 /* Learn.storyboard in Resources */,
 				719D0C7F1DBA2E66008F5F97 /* Main.storyboard in Resources */,
 				5BAF07CC1DB11C1B00AF2FD0 /* LaunchScreen.storyboard in Resources */,
@@ -461,6 +556,7 @@
 				5B9087651DDA64FB001C7F13 /* oldMain.storyboard in Resources */,
 				5B90876B1DDA7C38001C7F13 /* LogRelieverInhaler.storyboard in Resources */,
 				5B82CAD61DC9139C003930FB /* PendingTasks.storyboard in Resources */,
+				711210281DEF69ED001C597A /* ActionPlan.storyboard in Resources */,
 				28CC5CAD1DC777E4009A7BE9 /* Emergency.storyboard in Resources */,
 				280551A01DDB6262001E99C6 /* DoctorInput.storyboard in Resources */,
 				28CC5CAC1DC77625009A7BE9 /* Settings.storyboard in Resources */,
@@ -537,6 +633,7 @@
 				28A336C61DDB582C005D8626 /* Green1ViewController.swift in Sources */,
 				280C60871DCD531400089C08 /* SettingsViewController.swift in Sources */,
 				28A6D0DB1DCBB2E9003B9CDC /* RedViewController.swift in Sources */,
+				711210261DEF3B0E001C597A /* PlotBreathViewController.swift in Sources */,
 				28A336D81DDB58EE005D8626 /* Yellow4ViewController.swift in Sources */,
 				28A336C81DDB5850005D8626 /* Green2ViewController.swift in Sources */,
 				5B0DEF7A1DB8F1FC006ECFCE /* LearnTableViewController.swift in Sources */,
@@ -579,6 +676,11 @@
 			isa = PBXTargetDependency;
 			target = 5BAF07BD1DB11C1B00AF2FD0 /* Pulmonis */;
 			targetProxy = 5BAF07DE1DB11C1B00AF2FD0 /* PBXContainerItemProxy */;
+		};
+		711210231DEF3A97001C597A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Charts;
+			targetProxy = 711210221DEF3A97001C597A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -709,6 +811,7 @@
 		5BAF07E71DB11C1B00AF2FD0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = X2YRCXRG35;
@@ -723,6 +826,7 @@
 		5BAF07E81DB11C1B00AF2FD0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = X2YRCXRG35;

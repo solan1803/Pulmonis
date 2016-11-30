@@ -22,7 +22,8 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Shiny Blue" translatesAutoresizingMaskIntoConstraints="NO" id="D1Y-Vw-agY"/>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="89S-lM-dYK">
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What symptoms are you experiencing?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="SJT-B7-1Ms">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What symptoms
+are you experiencing?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="SJT-B7-1Ms">
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -49,7 +50,8 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ojw-E1-SHW">
                                                         <state key="normal">
                                                             <attributedString key="attributedTitle">
-                                                                <fragment content="Chest Tightness">
+                                                                <fragment content="Chest
+Tightness">
                                                                     <attributes>
                                                                         <font key="NSFont" size="20" name=".AppleSystemUIFont"/>
                                                                         <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
@@ -68,7 +70,8 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pAB-Jl-EuZ">
                                                         <state key="normal">
                                                             <attributedString key="attributedTitle">
-                                                                <fragment content="Difficulty Breathing">
+                                                                <fragment content="Difficulty
+Breathing">
                                                                     <attributes>
                                                                         <font key="NSFont" size="20" name=".AppleSystemUIFont"/>
                                                                         <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
@@ -101,7 +104,8 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NED-6f-RGM">
                                                         <state key="normal">
                                                             <attributedString key="attributedTitle">
-                                                                <fragment content="Waking up  at night">
+                                                                <fragment content="Waking up
+ at night">
                                                                     <attributes>
                                                                         <font key="NSFont" size="20" name=".AppleSystemUIFont"/>
                                                                         <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
@@ -116,7 +120,8 @@
                                                     <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UKV-Et-CW9">
                                                         <state key="normal">
                                                             <attributedString key="attributedTitle">
-                                                                <fragment content="Reduced ADL">
+                                                                <fragment content="Reduced
+ADL">
                                                                     <attributes>
                                                                         <font key="NSFont" metaFont="system" size="20"/>
                                                                         <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
@@ -135,7 +140,8 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2I2-SM-m70">
                                                         <state key="normal">
                                                             <attributedString key="attributedTitle">
-                                                                <fragment content="Difficulty talking">
+                                                                <fragment content="Difficulty
+talking">
                                                                     <attributes>
                                                                         <font key="NSFont" size="20" name=".AppleSystemUIFont"/>
                                                                         <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
@@ -150,7 +156,8 @@
                                                     <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CSb-Im-07E">
                                                         <state key="normal">
                                                             <attributedString key="attributedTitle">
-                                                                <fragment content="Difficulty walking">
+                                                                <fragment content="Difficulty
+walking">
                                                                     <attributes>
                                                                         <font key="NSFont" size="20" name=".AppleSystemUIFont"/>
                                                                         <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
