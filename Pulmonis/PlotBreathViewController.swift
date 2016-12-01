@@ -54,16 +54,16 @@ class PlotBreathViewController: UIViewController {
     func buttonAction(sender: UIButton!) {
         var dataPoints: [Double] = [1,2,3,4,5,6,7,8,9,10]
         var values: [Double] = [1,4,9,16,25,36,49,64,81,100]
-        var values2: [Double] = [3,8,12,19,35,39,41,59,69,80]
-        var values3: [Double] = [9,15,23,39,47,58,59,59,67,69]
+        var values2: [Double] = [3,8,12,19,35,39,41,59,69,58]
+        var values3: [Double] = [9,15,23,39,47,58,59,78,67,69]
         print("button pressed, i is ", i)
         //addSensorReading(dataPoint: dataPoints[i], value: values[i])
         if (i == 0) {
-            addSensorReadings(dataPoints: dataPoints, values: values)
+            addSensorReadings(dataPoints: values, values: dataPoints)
         } else if (i == 1){
-            addSensorReadings(dataPoints: dataPoints, values: values2)
+            addSensorReadings(dataPoints: values2, values: dataPoints)
         } else {
-            addSensorReadings(dataPoints: dataPoints, values: values3)
+            addSensorReadings(dataPoints: values3, values: dataPoints)
         }
         i += 1
     }
@@ -122,7 +122,7 @@ class PlotBreathViewController: UIViewController {
 
         let chartDataSet = LineChartDataSet(values: dataEntries, label: "Reading\(colourCounter)")
         //chartDataSet.setColors(colours, alpha: 1)
-        chartDataSet.colors = colours
+        chartDataSet.setColor(dataSetColours[colourCounter])
         chartDataSet.drawValuesEnabled = true
         chartDataSet.circleColors = colours
         
