@@ -40,6 +40,7 @@
 		28CC5CAC1DC77625009A7BE9 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28CC5CAB1DC77625009A7BE9 /* Settings.storyboard */; };
 		28CC5CAD1DC777E4009A7BE9 /* Emergency.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BAF07C51DB11C1B00AF2FD0 /* Emergency.storyboard */; };
 		28E486301DB672A500C3C87E /* StatsStartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E4862F1DB672A500C3C87E /* StatsStartViewController.swift */; };
+		2EAC843B1DF0B76400BA9E9C /* ActionPlan.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EAC843A1DF0B76400BA9E9C /* ActionPlan.storyboard */; };
 		5B0DEF7A1DB8F1FC006ECFCE /* LearnTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0DEF791DB8F1FC006ECFCE /* LearnTableViewController.swift */; };
 		5B6B434F1DC38E770071AC66 /* Learn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B6B434E1DC38E770071AC66 /* Learn.storyboard */; };
 		5B6B43511DC38F6A0071AC66 /* Statistics.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B6B43501DC38F6A0071AC66 /* Statistics.storyboard */; };
@@ -83,7 +84,6 @@
 		711210201DEF3A97001C597A /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7112101B1DEF39EE001C597A /* Charts.framework */; };
 		711210211DEF3A97001C597A /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7112101B1DEF39EE001C597A /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		711210261DEF3B0E001C597A /* PlotBreathViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711210251DEF3B0E001C597A /* PlotBreathViewController.swift */; };
-		711210281DEF69ED001C597A /* ActionPlan.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 711210271DEF69ED001C597A /* ActionPlan.storyboard */; };
 		719018921DC78CBE000E8F59 /* OrangeSection.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 719018911DC78CBE000E8F59 /* OrangeSection.storyboard */; };
 		719018941DC78CEA000E8F59 /* RedSection.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 719018931DC78CEA000E8F59 /* RedSection.storyboard */; };
 		71987C5B1DB678B300248AE1 /* EmergencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71987C5A1DB678B300248AE1 /* EmergencyViewController.swift */; };
@@ -185,6 +185,7 @@
 		28CC5CA91DC772E8009A7BE9 /* GreenSection.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = GreenSection.storyboard; sourceTree = "<group>"; };
 		28CC5CAB1DC77625009A7BE9 /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
 		28E4862F1DB672A500C3C87E /* StatsStartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatsStartViewController.swift; sourceTree = "<group>"; };
+		2EAC843A1DF0B76400BA9E9C /* ActionPlan.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = ActionPlan.storyboard; path = "../../../../../Downloads/Pulmonis-9764a39b637598a408cc307ad6bd3dff91ab7f40/Pulmonis/ActionPlan.storyboard"; sourceTree = "<group>"; };
 		5B0DEF791DB8F1FC006ECFCE /* LearnTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LearnTableViewController.swift; sourceTree = "<group>"; };
 		5B6B434E1DC38E770071AC66 /* Learn.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Learn.storyboard; sourceTree = "<group>"; };
 		5B6B43501DC38F6A0071AC66 /* Statistics.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Statistics.storyboard; sourceTree = "<group>"; };
@@ -226,7 +227,6 @@
 		711210121DEF3803001C597A /* PlotBreath.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PlotBreath.storyboard; sourceTree = "<group>"; };
 		711210141DEF39EE001C597A /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = Charts/Charts.xcodeproj; sourceTree = "<group>"; };
 		711210251DEF3B0E001C597A /* PlotBreathViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlotBreathViewController.swift; sourceTree = "<group>"; };
-		711210271DEF69ED001C597A /* ActionPlan.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = ActionPlan.storyboard; path = "../../../Downloads/Pulmonis-master/Pulmonis/ActionPlan.storyboard"; sourceTree = "<group>"; };
 		719018911DC78CBE000E8F59 /* OrangeSection.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = OrangeSection.storyboard; sourceTree = "<group>"; };
 		719018931DC78CEA000E8F59 /* RedSection.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RedSection.storyboard; sourceTree = "<group>"; };
 		71987C5A1DB678B300248AE1 /* EmergencyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmergencyViewController.swift; sourceTree = "<group>"; };
@@ -307,7 +307,7 @@
 				5B88A4E71DEB464800CDD946 /* BLE.swift */,
 				5B82CABF1DC8ECE4003930FB /* SupportViewController.swift */,
 				5B82CA951DC8C14B003930FB /* PeakFlowViewController.swift */,
-				711210271DEF69ED001C597A /* ActionPlan.storyboard */,
+				2EAC843A1DF0B76400BA9E9C /* ActionPlan.storyboard */,
 				2805519F1DDB6262001E99C6 /* DoctorInput.storyboard */,
 				5B6B43501DC38F6A0071AC66 /* Statistics.storyboard */,
 				5B6B434E1DC38E770071AC66 /* Learn.storyboard */,
@@ -556,12 +556,12 @@
 				5B9087651DDA64FB001C7F13 /* oldMain.storyboard in Resources */,
 				5B90876B1DDA7C38001C7F13 /* LogRelieverInhaler.storyboard in Resources */,
 				5B82CAD61DC9139C003930FB /* PendingTasks.storyboard in Resources */,
-				711210281DEF69ED001C597A /* ActionPlan.storyboard in Resources */,
 				28CC5CAD1DC777E4009A7BE9 /* Emergency.storyboard in Resources */,
 				280551A01DDB6262001E99C6 /* DoctorInput.storyboard in Resources */,
 				28CC5CAC1DC77625009A7BE9 /* Settings.storyboard in Resources */,
 				5BC536151DB6762A00231A50 /* LiberationSans-BoldItalic.ttf in Resources */,
 				5B6B43511DC38F6A0071AC66 /* Statistics.storyboard in Resources */,
+				2EAC843B1DF0B76400BA9E9C /* ActionPlan.storyboard in Resources */,
 				5BC536181DB6762A00231A50 /* LiberationSans-Italic.ttf in Resources */,
 				5BC5360F1DB6761C00231A50 /* LiberationSans-Bold.ttf in Resources */,
 			);

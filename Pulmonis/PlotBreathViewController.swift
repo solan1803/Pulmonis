@@ -18,6 +18,8 @@ class PlotBreathViewController: UIViewController {
     var minYPoint : Double = 0
     var maxYPoint : Double = 0
     var i = 0
+    var colourCounter = 0
+    var dataSetColours : [NSUIColor] = [NSUIColor.blue, NSUIColor.cyan, NSUIColor.green]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,13 +29,15 @@ class PlotBreathViewController: UIViewController {
         
         breathLineView.noDataText = "No breaths recorded, please breathe into the spirometer"
         breathLineView.chartDescription?.text = ""
+        breathLineView.legend.enabled = false
+        breathLineView.xAxis.labelPosition = .bottom
         
-        var dataEntries: [ChartDataEntry] = []
-        
-        dataEntries.append(ChartDataEntry(x: 0, y: 0))
-        let chartDataSet = LineChartDataSet(values: dataEntries, label: "Pressure")
-        let chartData = LineChartData(dataSet: chartDataSet)
-        breathLineView.data = chartData
+        //var dataEntries: [ChartDataEntry] = []
+        //
+        //dataEntries.append(ChartDataEntry(x: 0, y: 0))
+        //let chartDataSet = LineChartDataSet(values: dataEntries, label: "Pressure")
+        //let chartData = LineChartData(dataSet: chartDataSet)
+        //breathLineView.data = chartData
 
         let button = UIButton(frame: CGRect(x: 100, y: 100, width: 100, height: 50))
         button.setTitle("Test Button", for: .normal)
@@ -50,8 +54,17 @@ class PlotBreathViewController: UIViewController {
     func buttonAction(sender: UIButton!) {
         var dataPoints: [Double] = [1,2,3,4,5,6,7,8,9,10]
         var values: [Double] = [1,4,9,16,25,36,49,64,81,100]
+        var values2: [Double] = [3,8,12,19,35,39,41,59,69,80]
+        var values3: [Double] = [9,15,23,39,47,58,59,59,67,69]
         print("button pressed, i is ", i)
-        addSensorReading(dataPoint: dataPoints[i], value: values[i])
+        //addSensorReading(dataPoint: dataPoints[i], value: values[i])
+        if (i == 0) {
+            addSensorReadings(dataPoints: dataPoints, values: values)
+        } else if (i == 1){
+            addSensorReadings(dataPoints: dataPoints, values: values2)
+        } else {
+            addSensorReadings(dataPoints: dataPoints, values: values3)
+        }
         i += 1
     }
     
@@ -87,6 +100,46 @@ class PlotBreathViewController: UIViewController {
         breathLineView.moveViewToX(0)
         breathLineView.fitScreen()
         
+    }
+    
+    func addSensorReadings(dataPoints: [Double], values: [Double]) {
+    
+        var dataEntries: [ChartDataEntry] = []
+        
+        var colours : [NSUIColor] = []
+        var max : Double = 0
+        var maxIndex = 0
+        for i in 0..<dataPoints.count {
+            let dataEntry = ChartDataEntry(x: values[i], y: dataPoints[i])
+            if (max < dataPoints[i]) {
+                max = dataPoints[i]
+                maxIndex = i
+            }
+            dataEntries.append(dataEntry)
+            colours.append(dataSetColours[colourCounter])
+        }
+        colours[maxIndex] = NSUIColor.red
+
+        let chartDataSet = LineChartDataSet(values: dataEntries, label: "Reading\(colourCounter)")
+        //chartDataSet.setColors(colours, alpha: 1)
+        chartDataSet.colors = colours
+        chartDataSet.drawValuesEnabled = true
+        chartDataSet.circleColors = colours
+        
+        if (colourCounter == 0) {
+            let chartData = LineChartData(dataSet: chartDataSet)
+            breathLineView.data = chartData
+        } else {
+            breathLineView.data?.addDataSet(chartDataSet)
+        }
+        colourCounter += 1
+        
+        breathLineView.notifyDataSetChanged()
+        breathLineView.setNeedsLayout()
+        breathLineView.setNeedsDisplay()
+        breathLineView.setNeedsUpdateConstraints()
+        //breathLineView.moveViewToX(0)
+        breathLineView.fitScreen()
     }
 
     override func didReceiveMemoryWarning() {
