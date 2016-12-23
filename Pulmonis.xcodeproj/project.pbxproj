@@ -243,7 +243,6 @@
 				5B90876C1DDA7D37001C7F13 /* LogRelieverInhalerViewController.swift */,
 				B2A66DD41DDDEEC100F0A7EC /* ActionPlanTutorialViewController.swift */,
 				B2A66DCF1DDDE05F00F0A7EC /* SymptomsActionPlanViewController.swift */,
-				28A53A851DDDF64A00595F80 /* ColourFile.swift */,
 				28A6D0DA1DCBB2E9003B9CDC /* RedViewController.swift */,
 				2833EC7F1DCDF0C1000D4F7F /* SectionSelectionViewController.swift */,
 			);
@@ -309,6 +308,7 @@
 			isa = PBXGroup;
 			children = (
 				2805519F1DDB6262001E99C6 /* DoctorInput.storyboard */,
+				28A53A851DDDF64A00595F80 /* ColourFile.swift */,
 				28A6D0D01DCB552A003B9CDC /* ListedViewController.swift */,
 				28A53A871DDDFC7100595F80 /* PatientDataFields.swift */,
 				28787E111DDB6B38000439AD /* PatientData.plist */,
