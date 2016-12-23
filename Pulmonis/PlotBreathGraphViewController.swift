@@ -123,6 +123,7 @@ class PlotBreathGraphViewController: UIViewController {
         
         let chartDataSet = LineChartDataSet(values: dataEntries, label: "Reading\(colourCounter)")
         //chartDataSet.setColors(colours, alpha: 1)
+        chartDataSet.mode = .cubicBezier
         chartDataSet.setColor(dataSetColours[colourCounter])
         chartDataSet.drawValuesEnabled = true
         chartDataSet.circleColors = colours
