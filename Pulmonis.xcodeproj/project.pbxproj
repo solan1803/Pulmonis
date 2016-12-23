@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		280551A01DDB6262001E99C6 /* DoctorInput.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2805519F1DDB6262001E99C6 /* DoctorInput.storyboard */; };
 		280C60871DCD531400089C08 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280C60861DCD531400089C08 /* SettingsViewController.swift */; };
-		2833EC801DCDF0C1000D4F7F /* SectionSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2833EC7F1DCDF0C1000D4F7F /* SectionSelectionViewController.swift */; };
 		2834399E1DC2195900857437 /* Plist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2834399D1DC2195900857437 /* Plist.swift */; };
 		28787E121DDB6B38000439AD /* PatientData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 28787E111DDB6B38000439AD /* PatientData.plist */; };
 		2899A93C1DB4FE03004306DF /* SymptomsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2899A93B1DB4FE03004306DF /* SymptomsViewController.swift */; };
@@ -28,15 +27,9 @@
 		28A336DC1DDB58FF005D8626 /* Yellow6ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A336DB1DDB58FF005D8626 /* Yellow6ViewController.swift */; };
 		28A336DE1DDB590B005D8626 /* Red1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A336DD1DDB590B005D8626 /* Red1ViewController.swift */; };
 		28A336E01DDB5912005D8626 /* Red2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A336DF1DDB5912005D8626 /* Red2ViewController.swift */; };
-		28A336E21DDB5C79005D8626 /* Yellow7ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A336E11DDB5C79005D8626 /* Yellow7ViewController.swift */; };
 		28A53A861DDDF64A00595F80 /* ColourFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A53A851DDDF64A00595F80 /* ColourFile.swift */; };
 		28A53A881DDDFC7100595F80 /* PatientDataFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A53A871DDDFC7100595F80 /* PatientDataFields.swift */; };
 		28A6D0D11DCB552A003B9CDC /* ListedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A6D0D01DCB552A003B9CDC /* ListedViewController.swift */; };
-		28A6D0D31DCBA5C6003B9CDC /* Orange1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A6D0D21DCBA5C6003B9CDC /* Orange1ViewController.swift */; };
-		28A6D0D51DCBA5D1003B9CDC /* Orange2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A6D0D41DCBA5D1003B9CDC /* Orange2ViewController.swift */; };
-		28A6D0D71DCBA5DC003B9CDC /* Orange3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A6D0D61DCBA5DC003B9CDC /* Orange3ViewController.swift */; };
-		28A6D0DB1DCBB2E9003B9CDC /* RedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A6D0DA1DCBB2E9003B9CDC /* RedViewController.swift */; };
-		28CC5CAA1DC772E8009A7BE9 /* GreenSection.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28CC5CA91DC772E8009A7BE9 /* GreenSection.storyboard */; };
 		28CC5CAC1DC77625009A7BE9 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28CC5CAB1DC77625009A7BE9 /* Settings.storyboard */; };
 		28CC5CAD1DC777E4009A7BE9 /* Emergency.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BAF07C51DB11C1B00AF2FD0 /* Emergency.storyboard */; };
 		28E486301DB672A500C3C87E /* StatsStartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E4862F1DB672A500C3C87E /* StatsStartViewController.swift */; };
@@ -57,11 +50,6 @@
 		5B82CAD81DC91527003930FB /* TaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B82CAD71DC91527003930FB /* TaskTableViewCell.swift */; };
 		5B82CADA1DC918C1003930FB /* PendingTasksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B82CAD91DC918C1003930FB /* PendingTasksTableViewController.swift */; };
 		5B88A4E81DEB464800CDD946 /* BLE.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B88A4E71DEB464800CDD946 /* BLE.swift */; };
-		5B9087651DDA64FB001C7F13 /* oldMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B9087641DDA64FB001C7F13 /* oldMain.storyboard */; };
-		5B9087671DDA707F001C7F13 /* LogPreventerInhaler.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B9087661DDA707F001C7F13 /* LogPreventerInhaler.storyboard */; };
-		5B9087691DDA74D9001C7F13 /* LogPreventerInhalerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9087681DDA74D8001C7F13 /* LogPreventerInhalerViewController.swift */; };
-		5B90876B1DDA7C38001C7F13 /* LogRelieverInhaler.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B90876A1DDA7C38001C7F13 /* LogRelieverInhaler.storyboard */; };
-		5B90876D1DDA7D37001C7F13 /* LogRelieverInhalerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B90876C1DDA7D37001C7F13 /* LogRelieverInhalerViewController.swift */; };
 		5BAF07C21DB11C1B00AF2FD0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAF07C11DB11C1B00AF2FD0 /* AppDelegate.swift */; };
 		5BAF07C41DB11C1B00AF2FD0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAF07C31DB11C1B00AF2FD0 /* ViewController.swift */; };
 		5BAF07C91DB11C1B00AF2FD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BAF07C81DB11C1B00AF2FD0 /* Assets.xcassets */; };
@@ -81,12 +69,8 @@
 		5BC5361C1DB6762A00231A50 /* LiberationSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5BC536141DB6762A00231A50 /* LiberationSans-Regular.ttf */; };
 		5BC5361D1DB6762A00231A50 /* LiberationSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5BC536141DB6762A00231A50 /* LiberationSans-Regular.ttf */; };
 		719018921DC78CBE000E8F59 /* OrangeSection.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 719018911DC78CBE000E8F59 /* OrangeSection.storyboard */; };
-		719018941DC78CEA000E8F59 /* RedSection.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 719018931DC78CEA000E8F59 /* RedSection.storyboard */; };
 		71987C5B1DB678B300248AE1 /* EmergencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71987C5A1DB678B300248AE1 /* EmergencyViewController.swift */; };
 		719D0C7F1DBA2E66008F5F97 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 719D0C7D1DBA2E66008F5F97 /* Main.storyboard */; };
-		B2A66DD01DDDE05F00F0A7EC /* SymptomsActionPlanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A66DCF1DDDE05F00F0A7EC /* SymptomsActionPlanViewController.swift */; };
-		B2A66DD11DDDE2C300F0A7EC /* SymptomActionPlan.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2A66DCD1DDDE02100F0A7EC /* SymptomActionPlan.storyboard */; };
-		B2A66DD51DDDEEC100F0A7EC /* ActionPlanTutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A66DD41DDDEEC100F0A7EC /* ActionPlanTutorialViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,7 +93,6 @@
 /* Begin PBXFileReference section */
 		2805519F1DDB6262001E99C6 /* DoctorInput.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DoctorInput.storyboard; sourceTree = "<group>"; };
 		280C60861DCD531400089C08 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
-		2833EC7F1DCDF0C1000D4F7F /* SectionSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionSelectionViewController.swift; sourceTree = "<group>"; };
 		2834399D1DC2195900857437 /* Plist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Plist.swift; sourceTree = "<group>"; };
 		28787E111DDB6B38000439AD /* PatientData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PatientData.plist; sourceTree = "<group>"; };
 		2899A93B1DB4FE03004306DF /* SymptomsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SymptomsViewController.swift; sourceTree = "<group>"; };
@@ -132,11 +115,6 @@
 		28A53A851DDDF64A00595F80 /* ColourFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColourFile.swift; sourceTree = "<group>"; };
 		28A53A871DDDFC7100595F80 /* PatientDataFields.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatientDataFields.swift; sourceTree = "<group>"; };
 		28A6D0D01DCB552A003B9CDC /* ListedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListedViewController.swift; sourceTree = "<group>"; };
-		28A6D0D21DCBA5C6003B9CDC /* Orange1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Orange1ViewController.swift; sourceTree = "<group>"; };
-		28A6D0D41DCBA5D1003B9CDC /* Orange2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Orange2ViewController.swift; sourceTree = "<group>"; };
-		28A6D0D61DCBA5DC003B9CDC /* Orange3ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Orange3ViewController.swift; sourceTree = "<group>"; };
-		28A6D0DA1DCBB2E9003B9CDC /* RedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedViewController.swift; sourceTree = "<group>"; };
-		28CC5CA91DC772E8009A7BE9 /* GreenSection.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = GreenSection.storyboard; sourceTree = "<group>"; };
 		28CC5CAB1DC77625009A7BE9 /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
 		28E4862F1DB672A500C3C87E /* StatsStartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatsStartViewController.swift; sourceTree = "<group>"; };
 		5B0DEF791DB8F1FC006ECFCE /* LearnTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LearnTableViewController.swift; sourceTree = "<group>"; };
@@ -156,11 +134,6 @@
 		5B82CAD71DC91527003930FB /* TaskTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskTableViewCell.swift; sourceTree = "<group>"; };
 		5B82CAD91DC918C1003930FB /* PendingTasksTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PendingTasksTableViewController.swift; sourceTree = "<group>"; };
 		5B88A4E71DEB464800CDD946 /* BLE.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BLE.swift; sourceTree = "<group>"; };
-		5B9087641DDA64FB001C7F13 /* oldMain.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = oldMain.storyboard; sourceTree = "<group>"; };
-		5B9087661DDA707F001C7F13 /* LogPreventerInhaler.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LogPreventerInhaler.storyboard; sourceTree = "<group>"; };
-		5B9087681DDA74D8001C7F13 /* LogPreventerInhalerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogPreventerInhalerViewController.swift; sourceTree = "<group>"; };
-		5B90876A1DDA7C38001C7F13 /* LogRelieverInhaler.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LogRelieverInhaler.storyboard; sourceTree = "<group>"; };
-		5B90876C1DDA7D37001C7F13 /* LogRelieverInhalerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogRelieverInhalerViewController.swift; sourceTree = "<group>"; };
 		5BAF07BE1DB11C1B00AF2FD0 /* Pulmonis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pulmonis.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BAF07C11DB11C1B00AF2FD0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5BAF07C31DB11C1B00AF2FD0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -178,13 +151,9 @@
 		5BC536121DB6762A00231A50 /* LiberationSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LiberationSans-BoldItalic.ttf"; sourceTree = "<group>"; };
 		5BC536131DB6762A00231A50 /* LiberationSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LiberationSans-Italic.ttf"; sourceTree = "<group>"; };
 		5BC536141DB6762A00231A50 /* LiberationSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LiberationSans-Regular.ttf"; sourceTree = "<group>"; };
-		719018911DC78CBE000E8F59 /* OrangeSection.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = OrangeSection.storyboard; sourceTree = "<group>"; };
-		719018931DC78CEA000E8F59 /* RedSection.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RedSection.storyboard; sourceTree = "<group>"; };
+		719018911DC78CBE000E8F59 /* OrangeSection.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = OrangeSection.storyboard; path = /Users/manivannansolan/Developer/Pulmonis/Pulmonis/OrangeSection.storyboard; sourceTree = "<absolute>"; };
 		71987C5A1DB678B300248AE1 /* EmergencyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmergencyViewController.swift; sourceTree = "<group>"; };
 		719D0C7E1DBA2E66008F5F97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Pulmonis/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		B2A66DCD1DDDE02100F0A7EC /* SymptomActionPlan.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SymptomActionPlan.storyboard; sourceTree = "<group>"; };
-		B2A66DCF1DDDE05F00F0A7EC /* SymptomsActionPlanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SymptomsActionPlanViewController.swift; sourceTree = "<group>"; };
-		B2A66DD41DDDEEC100F0A7EC /* ActionPlanTutorialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionPlanTutorialViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -224,29 +193,6 @@
 				5B82CABC1DC8CAF1003930FB /* PeakFlowTable+CoreDataProperties.swift */,
 			);
 			name = "Database Files";
-			sourceTree = "<group>";
-		};
-		5B1E3B821E0AABF200901EF9 /* Old Files */ = {
-			isa = PBXGroup;
-			children = (
-				5B9087661DDA707F001C7F13 /* LogPreventerInhaler.storyboard */,
-				5B90876A1DDA7C38001C7F13 /* LogRelieverInhaler.storyboard */,
-				5B9087641DDA64FB001C7F13 /* oldMain.storyboard */,
-				B2A66DCD1DDDE02100F0A7EC /* SymptomActionPlan.storyboard */,
-				28CC5CA91DC772E8009A7BE9 /* GreenSection.storyboard */,
-				719018931DC78CEA000E8F59 /* RedSection.storyboard */,
-				719018911DC78CBE000E8F59 /* OrangeSection.storyboard */,
-				28A6D0D21DCBA5C6003B9CDC /* Orange1ViewController.swift */,
-				28A6D0D41DCBA5D1003B9CDC /* Orange2ViewController.swift */,
-				28A6D0D61DCBA5DC003B9CDC /* Orange3ViewController.swift */,
-				5B9087681DDA74D8001C7F13 /* LogPreventerInhalerViewController.swift */,
-				5B90876C1DDA7D37001C7F13 /* LogRelieverInhalerViewController.swift */,
-				B2A66DD41DDDEEC100F0A7EC /* ActionPlanTutorialViewController.swift */,
-				B2A66DCF1DDDE05F00F0A7EC /* SymptomsActionPlanViewController.swift */,
-				28A6D0DA1DCBB2E9003B9CDC /* RedViewController.swift */,
-				2833EC7F1DCDF0C1000D4F7F /* SectionSelectionViewController.swift */,
-			);
-			name = "Old Files";
 			sourceTree = "<group>";
 		};
 		5B1E3B831E0AAD9600901EF9 /* Miscellaneous */ = {
@@ -356,7 +302,6 @@
 			isa = PBXGroup;
 			children = (
 				5B1E3B811E0AAB9B00901EF9 /* Database Files */,
-				5B1E3B821E0AABF200901EF9 /* Old Files */,
 				5B1E3B831E0AAD9600901EF9 /* Miscellaneous */,
 				5B1E3B881E0AB34B00901EF9 /* Action Plan */,
 				5B1E3B871E0AB23200901EF9 /* Doctor Input */,
@@ -510,20 +455,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B2A66DD11DDDE2C300F0A7EC /* SymptomActionPlan.storyboard in Resources */,
 				719018921DC78CBE000E8F59 /* OrangeSection.storyboard in Resources */,
 				5BC5361B1DB6762A00231A50 /* LiberationSans-Regular.ttf in Resources */,
-				5B9087671DDA707F001C7F13 /* LogPreventerInhaler.storyboard in Resources */,
 				5B6B43531DC390400071AC66 /* ActionPlan.storyboard in Resources */,
 				5B6B434F1DC38E770071AC66 /* Learn.storyboard in Resources */,
 				719D0C7F1DBA2E66008F5F97 /* Main.storyboard in Resources */,
 				5BAF07CC1DB11C1B00AF2FD0 /* LaunchScreen.storyboard in Resources */,
 				28787E121DDB6B38000439AD /* PatientData.plist in Resources */,
 				5BAF07C91DB11C1B00AF2FD0 /* Assets.xcassets in Resources */,
-				719018941DC78CEA000E8F59 /* RedSection.storyboard in Resources */,
-				28CC5CAA1DC772E8009A7BE9 /* GreenSection.storyboard in Resources */,
-				5B9087651DDA64FB001C7F13 /* oldMain.storyboard in Resources */,
-				5B90876B1DDA7C38001C7F13 /* LogRelieverInhaler.storyboard in Resources */,
 				5B82CAD61DC9139C003930FB /* PendingTasks.storyboard in Resources */,
 				28CC5CAD1DC777E4009A7BE9 /* Emergency.storyboard in Resources */,
 				280551A01DDB6262001E99C6 /* DoctorInput.storyboard in Resources */,
@@ -564,33 +503,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28A336E21DDB5C79005D8626 /* Yellow7ViewController.swift in Sources */,
 				28A336CA1DDB585C005D8626 /* Green3ViewController.swift in Sources */,
 				5B82CADA1DC918C1003930FB /* PendingTasksTableViewController.swift in Sources */,
 				28A53A861DDDF64A00595F80 /* ColourFile.swift in Sources */,
-				B2A66DD01DDDE05F00F0A7EC /* SymptomsActionPlanViewController.swift in Sources */,
 				5B82CABA1DC8CA85003930FB /* PeakFlowModel.xcdatamodeld in Sources */,
 				28A336D21DDB58D6005D8626 /* Yellow1ViewController.swift in Sources */,
 				5B88A4E81DEB464800CDD946 /* BLE.swift in Sources */,
 				28A6D0D11DCB552A003B9CDC /* ListedViewController.swift in Sources */,
-				28A6D0D31DCBA5C6003B9CDC /* Orange1ViewController.swift in Sources */,
 				28A336E01DDB5912005D8626 /* Red2ViewController.swift in Sources */,
 				28A336DA1DDB58F4005D8626 /* Yellow5ViewController.swift in Sources */,
 				28E486301DB672A500C3C87E /* StatsStartViewController.swift in Sources */,
 				5B82CAD81DC91527003930FB /* TaskTableViewCell.swift in Sources */,
-				5B9087691DDA74D9001C7F13 /* LogPreventerInhalerViewController.swift in Sources */,
 				5B82CAC01DC8ECE4003930FB /* SupportViewController.swift in Sources */,
 				28A53A881DDDFC7100595F80 /* PatientDataFields.swift in Sources */,
 				2899A9411DB519D6004306DF /* MedicineViewController.swift in Sources */,
-				2833EC801DCDF0C1000D4F7F /* SectionSelectionViewController.swift in Sources */,
 				28A336CE1DDB5877005D8626 /* Green5ViewController.swift in Sources */,
 				2834399E1DC2195900857437 /* Plist.swift in Sources */,
 				5B82CAC41DC8EE07003930FB /* SupportRecord+CoreDataProperties.swift in Sources */,
 				5B82CAD31DC912CB003930FB /* PendingTask+CoreDataClass.swift in Sources */,
 				28A336CC1DDB586C005D8626 /* Green4ViewController.swift in Sources */,
-				5B90876D1DDA7D37001C7F13 /* LogRelieverInhalerViewController.swift in Sources */,
-				28A6D0D51DCBA5D1003B9CDC /* Orange2ViewController.swift in Sources */,
-				B2A66DD51DDDEEC100F0A7EC /* ActionPlanTutorialViewController.swift in Sources */,
 				5BAF07C41DB11C1B00AF2FD0 /* ViewController.swift in Sources */,
 				5BAF07C21DB11C1B00AF2FD0 /* AppDelegate.swift in Sources */,
 				2899A93C1DB4FE03004306DF /* SymptomsViewController.swift in Sources */,
@@ -600,7 +531,6 @@
 				28A336DE1DDB590B005D8626 /* Red1ViewController.swift in Sources */,
 				28A336C61DDB582C005D8626 /* Green1ViewController.swift in Sources */,
 				280C60871DCD531400089C08 /* SettingsViewController.swift in Sources */,
-				28A6D0DB1DCBB2E9003B9CDC /* RedViewController.swift in Sources */,
 				28A336D81DDB58EE005D8626 /* Yellow4ViewController.swift in Sources */,
 				28A336C81DDB5850005D8626 /* Green2ViewController.swift in Sources */,
 				5B0DEF7A1DB8F1FC006ECFCE /* LearnTableViewController.swift in Sources */,
@@ -610,7 +540,6 @@
 				5B82CABE1DC8CAF1003930FB /* PeakFlowTable+CoreDataProperties.swift in Sources */,
 				5B82CABD1DC8CAF1003930FB /* PeakFlowTable+CoreDataClass.swift in Sources */,
 				5B82CA961DC8C14B003930FB /* PeakFlowViewController.swift in Sources */,
-				28A6D0D71DCBA5DC003B9CDC /* Orange3ViewController.swift in Sources */,
 				28A336D01DDB5881005D8626 /* Green6ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

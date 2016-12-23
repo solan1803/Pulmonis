@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="jTH-zX-tr7">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="jTH-zX-tr7">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -74,129 +74,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W86-6l-ATF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2767" y="403"/>
-        </scene>
-        <!--Colour Selection-->
-        <scene sceneID="M5r-E5-Fq4">
-            <objects>
-                <viewController id="PH1-OI-yok" userLabel="Colour Selection" customClass="SectionSelectionViewController" customModule="Pulmonis" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="TaU-KJ-0Cb"/>
-                        <viewControllerLayoutGuide type="bottom" id="Bxe-Tr-cfd"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="GLx-FJ-yVR">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="Ig1-cb-OXK">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pick a section to edit:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uer-VX-hMo">
-                                <rect key="frame" x="55.5" y="40" width="264" height="31.5"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
-                                <color key="textColor" red="0.001422772068" green="0.4256876409" blue="0.55088329319999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="80" translatesAutoresizingMaskIntoConstraints="NO" id="4Bz-Rq-hCV">
-                                <rect key="frame" x="75" y="121.5" width="225" height="425.5"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="W1G-ZU-S3f">
-                                        <rect key="frame" x="0.0" y="0.0" width="225" height="88.5"/>
-                                        <color key="backgroundColor" red="0.0" green="0.5970953106880188" blue="0.28522098064422607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
-                                        <state key="normal">
-                                            <string key="title">Green 
-(Everyday asthma care)</string>
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <segue destination="Prf-fj-yx7" kind="show" id="5HL-6w-Sie"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Auy-Md-Vy0">
-                                        <rect key="frame" x="0.0" y="168.5" width="225" height="88.5"/>
-                                        <color key="backgroundColor" red="0.96236675977706909" green="0.74167639017105103" blue="0.19961568713188171" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
-                                        <state key="normal">
-                                            <string key="title">Orange
-(When I feel worse)</string>
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <segue destination="Fmb-uw-RI5" kind="show" id="jq5-jl-O6m"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="K3V-QZ-pxH">
-                                        <rect key="frame" x="0.0" y="337" width="225" height="88.5"/>
-                                        <color key="backgroundColor" red="0.69006246328353882" green="0.12373516708612442" blue="0.17300373315811157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
-                                        <state key="normal">
-                                            <string key="title">Red
-(In an asthma attack)</string>
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <segue destination="Uah-6e-e0L" kind="show" id="ug9-SO-hcb"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </stackView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="4Bz-Rq-hCV" firstAttribute="centerX" secondItem="GLx-FJ-yVR" secondAttribute="centerX" id="4Fd-2K-3dQ"/>
-                            <constraint firstAttribute="trailing" secondItem="4Bz-Rq-hCV" secondAttribute="trailing" constant="75" id="7lw-EL-P3u"/>
-                            <constraint firstItem="uer-VX-hMo" firstAttribute="top" secondItem="TaU-KJ-0Cb" secondAttribute="bottom" constant="20" id="8yR-xF-Qtz"/>
-                            <constraint firstItem="Ig1-cb-OXK" firstAttribute="top" secondItem="TaU-KJ-0Cb" secondAttribute="bottom" id="Bq3-74-6fA"/>
-                            <constraint firstAttribute="trailing" secondItem="Ig1-cb-OXK" secondAttribute="trailing" id="LD8-1I-qWq"/>
-                            <constraint firstItem="4Bz-Rq-hCV" firstAttribute="leading" secondItem="GLx-FJ-yVR" secondAttribute="leading" constant="75" id="ME6-Gw-eEf"/>
-                            <constraint firstItem="Bxe-Tr-cfd" firstAttribute="top" secondItem="4Bz-Rq-hCV" secondAttribute="bottom" constant="120" id="PSm-9c-JZA"/>
-                            <constraint firstItem="4Bz-Rq-hCV" firstAttribute="top" secondItem="uer-VX-hMo" secondAttribute="bottom" constant="50" id="YSn-0x-YQ1"/>
-                            <constraint firstItem="Ig1-cb-OXK" firstAttribute="leading" secondItem="GLx-FJ-yVR" secondAttribute="leading" id="atb-Ag-C0L"/>
-                            <constraint firstItem="uer-VX-hMo" firstAttribute="centerX" secondItem="GLx-FJ-yVR" secondAttribute="centerX" id="h9Y-jN-fIA"/>
-                            <constraint firstItem="Bxe-Tr-cfd" firstAttribute="top" secondItem="Ig1-cb-OXK" secondAttribute="bottom" id="pcF-wY-pxs"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="greenButton" destination="W1G-ZU-S3f" id="f1P-eT-sBi"/>
-                        <outlet property="orangeButton" destination="Auy-Md-Vy0" id="dsM-Wm-65H"/>
-                        <outlet property="redButton" destination="K3V-QZ-pxH" id="t74-e0-zwa"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9J2-Km-tgH" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3110" y="908"/>
-        </scene>
-        <!--DoctorInput-->
-        <scene sceneID="hgm-y9-Udm">
-            <objects>
-                <viewControllerPlaceholder storyboardName="DoctorInput" id="Prf-fj-yx7" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fcs-hh-Qtr" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3834" y="715"/>
-        </scene>
-        <!--Green1-->
-        <scene sceneID="dNz-id-VYv">
-            <objects>
-                <viewControllerPlaceholder storyboardName="GreenSection" referencedIdentifier="Green1" id="B55-XJ-qRK" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hcf-Io-hjX" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3870" y="801"/>
-        </scene>
-        <!--Orange1-->
-        <scene sceneID="zQ3-m8-A8z">
-            <objects>
-                <viewControllerPlaceholder storyboardName="OrangeSection" referencedIdentifier="Orange1" id="Fmb-uw-RI5" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="cck-eL-6IB" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3876" y="974"/>
-        </scene>
-        <!--Red1-->
-        <scene sceneID="wqa-dK-6hb">
-            <objects>
-                <viewControllerPlaceholder storyboardName="RedSection" referencedIdentifier="Red1" id="Uah-6e-e0L" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="jZ1-5h-DMZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3900" y="1106"/>
         </scene>
     </scenes>
     <resources>
