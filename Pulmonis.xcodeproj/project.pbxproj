@@ -40,6 +40,8 @@
 		28CC5CAC1DC77625009A7BE9 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28CC5CAB1DC77625009A7BE9 /* Settings.storyboard */; };
 		28CC5CAD1DC777E4009A7BE9 /* Emergency.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BAF07C51DB11C1B00AF2FD0 /* Emergency.storyboard */; };
 		28E486301DB672A500C3C87E /* StatsStartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E4862F1DB672A500C3C87E /* StatsStartViewController.swift */; };
+		2EAAC7C31E0D598F00BE9B77 /* PlotBreath.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EAAC7C11E0D598F00BE9B77 /* PlotBreath.storyboard */; };
+		2EAAC7C41E0D598F00BE9B77 /* PlotBreathViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAAC7C21E0D598F00BE9B77 /* PlotBreathViewController.swift */; };
 		5B0DEF7A1DB8F1FC006ECFCE /* LearnTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0DEF791DB8F1FC006ECFCE /* LearnTableViewController.swift */; };
 		5B6B434F1DC38E770071AC66 /* Learn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B6B434E1DC38E770071AC66 /* Learn.storyboard */; };
 		5B6B43511DC38F6A0071AC66 /* Statistics.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B6B43501DC38F6A0071AC66 /* Statistics.storyboard */; };
@@ -139,6 +141,8 @@
 		28CC5CA91DC772E8009A7BE9 /* GreenSection.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = GreenSection.storyboard; sourceTree = "<group>"; };
 		28CC5CAB1DC77625009A7BE9 /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
 		28E4862F1DB672A500C3C87E /* StatsStartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatsStartViewController.swift; sourceTree = "<group>"; };
+		2EAAC7C11E0D598F00BE9B77 /* PlotBreath.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PlotBreath.storyboard; sourceTree = "<group>"; };
+		2EAAC7C21E0D598F00BE9B77 /* PlotBreathViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlotBreathViewController.swift; sourceTree = "<group>"; };
 		5B0DEF791DB8F1FC006ECFCE /* LearnTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LearnTableViewController.swift; sourceTree = "<group>"; };
 		5B6B434E1DC38E770071AC66 /* Learn.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Learn.storyboard; sourceTree = "<group>"; };
 		5B6B43501DC38F6A0071AC66 /* Statistics.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Statistics.storyboard; sourceTree = "<group>"; };
@@ -212,6 +216,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2EAAC7C51E0D599600BE9B77 /* Plotting */ = {
+			isa = PBXGroup;
+			children = (
+				2EAAC7C11E0D598F00BE9B77 /* PlotBreath.storyboard */,
+				2EAAC7C21E0D598F00BE9B77 /* PlotBreathViewController.swift */,
+			);
+			name = Plotting;
+			sourceTree = "<group>";
+		};
 		5B1E3B811E0AAB9B00901EF9 /* Database Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -355,6 +368,7 @@
 		5BAF07C01DB11C1B00AF2FD0 /* Pulmonis */ = {
 			isa = PBXGroup;
 			children = (
+				2EAAC7C51E0D599600BE9B77 /* Plotting */,
 				5B1E3B811E0AAB9B00901EF9 /* Database Files */,
 				5B1E3B821E0AABF200901EF9 /* Old Files */,
 				5B1E3B831E0AAD9600901EF9 /* Miscellaneous */,
@@ -513,6 +527,7 @@
 				B2A66DD11DDDE2C300F0A7EC /* SymptomActionPlan.storyboard in Resources */,
 				719018921DC78CBE000E8F59 /* OrangeSection.storyboard in Resources */,
 				5BC5361B1DB6762A00231A50 /* LiberationSans-Regular.ttf in Resources */,
+				2EAAC7C31E0D598F00BE9B77 /* PlotBreath.storyboard in Resources */,
 				5B9087671DDA707F001C7F13 /* LogPreventerInhaler.storyboard in Resources */,
 				5B6B43531DC390400071AC66 /* ActionPlan.storyboard in Resources */,
 				5B6B434F1DC38E770071AC66 /* Learn.storyboard in Resources */,
@@ -601,6 +616,7 @@
 				28A336C61DDB582C005D8626 /* Green1ViewController.swift in Sources */,
 				280C60871DCD531400089C08 /* SettingsViewController.swift in Sources */,
 				28A6D0DB1DCBB2E9003B9CDC /* RedViewController.swift in Sources */,
+				2EAAC7C41E0D598F00BE9B77 /* PlotBreathViewController.swift in Sources */,
 				28A336D81DDB58EE005D8626 /* Yellow4ViewController.swift in Sources */,
 				28A336C81DDB5850005D8626 /* Green2ViewController.swift in Sources */,
 				5B0DEF7A1DB8F1FC006ECFCE /* LearnTableViewController.swift in Sources */,
