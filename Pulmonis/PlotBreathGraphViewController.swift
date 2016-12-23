@@ -53,10 +53,10 @@ class PlotBreathGraphViewController: UIViewController {
     
     //For test purposes
     func buttonAction(sender: UIButton!) {
-        var dataPoints: [Double] = [1,2,3,4,5,6,7,8,9,10]
-        var values: [Double] = [1,4,9,16,25,36,49,64,81,100]
-        var values2: [Double] = [3,8,12,19,35,39,41,59,69,58]
-        var values3: [Double] = [9,15,23,39,47,58,59,78,67,69]
+        let dataPoints: [Double] = [1,2,3,4,5,6,7,8,9,10]
+        let values: [Double] = [1,4,9,16,25,36,49,64,81,100]
+        let values2: [Double] = [3,8,12,19,35,39,41,59,69,58]
+        let values3: [Double] = [9,15,23,39,47,58,59,78,67,69]
         print("button pressed, i is ", i)
         //addSensorReading(dataPoint: dataPoints[i], value: values[i])
         if (i == 0) {
@@ -93,7 +93,7 @@ class PlotBreathGraphViewController: UIViewController {
             minXPoint = value
         }
         print("added ", dataPoint, ", ", value)
-        print(breathLineView.data)
+        // print(breathLineView.data)
         breathLineView.notifyDataSetChanged()
         breathLineView.setNeedsLayout()
         breathLineView.setNeedsDisplay()
