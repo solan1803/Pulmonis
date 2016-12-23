@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="6AO-Xv-D0b">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Plot Breath View Controller-->
+        <scene sceneID="R4W-z9-FIt">
+            <objects>
+                <viewController storyboardIdentifier="PlotBreath" id="6AO-Xv-D0b" customClass="PlotBreathViewController" customModule="Pulmonis" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dRd-cd-Ryo"/>
+                        <viewControllerLayoutGuide type="bottom" id="QOh-2h-xZQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GeI-Re-ONd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xje-gu-gjc" customClass="LineChartView" customModule="Charts">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="QOh-2h-xZQ" firstAttribute="top" secondItem="xje-gu-gjc" secondAttribute="bottom" id="WHX-7n-d2O"/>
+                            <constraint firstItem="xje-gu-gjc" firstAttribute="leading" secondItem="GeI-Re-ONd" secondAttribute="leading" id="Xu1-ao-o2R"/>
+                            <constraint firstItem="xje-gu-gjc" firstAttribute="top" secondItem="dRd-cd-Ryo" secondAttribute="bottom" id="aI8-dF-4Rh"/>
+                            <constraint firstAttribute="trailing" secondItem="xje-gu-gjc" secondAttribute="trailing" id="s4v-5i-jat"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="breathLineView" destination="xje-gu-gjc" id="19a-8t-ekp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Pb-4A-XtG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="86" y="174"/>
+        </scene>
+    </scenes>
+</document>
