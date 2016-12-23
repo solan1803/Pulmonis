@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vqD-fS-vdQ">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vqD-fS-vdQ">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -322,7 +322,6 @@
                                 </state>
                                 <connections>
                                     <action selector="connectBluetooth:" destination="oeC-Pe-cKC" eventType="touchUpInside" id="rXz-oD-v3e"/>
-                                    <segue destination="ran-lK-wF9" kind="show" id="vrc-is-DjV"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Running Value: 000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zZJ-cF-Ccb">
@@ -375,7 +374,7 @@
         <!--PlotBreath-->
         <scene sceneID="cOa-1L-oaA">
             <objects>
-                <viewControllerPlaceholder storyboardName="PlotBreath" referencedIdentifier="PlotBreath" id="ran-lK-wF9" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardIdentifier="plot" storyboardName="PlotBreath" referencedIdentifier="PlotBreath" id="ran-lK-wF9" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cg6-Tf-XKv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3793" y="-240"/>
