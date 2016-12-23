@@ -1,17 +1,18 @@
 //
-//  PlotBreathViewController.swift
+//  PlotBreathGraphViewController.swift
 //  Pulmonis
 //
-//  Created by Seng, Sophie on 30/11/2016.
+//  Created by Manivannan Solan on 23/12/2016.
 //  Copyright © 2016 Manivannan Solan. All rights reserved.
 //
 
 import UIKit
 import Charts
 
-class PlotBreathViewController: UIViewController {
-
+class PlotBreathGraphViewController: UIViewController {
+    
     @IBOutlet weak var breathLineView: LineChartView!
+
     var minXPoint : Double = 0
     var maxXPoint : Double = 0
     
@@ -38,14 +39,14 @@ class PlotBreathViewController: UIViewController {
         //let chartDataSet = LineChartDataSet(values: dataEntries, label: "Pressure")
         //let chartData = LineChartData(dataSet: chartDataSet)
         //breathLineView.data = chartData
-
+        
         let button = UIButton(frame: CGRect(x: 100, y: 100, width: 100, height: 50))
         button.setTitle("Test Button", for: .normal)
         button.backgroundColor = UIColor.blue
         button.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
         
         self.view.addSubview(button)
-
+        
         // Do any additional setup after loading the view.
     }
     
@@ -71,7 +72,7 @@ class PlotBreathViewController: UIViewController {
     func addSensorReading(dataPoint: Double, value: Double) {
         let dataEntry = ChartDataEntry(x: dataPoint, y: value)
         breathLineView.data?.addEntry(dataEntry, dataSetIndex: 0)
-
+        
         if (dataPoint > maxXPoint) {
             breathLineView.setVisibleXRangeMaximum(dataPoint)
             maxXPoint = dataPoint
@@ -103,7 +104,7 @@ class PlotBreathViewController: UIViewController {
     }
     
     func addSensorReadings(dataPoints: [Double], values: [Double]) {
-    
+        
         var dataEntries: [ChartDataEntry] = []
         
         var colours : [NSUIColor] = []
@@ -119,7 +120,7 @@ class PlotBreathViewController: UIViewController {
             colours.append(dataSetColours[colourCounter])
         }
         colours[maxIndex] = NSUIColor.red
-
+        
         let chartDataSet = LineChartDataSet(values: dataEntries, label: "Reading\(colourCounter)")
         //chartDataSet.setColors(colours, alpha: 1)
         chartDataSet.setColor(dataSetColours[colourCounter])
@@ -141,21 +142,21 @@ class PlotBreathViewController: UIViewController {
         //breathLineView.moveViewToX(0)
         breathLineView.fitScreen()
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-
+    
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destinationViewController.
+     // Pass the selected object to the new view controller.
+     }
+     */
 
 }

@@ -91,7 +91,7 @@ class PeakFlowViewController: UIViewController, BLEDelegate {
     
     func bleDidConnectToPeripheral(){
         connectButton.setTitle("Connected!", for: .normal)
-        self.performSegue(withIdentifier: "plot", sender: self)
+        self.performSegue(withIdentifier: "plotBreath", sender: self)
         print("->Connected")
         
         // send reset

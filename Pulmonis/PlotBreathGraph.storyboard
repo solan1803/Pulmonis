@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="jXa-Zp-FjI">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Plot Breath Graph View Controller-->
+        <scene sceneID="ova-uh-fp6">
+            <objects>
+                <viewController storyboardIdentifier="PlotBreathGraph" id="jXa-Zp-FjI" customClass="PlotBreathGraphViewController" customModule="Pulmonis" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="P2a-7y-M4d"/>
+                        <viewControllerLayoutGuide type="bottom" id="Wka-oK-SPv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9oG-yK-ARu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="css-u2-WwB" customClass="LineChartView" customModule="Charts">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="css-u2-WwB" firstAttribute="top" secondItem="P2a-7y-M4d" secondAttribute="bottom" id="MeE-Ma-4pw"/>
+                            <constraint firstItem="Wka-oK-SPv" firstAttribute="top" secondItem="css-u2-WwB" secondAttribute="bottom" id="odU-1w-ust"/>
+                            <constraint firstAttribute="trailing" secondItem="css-u2-WwB" secondAttribute="trailing" id="weX-1S-umQ"/>
+                            <constraint firstItem="css-u2-WwB" firstAttribute="leading" secondItem="9oG-yK-ARu" secondAttribute="leading" id="xHw-13-IpJ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="breathLineView" destination="css-u2-WwB" id="fLw-Qv-vbB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zCI-Ds-ek7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="86" y="174"/>
+        </scene>
+    </scenes>
+</document>

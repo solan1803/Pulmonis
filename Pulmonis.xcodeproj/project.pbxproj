@@ -33,11 +33,10 @@
 		28CC5CAC1DC77625009A7BE9 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28CC5CAB1DC77625009A7BE9 /* Settings.storyboard */; };
 		28CC5CAD1DC777E4009A7BE9 /* Emergency.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BAF07C51DB11C1B00AF2FD0 /* Emergency.storyboard */; };
 		28E486301DB672A500C3C87E /* StatsStartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E4862F1DB672A500C3C87E /* StatsStartViewController.swift */; };
-		2EAAC7C31E0D598F00BE9B77 /* PlotBreath.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EAAC7C11E0D598F00BE9B77 /* PlotBreath.storyboard */; };
-		2EAAC7C41E0D598F00BE9B77 /* PlotBreathViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAAC7C21E0D598F00BE9B77 /* PlotBreathViewController.swift */; };
 		2EAAC7D31E0D5A8200BE9B77 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EAAC7CE1E0D5A6300BE9B77 /* Charts.framework */; };
 		2EAAC7D41E0D5A8200BE9B77 /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2EAAC7CE1E0D5A6300BE9B77 /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5B0DEF7A1DB8F1FC006ECFCE /* LearnTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0DEF791DB8F1FC006ECFCE /* LearnTableViewController.swift */; };
+		5B3A1DBD1E0D7A76009800B8 /* PlotBreathGraph.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B3A1DBC1E0D7A76009800B8 /* PlotBreathGraph.storyboard */; };
 		5B6B434F1DC38E770071AC66 /* Learn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B6B434E1DC38E770071AC66 /* Learn.storyboard */; };
 		5B6B43511DC38F6A0071AC66 /* Statistics.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B6B43501DC38F6A0071AC66 /* Statistics.storyboard */; };
 		5B6B43531DC390400071AC66 /* ActionPlan.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B6B43521DC390400071AC66 /* ActionPlan.storyboard */; };
@@ -72,7 +71,7 @@
 		5BC5361B1DB6762A00231A50 /* LiberationSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5BC536141DB6762A00231A50 /* LiberationSans-Regular.ttf */; };
 		5BC5361C1DB6762A00231A50 /* LiberationSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5BC536141DB6762A00231A50 /* LiberationSans-Regular.ttf */; };
 		5BC5361D1DB6762A00231A50 /* LiberationSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5BC536141DB6762A00231A50 /* LiberationSans-Regular.ttf */; };
-		719018921DC78CBE000E8F59 /* OrangeSection.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 719018911DC78CBE000E8F59 /* OrangeSection.storyboard */; };
+		5BC91B941E0D7F1E002D0879 /* PlotBreathGraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC91B931E0D7F1E002D0879 /* PlotBreathGraphViewController.swift */; };
 		71987C5B1DB678B300248AE1 /* EmergencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71987C5A1DB678B300248AE1 /* EmergencyViewController.swift */; };
 		719D0C7F1DBA2E66008F5F97 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 719D0C7D1DBA2E66008F5F97 /* Main.storyboard */; };
 /* End PBXBuildFile section */
@@ -163,10 +162,9 @@
 		28A6D0D01DCB552A003B9CDC /* ListedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListedViewController.swift; sourceTree = "<group>"; };
 		28CC5CAB1DC77625009A7BE9 /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
 		28E4862F1DB672A500C3C87E /* StatsStartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatsStartViewController.swift; sourceTree = "<group>"; };
-		2EAAC7C11E0D598F00BE9B77 /* PlotBreath.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PlotBreath.storyboard; sourceTree = "<group>"; };
-		2EAAC7C21E0D598F00BE9B77 /* PlotBreathViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlotBreathViewController.swift; sourceTree = "<group>"; };
 		2EAAC7C71E0D5A6300BE9B77 /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = Charts/Charts.xcodeproj; sourceTree = "<group>"; };
 		5B0DEF791DB8F1FC006ECFCE /* LearnTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LearnTableViewController.swift; sourceTree = "<group>"; };
+		5B3A1DBC1E0D7A76009800B8 /* PlotBreathGraph.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PlotBreathGraph.storyboard; sourceTree = "<group>"; };
 		5B6B434E1DC38E770071AC66 /* Learn.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Learn.storyboard; sourceTree = "<group>"; };
 		5B6B43501DC38F6A0071AC66 /* Statistics.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Statistics.storyboard; sourceTree = "<group>"; };
 		5B6B43521DC390400071AC66 /* ActionPlan.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ActionPlan.storyboard; sourceTree = "<group>"; };
@@ -200,7 +198,7 @@
 		5BC536121DB6762A00231A50 /* LiberationSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LiberationSans-BoldItalic.ttf"; sourceTree = "<group>"; };
 		5BC536131DB6762A00231A50 /* LiberationSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LiberationSans-Italic.ttf"; sourceTree = "<group>"; };
 		5BC536141DB6762A00231A50 /* LiberationSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LiberationSans-Regular.ttf"; sourceTree = "<group>"; };
-		719018911DC78CBE000E8F59 /* OrangeSection.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = OrangeSection.storyboard; path = /Users/manivannansolan/Developer/Pulmonis/Pulmonis/OrangeSection.storyboard; sourceTree = "<absolute>"; };
+		5BC91B931E0D7F1E002D0879 /* PlotBreathGraphViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlotBreathGraphViewController.swift; sourceTree = "<group>"; };
 		71987C5A1DB678B300248AE1 /* EmergencyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmergencyViewController.swift; sourceTree = "<group>"; };
 		719D0C7E1DBA2E66008F5F97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Pulmonis/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -234,8 +232,8 @@
 		2EAAC7C51E0D599600BE9B77 /* Plotting */ = {
 			isa = PBXGroup;
 			children = (
-				2EAAC7C11E0D598F00BE9B77 /* PlotBreath.storyboard */,
-				2EAAC7C21E0D598F00BE9B77 /* PlotBreathViewController.swift */,
+				5BC91B931E0D7F1E002D0879 /* PlotBreathGraphViewController.swift */,
+				5B3A1DBC1E0D7A76009800B8 /* PlotBreathGraph.storyboard */,
 			);
 			name = Plotting;
 			sourceTree = "<group>";
@@ -558,7 +556,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				719018921DC78CBE000E8F59 /* OrangeSection.storyboard in Resources */,
 				5BC5361B1DB6762A00231A50 /* LiberationSans-Regular.ttf in Resources */,
 				5B6B43531DC390400071AC66 /* ActionPlan.storyboard in Resources */,
 				5B6B434F1DC38E770071AC66 /* Learn.storyboard in Resources */,
@@ -567,6 +564,7 @@
 				28787E121DDB6B38000439AD /* PatientData.plist in Resources */,
 				5BAF07C91DB11C1B00AF2FD0 /* Assets.xcassets in Resources */,
 				5B82CAD61DC9139C003930FB /* PendingTasks.storyboard in Resources */,
+				5B3A1DBD1E0D7A76009800B8 /* PlotBreathGraph.storyboard in Resources */,
 				28CC5CAD1DC777E4009A7BE9 /* Emergency.storyboard in Resources */,
 				280551A01DDB6262001E99C6 /* DoctorInput.storyboard in Resources */,
 				28CC5CAC1DC77625009A7BE9 /* Settings.storyboard in Resources */,
@@ -606,6 +604,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BC91B941E0D7F1E002D0879 /* PlotBreathGraphViewController.swift in Sources */,
 				28A336CA1DDB585C005D8626 /* Green3ViewController.swift in Sources */,
 				5B82CADA1DC918C1003930FB /* PendingTasksTableViewController.swift in Sources */,
 				28A53A861DDDF64A00595F80 /* ColourFile.swift in Sources */,
@@ -815,6 +814,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = X2YRCXRG35;
 				INFOPLIST_FILE = Pulmonis/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.stanford.msolan.Pulmonis;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -830,6 +830,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = X2YRCXRG35;
 				INFOPLIST_FILE = Pulmonis/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.stanford.msolan.Pulmonis;
 				PRODUCT_NAME = "$(TARGET_NAME)";
