@@ -381,6 +381,16 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D6E-24-akT">
+                                <rect key="frame" x="211" y="500" width="101" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.225386858" green="0.83328109979999998" blue="0.50258815290000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Test"/>
+                                <connections>
+                                    <segue destination="Mha-qu-Zxg" kind="show" id="oPi-Lf-MmV"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -411,7 +421,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2yb-QP-ObV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3231" y="-242"/>
+            <point key="canvasLocation" x="3229.5999999999999" y="-242.42878560719643"/>
         </scene>
         <!--PlotBreathGraph-->
         <scene sceneID="vIE-Qu-WW8">
@@ -492,4 +502,7 @@
         <image name="drugs" width="884" height="452"/>
         <image name="exclamation_mark" width="165" height="165"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="oPi-Lf-MmV"/>
+    </inferredMetricsTieBreakers>
 </document>

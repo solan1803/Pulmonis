@@ -109,34 +109,43 @@ class PeakFlowViewController: UIViewController, BLEDelegate {
     
     var maxPeakFlowValue : Float = 0.0
     
+    var readings: [Double] = []
+
     func bleDidReceiveData(data: NSData?) {
         let length = data?.length
         print("LENGTH: \(length)")
         let count = length!/MemoryLayout<UInt8>.size
-        var array = [UInt8](repeating: 0, count: count)
-        data!.getBytes(&array, length:count * MemoryLayout<UInt8>.size)
-        for i in stride(from: 0, through: count-1, by: 4) {//= 0; i < count; i+=4 {
-            let arr = Array(array[i...(i+3)])
-            let u32 = UnsafePointer(arr).withMemoryRebound(to: Float.self, capacity: 1) {
-                $0.pointee
+        
+        if (count == 1) {
+            print("COUNT WAS 1")
+            if let topController = UIApplication.topViewController() {
+                let graphController = topController as! PlotBreathGraphViewController
+                let times = [1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0,
+                            11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0]
+                let trimmedReadings = Array(readings[0...19])
+                graphController.addSensorReadings(dataPoints: trimmedReadings, values: times )
             }
-            print(u32)
-            let f = String(format:"%02f", u32)
-            bluetoothValueLabel.text! = "Running Value: " + f
-            maxPeakFlowValue = max(maxPeakFlowValue, u32)
-            let m = String(format: "%02f", max(maxPeakFlowValue, u32))
-            maxBluetoothValueLabel.text! = "Max Value: " + m
+            readings = []
+        } else {
+        
+            var array = [UInt8](repeating: 0, count: count)
+            data!.getBytes(&array, length:count * MemoryLayout<UInt8>.size)
+        
+            for i in stride(from: 0, through: count-1, by: 4) {
+                let arr = Array(array[i...(i+3)])
+                let u32 = UnsafePointer(arr).withMemoryRebound(to: Float.self, capacity: 1) {
+                    $0.pointee
+                }
+                readings.append(Double(u32))
+                print(u32)
+    //            let f = String(format:"%02f", u32)
+    //            bluetoothValueLabel.text! = "Running Value: " + f
+    //            maxPeakFlowValue = max(maxPeakFlowValue, u32)
+    //            let m = String(format: "%02f", max(maxPeakFlowValue, u32))
+    //            maxBluetoothValueLabel.text! = "Max Value: " + m
+            
+            }
         }
-//        bluetoothText = "h"
-//        let flo = String(format:"%02f", u32)
-//        print(flo)
-//        for i in 0 ..< count {
-//            let hex = String(format:"0x%02X", array[i])
-//            let dec = String(format:"%02d", array[i])
-//            print(dec)
-//            let value = UInt8(hex, radix: 16)
-//            bluetoothText = dec
-//        }
     }
     
 
@@ -181,3 +190,21 @@ extension UIViewController {
         }
     }
 }
+
+extension UIApplication {
+    class func topViewController(controller: UIViewController? = UIApplication.shared.keyWindow?.rootViewController) -> UIViewController? {
+        if let navigationController = controller as? UINavigationController {
+            return topViewController(controller: navigationController.visibleViewController)
+        }
+        if let tabController = controller as? UITabBarController {
+            if let selected = tabController.selectedViewController {
+                return topViewController(controller: selected)
+            }
+        }
+        if let presented = controller?.presentedViewController {
+            return topViewController(controller: presented)
+        }
+        return controller
+    }
+}
+
