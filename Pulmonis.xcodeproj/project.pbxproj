@@ -40,6 +40,7 @@
 		5B6B434F1DC38E770071AC66 /* Learn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B6B434E1DC38E770071AC66 /* Learn.storyboard */; };
 		5B6B43511DC38F6A0071AC66 /* Statistics.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B6B43501DC38F6A0071AC66 /* Statistics.storyboard */; };
 		5B6B43531DC390400071AC66 /* ActionPlan.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B6B43521DC390400071AC66 /* ActionPlan.storyboard */; };
+		5B702FE91E0E9FEB0082B649 /* BluetoothUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B702FE81E0E9FEB0082B649 /* BluetoothUnitTests.swift */; };
 		5B82CA961DC8C14B003930FB /* PeakFlowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B82CA951DC8C14B003930FB /* PeakFlowViewController.swift */; };
 		5B82CABA1DC8CA85003930FB /* PeakFlowModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5B82CAB81DC8CA85003930FB /* PeakFlowModel.xcdatamodeld */; };
 		5B82CABD1DC8CAF1003930FB /* PeakFlowTable+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B82CABB1DC8CAF1003930FB /* PeakFlowTable+CoreDataClass.swift */; };
@@ -168,6 +169,7 @@
 		5B6B434E1DC38E770071AC66 /* Learn.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Learn.storyboard; sourceTree = "<group>"; };
 		5B6B43501DC38F6A0071AC66 /* Statistics.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Statistics.storyboard; sourceTree = "<group>"; };
 		5B6B43521DC390400071AC66 /* ActionPlan.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ActionPlan.storyboard; sourceTree = "<group>"; };
+		5B702FE81E0E9FEB0082B649 /* BluetoothUnitTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BluetoothUnitTests.swift; sourceTree = "<group>"; };
 		5B82CA951DC8C14B003930FB /* PeakFlowViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeakFlowViewController.swift; sourceTree = "<group>"; };
 		5B82CAB91DC8CA85003930FB /* PeakFlowModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PeakFlowModel.xcdatamodel; sourceTree = "<group>"; };
 		5B82CABB1DC8CAF1003930FB /* PeakFlowTable+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PeakFlowTable+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -389,6 +391,7 @@
 			isa = PBXGroup;
 			children = (
 				5BAF07D61DB11C1B00AF2FD0 /* PulmonisTests.swift */,
+				5B702FE81E0E9FEB0082B649 /* BluetoothUnitTests.swift */,
 				5BAF07D81DB11C1B00AF2FD0 /* Info.plist */,
 			);
 			path = PulmonisTests;
@@ -650,6 +653,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B702FE91E0E9FEB0082B649 /* BluetoothUnitTests.swift in Sources */,
 				5BAF07D71DB11C1B00AF2FD0 /* PulmonisTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
