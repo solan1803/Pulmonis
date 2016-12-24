@@ -324,7 +324,7 @@
         <!--Peak Flow View Controller-->
         <scene sceneID="FhW-wY-3gO">
             <objects>
-                <viewController id="oeC-Pe-cKC" customClass="PeakFlowViewController" customModule="Pulmonis" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PeakFlowController" id="oeC-Pe-cKC" customClass="PeakFlowViewController" customModule="Pulmonis" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="CCB-fH-3FO"/>
                         <viewControllerLayoutGuide type="bottom" id="MTI-St-cBZ"/>
