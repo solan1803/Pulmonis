@@ -60,6 +60,7 @@
 		5BAF07CC1DB11C1B00AF2FD0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BAF07CA1DB11C1B00AF2FD0 /* LaunchScreen.storyboard */; };
 		5BAF07D71DB11C1B00AF2FD0 /* PulmonisTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAF07D61DB11C1B00AF2FD0 /* PulmonisTests.swift */; };
 		5BAF07E21DB11C1B00AF2FD0 /* PulmonisUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAF07E11DB11C1B00AF2FD0 /* PulmonisUITests.swift */; };
+		5BB493911E0F2BB600C09719 /* Yellow7ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB493901E0F2BB600C09719 /* Yellow7ViewController.swift */; };
 		5BC5360F1DB6761C00231A50 /* LiberationSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5BC5360E1DB6761C00231A50 /* LiberationSans-Bold.ttf */; };
 		5BC536101DB6761C00231A50 /* LiberationSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5BC5360E1DB6761C00231A50 /* LiberationSans-Bold.ttf */; };
 		5BC536111DB6761C00231A50 /* LiberationSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5BC5360E1DB6761C00231A50 /* LiberationSans-Bold.ttf */; };
@@ -157,7 +158,6 @@
 		28A336DB1DDB58FF005D8626 /* Yellow6ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Yellow6ViewController.swift; sourceTree = "<group>"; };
 		28A336DD1DDB590B005D8626 /* Red1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Red1ViewController.swift; sourceTree = "<group>"; };
 		28A336DF1DDB5912005D8626 /* Red2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Red2ViewController.swift; sourceTree = "<group>"; };
-		28A336E11DDB5C79005D8626 /* Yellow7ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Yellow7ViewController.swift; sourceTree = "<group>"; };
 		28A53A851DDDF64A00595F80 /* ColourFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColourFile.swift; sourceTree = "<group>"; };
 		28A53A871DDDFC7100595F80 /* PatientDataFields.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatientDataFields.swift; sourceTree = "<group>"; };
 		28A6D0D01DCB552A003B9CDC /* ListedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListedViewController.swift; sourceTree = "<group>"; };
@@ -196,6 +196,7 @@
 		5BAF07DD1DB11C1B00AF2FD0 /* PulmonisUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PulmonisUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BAF07E11DB11C1B00AF2FD0 /* PulmonisUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulmonisUITests.swift; sourceTree = "<group>"; };
 		5BAF07E31DB11C1B00AF2FD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5BB493901E0F2BB600C09719 /* Yellow7ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Yellow7ViewController.swift; sourceTree = "<group>"; };
 		5BC5360E1DB6761C00231A50 /* LiberationSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LiberationSans-Bold.ttf"; sourceTree = "<group>"; };
 		5BC536121DB6762A00231A50 /* LiberationSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LiberationSans-BoldItalic.ttf"; sourceTree = "<group>"; };
 		5BC536131DB6762A00231A50 /* LiberationSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LiberationSans-Italic.ttf"; sourceTree = "<group>"; };
@@ -292,7 +293,7 @@
 				28A336D71DDB58EE005D8626 /* Yellow4ViewController.swift */,
 				28A336D91DDB58F4005D8626 /* Yellow5ViewController.swift */,
 				28A336DB1DDB58FF005D8626 /* Yellow6ViewController.swift */,
-				28A336E11DDB5C79005D8626 /* Yellow7ViewController.swift */,
+				5BB493901E0F2BB600C09719 /* Yellow7ViewController.swift */,
 			);
 			name = "Yellow Section";
 			sourceTree = "<group>";
@@ -487,7 +488,7 @@
 				TargetAttributes = {
 					5BAF07BD1DB11C1B00AF2FD0 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = X2YRCXRG35;
+						DevelopmentTeam = QJQGH9NF7F;
 						ProvisioningStyle = Automatic;
 					};
 					5BAF07D11DB11C1B00AF2FD0 = {
@@ -607,6 +608,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BB493911E0F2BB600C09719 /* Yellow7ViewController.swift in Sources */,
 				5BC91B941E0D7F1E002D0879 /* PlotBreathGraphViewController.swift in Sources */,
 				28A336CA1DDB585C005D8626 /* Green3ViewController.swift in Sources */,
 				5B82CADA1DC918C1003930FB /* PendingTasksTableViewController.swift in Sources */,
@@ -816,7 +818,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = X2YRCXRG35;
+				DEVELOPMENT_TEAM = QJQGH9NF7F;
 				INFOPLIST_FILE = Pulmonis/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -832,7 +834,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = X2YRCXRG35;
+				DEVELOPMENT_TEAM = QJQGH9NF7F;
 				INFOPLIST_FILE = Pulmonis/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
