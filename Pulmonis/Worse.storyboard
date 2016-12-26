@@ -84,6 +84,7 @@
                                         </state>
                                         <connections>
                                             <action selector="addMedicineNotification:" destination="WEy-i1-ZdM" eventType="touchUpInside" id="rVT-dV-cDW"/>
+                                            <segue destination="YXn-JP-vU6" kind="show" id="BV0-dn-mfk"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OZt-iT-LGt">
@@ -96,6 +97,9 @@
                                         <state key="normal" title="Taken">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="YXn-JP-vU6" kind="show" id="iQV-bJ-HdG"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -142,6 +146,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1vS-Mq-qdY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4319" y="514"/>
+        </scene>
+        <!--Main-->
+        <scene sceneID="hGQ-bp-Dxu">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" id="YXn-JP-vU6" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zWp-xi-Tg2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4366" y="972"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="lKN-jb-P1m">
@@ -233,4 +245,7 @@
         <image name="drugs" width="884" height="452"/>
         <image name="exclamation_mark" width="165" height="165"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="iQV-bJ-HdG"/>
+    </inferredMetricsTieBreakers>
 </document>
