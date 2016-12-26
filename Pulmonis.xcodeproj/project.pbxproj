@@ -61,6 +61,9 @@
 		5BAF07D71DB11C1B00AF2FD0 /* PulmonisTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAF07D61DB11C1B00AF2FD0 /* PulmonisTests.swift */; };
 		5BAF07E21DB11C1B00AF2FD0 /* PulmonisUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAF07E11DB11C1B00AF2FD0 /* PulmonisUITests.swift */; };
 		5BB493911E0F2BB600C09719 /* Yellow7ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB493901E0F2BB600C09719 /* Yellow7ViewController.swift */; };
+		5BC2CD3C1E0F340700FBDEC9 /* HealthKit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BC2CD3B1E0F340600FBDEC9 /* HealthKit.storyboard */; };
+		5BC2CD401E0F343300FBDEC9 /* HealthKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC2CD3F1E0F343300FBDEC9 /* HealthKitViewController.swift */; };
+		5BC2CD481E0FD3E700FBDEC9 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BC2CD471E0FD3E700FBDEC9 /* HealthKit.framework */; };
 		5BC5360F1DB6761C00231A50 /* LiberationSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5BC5360E1DB6761C00231A50 /* LiberationSans-Bold.ttf */; };
 		5BC536101DB6761C00231A50 /* LiberationSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5BC5360E1DB6761C00231A50 /* LiberationSans-Bold.ttf */; };
 		5BC536111DB6761C00231A50 /* LiberationSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5BC5360E1DB6761C00231A50 /* LiberationSans-Bold.ttf */; };
@@ -74,6 +77,7 @@
 		5BC5361C1DB6762A00231A50 /* LiberationSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5BC536141DB6762A00231A50 /* LiberationSans-Regular.ttf */; };
 		5BC5361D1DB6762A00231A50 /* LiberationSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5BC536141DB6762A00231A50 /* LiberationSans-Regular.ttf */; };
 		5BC91B941E0D7F1E002D0879 /* PlotBreathGraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC91B931E0D7F1E002D0879 /* PlotBreathGraphViewController.swift */; };
+		5BD2AFAF1E0FF285008FA668 /* HealthKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD2AFAE1E0FF285008FA668 /* HealthKitTests.swift */; };
 		71987C5B1DB678B300248AE1 /* EmergencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71987C5A1DB678B300248AE1 /* EmergencyViewController.swift */; };
 		719D0C7F1DBA2E66008F5F97 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 719D0C7D1DBA2E66008F5F97 /* Main.storyboard */; };
 /* End PBXBuildFile section */
@@ -197,11 +201,16 @@
 		5BAF07E11DB11C1B00AF2FD0 /* PulmonisUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulmonisUITests.swift; sourceTree = "<group>"; };
 		5BAF07E31DB11C1B00AF2FD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5BB493901E0F2BB600C09719 /* Yellow7ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Yellow7ViewController.swift; sourceTree = "<group>"; };
+		5BC2CD3B1E0F340600FBDEC9 /* HealthKit.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HealthKit.storyboard; sourceTree = "<group>"; };
+		5BC2CD3F1E0F343300FBDEC9 /* HealthKitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthKitViewController.swift; sourceTree = "<group>"; };
+		5BC2CD411E0F34DA00FBDEC9 /* Pulmonis.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Pulmonis.entitlements; sourceTree = "<group>"; };
+		5BC2CD471E0FD3E700FBDEC9 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		5BC5360E1DB6761C00231A50 /* LiberationSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LiberationSans-Bold.ttf"; sourceTree = "<group>"; };
 		5BC536121DB6762A00231A50 /* LiberationSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LiberationSans-BoldItalic.ttf"; sourceTree = "<group>"; };
 		5BC536131DB6762A00231A50 /* LiberationSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LiberationSans-Italic.ttf"; sourceTree = "<group>"; };
 		5BC536141DB6762A00231A50 /* LiberationSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LiberationSans-Regular.ttf"; sourceTree = "<group>"; };
 		5BC91B931E0D7F1E002D0879 /* PlotBreathGraphViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlotBreathGraphViewController.swift; sourceTree = "<group>"; };
+		5BD2AFAE1E0FF285008FA668 /* HealthKitTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthKitTests.swift; sourceTree = "<group>"; };
 		71987C5A1DB678B300248AE1 /* EmergencyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmergencyViewController.swift; sourceTree = "<group>"; };
 		719D0C7E1DBA2E66008F5F97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Pulmonis/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -212,6 +221,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2EAAC7D31E0D5A8200BE9B77 /* Charts.framework in Frameworks */,
+				5BC2CD481E0FD3E700FBDEC9 /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,8 +281,10 @@
 				5BAF07C51DB11C1B00AF2FD0 /* Emergency.storyboard */,
 				5B6B434E1DC38E770071AC66 /* Learn.storyboard */,
 				28CC5CAB1DC77625009A7BE9 /* Settings.storyboard */,
+				5BC2CD3B1E0F340600FBDEC9 /* HealthKit.storyboard */,
 				5B82CAD51DC9139C003930FB /* PendingTasks.storyboard */,
 				5B6B43501DC38F6A0071AC66 /* Statistics.storyboard */,
+				5BC2CD3F1E0F343300FBDEC9 /* HealthKitViewController.swift */,
 				28E4862F1DB672A500C3C87E /* StatsStartViewController.swift */,
 				71987C5A1DB678B300248AE1 /* EmergencyViewController.swift */,
 				280C60861DCD531400089C08 /* SettingsViewController.swift */,
@@ -356,6 +368,7 @@
 				5BAF07D51DB11C1B00AF2FD0 /* PulmonisTests */,
 				5BAF07E01DB11C1B00AF2FD0 /* PulmonisUITests */,
 				5BAF07BF1DB11C1B00AF2FD0 /* Products */,
+				5BC2CD421E0F34DA00FBDEC9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -372,6 +385,7 @@
 		5BAF07C01DB11C1B00AF2FD0 /* Pulmonis */ = {
 			isa = PBXGroup;
 			children = (
+				5BC2CD411E0F34DA00FBDEC9 /* Pulmonis.entitlements */,
 				2EAAC7C51E0D599600BE9B77 /* Plotting */,
 				5B1E3B811E0AAB9B00901EF9 /* Database Files */,
 				5B1E3B831E0AAD9600901EF9 /* Miscellaneous */,
@@ -393,6 +407,7 @@
 			children = (
 				5BAF07D61DB11C1B00AF2FD0 /* PulmonisTests.swift */,
 				5B702FE81E0E9FEB0082B649 /* BluetoothUnitTests.swift */,
+				5BD2AFAE1E0FF285008FA668 /* HealthKitTests.swift */,
 				5BAF07D81DB11C1B00AF2FD0 /* Info.plist */,
 			);
 			path = PulmonisTests;
@@ -405,6 +420,14 @@
 				5BAF07E31DB11C1B00AF2FD0 /* Info.plist */,
 			);
 			path = PulmonisUITests;
+			sourceTree = "<group>";
+		};
+		5BC2CD421E0F34DA00FBDEC9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5BC2CD471E0FD3E700FBDEC9 /* HealthKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		5BC5360D1DB675AD00231A50 /* Resources */ = {
@@ -489,7 +512,12 @@
 					5BAF07BD1DB11C1B00AF2FD0 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = QJQGH9NF7F;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.HealthKit = {
+								enabled = 1;
+							};
+						};
 					};
 					5BAF07D11DB11C1B00AF2FD0 = {
 						CreatedOnToolsVersion = 8.0;
@@ -560,6 +588,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BC2CD3C1E0F340700FBDEC9 /* HealthKit.storyboard in Resources */,
 				5BC5361B1DB6762A00231A50 /* LiberationSans-Regular.ttf in Resources */,
 				5B6B43531DC390400071AC66 /* ActionPlan.storyboard in Resources */,
 				5B6B434F1DC38E770071AC66 /* Learn.storyboard in Resources */,
@@ -640,6 +669,7 @@
 				280C60871DCD531400089C08 /* SettingsViewController.swift in Sources */,
 				28A336D81DDB58EE005D8626 /* Yellow4ViewController.swift in Sources */,
 				28A336C81DDB5850005D8626 /* Green2ViewController.swift in Sources */,
+				5BC2CD401E0F343300FBDEC9 /* HealthKitViewController.swift in Sources */,
 				5B0DEF7A1DB8F1FC006ECFCE /* LearnTableViewController.swift in Sources */,
 				5B82CAD41DC912CB003930FB /* PendingTask+CoreDataProperties.swift in Sources */,
 				71987C5B1DB678B300248AE1 /* EmergencyViewController.swift in Sources */,
@@ -655,6 +685,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BD2AFAF1E0FF285008FA668 /* HealthKitTests.swift in Sources */,
 				5B702FE91E0E9FEB0082B649 /* BluetoothUnitTests.swift in Sources */,
 				5BAF07D71DB11C1B00AF2FD0 /* PulmonisTests.swift in Sources */,
 			);
@@ -817,13 +848,16 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Pulmonis/Pulmonis.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = QJQGH9NF7F;
 				INFOPLIST_FILE = Pulmonis/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = edu.stanford.msolan.Pulmonis;
+				PRODUCT_BUNDLE_IDENTIFIER = uk.ac.imperial.Pulmonis;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "36a2b486-9d85-464d-ba9e-32399f3fbfc3";
+				PROVISIONING_PROFILE_SPECIFIER = PulmonisApp;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -833,13 +867,16 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Pulmonis/Pulmonis.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = QJQGH9NF7F;
 				INFOPLIST_FILE = Pulmonis/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = edu.stanford.msolan.Pulmonis;
+				PRODUCT_BUNDLE_IDENTIFIER = uk.ac.imperial.Pulmonis;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "36a2b486-9d85-464d-ba9e-32399f3fbfc3";
+				PROVISIONING_PROFILE_SPECIFIER = PulmonisApp;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

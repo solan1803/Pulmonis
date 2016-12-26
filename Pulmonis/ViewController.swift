@@ -68,8 +68,6 @@ class ViewController: UIViewController, UIPopoverPresentationControllerDelegate 
             controller?.permittedArrowDirections = UIPopoverArrowDirection(rawValue:0)
             controller?.sourceRect = CGRect(x: (self.view.bounds).midX, y: (self.view.bounds).midY, width: 0, height: 0)
             //(x: (self.view.bounds), y: (self.view.bounds),0,0)
-            
-            
         }
         
     }
