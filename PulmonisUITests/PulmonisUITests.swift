@@ -57,10 +57,6 @@ class PulmonisUITests: XCTestCase {
         textField.typeText("3")
         app.buttons["Next"].tap()
         app.buttons["I do not have this"].tap()
-        app.navigationBars["Medicine"].children(matching: .button).matching(identifier: "Back").element(boundBy: 0).tap()
-        app.navigationBars["Pulmonis.SupportView"].children(matching: .button).matching(identifier: "Back").element(boundBy: 0).tap()
-        app.navigationBars["UIView"].children(matching: .button).matching(identifier: "Back").element(boundBy: 0).tap()
-        tasksButton.tap()
         
     }
     
