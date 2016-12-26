@@ -37,12 +37,11 @@ class SupportViewController: UIViewController {
     }
     
     @IBAction func saveSupportValue(_ sender: UIButton) {
-        
         print("INSIDE SAVESUPPORTVALUE METHOD")
+        let text = (supportTextField.text! as NSString).integerValue
+        let val = Int16(text)
         if let support_record = NSEntityDescription.insertNewObject(forEntityName: "SupportRecord", into: managedObjectContext!) as? SupportRecord {
             support_record.date = NSDate()
-            let text = (supportTextField.text! as NSString).integerValue
-            let val = Int16(text)
             support_record.value = val
         }
         do {
@@ -60,8 +59,17 @@ class SupportViewController: UIViewController {
             print(r.value)
         }
         
-        
+        /* Karow and Ziyi need to access plist to get the correct threshold value for patient. */
+        if (val < 2) { //Action plan 'worse' value
+            performSegue(withIdentifier: "wellSegue", sender: self)
+        } else if (val < 5) { // Action Plan 'critical' value
+            performSegue(withIdentifier: "worseSegue", sender: self)
+        } else {
+            performSegue(withIdentifier: "criticalSegue", sender: self)
+        }
     }
+    
+    
 
     /*
     // MARK: - Navigation
