@@ -172,7 +172,7 @@
                     <navigationItem key="navigationItem" id="WjT-9M-rOa">
                         <barButtonItem key="rightBarButtonItem" title="&quot;\u26ED&quot;" id="ILJ-CI-eA7">
                             <connections>
-                                <segue destination="YYW-cm-chO" kind="show" id="Jxm-E3-KAx">
+                                <segue destination="YYW-cm-chO" kind="show" identifier="showSettings" id="Jxm-E3-KAx">
                                     <nil key="action"/>
                                 </segue>
                             </connections>

@@ -12,7 +12,7 @@
         <!--Settings-->
         <scene sceneID="7ZR-zY-BLc">
             <objects>
-                <viewController storyboardIdentifier="Settings" id="jTH-zX-tr7" userLabel="Settings" customClass="SettingsViewController" customModule="Pulmonis" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Settings" title="Settings" id="jTH-zX-tr7" userLabel="Settings" customClass="SettingsViewController" customModule="Pulmonis" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Rsw-Lo-Qwf"/>
                         <viewControllerLayoutGuide type="bottom" id="SHU-bi-ty1"/>
@@ -22,7 +22,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="FIa-ij-bZ1">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q0d-Ty-Z7p">
                                 <rect key="frame" x="135.5" y="40" width="104" height="31.5"/>
@@ -44,6 +44,18 @@
                                     <segue destination="PP4-85-Vn2" kind="show" id="MND-hb-dt4"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LMk-fA-TPi">
+                                <rect key="frame" x="89" y="343" width="196" height="78"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.1202454641" green="0.4030750394" blue="0.48271960019999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title="HealthKit">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="EK8-rI-i5b" kind="show" id="QBB-aS-9yv"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -52,9 +64,9 @@
                             <constraint firstItem="q0d-Ty-Z7p" firstAttribute="centerX" secondItem="mLk-LD-DWi" secondAttribute="centerX" id="LrK-yI-iOd"/>
                             <constraint firstItem="SHU-bi-ty1" firstAttribute="top" secondItem="FIa-ij-bZ1" secondAttribute="bottom" id="MtC-6S-4j9"/>
                             <constraint firstItem="fod-lN-gkh" firstAttribute="leading" secondItem="mLk-LD-DWi" secondAttribute="leading" constant="75" id="Nqa-Ud-Y3I"/>
+                            <constraint firstItem="FIa-ij-bZ1" firstAttribute="top" secondItem="mLk-LD-DWi" secondAttribute="top" id="Vyr-k9-H25"/>
                             <constraint firstItem="FIa-ij-bZ1" firstAttribute="leading" secondItem="mLk-LD-DWi" secondAttribute="leading" id="ZGV-ck-1R3"/>
                             <constraint firstItem="fod-lN-gkh" firstAttribute="centerX" secondItem="mLk-LD-DWi" secondAttribute="centerX" id="dDr-Ia-7a4"/>
-                            <constraint firstItem="FIa-ij-bZ1" firstAttribute="top" secondItem="Rsw-Lo-Qwf" secondAttribute="bottom" id="g1z-Bf-5uV"/>
                             <constraint firstAttribute="trailing" secondItem="FIa-ij-bZ1" secondAttribute="trailing" id="imA-IA-5qx"/>
                             <constraint firstAttribute="trailing" secondItem="fod-lN-gkh" secondAttribute="trailing" constant="75" id="q2k-ab-RGA"/>
                         </constraints>
@@ -65,7 +77,15 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c49-EO-sZq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2279" y="897"/>
+            <point key="canvasLocation" x="2277.5999999999999" y="896.40179910044981"/>
+        </scene>
+        <!--HealthKit-->
+        <scene sceneID="zwq-UV-T3p">
+            <objects>
+                <viewControllerPlaceholder storyboardName="HealthKit" id="EK8-rI-i5b" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RV7-de-Baz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2951" y="981"/>
         </scene>
         <!--DoctorInput-->
         <scene sceneID="e3s-t5-6cY">
