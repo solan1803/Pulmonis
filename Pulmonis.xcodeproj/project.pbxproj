@@ -78,6 +78,9 @@
 		5BC5361D1DB6762A00231A50 /* LiberationSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5BC536141DB6762A00231A50 /* LiberationSans-Regular.ttf */; };
 		5BC91B941E0D7F1E002D0879 /* PlotBreathGraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC91B931E0D7F1E002D0879 /* PlotBreathGraphViewController.swift */; };
 		5BD2AFAF1E0FF285008FA668 /* HealthKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD2AFAE1E0FF285008FA668 /* HealthKitTests.swift */; };
+		5BD2AFB31E11D010008FA668 /* Well.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BD2AFB21E11D010008FA668 /* Well.storyboard */; };
+		5BD2AFB71E11D028008FA668 /* Worse.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BD2AFB61E11D028008FA668 /* Worse.storyboard */; };
+		5BD2AFB91E11D036008FA668 /* Critical.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BD2AFB81E11D036008FA668 /* Critical.storyboard */; };
 		71987C5B1DB678B300248AE1 /* EmergencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71987C5A1DB678B300248AE1 /* EmergencyViewController.swift */; };
 		719D0C7F1DBA2E66008F5F97 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 719D0C7D1DBA2E66008F5F97 /* Main.storyboard */; };
 /* End PBXBuildFile section */
@@ -211,6 +214,9 @@
 		5BC536141DB6762A00231A50 /* LiberationSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LiberationSans-Regular.ttf"; sourceTree = "<group>"; };
 		5BC91B931E0D7F1E002D0879 /* PlotBreathGraphViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlotBreathGraphViewController.swift; sourceTree = "<group>"; };
 		5BD2AFAE1E0FF285008FA668 /* HealthKitTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthKitTests.swift; sourceTree = "<group>"; };
+		5BD2AFB21E11D010008FA668 /* Well.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Well.storyboard; sourceTree = "<group>"; };
+		5BD2AFB61E11D028008FA668 /* Worse.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Worse.storyboard; sourceTree = "<group>"; };
+		5BD2AFB81E11D036008FA668 /* Critical.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Critical.storyboard; sourceTree = "<group>"; };
 		71987C5A1DB678B300248AE1 /* EmergencyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmergencyViewController.swift; sourceTree = "<group>"; };
 		719D0C7E1DBA2E66008F5F97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Pulmonis/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -351,6 +357,9 @@
 			isa = PBXGroup;
 			children = (
 				5B6B43521DC390400071AC66 /* ActionPlan.storyboard */,
+				5BD2AFB21E11D010008FA668 /* Well.storyboard */,
+				5BD2AFB61E11D028008FA668 /* Worse.storyboard */,
+				5BD2AFB81E11D036008FA668 /* Critical.storyboard */,
 				2899A93F1DB519D6004306DF /* MedicineViewController.swift */,
 				5B88A4E71DEB464800CDD946 /* BLE.swift */,
 				5B82CABF1DC8ECE4003930FB /* SupportViewController.swift */,
@@ -589,7 +598,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5BC2CD3C1E0F340700FBDEC9 /* HealthKit.storyboard in Resources */,
+				5BD2AFB91E11D036008FA668 /* Critical.storyboard in Resources */,
 				5BC5361B1DB6762A00231A50 /* LiberationSans-Regular.ttf in Resources */,
+				5BD2AFB31E11D010008FA668 /* Well.storyboard in Resources */,
 				5B6B43531DC390400071AC66 /* ActionPlan.storyboard in Resources */,
 				5B6B434F1DC38E770071AC66 /* Learn.storyboard in Resources */,
 				719D0C7F1DBA2E66008F5F97 /* Main.storyboard in Resources */,
@@ -597,6 +608,7 @@
 				28787E121DDB6B38000439AD /* PatientData.plist in Resources */,
 				5BAF07C91DB11C1B00AF2FD0 /* Assets.xcassets in Resources */,
 				5B82CAD61DC9139C003930FB /* PendingTasks.storyboard in Resources */,
+				5BD2AFB71E11D028008FA668 /* Worse.storyboard in Resources */,
 				5B3A1DBD1E0D7A76009800B8 /* PlotBreathGraph.storyboard in Resources */,
 				28CC5CAD1DC777E4009A7BE9 /* Emergency.storyboard in Resources */,
 				280551A01DDB6262001E99C6 /* DoctorInput.storyboard in Resources */,
