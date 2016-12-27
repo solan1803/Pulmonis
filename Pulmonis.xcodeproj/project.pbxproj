@@ -81,6 +81,8 @@
 		5BD2AFB31E11D010008FA668 /* Well.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BD2AFB21E11D010008FA668 /* Well.storyboard */; };
 		5BD2AFB71E11D028008FA668 /* Worse.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BD2AFB61E11D028008FA668 /* Worse.storyboard */; };
 		5BD2AFB91E11D036008FA668 /* Critical.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BD2AFB81E11D036008FA668 /* Critical.storyboard */; };
+		5BE313151E1290D50094C7EF /* PushNotifications.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BE313141E1290D50094C7EF /* PushNotifications.storyboard */; };
+		5BE3131B1E1295CE0094C7EF /* PushNotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE3131A1E1295CE0094C7EF /* PushNotificationsViewController.swift */; };
 		71987C5B1DB678B300248AE1 /* EmergencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71987C5A1DB678B300248AE1 /* EmergencyViewController.swift */; };
 		719D0C7F1DBA2E66008F5F97 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 719D0C7D1DBA2E66008F5F97 /* Main.storyboard */; };
 /* End PBXBuildFile section */
@@ -217,6 +219,8 @@
 		5BD2AFB21E11D010008FA668 /* Well.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Well.storyboard; sourceTree = "<group>"; };
 		5BD2AFB61E11D028008FA668 /* Worse.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Worse.storyboard; sourceTree = "<group>"; };
 		5BD2AFB81E11D036008FA668 /* Critical.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Critical.storyboard; sourceTree = "<group>"; };
+		5BE313141E1290D50094C7EF /* PushNotifications.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PushNotifications.storyboard; sourceTree = "<group>"; };
+		5BE3131A1E1295CE0094C7EF /* PushNotificationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushNotificationsViewController.swift; sourceTree = "<group>"; };
 		71987C5A1DB678B300248AE1 /* EmergencyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmergencyViewController.swift; sourceTree = "<group>"; };
 		719D0C7E1DBA2E66008F5F97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Pulmonis/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -287,6 +291,7 @@
 				5BAF07C51DB11C1B00AF2FD0 /* Emergency.storyboard */,
 				5B6B434E1DC38E770071AC66 /* Learn.storyboard */,
 				28CC5CAB1DC77625009A7BE9 /* Settings.storyboard */,
+				5BE313141E1290D50094C7EF /* PushNotifications.storyboard */,
 				5BC2CD3B1E0F340600FBDEC9 /* HealthKit.storyboard */,
 				5B82CAD51DC9139C003930FB /* PendingTasks.storyboard */,
 				5B6B43501DC38F6A0071AC66 /* Statistics.storyboard */,
@@ -298,6 +303,7 @@
 				2899A93B1DB4FE03004306DF /* SymptomsViewController.swift */,
 				5B82CAD91DC918C1003930FB /* PendingTasksTableViewController.swift */,
 				5B82CAD71DC91527003930FB /* TaskTableViewCell.swift */,
+				5BE3131A1E1295CE0094C7EF /* PushNotificationsViewController.swift */,
 			);
 			name = Miscellaneous;
 			sourceTree = "<group>";
@@ -603,6 +609,7 @@
 				5BD2AFB31E11D010008FA668 /* Well.storyboard in Resources */,
 				5B6B43531DC390400071AC66 /* ActionPlan.storyboard in Resources */,
 				5B6B434F1DC38E770071AC66 /* Learn.storyboard in Resources */,
+				5BE313151E1290D50094C7EF /* PushNotifications.storyboard in Resources */,
 				719D0C7F1DBA2E66008F5F97 /* Main.storyboard in Resources */,
 				5BAF07CC1DB11C1B00AF2FD0 /* LaunchScreen.storyboard in Resources */,
 				28787E121DDB6B38000439AD /* PatientData.plist in Resources */,
@@ -680,6 +687,7 @@
 				28A336C61DDB582C005D8626 /* Green1ViewController.swift in Sources */,
 				280C60871DCD531400089C08 /* SettingsViewController.swift in Sources */,
 				28A336D81DDB58EE005D8626 /* Yellow4ViewController.swift in Sources */,
+				5BE3131B1E1295CE0094C7EF /* PushNotificationsViewController.swift in Sources */,
 				28A336C81DDB5850005D8626 /* Green2ViewController.swift in Sources */,
 				5BC2CD401E0F343300FBDEC9 /* HealthKitViewController.swift in Sources */,
 				5B0DEF7A1DB8F1FC006ECFCE /* LearnTableViewController.swift in Sources */,

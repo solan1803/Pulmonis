@@ -56,6 +56,17 @@
                                     <segue destination="EK8-rI-i5b" kind="show" id="QBB-aS-9yv"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TqJ-5O-6D1">
+                                <rect key="frame" x="89" y="526" width="196" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.1202454641" green="0.4030750394" blue="0.48271960019999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Push Notifications">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Lov-Tj-N8P" kind="show" id="eTR-WV-Ht3"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -85,7 +96,15 @@
                 <viewControllerPlaceholder storyboardName="HealthKit" id="EK8-rI-i5b" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RV7-de-Baz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2951" y="981"/>
+            <point key="canvasLocation" x="3049" y="947"/>
+        </scene>
+        <!--PushNotifications-->
+        <scene sceneID="9pF-j4-Nrx">
+            <objects>
+                <viewControllerPlaceholder storyboardName="PushNotifications" id="Lov-Tj-N8P" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dZk-PG-6l3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3023" y="1096"/>
         </scene>
         <!--DoctorInput-->
         <scene sceneID="e3s-t5-6cY">
@@ -93,7 +112,7 @@
                 <viewControllerPlaceholder storyboardName="DoctorInput" id="PP4-85-Vn2" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W86-6l-ATF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2767" y="403"/>
+            <point key="canvasLocation" x="2950" y="745"/>
         </scene>
     </scenes>
     <resources>
