@@ -78,10 +78,23 @@ class SupportViewController: UIViewController {
             print(r.value)
         }
         
+        //variables to store threshold values from plist
+        var yWeeklyRelieverUses: Int16 = 0
+        var rRelieverFrequencyLimit: Int16 = 0
+        
+        if let plist = Plist(name: "PatientData") {
+            let dict = plist.getMutablePlistFile()!
+            
+            yWeeklyRelieverUses = (dict[yWeeklyRelieverUsesStr]! as? Int16)!
+            rRelieverFrequencyLimit = (dict[rRelieverFrequencyLimitStr]! as? Int16)!
+        } else {
+            //Error with opening the PList
+        }
+        
         /* Karow and Ziyi need to access plist to get the correct threshold value for patient. */
-        if (val < 2) { //Action plan 'worse' value
+        if (val < yWeeklyRelieverUses) { //Action plan 'worse' value
             performSegue(withIdentifier: "wellSegue", sender: self)
-        } else if (val < 5) { // Action Plan 'critical' value
+        } else if (val < rRelieverFrequencyLimit) { // Action Plan 'critical' value
             performSegue(withIdentifier: "worseSegue", sender: self)
         } else {
             performSegue(withIdentifier: "criticalSegue", sender: self)
