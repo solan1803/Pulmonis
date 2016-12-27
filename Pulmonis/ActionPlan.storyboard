@@ -153,7 +153,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please blow into the peak flow meter 3 times, taking at least a 2 second pause in between each blow" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VqM-Os-ury">
-                                <rect key="frame" x="51" y="70" width="273" height="103"/>
+                                <rect key="frame" x="51" y="70" width="273" height="107.5"/>
                                 <fontDescription key="fontDescription" name="LiberationSans" family="Liberation Sans" pointSize="23"/>
                                 <color key="textColor" red="0.1202454641" green="0.4030750394" blue="0.48271960019999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -256,47 +256,49 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Shiny Blue" translatesAutoresizingMaskIntoConstraints="NO" id="ROb-5f-0Sc">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zP7-pC-hML">
-                                <rect key="frame" x="62.5" y="120" width="250" height="121"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="zP7-pC-hML" secondAttribute="height" multiplier="399:193" id="dkN-ht-AEt"/>
-                                    <constraint firstAttribute="width" constant="250" id="slr-Fc-qYP"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="LiberationSans-Bold" family="Liberation Sans" pointSize="25"/>
-                                <inset key="titleEdgeInsets" minX="0.0" minY="150" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" title="Peak Flow" backgroundImage="PeakFlowMeter">
-                                    <color key="titleColor" red="0.1202454641" green="0.4030750394" blue="0.48271960019999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="oeC-Pe-cKC" kind="show" id="1IU-2L-0jB"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nmZ-Dg-a76">
-                                <rect key="frame" x="100" y="376.5" width="175" height="140.5"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="nmZ-Dg-a76" secondAttribute="height" multiplier="250:201" id="16r-hD-fYC"/>
-                                    <constraint firstAttribute="width" constant="175" id="EmR-GU-UIM"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="LiberationSans-Bold" family="Liberation Sans" pointSize="25"/>
-                                <inset key="titleEdgeInsets" minX="0.0" minY="200" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" title="Support" backgroundImage="Inhaler">
-                                    <color key="titleColor" red="0.1202454641" green="0.4030750394" blue="0.48271960019999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="Z6G-0c-4j3" kind="show" id="xNo-Ll-haN"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="jFc-NG-a5B">
+                                <rect key="frame" x="36" y="136.5" width="303" height="394"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zP7-pC-hML">
+                                        <rect key="frame" x="0.0" y="0.0" width="303" height="147"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="zP7-pC-hML" secondAttribute="height" multiplier="399:193" id="dkN-ht-AEt"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="LiberationSans-Bold" family="Liberation Sans" pointSize="25"/>
+                                        <inset key="titleEdgeInsets" minX="0.0" minY="150" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Peak Flow" backgroundImage="PeakFlowMeter">
+                                            <color key="titleColor" red="0.1202454641" green="0.4030750394" blue="0.48271960019999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="oeC-Pe-cKC" kind="show" id="1IU-2L-0jB"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nmZ-Dg-a76">
+                                        <rect key="frame" x="60" y="247" width="183" height="147"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="nmZ-Dg-a76" secondAttribute="height" multiplier="250:201" id="16r-hD-fYC"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="LiberationSans-Bold" family="Liberation Sans" pointSize="25"/>
+                                        <inset key="titleEdgeInsets" minX="0.0" minY="200" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Support" backgroundImage="Inhaler">
+                                            <color key="titleColor" red="0.1202454641" green="0.4030750394" blue="0.48271960019999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="Z6G-0c-4j3" kind="show" id="xNo-Ll-haN"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="zP7-pC-hML" firstAttribute="centerX" secondItem="K6D-Pv-Oyg" secondAttribute="centerX" id="5q6-yd-AQE"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="ROb-5f-0Sc" secondAttribute="trailing" constant="-16" id="dVR-m4-G48"/>
-                            <constraint firstItem="pS1-G1-qwD" firstAttribute="top" secondItem="ROb-5f-0Sc" secondAttribute="bottom" id="e5j-jJ-pmm"/>
-                            <constraint firstItem="ROb-5f-0Sc" firstAttribute="leading" secondItem="K6D-Pv-Oyg" secondAttribute="leadingMargin" constant="-16" id="fzy-FW-Pyb"/>
-                            <constraint firstItem="pS1-G1-qwD" firstAttribute="top" secondItem="nmZ-Dg-a76" secondAttribute="bottom" constant="150" id="lUL-hC-Sfm"/>
-                            <constraint firstItem="nmZ-Dg-a76" firstAttribute="centerX" secondItem="K6D-Pv-Oyg" secondAttribute="centerX" id="mce-tH-qf8"/>
-                            <constraint firstItem="ROb-5f-0Sc" firstAttribute="top" secondItem="K6D-Pv-Oyg" secondAttribute="topMargin" id="oOv-ni-cyf"/>
-                            <constraint firstItem="zP7-pC-hML" firstAttribute="top" secondItem="BsD-Om-Ucc" secondAttribute="bottom" constant="100" id="yE6-Eh-Hbg"/>
+                            <constraint firstItem="ROb-5f-0Sc" firstAttribute="leading" secondItem="K6D-Pv-Oyg" secondAttribute="leading" id="Piq-eB-VE1"/>
+                            <constraint firstItem="ROb-5f-0Sc" firstAttribute="top" secondItem="K6D-Pv-Oyg" secondAttribute="top" id="Qdq-w5-ULY"/>
+                            <constraint firstAttribute="trailing" secondItem="ROb-5f-0Sc" secondAttribute="trailing" id="VlU-RN-bhg"/>
+                            <constraint firstItem="jFc-NG-a5B" firstAttribute="centerY" secondItem="K6D-Pv-Oyg" secondAttribute="centerY" id="gy0-fw-vD8"/>
+                            <constraint firstItem="jFc-NG-a5B" firstAttribute="leading" secondItem="K6D-Pv-Oyg" secondAttribute="leadingMargin" constant="20" id="hgX-Vg-zWo"/>
+                            <constraint firstItem="jFc-NG-a5B" firstAttribute="centerX" secondItem="K6D-Pv-Oyg" secondAttribute="centerX" id="ieH-gt-qNa"/>
+                            <constraint firstAttribute="bottom" secondItem="ROb-5f-0Sc" secondAttribute="bottom" id="ziw-F5-4rh"/>
                         </constraints>
                     </view>
                 </viewController>
