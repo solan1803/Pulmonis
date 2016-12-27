@@ -41,6 +41,7 @@
 		5B6B43511DC38F6A0071AC66 /* Statistics.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B6B43501DC38F6A0071AC66 /* Statistics.storyboard */; };
 		5B6B43531DC390400071AC66 /* ActionPlan.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B6B43521DC390400071AC66 /* ActionPlan.storyboard */; };
 		5B702FE91E0E9FEB0082B649 /* BluetoothUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B702FE81E0E9FEB0082B649 /* BluetoothUnitTests.swift */; };
+		5B7DFE811E12FB7B0057D341 /* PulmonisDoctorInputUITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7DFE801E12FB7B0057D341 /* PulmonisDoctorInputUITest.swift */; };
 		5B82CA961DC8C14B003930FB /* PeakFlowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B82CA951DC8C14B003930FB /* PeakFlowViewController.swift */; };
 		5B82CABA1DC8CA85003930FB /* PeakFlowModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5B82CAB81DC8CA85003930FB /* PeakFlowModel.xcdatamodeld */; };
 		5B82CABD1DC8CAF1003930FB /* PeakFlowTable+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B82CABB1DC8CAF1003930FB /* PeakFlowTable+CoreDataClass.swift */; };
@@ -179,6 +180,7 @@
 		5B6B43501DC38F6A0071AC66 /* Statistics.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Statistics.storyboard; sourceTree = "<group>"; };
 		5B6B43521DC390400071AC66 /* ActionPlan.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ActionPlan.storyboard; sourceTree = "<group>"; };
 		5B702FE81E0E9FEB0082B649 /* BluetoothUnitTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BluetoothUnitTests.swift; sourceTree = "<group>"; };
+		5B7DFE801E12FB7B0057D341 /* PulmonisDoctorInputUITest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PulmonisDoctorInputUITest.swift; sourceTree = "<group>"; };
 		5B82CA951DC8C14B003930FB /* PeakFlowViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeakFlowViewController.swift; sourceTree = "<group>"; };
 		5B82CAB91DC8CA85003930FB /* PeakFlowModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PeakFlowModel.xcdatamodel; sourceTree = "<group>"; };
 		5B82CABB1DC8CAF1003930FB /* PeakFlowTable+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PeakFlowTable+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -432,6 +434,7 @@
 			isa = PBXGroup;
 			children = (
 				5BAF07E11DB11C1B00AF2FD0 /* PulmonisUITests.swift */,
+				5B7DFE801E12FB7B0057D341 /* PulmonisDoctorInputUITest.swift */,
 				5BAF07E31DB11C1B00AF2FD0 /* Info.plist */,
 			);
 			path = PulmonisUITests;
@@ -715,6 +718,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B7DFE811E12FB7B0057D341 /* PulmonisDoctorInputUITest.swift in Sources */,
 				5BAF07E21DB11C1B00AF2FD0 /* PulmonisUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
