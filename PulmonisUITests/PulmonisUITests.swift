@@ -56,6 +56,7 @@ class PulmonisUITests: XCTestCase {
         textField.tap()
         textField.typeText("3")
         app.buttons["Next"].tap()
+        app.alerts["Please confirm inhaler usage:"].buttons["Yes"].tap()
         app.buttons["I do not have this"].tap()
         
     }
