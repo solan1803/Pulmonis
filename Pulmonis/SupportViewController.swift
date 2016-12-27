@@ -36,8 +36,27 @@ class SupportViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func saveSupportValue(_ sender: UIButton) {
-        print("INSIDE SAVESUPPORTVALUE METHOD")
+    @IBAction func confirmLogInhaler(_ sender: UIButton) {
+        let text = (supportTextField.text! as NSString).integerValue
+        let usage = Int16(text)
+        let refreshAlert = UIAlertController(title: "Please confirm inhaler usage:", message: "Are you sure \(usage)?", preferredStyle: UIAlertControllerStyle.alert)
+        
+        refreshAlert.addAction(UIAlertAction(title: "Yes", style: .default, handler: { (action: UIAlertAction!) in
+            print("Handle Ok logic here")
+            self.dismiss(animated: true, completion: nil)
+            self.saveLogInhalerValue()
+        }))
+        
+        refreshAlert.addAction(UIAlertAction(title: "No", style: .cancel, handler: { (action: UIAlertAction!) in
+            print("Handle Cancel Logic here")
+        }))
+        
+        present(refreshAlert, animated: true, completion: nil)
+        
+    }
+    
+    func saveLogInhalerValue() {
+        print("[DEBUG] Inside saveLogInhalerValue")
         let text = (supportTextField.text! as NSString).integerValue
         let val = Int16(text)
         if let support_record = NSEntityDescription.insertNewObject(forEntityName: "SupportRecord", into: managedObjectContext!) as? SupportRecord {
@@ -68,7 +87,6 @@ class SupportViewController: UIViewController {
             performSegue(withIdentifier: "criticalSegue", sender: self)
         }
     }
-    
     
 
     /*
