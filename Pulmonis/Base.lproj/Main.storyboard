@@ -7,7 +7,6 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -55,118 +54,121 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Shiny Blue" translatesAutoresizingMaskIntoConstraints="NO" id="lpi-85-31Q">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WGh-nB-uBm">
-                                <rect key="frame" x="16" y="607" width="343" height="50"/>
-                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="Nbf-HS-OBu"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <state key="normal" title="EMERGENCY ACTION">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="hAu-11-U9P" kind="show" id="s8q-97-bJ1">
-                                        <nil key="action"/>
-                                    </segue>
-                                </connections>
-                            </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="f1u-xL-GRZ">
-                                <rect key="frame" x="16" y="467" width="343" height="100"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="P6I-Tm-9xb">
+                                <rect key="frame" x="20" y="20" width="335" height="627"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jTs-mC-rop">
-                                        <rect key="frame" x="0.0" y="0.0" width="91" height="100"/>
-                                        <inset key="titleEdgeInsets" minX="0.0" minY="140" maxX="0.0" maxY="0.0"/>
-                                        <state key="normal" title="STATS" backgroundImage="Stats">
-                                            <color key="titleColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                                        </state>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PULMONIS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mlR-EE-ikV">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="L6r-De-eUY"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="LiberationSans" family="Liberation Sans" pointSize="31"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j2n-6J-GvU">
+                                        <rect key="frame" x="0.0" y="35" width="335" height="68"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="j2n-6J-GvU" secondAttribute="height" multiplier="750:152" id="oQf-sy-NMs"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="tasks"/>
                                         <connections>
-                                            <segue destination="98w-63-Scx" kind="show" id="enL-DH-tcf">
+                                            <segue destination="syh-Rg-CSd" kind="show" id="mnb-s1-RKT">
                                                 <nil key="action"/>
                                             </segue>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9nM-he-Qla">
-                                        <rect key="frame" x="126" y="0.0" width="91" height="100"/>
-                                        <inset key="titleEdgeInsets" minX="0.0" minY="140" maxX="0.0" maxY="0.0"/>
-                                        <state key="normal" title="MAP" backgroundImage="map">
-                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mFk-PA-nTh">
-                                        <rect key="frame" x="252" y="0.0" width="91" height="100"/>
-                                        <inset key="titleEdgeInsets" minX="0.0" minY="140" maxX="0.0" maxY="0.0"/>
-                                        <state key="normal" title="LEARN" backgroundImage="learn">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9sC-XQ-nQ2">
+                                        <rect key="frame" x="0.0" y="103" width="335" height="335"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="9sC-XQ-nQ2" secondAttribute="height" multiplier="300:300" id="hMi-D2-PSU"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="30"/>
+                                        <inset key="titleEdgeInsets" minX="0.0" minY="150" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="ACTION PLAN" backgroundImage="inhaler2">
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="1Jb-MN-qVN" kind="show" id="9zd-gq-Apd">
+                                            <segue destination="5Eu-jd-H3G" kind="show" id="UzJ-UL-jjv">
                                                 <nil key="action"/>
                                             </segue>
                                         </connections>
                                     </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="Hw1-sD-wAV">
+                                        <rect key="frame" x="0.0" y="438" width="335" height="189"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="f1u-xL-GRZ">
+                                                <rect key="frame" x="0.0" y="0.0" width="335" height="91"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jTs-mC-rop">
+                                                        <rect key="frame" x="0.0" y="0.0" width="100" height="91"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="jTs-mC-rop" secondAttribute="height" multiplier="155:140" id="Itf-bc-TEj"/>
+                                                        </constraints>
+                                                        <inset key="titleEdgeInsets" minX="0.0" minY="140" maxX="0.0" maxY="0.0"/>
+                                                        <state key="normal" title="STATS" backgroundImage="Stats">
+                                                            <color key="titleColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                        </state>
+                                                        <connections>
+                                                            <segue destination="98w-63-Scx" kind="show" id="enL-DH-tcf">
+                                                                <nil key="action"/>
+                                                            </segue>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9nM-he-Qla">
+                                                        <rect key="frame" x="135" y="0.0" width="90.5" height="91"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="9nM-he-Qla" secondAttribute="height" multiplier="213:213" id="gBS-kZ-s6g"/>
+                                                        </constraints>
+                                                        <inset key="titleEdgeInsets" minX="0.0" minY="140" maxX="0.0" maxY="0.0"/>
+                                                        <state key="normal" title="MAP" backgroundImage="map">
+                                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </state>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mFk-PA-nTh">
+                                                        <rect key="frame" x="260.5" y="0.0" width="74.5" height="91"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="mFk-PA-nTh" secondAttribute="height" multiplier="126:154" id="3QW-hO-BJM"/>
+                                                        </constraints>
+                                                        <inset key="titleEdgeInsets" minX="0.0" minY="140" maxX="0.0" maxY="0.0"/>
+                                                        <state key="normal" title="LEARN" backgroundImage="learn">
+                                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </state>
+                                                        <connections>
+                                                            <segue destination="1Jb-MN-qVN" kind="show" id="9zd-gq-Apd">
+                                                                <nil key="action"/>
+                                                            </segue>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WGh-nB-uBm">
+                                                <rect key="frame" x="0.0" y="141" width="335" height="48"/>
+                                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <state key="normal" title="EMERGENCY ACTION">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="hAu-11-U9P" kind="show" id="s8q-97-bJ1">
+                                                        <nil key="action"/>
+                                                    </segue>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="W3D-wV-pSx"/>
-                                </constraints>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PULMONIS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mlR-EE-ikV">
-                                <rect key="frame" x="107" y="29" width="162" height="35"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="35" id="L6r-De-eUY"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="LiberationSans" family="Liberation Sans" pointSize="31"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9sC-XQ-nQ2">
-                                <rect key="frame" x="36" y="164" width="303" height="303"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="9sC-XQ-nQ2" secondAttribute="height" multiplier="300:300" id="hMi-D2-PSU"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="32"/>
-                                <inset key="titleEdgeInsets" minX="0.0" minY="150" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" title="ACTION PLAN" backgroundImage="inhaler2">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="5Eu-jd-H3G" kind="show" id="UzJ-UL-jjv">
-                                        <nil key="action"/>
-                                    </segue>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j2n-6J-GvU">
-                                <rect key="frame" x="0.0" y="64" width="375" height="76"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="76" id="CqA-65-Ut5"/>
-                                </constraints>
-                                <state key="normal" backgroundImage="tasks"/>
-                                <connections>
-                                    <segue destination="syh-Rg-CSd" kind="show" id="mnb-s1-RKT">
-                                        <nil key="action"/>
-                                    </segue>
-                                </connections>
-                            </button>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="f1u-xL-GRZ" firstAttribute="top" secondItem="9sC-XQ-nQ2" secondAttribute="bottom" id="18H-bk-JKN"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="f1u-xL-GRZ" secondAttribute="leading" id="4NW-ST-3vf"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="j2n-6J-GvU" secondAttribute="trailing" constant="-16" id="Czx-ww-Nu6"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="lpi-85-31Q" secondAttribute="trailing" constant="-16" id="EOf-h5-0Gm"/>
-                            <constraint firstItem="rYl-BN-lLz" firstAttribute="top" secondItem="WGh-nB-uBm" secondAttribute="bottom" constant="10" id="K4Y-jS-YUg"/>
-                            <constraint firstItem="lpi-85-31Q" firstAttribute="leading" secondItem="dBC-zh-tZj" secondAttribute="leading" id="K87-6m-E0R"/>
-                            <constraint firstItem="mlR-EE-ikV" firstAttribute="top" secondItem="o3S-uk-fSu" secondAttribute="bottom" constant="-35" id="Q6B-4n-8nm"/>
-                            <constraint firstItem="lpi-85-31Q" firstAttribute="bottom" secondItem="rYl-BN-lLz" secondAttribute="top" id="Qt1-NF-0ik"/>
-                            <constraint firstItem="WGh-nB-uBm" firstAttribute="top" secondItem="f1u-xL-GRZ" secondAttribute="bottom" constant="40" id="RgU-ms-2iZ"/>
-                            <constraint firstItem="9sC-XQ-nQ2" firstAttribute="centerX" secondItem="dBC-zh-tZj" secondAttribute="centerX" id="aUN-6V-iG2"/>
-                            <constraint firstItem="lpi-85-31Q" firstAttribute="top" secondItem="o3S-uk-fSu" secondAttribute="bottom" constant="-64" id="cY6-Og-AZU"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="f1u-xL-GRZ" secondAttribute="trailing" id="fce-Af-bly"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="WGh-nB-uBm" secondAttribute="trailing" id="jTW-RG-O8A"/>
-                            <constraint firstItem="mlR-EE-ikV" firstAttribute="centerX" secondItem="dBC-zh-tZj" secondAttribute="centerX" id="lZq-lm-eCJ"/>
-                            <constraint firstItem="j2n-6J-GvU" firstAttribute="leading" secondItem="dBC-zh-tZj" secondAttribute="leadingMargin" constant="-16" id="lgF-Rf-ZkO"/>
-                            <constraint firstItem="9sC-XQ-nQ2" firstAttribute="top" secondItem="o3S-uk-fSu" secondAttribute="bottom" constant="100" id="m93-27-75q"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="WGh-nB-uBm" secondAttribute="leading" id="tRe-cv-5QQ"/>
-                            <constraint firstItem="j2n-6J-GvU" firstAttribute="top" secondItem="o3S-uk-fSu" secondAttribute="bottom" id="vZa-4m-jXX"/>
+                            <constraint firstAttribute="trailing" secondItem="P6I-Tm-9xb" secondAttribute="trailing" constant="20" symbolic="YES" id="GHn-v1-Ua8"/>
+                            <constraint firstAttribute="trailing" secondItem="lpi-85-31Q" secondAttribute="trailing" id="J5s-A9-fIq"/>
+                            <constraint firstItem="lpi-85-31Q" firstAttribute="leading" secondItem="dBC-zh-tZj" secondAttribute="leading" id="JHK-Pu-4ak"/>
+                            <constraint firstItem="P6I-Tm-9xb" firstAttribute="top" secondItem="dBC-zh-tZj" secondAttribute="top" constant="20" symbolic="YES" id="UHY-Cr-LgF"/>
+                            <constraint firstAttribute="bottom" secondItem="lpi-85-31Q" secondAttribute="bottom" id="ex9-AT-ILy"/>
+                            <constraint firstAttribute="bottom" secondItem="P6I-Tm-9xb" secondAttribute="bottom" constant="20" symbolic="YES" id="rRA-1c-cXh"/>
+                            <constraint firstItem="P6I-Tm-9xb" firstAttribute="leading" secondItem="dBC-zh-tZj" secondAttribute="leading" constant="20" symbolic="YES" id="upc-L3-XEv"/>
+                            <constraint firstItem="lpi-85-31Q" firstAttribute="top" secondItem="dBC-zh-tZj" secondAttribute="top" id="xbt-wA-LWg"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="WjT-9M-rOa">
@@ -218,7 +220,7 @@
                     <toolbarItems/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="667"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="gc7-QF-kan">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gc7-QF-kan">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
