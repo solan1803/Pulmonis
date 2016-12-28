@@ -85,20 +85,11 @@ class SupportViewController: UIViewController {
         if let plist = Plist(name: "PatientData") {
             let dict = plist.getMutablePlistFile()!
             
-            if let yWeeklyRelieverUses = dict[yWeeklyRelieverUsesStr]! as? String {
-                worseVal = Int16(yWeeklyRelieverUses)!
-            }
-            
-            if let rRelieverFrequencyLimit = dict[rRelieverFrequencyLimitStr]! as? String {
-                criticalVal = Int16(rRelieverFrequencyLimit)!
-            }
-            
-            
-            //old code
-            /*
-            if let yWeeklyRelieverUses = Int((dict[yWeeklyRelieverUsesStr]! as? String)!) {
-                if yWeeklyRelieverUses != 0 {
-                    worseVal = Int16(yWeeklyRelieverUses)
+            if let yWeeklyRelieverUses = dict[yWeeklyRelieverUsesStr] {
+                if let yWeeklyRelieverUsesString = yWeeklyRelieverUses as? String {
+                    if yWeeklyRelieverUsesString != "" {
+                        worseVal = Int16(yWeeklyRelieverUsesString)!
+                    }
                 }
             }
             
@@ -109,8 +100,6 @@ class SupportViewController: UIViewController {
                     }
                 }
             }
-            */
-            
         } else {
             //Error with opening the PList
         }
