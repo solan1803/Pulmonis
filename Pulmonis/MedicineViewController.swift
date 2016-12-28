@@ -27,7 +27,7 @@ class MedicineViewController: UIViewController, UIPopoverPresentationControllerD
         
         takenButton.layer.cornerRadius = 10
         takenButton.clipsToBounds = true
-        
+        addContactGPTask()
         /*
         let fixedWidth = textView.frame.size.width
         textView.sizeThatFits(CGSize(width: fixedWidth, height: CGFloat.greatestFiniteMagnitude))
@@ -47,6 +47,20 @@ class MedicineViewController: UIViewController, UIPopoverPresentationControllerD
         self.performSegue(withIdentifier: "notePopover", sender: self)
     }
 
+    func addContactGPTask() {
+        if let task = NSEntityDescription.insertNewObject(forEntityName: "PendingTask", into: managedObjectContext!) as? PendingTask {
+            task.date_created = NSDate()
+            task.message = "Your treatment may need to be reviewed."
+            task.type = "contactGP"
+            task.reminder_time = NSDate().addingTimeInterval(60.0 * 60.0)
+        }
+        do {
+            try managedObjectContext?.save()
+        } catch let error {
+            print(error)
+        }
+    }
+    
     @IBAction func addMedicineNotification(_ sender: UIButton) {
         print("INSIDE ADD_MEDICINE_NOTIFICATION METHOD")
         if let task = NSEntityDescription.insertNewObject(forEntityName: "PendingTask", into: managedObjectContext!) as? PendingTask {

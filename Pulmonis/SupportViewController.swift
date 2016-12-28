@@ -101,9 +101,12 @@ class SupportViewController: UIViewController {
                     worseVal = Int16(yWeeklyRelieverUses)
                 }
             }
-            if let rRelieverFrequencyLimit = Int((dict[rRelieverFrequencyLimitStr]! as? String)!) {
-                if rRelieverFrequencyLimit != 0 {
-                    criticalVal = Int16(rRelieverFrequencyLimit)
+            
+            if let rRelieverFrequencyLimit = dict[rRelieverFrequencyLimitStr] {
+                if let rRelieverFrequencyLimitString = rRelieverFrequencyLimit as? String {
+                    if rRelieverFrequencyLimitString != "" {
+                        criticalVal = Int16(rRelieverFrequencyLimitString)!
+                    }
                 }
             }
             */
