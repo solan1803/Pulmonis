@@ -64,6 +64,9 @@
 		5BAF07D71DB11C1B00AF2FD0 /* PulmonisTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAF07D61DB11C1B00AF2FD0 /* PulmonisTests.swift */; };
 		5BAF07E21DB11C1B00AF2FD0 /* PulmonisUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAF07E11DB11C1B00AF2FD0 /* PulmonisUITests.swift */; };
 		5BB493911E0F2BB600C09719 /* Yellow7ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB493901E0F2BB600C09719 /* Yellow7ViewController.swift */; };
+		5BB9E4401E13FDAA00B5892A /* MorningReminderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB9E43F1E13FDAA00B5892A /* MorningReminderTableViewCell.swift */; };
+		5BB9E4421E13FFB800B5892A /* RemindersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB9E4411E13FFB800B5892A /* RemindersTableViewController.swift */; };
+		5BB9E4461E1402D000B5892A /* EveningReminderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB9E4451E1402D000B5892A /* EveningReminderTableViewCell.swift */; };
 		5BC2CD3C1E0F340700FBDEC9 /* HealthKit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BC2CD3B1E0F340600FBDEC9 /* HealthKit.storyboard */; };
 		5BC2CD401E0F343300FBDEC9 /* HealthKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC2CD3F1E0F343300FBDEC9 /* HealthKitViewController.swift */; };
 		5BC2CD481E0FD3E700FBDEC9 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BC2CD471E0FD3E700FBDEC9 /* HealthKit.framework */; };
@@ -212,6 +215,9 @@
 		5BAF07E11DB11C1B00AF2FD0 /* PulmonisUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulmonisUITests.swift; sourceTree = "<group>"; };
 		5BAF07E31DB11C1B00AF2FD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5BB493901E0F2BB600C09719 /* Yellow7ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Yellow7ViewController.swift; sourceTree = "<group>"; };
+		5BB9E43F1E13FDAA00B5892A /* MorningReminderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MorningReminderTableViewCell.swift; path = ../MorningReminderTableViewCell.swift; sourceTree = "<group>"; };
+		5BB9E4411E13FFB800B5892A /* RemindersTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemindersTableViewController.swift; sourceTree = "<group>"; };
+		5BB9E4451E1402D000B5892A /* EveningReminderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EveningReminderTableViewCell.swift; path = ../EveningReminderTableViewCell.swift; sourceTree = "<group>"; };
 		5BC2CD3B1E0F340600FBDEC9 /* HealthKit.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HealthKit.storyboard; sourceTree = "<group>"; };
 		5BC2CD3F1E0F343300FBDEC9 /* HealthKitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthKitViewController.swift; sourceTree = "<group>"; };
 		5BC2CD411E0F34DA00FBDEC9 /* Pulmonis.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Pulmonis.entitlements; sourceTree = "<group>"; };
@@ -301,6 +307,9 @@
 				5BC2CD3B1E0F340600FBDEC9 /* HealthKit.storyboard */,
 				5B82CAD51DC9139C003930FB /* PendingTasks.storyboard */,
 				5B6B43501DC38F6A0071AC66 /* Statistics.storyboard */,
+				5BB9E4411E13FFB800B5892A /* RemindersTableViewController.swift */,
+				5BB9E43F1E13FDAA00B5892A /* MorningReminderTableViewCell.swift */,
+				5BB9E4451E1402D000B5892A /* EveningReminderTableViewCell.swift */,
 				5BC2CD3F1E0F343300FBDEC9 /* HealthKitViewController.swift */,
 				28E4862F1DB672A500C3C87E /* StatsStartViewController.swift */,
 				71987C5A1DB678B300248AE1 /* EmergencyViewController.swift */,
@@ -684,11 +693,14 @@
 				28A336CE1DDB5877005D8626 /* Green5ViewController.swift in Sources */,
 				2834399E1DC2195900857437 /* Plist.swift in Sources */,
 				5B82CAC41DC8EE07003930FB /* SupportRecord+CoreDataProperties.swift in Sources */,
+				5BB9E4421E13FFB800B5892A /* RemindersTableViewController.swift in Sources */,
 				5B82CAD31DC912CB003930FB /* PendingTask+CoreDataClass.swift in Sources */,
 				28A336CC1DDB586C005D8626 /* Green4ViewController.swift in Sources */,
+				5BB9E4461E1402D000B5892A /* EveningReminderTableViewCell.swift in Sources */,
 				5BAF07C41DB11C1B00AF2FD0 /* ViewController.swift in Sources */,
 				5BAF07C21DB11C1B00AF2FD0 /* AppDelegate.swift in Sources */,
 				2899A93C1DB4FE03004306DF /* SymptomsViewController.swift in Sources */,
+				5BB9E4401E13FDAA00B5892A /* MorningReminderTableViewCell.swift in Sources */,
 				28A336DC1DDB58FF005D8626 /* Yellow6ViewController.swift in Sources */,
 				28A336D61DDB58E7005D8626 /* Yellow3ViewController.swift in Sources */,
 				28A336D41DDB58E0005D8626 /* Yellow2ViewController.swift in Sources */,
