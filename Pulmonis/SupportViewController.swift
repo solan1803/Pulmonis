@@ -85,16 +85,14 @@ class SupportViewController: UIViewController {
         if let plist = Plist(name: "PatientData") {
             let dict = plist.getMutablePlistFile()!
             
-            let yWeeklyRelieverUses = dict[yWeeklyRelieverUsesStr]! as? String
-            let rRelieverFrequencyLimit = dict[rRelieverFrequencyLimitStr]! as? String
-            
-            if (yWeeklyRelieverUses != nil) {
-                worseVal = Int16(yWeeklyRelieverUses!)!
+            if let yWeeklyRelieverUses = dict[yWeeklyRelieverUsesStr]! as? String {
+                worseVal = Int16(yWeeklyRelieverUses)!
             }
             
-            if (rRelieverFrequencyLimit != nil) {
-                criticalVal = Int16(rRelieverFrequencyLimit!)!
+            if let rRelieverFrequencyLimit = dict[rRelieverFrequencyLimitStr]! as? String {
+                criticalVal = Int16(rRelieverFrequencyLimit)!
             }
+            
             
             //old code
             /*
