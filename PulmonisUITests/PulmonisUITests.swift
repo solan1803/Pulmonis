@@ -38,7 +38,9 @@ class PulmonisUITests: XCTestCase {
         app.navigationBars["Pending Tasks"].children(matching: .button).matching(identifier: "Back").element(boundBy: 0).tap()
         app.buttons["ACTION PLAN"].tap()
         app.buttons["Support"].tap()
-        let textField = app.otherElements.containing(.navigationBar, identifier:"Pulmonis.SupportView").children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .textField).element
+        
+        let textField = app.otherElements.containing(.navigationBar, identifier:"Pulmonis.SupportView").children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element(boundBy: 1).children(matching: .other).element.children(matching: .textField).element
+        
         textField.tap()
         textField.typeText("3")
         app.buttons["Next"].tap()
@@ -54,7 +56,7 @@ class PulmonisUITests: XCTestCase {
         app.buttons["ACTION PLAN"].tap()
         app.buttons["Support"].tap()
         
-        let textField = app.otherElements.containing(.navigationBar, identifier:"Pulmonis.SupportView").children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .textField).element
+        let textField = app.otherElements.containing(.navigationBar, identifier:"Pulmonis.SupportView").children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element(boundBy: 1).children(matching: .other).element.children(matching: .textField).element
         textField.tap()
         textField.typeText("1")
         app.buttons["Next"].tap()
@@ -66,7 +68,7 @@ class PulmonisUITests: XCTestCase {
         app.buttons["ACTION PLAN"].tap()
         app.buttons["Support"].tap()
         
-        let textField = app.otherElements.containing(.navigationBar, identifier:"Pulmonis.SupportView").children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .textField).element
+        let textField = app.otherElements.containing(.navigationBar, identifier:"Pulmonis.SupportView").children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element(boundBy: 1).children(matching: .other).element.children(matching: .textField).element
         textField.tap()
         textField.typeText("6")
         app.buttons["Next"].tap()
