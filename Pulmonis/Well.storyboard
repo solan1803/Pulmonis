@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Well View Controller-->
         <scene sceneID="dKm-bw-47e">
             <objects>
-                <viewController id="wMU-3L-Fnr" sceneMemberID="viewController">
+                <viewController id="wMU-3L-Fnr" customClass="WellViewController" customModule="Pulmonis" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="rLM-7q-fMW"/>
                         <viewControllerLayoutGuide type="bottom" id="Lft-BX-p4A"/>
@@ -36,7 +36,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Vfa-IJ-56S" kind="show" id="aLO-CL-wCF"/>
+                                    <action selector="backToMainPage:" destination="wMU-3L-Fnr" eventType="touchUpInside" id="OPe-By-fhz"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -46,14 +46,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hz3-NN-Ydg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1623.2" y="115.59220389805098"/>
-        </scene>
-        <!--Main-->
-        <scene sceneID="wJ0-AD-YIp">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Main" id="Vfa-IJ-56S" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="lGJ-1U-haB" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1067" y="122"/>
         </scene>
     </scenes>
 </document>

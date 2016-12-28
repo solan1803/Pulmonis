@@ -36,6 +36,8 @@
 		2EAAC7D31E0D5A8200BE9B77 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EAAC7CE1E0D5A6300BE9B77 /* Charts.framework */; };
 		2EAAC7D41E0D5A8200BE9B77 /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2EAAC7CE1E0D5A6300BE9B77 /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5B0DEF7A1DB8F1FC006ECFCE /* LearnTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0DEF791DB8F1FC006ECFCE /* LearnTableViewController.swift */; };
+		5B1C00531E13CBC000C1F3D8 /* WellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1C00521E13CBC000C1F3D8 /* WellViewController.swift */; };
+		5B1C00571E13CFE900C1F3D8 /* CriticalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1C00561E13CFE900C1F3D8 /* CriticalViewController.swift */; };
 		5B3A1DBD1E0D7A76009800B8 /* PlotBreathGraph.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B3A1DBC1E0D7A76009800B8 /* PlotBreathGraph.storyboard */; };
 		5B6B434F1DC38E770071AC66 /* Learn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B6B434E1DC38E770071AC66 /* Learn.storyboard */; };
 		5B6B43511DC38F6A0071AC66 /* Statistics.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B6B43501DC38F6A0071AC66 /* Statistics.storyboard */; };
@@ -175,6 +177,8 @@
 		28E4862F1DB672A500C3C87E /* StatsStartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatsStartViewController.swift; sourceTree = "<group>"; };
 		2EAAC7C71E0D5A6300BE9B77 /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = Charts/Charts.xcodeproj; sourceTree = "<group>"; };
 		5B0DEF791DB8F1FC006ECFCE /* LearnTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LearnTableViewController.swift; sourceTree = "<group>"; };
+		5B1C00521E13CBC000C1F3D8 /* WellViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WellViewController.swift; sourceTree = "<group>"; };
+		5B1C00561E13CFE900C1F3D8 /* CriticalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CriticalViewController.swift; sourceTree = "<group>"; };
 		5B3A1DBC1E0D7A76009800B8 /* PlotBreathGraph.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PlotBreathGraph.storyboard; sourceTree = "<group>"; };
 		5B6B434E1DC38E770071AC66 /* Learn.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Learn.storyboard; sourceTree = "<group>"; };
 		5B6B43501DC38F6A0071AC66 /* Statistics.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Statistics.storyboard; sourceTree = "<group>"; };
@@ -368,6 +372,8 @@
 				5BD2AFB21E11D010008FA668 /* Well.storyboard */,
 				5BD2AFB61E11D028008FA668 /* Worse.storyboard */,
 				5BD2AFB81E11D036008FA668 /* Critical.storyboard */,
+				5B1C00561E13CFE900C1F3D8 /* CriticalViewController.swift */,
+				5B1C00521E13CBC000C1F3D8 /* WellViewController.swift */,
 				2899A93F1DB519D6004306DF /* MedicineViewController.swift */,
 				5B88A4E71DEB464800CDD946 /* BLE.swift */,
 				5B82CABF1DC8ECE4003930FB /* SupportViewController.swift */,
@@ -695,6 +701,8 @@
 				5BC2CD401E0F343300FBDEC9 /* HealthKitViewController.swift in Sources */,
 				5B0DEF7A1DB8F1FC006ECFCE /* LearnTableViewController.swift in Sources */,
 				5B82CAD41DC912CB003930FB /* PendingTask+CoreDataProperties.swift in Sources */,
+				5B1C00531E13CBC000C1F3D8 /* WellViewController.swift in Sources */,
+				5B1C00571E13CFE900C1F3D8 /* CriticalViewController.swift in Sources */,
 				71987C5B1DB678B300248AE1 /* EmergencyViewController.swift in Sources */,
 				5B82CAC31DC8EE07003930FB /* SupportRecord+CoreDataClass.swift in Sources */,
 				5B82CABE1DC8CAF1003930FB /* PeakFlowTable+CoreDataProperties.swift in Sources */,
