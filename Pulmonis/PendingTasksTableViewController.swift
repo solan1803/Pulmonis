@@ -68,6 +68,21 @@ class PendingTasksTableViewController: UITableViewController {
         if let taskCell = cell as? TaskTableViewCell {
             switch (task.type!) {
                 case "medicine":
+//                    if let plist = Plist(name: "PatientData") {
+//                        let dict = plist.getMutablePlistFile()!
+//                        
+//                        if let morningPuffs = (dict[gPuffsMorningStr]! as? String) {
+//                            if morningPuffs != "" {
+//                                dosageLabel.text = morningPuffs + " every morning at 9AM."
+//                            } else {
+//                                dosageLabel.text = "No record in doctor's input."
+//                            }
+//                        } else {
+//                            dosageLabel.text = "No record in doctor's input."
+//                        }
+//                    } else {
+//                        //Error with opening the PList
+//                    }
                     taskCell.headingText!.text = "2 X 5mg"
                     taskCell.taskImage!.image = UIImage(named: "pill")
             default:
