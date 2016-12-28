@@ -53,6 +53,17 @@ class MorningReminderTableViewCell: UITableViewCell {
             UNUserNotificationCenter.current().removePendingNotificationRequests(withIdentifiers: morningNotification)
             pListVal = false
         } else {
+            var puffs = ""
+            
+            if let plist = Plist(name: "PatientData") {
+                let dict = plist.getMutablePlistFile()!
+                
+                if let morningPuffs = (dict[gPuffsMorningStr]! as? String) {
+                    puffs = morningPuffs
+                }
+            } else {
+                //Error with opening the PList
+            }
             let calendar = Calendar(identifier: .gregorian)
             let newComponents = DateComponents(calendar: calendar, timeZone: .current, second: 0)
             
@@ -60,7 +71,7 @@ class MorningReminderTableViewCell: UITableViewCell {
             
             let content = UNMutableNotificationContent()
             content.title = "Morning Asthma Reminder"
-            content.body = "Please remember to take x puffs of your preventer inhaler this morning"
+            content.body = "Please remember to take \(puffs) puffs of your preventer inhaler this morning"
             content.sound = UNNotificationSound.default()
             
             let request = UNNotificationRequest(identifier: "morningNotification", content: content, trigger: trigger)

@@ -1,36 +1,20 @@
 //
-//  PendingTasksTableViewController.swift
+//  SettingsTableViewController.swift
 //  Pulmonis
 //
-//  Created by Manivannan Solan on 01/11/2016.
+//  Created by Manivannan Solan on 28/12/2016.
 //  Copyright © 2016 Manivannan Solan. All rights reserved.
 //
 
 import UIKit
-import CoreData
 
-class PendingTasksTableViewController: UITableViewController {
-    
-    // MARK: Model
-    
-    // if this is nil, then we simply don't update the database
-    // having this default to the AppDelegate's context is a little bit of "demo cheat"
-    // probably it would be better to subclass TweetTableViewController
-    // and set this var in that subclass and then use that subclass in our storyboard
-    // (the only purpose of that subclass would be to pick what database we're using)
-    var managedObjectContext: NSManagedObjectContext? =
-        (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
-    
-    var tasksList : [PendingTask] = []
+class SettingsTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.navigationBar.isTranslucent = false
         tableView.backgroundView = UIImageView(image: UIImage(named: "Background.png"))
         tableView.backgroundColor = UIColor.clear
-        print("VIEW DID LOAD IN PENDING TASKS")
-        let request: NSFetchRequest<PendingTask> = PendingTask.fetchRequest()
-        tasksList = try! managedObjectContext!.fetch(request)
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -38,16 +22,15 @@ class PendingTasksTableViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
 
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        self.navigationController?.navigationBar.isTranslucent = true
-    }
-    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
 
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.navigationBar.isTranslucent = true
+    }
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -57,49 +40,24 @@ class PendingTasksTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return tasksList.count
+        return 3
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "TaskCellIdentifier", for: indexPath)
-
-        let task = tasksList[indexPath.row]
-        if let taskCell = cell as? TaskTableViewCell {
-            switch (task.type!) {
-                case "medicine":
-                    var dosageNumber = ""
-                    if let plist = Plist(name: "PatientData") {
-                        let dict = plist.getMutablePlistFile()!
-                        
-                        if let dosage = (dict[yTabletDosageStr]! as? String) {
-                            if dosage != "" {
-                                dosageNumber = String(Int(dosage)!/5)
-                            }
-                        }
-                    } else {
-                        //Error with opening the PList
-                    }
-                    if dosageNumber != "" {
-                        taskCell.headingText!.text = "\(dosageNumber) x 5mg prednisolone"
-                    } else {
-                        taskCell.headingText!.text = "No record of dosage, contact GP."
-                    }
-                    taskCell.taskImage!.image = UIImage(named: "pill")
-                case "contactGP":
-                    taskCell.headingText!.text = "Talk to your GP"
-                    taskCell.taskImage!.image = UIImage(named: "call_button")
-            default:
-                break;
-                
-            }
-            taskCell.messageText!.text = task.message
+        let cell : UITableViewCell
+        if indexPath.row == 1 {
+            cell = tableView.dequeueReusableCell(withIdentifier: "doctorsInputCell", for: indexPath)
+        }else if indexPath.row == 2 {
+            cell = tableView.dequeueReusableCell(withIdentifier: "healthKitCell", for: indexPath)
+        } else {
+            cell = tableView.dequeueReusableCell(withIdentifier: "remindersCell", for: indexPath)
+        // Configure the cell...
         }
         cell.backgroundColor = UIColor.clear
-
         return cell
     }
- 
+    
 
     /*
     // Override to support conditional editing of the table view.
@@ -109,27 +67,17 @@ class PendingTasksTableViewController: UITableViewController {
     }
     */
 
-    
+    /*
     // Override to support editing the table view.
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             // Delete the row from the data source
-            managedObjectContext?.delete(tasksList[indexPath.row])
-            do {
-                try managedObjectContext?.save()
-            } catch let error {
-                print(error)
-            }
-            tableView.beginUpdates()
-            tasksList.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .fade)
-            tableView.endUpdates()
         } else if editingStyle == .insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
         }    
     }
-    
-    
+    */
 
     /*
     // Override to support rearranging the table view.

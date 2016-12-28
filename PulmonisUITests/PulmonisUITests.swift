@@ -34,7 +34,7 @@ class PulmonisUITests: XCTestCase {
         let app = XCUIApplication()
         let tasksButton = app.buttons["tasks"]
         tasksButton.tap()
-        let cellCount = app.tables.cells.count + 1
+        let cellCount = app.tables.cells.count + 2
         app.navigationBars["Pending Tasks"].children(matching: .button).matching(identifier: "Back").element(boundBy: 0).tap()
         app.buttons["ACTION PLAN"].tap()
         app.buttons["Support"].tap()
@@ -45,6 +45,7 @@ class PulmonisUITests: XCTestCase {
         textField.typeText("3")
         app.buttons["Next"].tap()
         app.alerts["Please confirm inhaler usage:"].buttons["Yes"].tap()
+        
         app.buttons["I do not have this"].tap()
         tasksButton.tap()
         XCTAssertEqual(cellCount, app.tables.cells.count, "Number of pending tasks incorrect!")

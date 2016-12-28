@@ -208,7 +208,7 @@
         <!--Settings-->
         <scene sceneID="OHd-T8-MOb">
             <objects>
-                <viewControllerPlaceholder storyboardIdentifier="Settings" storyboardName="Settings" referencedIdentifier="Settings" id="YYW-cm-chO" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardIdentifier="Settings" storyboardName="Settings" id="YYW-cm-chO" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eft-Qc-Ocf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="954" y="-1573"/>
@@ -218,7 +218,9 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xUS-Tv-YEJ" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="gc7-QF-kan">
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="667"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gc7-QF-kan">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
