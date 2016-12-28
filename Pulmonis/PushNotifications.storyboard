@@ -142,6 +142,9 @@
                                                 </stackView>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Ogz-5K-AK1">
                                                     <rect key="frame" x="286" y="34.5" width="51" height="31"/>
+                                                    <connections>
+                                                        <action selector="eveningReminderSwitchChanged:" destination="ULr-II-835" eventType="valueChanged" id="aHf-9y-1jW"/>
+                                                    </connections>
                                                 </switch>
                                             </subviews>
                                         </stackView>
@@ -155,6 +158,7 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="dosageLabel" destination="bkq-jf-n7e" id="43B-0Z-9JR"/>
+                                    <outlet property="eveningSwitch" destination="Ogz-5K-AK1" id="A9r-ex-b2S"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
