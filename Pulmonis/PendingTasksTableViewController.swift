@@ -115,6 +115,11 @@ class PendingTasksTableViewController: UITableViewController {
         if editingStyle == .delete {
             // Delete the row from the data source
             managedObjectContext?.delete(tasksList[indexPath.row])
+            do {
+                try managedObjectContext?.save()
+            } catch let error {
+                print(error)
+            }
             tableView.beginUpdates()
             tasksList.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .fade)
