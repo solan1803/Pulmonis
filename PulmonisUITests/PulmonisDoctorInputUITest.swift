@@ -24,9 +24,8 @@ class PulmonisDoctorInputUITest: XCTestCase {
         
         let app = XCUIApplication()
         app.navigationBars["Pulmonis.View"].buttons["⚙"].tap()
+        app.tables.staticTexts["Doctor's Input"].tap()
         
-        let doctorButton = app.buttons["Doctor"]
-        doctorButton.tap()
         
         
         let element12 = app.otherElements.containing(.navigationBar, identifier:"Page 1 of 15").children(matching: .other).element.children(matching: .other).element.children(matching: .other).element
@@ -96,7 +95,7 @@ class PulmonisDoctorInputUITest: XCTestCase {
         
         let app = XCUIApplication()
         app.navigationBars["Pulmonis.View"].buttons["⚙"].tap()
-        app.buttons["Doctor"].tap()
+        app.tables.staticTexts["Doctor's Input"].tap()
         
         let deleteKey = app.keys["delete"]
         deleteKey.tap()
@@ -159,7 +158,7 @@ class PulmonisDoctorInputUITest: XCTestCase {
         
         let app = XCUIApplication()
         app.navigationBars["Pulmonis.View"].buttons["⚙"].tap()
-        app.buttons["Doctor"].tap()
+        app.tables.staticTexts["Doctor's Input"].tap()
         
         let element12 = app.otherElements.containing(.navigationBar, identifier:"Page 1 of 15").children(matching: .other).element.children(matching: .other).element.children(matching: .other).element
         var textField = element12.children(matching: .other).element(boundBy: 1).children(matching: .textField).element

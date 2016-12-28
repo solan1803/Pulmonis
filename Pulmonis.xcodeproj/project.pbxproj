@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		280551A01DDB6262001E99C6 /* DoctorInput.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2805519F1DDB6262001E99C6 /* DoctorInput.storyboard */; };
-		280C60871DCD531400089C08 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280C60861DCD531400089C08 /* SettingsViewController.swift */; };
 		2834399E1DC2195900857437 /* Plist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2834399D1DC2195900857437 /* Plist.swift */; };
 		28787E121DDB6B38000439AD /* PatientData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 28787E111DDB6B38000439AD /* PatientData.plist */; };
 		2899A93C1DB4FE03004306DF /* SymptomsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2899A93B1DB4FE03004306DF /* SymptomsViewController.swift */; };
@@ -67,6 +66,7 @@
 		5BB9E4401E13FDAA00B5892A /* MorningReminderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB9E43F1E13FDAA00B5892A /* MorningReminderTableViewCell.swift */; };
 		5BB9E4421E13FFB800B5892A /* RemindersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB9E4411E13FFB800B5892A /* RemindersTableViewController.swift */; };
 		5BB9E4461E1402D000B5892A /* EveningReminderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB9E4451E1402D000B5892A /* EveningReminderTableViewCell.swift */; };
+		5BB9E44C1E1441C800B5892A /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB9E44B1E1441C800B5892A /* SettingsTableViewController.swift */; };
 		5BC2CD3C1E0F340700FBDEC9 /* HealthKit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BC2CD3B1E0F340600FBDEC9 /* HealthKit.storyboard */; };
 		5BC2CD401E0F343300FBDEC9 /* HealthKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC2CD3F1E0F343300FBDEC9 /* HealthKitViewController.swift */; };
 		5BC2CD481E0FD3E700FBDEC9 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BC2CD471E0FD3E700FBDEC9 /* HealthKit.framework */; };
@@ -154,7 +154,6 @@
 
 /* Begin PBXFileReference section */
 		2805519F1DDB6262001E99C6 /* DoctorInput.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DoctorInput.storyboard; sourceTree = "<group>"; };
-		280C60861DCD531400089C08 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		2834399D1DC2195900857437 /* Plist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Plist.swift; sourceTree = "<group>"; };
 		28787E111DDB6B38000439AD /* PatientData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PatientData.plist; sourceTree = "<group>"; };
 		2899A93B1DB4FE03004306DF /* SymptomsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SymptomsViewController.swift; sourceTree = "<group>"; };
@@ -218,6 +217,7 @@
 		5BB9E43F1E13FDAA00B5892A /* MorningReminderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MorningReminderTableViewCell.swift; path = ../MorningReminderTableViewCell.swift; sourceTree = "<group>"; };
 		5BB9E4411E13FFB800B5892A /* RemindersTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemindersTableViewController.swift; sourceTree = "<group>"; };
 		5BB9E4451E1402D000B5892A /* EveningReminderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EveningReminderTableViewCell.swift; path = ../EveningReminderTableViewCell.swift; sourceTree = "<group>"; };
+		5BB9E44B1E1441C800B5892A /* SettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		5BC2CD3B1E0F340600FBDEC9 /* HealthKit.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HealthKit.storyboard; sourceTree = "<group>"; };
 		5BC2CD3F1E0F343300FBDEC9 /* HealthKitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthKitViewController.swift; sourceTree = "<group>"; };
 		5BC2CD411E0F34DA00FBDEC9 /* Pulmonis.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Pulmonis.entitlements; sourceTree = "<group>"; };
@@ -307,13 +307,13 @@
 				5BC2CD3B1E0F340600FBDEC9 /* HealthKit.storyboard */,
 				5B82CAD51DC9139C003930FB /* PendingTasks.storyboard */,
 				5B6B43501DC38F6A0071AC66 /* Statistics.storyboard */,
+				5BB9E44B1E1441C800B5892A /* SettingsTableViewController.swift */,
 				5BB9E4411E13FFB800B5892A /* RemindersTableViewController.swift */,
 				5BB9E43F1E13FDAA00B5892A /* MorningReminderTableViewCell.swift */,
 				5BB9E4451E1402D000B5892A /* EveningReminderTableViewCell.swift */,
 				5BC2CD3F1E0F343300FBDEC9 /* HealthKitViewController.swift */,
 				28E4862F1DB672A500C3C87E /* StatsStartViewController.swift */,
 				71987C5A1DB678B300248AE1 /* EmergencyViewController.swift */,
-				280C60861DCD531400089C08 /* SettingsViewController.swift */,
 				5B0DEF791DB8F1FC006ECFCE /* LearnTableViewController.swift */,
 				2899A93B1DB4FE03004306DF /* SymptomsViewController.swift */,
 				5B82CAD91DC918C1003930FB /* PendingTasksTableViewController.swift */,
@@ -706,7 +706,6 @@
 				28A336D41DDB58E0005D8626 /* Yellow2ViewController.swift in Sources */,
 				28A336DE1DDB590B005D8626 /* Red1ViewController.swift in Sources */,
 				28A336C61DDB582C005D8626 /* Green1ViewController.swift in Sources */,
-				280C60871DCD531400089C08 /* SettingsViewController.swift in Sources */,
 				28A336D81DDB58EE005D8626 /* Yellow4ViewController.swift in Sources */,
 				5BE3131B1E1295CE0094C7EF /* PushNotificationsViewController.swift in Sources */,
 				28A336C81DDB5850005D8626 /* Green2ViewController.swift in Sources */,
@@ -718,6 +717,7 @@
 				71987C5B1DB678B300248AE1 /* EmergencyViewController.swift in Sources */,
 				5B82CAC31DC8EE07003930FB /* SupportRecord+CoreDataClass.swift in Sources */,
 				5B82CABE1DC8CAF1003930FB /* PeakFlowTable+CoreDataProperties.swift in Sources */,
+				5BB9E44C1E1441C800B5892A /* SettingsTableViewController.swift in Sources */,
 				5B82CABD1DC8CAF1003930FB /* PeakFlowTable+CoreDataClass.swift in Sources */,
 				5B82CA961DC8C14B003930FB /* PeakFlowViewController.swift in Sources */,
 				28A336D01DDB5881005D8626 /* Green6ViewController.swift in Sources */,
