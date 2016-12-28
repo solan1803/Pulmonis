@@ -1244,21 +1244,12 @@
                     <navigationItem key="navigationItem" title="Page 15 of 15" id="6Mc-bQ-bKf"/>
                     <connections>
                         <outlet property="rMinimumPeakFlow" destination="vwK-gg-lql" id="y1a-X4-tUD"/>
-                        <segue destination="AeQ-Vn-If2" kind="show" identifier="save" id="4Ky-5a-XDF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yBA-yJ-tv1" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <swipeGestureRecognizer direction="right" id="2hr-3y-EZS"/>
             </objects>
             <point key="canvasLocation" x="7686.9565217391309" y="4607.608695652174"/>
-        </scene>
-        <!--Settings-->
-        <scene sceneID="TRJ-aa-TLX">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Settings" id="AeQ-Vn-If2" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="X63-mH-hOJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="8355" y="4546"/>
         </scene>
         <!--Page 11 of 15-->
         <scene sceneID="Rtk-LH-Q1n">

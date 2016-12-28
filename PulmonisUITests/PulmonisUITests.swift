@@ -29,21 +29,6 @@ class PulmonisUITests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-    
-    func testMedicineUI() {
-        
-        let app = XCUIApplication()
-        app.buttons["ACTION PLAN"].tap()
-        app.buttons["Support"].tap()
-        // Need to be able to write tests for core data.
-//        app.buttons["Next"].tap()
-        
-    }
-    
     func testPendingTasksTable() {
         
         let app = XCUIApplication()

@@ -80,6 +80,16 @@ class MedicineViewController: UIViewController, UIPopoverPresentationControllerD
             print("TYPE: ")
             print(r.type!)
         }
+        
+        backToMainPage()
+    }
+    
+    @IBAction func takenMedicine(_ sender: UIButton) {
+        backToMainPage()
+    }
+    
+    func backToMainPage() {
+        navigationController!.popToViewController(navigationController!.viewControllers[0], animated: true)
     }
     
     // MARK: - Navigation

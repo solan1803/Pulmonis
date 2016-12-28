@@ -88,25 +88,6 @@ class PulmonisDoctorInputUITest: XCTestCase {
         app.buttons["Save"].tap()
         
         
-        let settingsNavigationBar = app.navigationBars["Settings"]
-        settingsNavigationBar.buttons["Page 15 of 15"].tap()
-        app.navigationBars["Page 15 of 15"].buttons["Page 14 of 15"].tap()
-        app.navigationBars["Page 14 of 15"].buttons["Page 13 of 15"].tap()
-        app.navigationBars["Page 13 of 15"].buttons["Page 12 of 15"].tap()
-        app.navigationBars["Page 12 of 15"].buttons["Page 11 of 15"].tap()
-        app.navigationBars["Page 11 of 15"].buttons["Page 10 of 15"].tap()
-        app.navigationBars["Page 10 of 15"].buttons["Page 9 of 15"].tap()
-        app.navigationBars["Page 9 of 15"].buttons["Page 8 of 15"].tap()
-        app.navigationBars["Page 8 of 15"].buttons["Page 7 of 15"].tap()
-        app.navigationBars["Page 7 of 15"].buttons["Page 6 of 15"].tap()
-        app.navigationBars["Page 6 of 15"].buttons["Page 5 of 15"].tap()
-        app.navigationBars["Page 5 of 15"].buttons["Page 4 of 15"].tap()
-        app.navigationBars["Page 4 of 15"].buttons["Page 3 of 15"].tap()
-        app.navigationBars["Page 3 of 15"].buttons["Page 2 of 15"].tap()
-        app.navigationBars["Page 2 of 15"].buttons["Page 1 of 15"].tap()
-        app.navigationBars["Page 1 of 15"].buttons["Settings"].tap()
-        settingsNavigationBar.children(matching: .button).matching(identifier: "Back").element(boundBy: 0).tap()
-        
     }
     
     override func tearDown() {
@@ -174,7 +155,7 @@ class PulmonisDoctorInputUITest: XCTestCase {
         
     }
     
-    func testExample() {
+    func testDoctorInputUIAllPages() {
         
         let app = XCUIApplication()
         app.navigationBars["Pulmonis.View"].buttons["⚙"].tap()
@@ -248,22 +229,7 @@ class PulmonisDoctorInputUITest: XCTestCase {
         textField = app.otherElements.containing(.navigationBar, identifier:"Page 15 of 15").children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element(boundBy: 1).children(matching: .textField).element
         XCTAssertEqual(textField.value as! String, "9")
         
-        app.navigationBars["Page 15 of 15"].buttons["Page 14 of 15"].tap()
-        app.navigationBars["Page 14 of 15"].buttons["Page 13 of 15"].tap()
-        app.navigationBars["Page 13 of 15"].buttons["Page 12 of 15"].tap()
-        app.navigationBars["Page 12 of 15"].buttons["Page 11 of 15"].tap()
-        app.navigationBars["Page 11 of 15"].buttons["Page 10 of 15"].tap()
-        app.navigationBars["Page 10 of 15"].buttons["Page 9 of 15"].tap()
-        app.navigationBars["Page 9 of 15"].buttons["Page 8 of 15"].tap()
-        app.navigationBars["Page 8 of 15"].buttons["Page 7 of 15"].tap()
-        app.navigationBars["Page 7 of 15"].buttons["Page 6 of 15"].tap()
-        app.navigationBars["Page 6 of 15"].buttons["Page 5 of 15"].tap()
-        app.navigationBars["Page 5 of 15"].buttons["Page 4 of 15"].tap()
-        app.navigationBars["Page 4 of 15"].buttons["Page 3 of 15"].tap()
-        app.navigationBars["Page 3 of 15"].buttons["Page 2 of 15"].tap()
-        app.navigationBars["Page 2 of 15"].buttons["Page 1 of 15"].tap()
-        app.navigationBars["Page 1 of 15"].buttons["Settings"].tap()
-        app.navigationBars["Settings"].children(matching: .button).matching(identifier: "Back").element(boundBy: 0).tap()
+        app.buttons["Save"].tap()
         
     }
     
