@@ -68,23 +68,27 @@ class PendingTasksTableViewController: UITableViewController {
         if let taskCell = cell as? TaskTableViewCell {
             switch (task.type!) {
                 case "medicine":
-//                    if let plist = Plist(name: "PatientData") {
-//                        let dict = plist.getMutablePlistFile()!
-//                        
-//                        if let morningPuffs = (dict[gPuffsMorningStr]! as? String) {
-//                            if morningPuffs != "" {
-//                                dosageLabel.text = morningPuffs + " every morning at 9AM."
-//                            } else {
-//                                dosageLabel.text = "No record in doctor's input."
-//                            }
-//                        } else {
-//                            dosageLabel.text = "No record in doctor's input."
-//                        }
-//                    } else {
-//                        //Error with opening the PList
-//                    }
-                    taskCell.headingText!.text = "2 X 5mg"
+                    var dosageNumber = ""
+                    if let plist = Plist(name: "PatientData") {
+                        let dict = plist.getMutablePlistFile()!
+                        
+                        if let dosage = (dict[yTabletDosageStr]! as? String) {
+                            if dosage != "" {
+                                dosageNumber = String(Int(dosage)!/5)
+                            }
+                        }
+                    } else {
+                        //Error with opening the PList
+                    }
+                    if dosageNumber != "" {
+                        taskCell.headingText!.text = "\(dosageNumber) x 5mg prednisolone"
+                    } else {
+                        taskCell.headingText!.text = "No record of dosage, contact GP."
+                    }
                     taskCell.taskImage!.image = UIImage(named: "pill")
+                case "contactGP":
+                    taskCell.headingText!.text = "Talk to your GP"
+                    taskCell.taskImage!.image = UIImage(named: "call_button")
             default:
                 break;
                 
@@ -105,18 +109,21 @@ class PendingTasksTableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // Override to support editing the table view.
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             // Delete the row from the data source
             managedObjectContext?.delete(tasksList[indexPath.row])
+            tableView.beginUpdates()
+            tasksList.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .fade)
+            tableView.endUpdates()
         } else if editingStyle == .insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
         }    
     }
-    */
+    
     
 
     /*
