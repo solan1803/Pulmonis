@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import UserNotifications
 
 class PushNotificationsViewController: UIViewController {
     
@@ -16,5 +17,8 @@ class PushNotificationsViewController: UIViewController {
         let delegate = UIApplication.shared.delegate as? AppDelegate
         delegate?.scheduleNotification(at: selectedDate)
         
+    }
+    @IBAction func deleteAllNotifications(_ sender: UIButton) {
+        UNUserNotificationCenter.current().removeAllPendingNotificationRequests()
     }
 }
