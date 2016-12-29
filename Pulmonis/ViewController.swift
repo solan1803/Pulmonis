@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 extension UILabel{
     func addTextSpacing(spacing: CGFloat){
@@ -18,9 +19,19 @@ extension UILabel{
 
 class ViewController: UIViewController {
     
+    var managedObjectContext: NSManagedObjectContext? =
+        (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+    
     @IBOutlet weak var learnImage: UIImageView!
     @IBOutlet weak var pulmonisTitle: UILabel!
     @IBOutlet weak var settingsBarItem: UIBarButtonItem!
+    
+    @IBOutlet weak var notificationImage1: UIImageView!
+    @IBOutlet weak var notificationImage2: UIImageView!
+    @IBOutlet weak var notificationMessage1: UIButton!
+    @IBOutlet weak var notificationMessage2: UIButton!
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,6 +45,52 @@ class ViewController: UIViewController {
         self.hideKeyboardWhenTappedAround()
         NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillShow), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillHide), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
+        
+        
+        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        var tasksList : [PendingTask] = []
+        let request: NSFetchRequest<PendingTask> = PendingTask.fetchRequest()
+        let sortDescriptor = NSSortDescriptor(key: "date_created", ascending: true)
+        request.sortDescriptors = [sortDescriptor]
+        request.fetchLimit = 2
+        tasksList = try! managedObjectContext!.fetch(request)
+        notificationMessage1.setTitle("No current pending tasks", for: .normal)
+        notificationMessage2.setTitle("", for: .normal)
+        notificationImage1.image = nil
+        notificationImage2.image = nil
+        if tasksList.count >= 1 {
+            setNotificationMessage(typeOfNotification: tasksList[0].type!, notificationNumber: 1);
+        }
+        if tasksList.count >= 2 {
+            setNotificationMessage(typeOfNotification: tasksList[1].type!, notificationNumber: 2)
+        }
+    }
+    
+    func setNotificationMessage(typeOfNotification: String, notificationNumber: Int) {
+        var notificationMessageButton : UIButton
+        var notificationImage : UIImageView
+        if notificationNumber == 1 {
+            notificationMessageButton = notificationMessage1
+            notificationImage = notificationImage1
+        } else {
+            notificationMessageButton = notificationMessage2
+            notificationImage = notificationImage2
+        }
+        
+        switch typeOfNotification {
+        case "medicine" :
+            notificationMessageButton.setTitle("Medication reminder", for: .normal)
+            notificationImage.image = UIImage(named: "pill")
+        case "contactGP" :
+            notificationMessageButton.setTitle("Talk to your GP", for: .normal)
+            notificationImage.image = UIImage(named: "call_button")
+        default:
+            break;
+        }
     }
     
     override func didReceiveMemoryWarning() {
