@@ -39,6 +39,7 @@
 		5B1C00571E13CFE900C1F3D8 /* CriticalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1C00561E13CFE900C1F3D8 /* CriticalViewController.swift */; };
 		5B3A1DBD1E0D7A76009800B8 /* PlotBreathGraph.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B3A1DBC1E0D7A76009800B8 /* PlotBreathGraph.storyboard */; };
 		5B4AA88E1E15887600F162AF /* PulmonisAsthmaJournalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4AA88D1E15887600F162AF /* PulmonisAsthmaJournalUITests.swift */; };
+		5B4AA89A1E15BA6900F162AF /* WorsePopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4AA8991E15BA6900F162AF /* WorsePopoverViewController.swift */; };
 		5B6B434F1DC38E770071AC66 /* Learn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B6B434E1DC38E770071AC66 /* Learn.storyboard */; };
 		5B6B43511DC38F6A0071AC66 /* Statistics.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B6B43501DC38F6A0071AC66 /* Statistics.storyboard */; };
 		5B6B43531DC390400071AC66 /* ActionPlan.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B6B43521DC390400071AC66 /* ActionPlan.storyboard */; };
@@ -187,6 +188,7 @@
 		5B1C00561E13CFE900C1F3D8 /* CriticalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CriticalViewController.swift; sourceTree = "<group>"; };
 		5B3A1DBC1E0D7A76009800B8 /* PlotBreathGraph.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PlotBreathGraph.storyboard; sourceTree = "<group>"; };
 		5B4AA88D1E15887600F162AF /* PulmonisAsthmaJournalUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PulmonisAsthmaJournalUITests.swift; sourceTree = "<group>"; };
+		5B4AA8991E15BA6900F162AF /* WorsePopoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorsePopoverViewController.swift; sourceTree = "<group>"; };
 		5B6B434E1DC38E770071AC66 /* Learn.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Learn.storyboard; sourceTree = "<group>"; };
 		5B6B43501DC38F6A0071AC66 /* Statistics.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Statistics.storyboard; sourceTree = "<group>"; };
 		5B6B43521DC390400071AC66 /* ActionPlan.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ActionPlan.storyboard; sourceTree = "<group>"; };
@@ -383,6 +385,7 @@
 				5BD2AFB21E11D010008FA668 /* Well.storyboard */,
 				5BD2AFB61E11D028008FA668 /* Worse.storyboard */,
 				5BD2AFB81E11D036008FA668 /* Critical.storyboard */,
+				5B4AA8991E15BA6900F162AF /* WorsePopoverViewController.swift */,
 				5B1C00561E13CFE900C1F3D8 /* CriticalViewController.swift */,
 				5B1C00521E13CBC000C1F3D8 /* WellViewController.swift */,
 				2899A93F1DB519D6004306DF /* MedicineViewController.swift */,
@@ -754,6 +757,7 @@
 				5B1C00531E13CBC000C1F3D8 /* WellViewController.swift in Sources */,
 				5B1C00571E13CFE900C1F3D8 /* CriticalViewController.swift in Sources */,
 				71987C5B1DB678B300248AE1 /* EmergencyViewController.swift in Sources */,
+				5B4AA89A1E15BA6900F162AF /* WorsePopoverViewController.swift in Sources */,
 				5B82CAC31DC8EE07003930FB /* SupportRecord+CoreDataClass.swift in Sources */,
 				5B82CABE1DC8CAF1003930FB /* PeakFlowTable+CoreDataProperties.swift in Sources */,
 				5BB9E44C1E1441C800B5892A /* SettingsTableViewController.swift in Sources */,

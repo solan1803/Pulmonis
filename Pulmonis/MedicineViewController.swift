@@ -18,9 +18,14 @@ class MedicineViewController: UIViewController, UIPopoverPresentationControllerD
     @IBOutlet weak var takenButton: UIButton!
     @IBOutlet weak var notHaveButton: UIButton!
     
+    @IBOutlet weak var dosageLabel: UILabel!
+    
+    @IBOutlet weak var medicineAlertLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("[DEBUG] viewDidLoad of medicine view controller")
+        performSegue(withIdentifier: "notePopover", sender: self)
         notHaveButton.layer.cornerRadius = 10
         notHaveButton.clipsToBounds = true
         
@@ -28,6 +33,26 @@ class MedicineViewController: UIViewController, UIPopoverPresentationControllerD
         takenButton.layer.cornerRadius = 10
         takenButton.clipsToBounds = true
         addContactGPTask()
+        var dosageNumber = ""
+        var days = ""
+        if let plist = Plist(name: "PatientData") {
+            let dict = plist.getMutablePlistFile()!
+            
+            if let dosage = (dict[yTabletDosageStr]! as? String) {
+                if dosage != "" {
+                    dosageNumber = String(Int(dosage)!/5)
+                }
+            }
+            if let d = (dict[yTabletDurationStr]! as? String) {
+                if d != "" {
+                    days = d
+                }
+            }
+        } else {
+            //Error with opening the PList
+        }
+        dosageLabel.text = "\(dosageNumber) tablets"
+        medicineAlertLabel.text =  "Please take \(dosageNumber) x 5mg of prednisolone tablets immediately and again every morning for \(days) days or until you are fully better."
         /*
         let fixedWidth = textView.frame.size.width
         textView.sizeThatFits(CGSize(width: fixedWidth, height: CGFloat.greatestFiniteMagnitude))
