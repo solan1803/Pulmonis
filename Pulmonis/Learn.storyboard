@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -68,9 +67,6 @@
                                                 <constraint firstItem="KPr-dQ-00h" firstAttribute="leading" secondItem="ooi-hW-axk" secondAttribute="leadingMargin" constant="100" id="mxc-Vk-PKP"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="tSQ-GB-SRU" kind="show" id="raL-dL-h6D"/>
-                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="136" id="ZaA-Au-dFL">
                                         <rect key="frame" x="0.0" y="136" width="375" height="136"/>
@@ -241,105 +237,9 @@
             </objects>
             <point key="canvasLocation" x="1596" y="1192"/>
         </scene>
-        <!--Symptoms-->
-        <scene sceneID="H91-FF-x7s">
-            <objects>
-                <viewController id="tSQ-GB-SRU" customClass="SymptomsViewController" customModule="Pulmonis" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="8bU-gF-oNc"/>
-                        <viewControllerLayoutGuide type="bottom" id="WGj-Kx-QeG"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="nxk-T5-0pV">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Shiny Blue" translatesAutoresizingMaskIntoConstraints="NO" id="yi8-RH-Ybz">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kiZ-zr-IiC">
-                                <rect key="frame" x="152.5" y="604" width="70" height="38"/>
-                                <color key="backgroundColor" red="0.001422772068" green="0.4256876409" blue="0.55088329319999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="70" id="6yU-qm-ci9"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
-                                <state key="normal" title="Next">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="How are you currently feeling?" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="YXU-xs-eXB">
-                                <rect key="frame" x="46" y="60" width="299" height="99.5"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="YXU-xs-eXB" secondAttribute="height" multiplier="3:1" id="jyR-NU-Q75"/>
-                                </constraints>
-                                <color key="textColor" red="0.001422772068" green="0.4256876409" blue="0.55088329319999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="tpb-c9-LO3">
-                                <rect key="frame" x="35" y="189.5" width="305" height="384.5"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AXy-Aq-J3L">
-                                        <rect key="frame" x="0.0" y="0.0" width="305" height="101.5"/>
-                                        <color key="backgroundColor" red="0.001422772068" green="0.4256876409" blue="0.55088329319999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
-                                        <state key="normal" title="No symptoms">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Ci-x7-QBr">
-                                        <rect key="frame" x="0.0" y="141.5" width="305" height="101.5"/>
-                                        <color key="backgroundColor" red="0.001422772068" green="0.4256876409" blue="0.55088329319999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
-                                        <state key="normal" title="Breathless">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="eXa-Df-b9T">
-                                        <rect key="frame" x="0.0" y="283" width="305" height="101.5"/>
-                                        <color key="backgroundColor" red="0.001422772068" green="0.4256876409" blue="0.55088329319999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
-                                        <state key="normal" title="Using inhaler more often than usual">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                    </button>
-                                </subviews>
-                            </stackView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="YXU-xs-eXB" firstAttribute="top" secondItem="8bU-gF-oNc" secondAttribute="bottom" constant="40" id="0rX-cE-08F"/>
-                            <constraint firstItem="yi8-RH-Ybz" firstAttribute="top" secondItem="nxk-T5-0pV" secondAttribute="top" id="3bE-AK-kxH"/>
-                            <constraint firstItem="tpb-c9-LO3" firstAttribute="top" secondItem="YXU-xs-eXB" secondAttribute="bottom" constant="30" id="9hi-Xp-IG8"/>
-                            <constraint firstItem="YXU-xs-eXB" firstAttribute="leading" secondItem="nxk-T5-0pV" secondAttribute="leadingMargin" constant="30" id="Bnp-Lu-lxv"/>
-                            <constraint firstAttribute="trailing" secondItem="tpb-c9-LO3" secondAttribute="trailing" constant="35" id="DxO-ic-OtD"/>
-                            <constraint firstItem="WGj-Kx-QeG" firstAttribute="top" secondItem="kiZ-zr-IiC" secondAttribute="bottom" constant="25" id="O4i-Q3-8Vl"/>
-                            <constraint firstAttribute="trailing" secondItem="yi8-RH-Ybz" secondAttribute="trailing" id="OHq-Jv-iPo"/>
-                            <constraint firstItem="yi8-RH-Ybz" firstAttribute="leading" secondItem="nxk-T5-0pV" secondAttribute="leading" id="b6k-I0-Ncm"/>
-                            <constraint firstAttribute="trailing" secondItem="YXU-xs-eXB" secondAttribute="trailing" constant="30" id="gfN-rM-CI2"/>
-                            <constraint firstItem="kiZ-zr-IiC" firstAttribute="top" secondItem="tpb-c9-LO3" secondAttribute="bottom" constant="30" id="kkr-y5-44k"/>
-                            <constraint firstItem="tpb-c9-LO3" firstAttribute="leading" secondItem="nxk-T5-0pV" secondAttribute="leading" constant="35" id="moU-Ao-zHI"/>
-                            <constraint firstItem="kiZ-zr-IiC" firstAttribute="centerX" secondItem="nxk-T5-0pV" secondAttribute="centerX" id="qk3-FA-cMm"/>
-                            <constraint firstAttribute="bottom" secondItem="yi8-RH-Ybz" secondAttribute="bottom" id="vDW-1Z-gVr"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" title="Symptoms" id="BzK-cg-EVK"/>
-                    <connections>
-                        <outlet property="breathlessButton" destination="5Ci-x7-QBr" id="gni-N9-AoP"/>
-                        <outlet property="inhalerButton" destination="eXa-Df-b9T" id="ms8-N9-Yyi"/>
-                        <outlet property="nextButton" destination="kiZ-zr-IiC" id="WAf-UF-AMT"/>
-                        <outlet property="symptomsButton" destination="AXy-Aq-J3L" id="vI2-Mz-thH"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Xea-OG-dnx" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2535" y="1191"/>
-        </scene>
     </scenes>
     <resources>
         <image name="Inhaler" width="250" height="201"/>
-        <image name="Shiny Blue" width="750" height="1334"/>
         <image name="learn_book" width="155" height="191"/>
         <image name="learn_lungs" width="176" height="155"/>
         <image name="pill" width="139" height="141"/>

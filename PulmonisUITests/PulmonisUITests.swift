@@ -32,8 +32,7 @@ class PulmonisUITests: XCTestCase {
     func testPendingTasksTable() {
         
         let app = XCUIApplication()
-        let tasksButton = app.buttons["tasks"]
-        tasksButton.tap()
+        XCUIApplication().buttons["No current pending tasks"].tap()
         let cellCount = app.tables.cells.count + 2
         app.navigationBars["Pending Tasks"].children(matching: .button).matching(identifier: "Back").element(boundBy: 0).tap()
         app.buttons["ACTION PLAN"].tap()
@@ -47,8 +46,17 @@ class PulmonisUITests: XCTestCase {
         app.alerts["Please confirm inhaler usage:"].buttons["Yes"].tap()
         
         app.buttons["I do not have this"].tap()
-        tasksButton.tap()
+        app.buttons["Talk to your GP"].tap()
         XCTAssertEqual(cellCount, app.tables.cells.count, "Number of pending tasks incorrect!")
+        
+        
+        let tablesQuery = app.tables
+        let talkToYourGpStaticText = tablesQuery.staticTexts["Talk to your GP"]
+        talkToYourGpStaticText.swipeLeft()
+        tablesQuery.buttons["Delete"].tap()
+        tablesQuery.staticTexts["No record of dosage, contact GP."].swipeLeft()
+        tablesQuery.buttons["Delete"].tap()
+        
     }
     
     func testWellSegueFromSupport() {
