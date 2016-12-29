@@ -10,7 +10,6 @@
 		280551A01DDB6262001E99C6 /* DoctorInput.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2805519F1DDB6262001E99C6 /* DoctorInput.storyboard */; };
 		2834399E1DC2195900857437 /* Plist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2834399D1DC2195900857437 /* Plist.swift */; };
 		28787E121DDB6B38000439AD /* PatientData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 28787E111DDB6B38000439AD /* PatientData.plist */; };
-		2899A93C1DB4FE03004306DF /* SymptomsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2899A93B1DB4FE03004306DF /* SymptomsViewController.swift */; };
 		2899A9411DB519D6004306DF /* MedicineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2899A93F1DB519D6004306DF /* MedicineViewController.swift */; };
 		28A336C61DDB582C005D8626 /* Green1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A336C51DDB582C005D8626 /* Green1ViewController.swift */; };
 		28A336C81DDB5850005D8626 /* Green2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A336C71DDB5850005D8626 /* Green2ViewController.swift */; };
@@ -156,7 +155,6 @@
 		2805519F1DDB6262001E99C6 /* DoctorInput.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DoctorInput.storyboard; sourceTree = "<group>"; };
 		2834399D1DC2195900857437 /* Plist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Plist.swift; sourceTree = "<group>"; };
 		28787E111DDB6B38000439AD /* PatientData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PatientData.plist; sourceTree = "<group>"; };
-		2899A93B1DB4FE03004306DF /* SymptomsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SymptomsViewController.swift; sourceTree = "<group>"; };
 		2899A93F1DB519D6004306DF /* MedicineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicineViewController.swift; sourceTree = "<group>"; };
 		28A336C51DDB582C005D8626 /* Green1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Green1ViewController.swift; sourceTree = "<group>"; };
 		28A336C71DDB5850005D8626 /* Green2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Green2ViewController.swift; sourceTree = "<group>"; };
@@ -300,25 +298,18 @@
 		5B1E3B831E0AAD9600901EF9 /* Miscellaneous */ = {
 			isa = PBXGroup;
 			children = (
+				5BA780731E15744300DAA367 /* Push Notifications and Reminders */,
+				5BA780741E15747D00DAA367 /* Pending Tasks */,
 				5BAF07C51DB11C1B00AF2FD0 /* Emergency.storyboard */,
 				5B6B434E1DC38E770071AC66 /* Learn.storyboard */,
 				28CC5CAB1DC77625009A7BE9 /* Settings.storyboard */,
-				5BE313141E1290D50094C7EF /* PushNotifications.storyboard */,
 				5BC2CD3B1E0F340600FBDEC9 /* HealthKit.storyboard */,
-				5B82CAD51DC9139C003930FB /* PendingTasks.storyboard */,
 				5B6B43501DC38F6A0071AC66 /* Statistics.storyboard */,
 				5BB9E44B1E1441C800B5892A /* SettingsTableViewController.swift */,
-				5BB9E4411E13FFB800B5892A /* RemindersTableViewController.swift */,
-				5BB9E43F1E13FDAA00B5892A /* MorningReminderTableViewCell.swift */,
-				5BB9E4451E1402D000B5892A /* EveningReminderTableViewCell.swift */,
 				5BC2CD3F1E0F343300FBDEC9 /* HealthKitViewController.swift */,
 				28E4862F1DB672A500C3C87E /* StatsStartViewController.swift */,
 				71987C5A1DB678B300248AE1 /* EmergencyViewController.swift */,
 				5B0DEF791DB8F1FC006ECFCE /* LearnTableViewController.swift */,
-				2899A93B1DB4FE03004306DF /* SymptomsViewController.swift */,
-				5B82CAD91DC918C1003930FB /* PendingTasksTableViewController.swift */,
-				5B82CAD71DC91527003930FB /* TaskTableViewCell.swift */,
-				5BE3131A1E1295CE0094C7EF /* PushNotificationsViewController.swift */,
 			);
 			name = Miscellaneous;
 			sourceTree = "<group>";
@@ -389,6 +380,28 @@
 				5B82CA951DC8C14B003930FB /* PeakFlowViewController.swift */,
 			);
 			name = "Action Plan";
+			sourceTree = "<group>";
+		};
+		5BA780731E15744300DAA367 /* Push Notifications and Reminders */ = {
+			isa = PBXGroup;
+			children = (
+				5BB9E4411E13FFB800B5892A /* RemindersTableViewController.swift */,
+				5BB9E43F1E13FDAA00B5892A /* MorningReminderTableViewCell.swift */,
+				5BB9E4451E1402D000B5892A /* EveningReminderTableViewCell.swift */,
+				5BE313141E1290D50094C7EF /* PushNotifications.storyboard */,
+				5BE3131A1E1295CE0094C7EF /* PushNotificationsViewController.swift */,
+			);
+			name = "Push Notifications and Reminders";
+			sourceTree = "<group>";
+		};
+		5BA780741E15747D00DAA367 /* Pending Tasks */ = {
+			isa = PBXGroup;
+			children = (
+				5B82CAD51DC9139C003930FB /* PendingTasks.storyboard */,
+				5B82CAD91DC918C1003930FB /* PendingTasksTableViewController.swift */,
+				5B82CAD71DC91527003930FB /* TaskTableViewCell.swift */,
+			);
+			name = "Pending Tasks";
 			sourceTree = "<group>";
 		};
 		5BAF07B51DB11C1B00AF2FD0 = {
@@ -699,7 +712,6 @@
 				5BB9E4461E1402D000B5892A /* EveningReminderTableViewCell.swift in Sources */,
 				5BAF07C41DB11C1B00AF2FD0 /* ViewController.swift in Sources */,
 				5BAF07C21DB11C1B00AF2FD0 /* AppDelegate.swift in Sources */,
-				2899A93C1DB4FE03004306DF /* SymptomsViewController.swift in Sources */,
 				5BB9E4401E13FDAA00B5892A /* MorningReminderTableViewCell.swift in Sources */,
 				28A336DC1DDB58FF005D8626 /* Yellow6ViewController.swift in Sources */,
 				28A336D61DDB58E7005D8626 /* Yellow3ViewController.swift in Sources */,
