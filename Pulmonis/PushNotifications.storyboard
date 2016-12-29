@@ -48,6 +48,14 @@
                                     <action selector="deleteAllNotifications:" destination="oSU-wt-Ee5" eventType="touchUpInside" id="OmZ-T1-eGR"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BBb-Ce-h0s">
+                                <rect key="frame" x="101" y="494" width="172" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Add Peak Flow Record"/>
+                                <connections>
+                                    <action selector="addPeakFlowRecord:" destination="oSU-wt-Ee5" eventType="touchUpInside" id="uvM-IZ-CBX"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
