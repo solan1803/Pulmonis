@@ -8,8 +8,13 @@
 
 import UIKit
 import UserNotifications
+import CoreData
 
 class PushNotificationsViewController: UIViewController {
+    
+    var managedObjectContext: NSManagedObjectContext? =
+        (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+    
     
     @IBAction func addReminderNotification(_ sender: UIButton) {
         
@@ -20,5 +25,16 @@ class PushNotificationsViewController: UIViewController {
     }
     @IBAction func deleteAllNotifications(_ sender: UIButton) {
         UNUserNotificationCenter.current().removeAllPendingNotificationRequests()
+    }
+    @IBAction func addPeakFlowRecord(_ sender: UIButton) {
+        if let record = NSEntityDescription.insertNewObject(forEntityName: "PeakFlowTable", into: managedObjectContext!) as? PeakFlowTable {
+            record.date = NSDate()
+            record.value = Int16(300)
+        }
+        do {
+            try managedObjectContext?.save()
+        } catch let error {
+            print(error)
+        }
     }
 }
