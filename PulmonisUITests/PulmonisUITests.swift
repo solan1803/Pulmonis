@@ -45,6 +45,8 @@ class PulmonisUITests: XCTestCase {
         app.buttons["Next"].tap()
         app.alerts["Please confirm inhaler usage:"].buttons["Yes"].tap()
         
+        XCUIApplication().buttons["Button"].tap()
+        
         app.buttons["I do not have this"].tap()
         app.buttons["Talk to your GP"].tap()
         XCTAssertEqual(cellCount, app.tables.cells.count, "Number of pending tasks incorrect!")
