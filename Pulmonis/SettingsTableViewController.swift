@@ -28,7 +28,7 @@ class SettingsTableViewController: UITableViewController {
     }
 
     override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillAppear(animated)
+        super.viewWillDisappear(animated)
         self.navigationController?.navigationBar.isTranslucent = true
     }
     // MARK: - Table view data source
@@ -40,7 +40,7 @@ class SettingsTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 3
+        return 4
     }
 
     
@@ -50,9 +50,10 @@ class SettingsTableViewController: UITableViewController {
             cell = tableView.dequeueReusableCell(withIdentifier: "doctorsInputCell", for: indexPath)
         }else if indexPath.row == 2 {
             cell = tableView.dequeueReusableCell(withIdentifier: "healthKitCell", for: indexPath)
-        } else {
+        } else if indexPath.row == 3 {
             cell = tableView.dequeueReusableCell(withIdentifier: "remindersCell", for: indexPath)
-        // Configure the cell...
+        } else {
+            cell = tableView.dequeueReusableCell(withIdentifier: "asthmaJournalCell", for: indexPath)
         }
         cell.backgroundColor = UIColor.clear
         return cell
