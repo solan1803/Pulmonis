@@ -8,10 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		280551A01DDB6262001E99C6 /* DoctorInput.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2805519F1DDB6262001E99C6 /* DoctorInput.storyboard */; };
-		280C60871DCD531400089C08 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280C60861DCD531400089C08 /* SettingsViewController.swift */; };
 		2834399E1DC2195900857437 /* Plist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2834399D1DC2195900857437 /* Plist.swift */; };
 		28787E121DDB6B38000439AD /* PatientData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 28787E111DDB6B38000439AD /* PatientData.plist */; };
-		2899A93C1DB4FE03004306DF /* SymptomsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2899A93B1DB4FE03004306DF /* SymptomsViewController.swift */; };
 		2899A9411DB519D6004306DF /* MedicineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2899A93F1DB519D6004306DF /* MedicineViewController.swift */; };
 		28A336C61DDB582C005D8626 /* Green1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A336C51DDB582C005D8626 /* Green1ViewController.swift */; };
 		28A336C81DDB5850005D8626 /* Green2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A336C71DDB5850005D8626 /* Green2ViewController.swift */; };
@@ -33,13 +31,20 @@
 		28CC5CAC1DC77625009A7BE9 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28CC5CAB1DC77625009A7BE9 /* Settings.storyboard */; };
 		28CC5CAD1DC777E4009A7BE9 /* Emergency.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BAF07C51DB11C1B00AF2FD0 /* Emergency.storyboard */; };
 		28E486301DB672A500C3C87E /* StatsStartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E4862F1DB672A500C3C87E /* StatsStartViewController.swift */; };
+		28FEC5681E158DE50040EA96 /* Reminders.plist in Resources */ = {isa = PBXBuildFile; fileRef = 28FEC5671E158DE50040EA96 /* Reminders.plist */; };
 		2EAAC7D31E0D5A8200BE9B77 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EAAC7CE1E0D5A6300BE9B77 /* Charts.framework */; };
 		2EAAC7D41E0D5A8200BE9B77 /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2EAAC7CE1E0D5A6300BE9B77 /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5B0DEF7A1DB8F1FC006ECFCE /* LearnTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0DEF791DB8F1FC006ECFCE /* LearnTableViewController.swift */; };
+		5B1C00531E13CBC000C1F3D8 /* WellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1C00521E13CBC000C1F3D8 /* WellViewController.swift */; };
+		5B1C00571E13CFE900C1F3D8 /* CriticalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1C00561E13CFE900C1F3D8 /* CriticalViewController.swift */; };
 		5B3A1DBD1E0D7A76009800B8 /* PlotBreathGraph.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B3A1DBC1E0D7A76009800B8 /* PlotBreathGraph.storyboard */; };
+		5B4AA88E1E15887600F162AF /* PulmonisAsthmaJournalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4AA88D1E15887600F162AF /* PulmonisAsthmaJournalUITests.swift */; };
+		5B4AA89A1E15BA6900F162AF /* WorsePopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4AA8991E15BA6900F162AF /* WorsePopoverViewController.swift */; };
 		5B6B434F1DC38E770071AC66 /* Learn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B6B434E1DC38E770071AC66 /* Learn.storyboard */; };
 		5B6B43511DC38F6A0071AC66 /* Statistics.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B6B43501DC38F6A0071AC66 /* Statistics.storyboard */; };
 		5B6B43531DC390400071AC66 /* ActionPlan.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B6B43521DC390400071AC66 /* ActionPlan.storyboard */; };
+		5B702FE91E0E9FEB0082B649 /* BluetoothUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B702FE81E0E9FEB0082B649 /* BluetoothUnitTests.swift */; };
+		5B7DFE811E12FB7B0057D341 /* PulmonisDoctorInputUITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7DFE801E12FB7B0057D341 /* PulmonisDoctorInputUITest.swift */; };
 		5B82CA961DC8C14B003930FB /* PeakFlowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B82CA951DC8C14B003930FB /* PeakFlowViewController.swift */; };
 		5B82CABA1DC8CA85003930FB /* PeakFlowModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5B82CAB81DC8CA85003930FB /* PeakFlowModel.xcdatamodeld */; };
 		5B82CABD1DC8CAF1003930FB /* PeakFlowTable+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B82CABB1DC8CAF1003930FB /* PeakFlowTable+CoreDataClass.swift */; };
@@ -53,12 +58,23 @@
 		5B82CAD81DC91527003930FB /* TaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B82CAD71DC91527003930FB /* TaskTableViewCell.swift */; };
 		5B82CADA1DC918C1003930FB /* PendingTasksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B82CAD91DC918C1003930FB /* PendingTasksTableViewController.swift */; };
 		5B88A4E81DEB464800CDD946 /* BLE.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B88A4E71DEB464800CDD946 /* BLE.swift */; };
+		5BA780761E1578FF00DAA367 /* AsthmaJournal.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BA780751E1578FF00DAA367 /* AsthmaJournal.storyboard */; };
+		5BA780781E157BAA00DAA367 /* AsthmaJournalTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA780771E157BAA00DAA367 /* AsthmaJournalTableViewController.swift */; };
+		5BA7807C1E157C4E00DAA367 /* BreathRecordTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA7807B1E157C4E00DAA367 /* BreathRecordTableViewCell.swift */; };
 		5BAF07C21DB11C1B00AF2FD0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAF07C11DB11C1B00AF2FD0 /* AppDelegate.swift */; };
 		5BAF07C41DB11C1B00AF2FD0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAF07C31DB11C1B00AF2FD0 /* ViewController.swift */; };
 		5BAF07C91DB11C1B00AF2FD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BAF07C81DB11C1B00AF2FD0 /* Assets.xcassets */; };
 		5BAF07CC1DB11C1B00AF2FD0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BAF07CA1DB11C1B00AF2FD0 /* LaunchScreen.storyboard */; };
 		5BAF07D71DB11C1B00AF2FD0 /* PulmonisTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAF07D61DB11C1B00AF2FD0 /* PulmonisTests.swift */; };
 		5BAF07E21DB11C1B00AF2FD0 /* PulmonisUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAF07E11DB11C1B00AF2FD0 /* PulmonisUITests.swift */; };
+		5BB493911E0F2BB600C09719 /* Yellow7ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB493901E0F2BB600C09719 /* Yellow7ViewController.swift */; };
+		5BB9E4401E13FDAA00B5892A /* MorningReminderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB9E43F1E13FDAA00B5892A /* MorningReminderTableViewCell.swift */; };
+		5BB9E4421E13FFB800B5892A /* RemindersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB9E4411E13FFB800B5892A /* RemindersTableViewController.swift */; };
+		5BB9E4461E1402D000B5892A /* EveningReminderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB9E4451E1402D000B5892A /* EveningReminderTableViewCell.swift */; };
+		5BB9E44C1E1441C800B5892A /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB9E44B1E1441C800B5892A /* SettingsTableViewController.swift */; };
+		5BC2CD3C1E0F340700FBDEC9 /* HealthKit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BC2CD3B1E0F340600FBDEC9 /* HealthKit.storyboard */; };
+		5BC2CD401E0F343300FBDEC9 /* HealthKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC2CD3F1E0F343300FBDEC9 /* HealthKitViewController.swift */; };
+		5BC2CD481E0FD3E700FBDEC9 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BC2CD471E0FD3E700FBDEC9 /* HealthKit.framework */; };
 		5BC5360F1DB6761C00231A50 /* LiberationSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5BC5360E1DB6761C00231A50 /* LiberationSans-Bold.ttf */; };
 		5BC536101DB6761C00231A50 /* LiberationSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5BC5360E1DB6761C00231A50 /* LiberationSans-Bold.ttf */; };
 		5BC536111DB6761C00231A50 /* LiberationSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5BC5360E1DB6761C00231A50 /* LiberationSans-Bold.ttf */; };
@@ -72,6 +88,12 @@
 		5BC5361C1DB6762A00231A50 /* LiberationSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5BC536141DB6762A00231A50 /* LiberationSans-Regular.ttf */; };
 		5BC5361D1DB6762A00231A50 /* LiberationSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5BC536141DB6762A00231A50 /* LiberationSans-Regular.ttf */; };
 		5BC91B941E0D7F1E002D0879 /* PlotBreathGraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC91B931E0D7F1E002D0879 /* PlotBreathGraphViewController.swift */; };
+		5BD2AFAF1E0FF285008FA668 /* HealthKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD2AFAE1E0FF285008FA668 /* HealthKitTests.swift */; };
+		5BD2AFB31E11D010008FA668 /* Well.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BD2AFB21E11D010008FA668 /* Well.storyboard */; };
+		5BD2AFB71E11D028008FA668 /* Worse.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BD2AFB61E11D028008FA668 /* Worse.storyboard */; };
+		5BD2AFB91E11D036008FA668 /* Critical.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BD2AFB81E11D036008FA668 /* Critical.storyboard */; };
+		5BE313151E1290D50094C7EF /* PushNotifications.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BE313141E1290D50094C7EF /* PushNotifications.storyboard */; };
+		5BE3131B1E1295CE0094C7EF /* PushNotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE3131A1E1295CE0094C7EF /* PushNotificationsViewController.swift */; };
 		71987C5B1DB678B300248AE1 /* EmergencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71987C5A1DB678B300248AE1 /* EmergencyViewController.swift */; };
 		719D0C7F1DBA2E66008F5F97 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 719D0C7D1DBA2E66008F5F97 /* Main.storyboard */; };
 /* End PBXBuildFile section */
@@ -137,10 +159,8 @@
 
 /* Begin PBXFileReference section */
 		2805519F1DDB6262001E99C6 /* DoctorInput.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DoctorInput.storyboard; sourceTree = "<group>"; };
-		280C60861DCD531400089C08 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		2834399D1DC2195900857437 /* Plist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Plist.swift; sourceTree = "<group>"; };
 		28787E111DDB6B38000439AD /* PatientData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PatientData.plist; sourceTree = "<group>"; };
-		2899A93B1DB4FE03004306DF /* SymptomsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SymptomsViewController.swift; sourceTree = "<group>"; };
 		2899A93F1DB519D6004306DF /* MedicineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicineViewController.swift; sourceTree = "<group>"; };
 		28A336C51DDB582C005D8626 /* Green1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Green1ViewController.swift; sourceTree = "<group>"; };
 		28A336C71DDB5850005D8626 /* Green2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Green2ViewController.swift; sourceTree = "<group>"; };
@@ -156,18 +176,24 @@
 		28A336DB1DDB58FF005D8626 /* Yellow6ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Yellow6ViewController.swift; sourceTree = "<group>"; };
 		28A336DD1DDB590B005D8626 /* Red1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Red1ViewController.swift; sourceTree = "<group>"; };
 		28A336DF1DDB5912005D8626 /* Red2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Red2ViewController.swift; sourceTree = "<group>"; };
-		28A336E11DDB5C79005D8626 /* Yellow7ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Yellow7ViewController.swift; sourceTree = "<group>"; };
 		28A53A851DDDF64A00595F80 /* ColourFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColourFile.swift; sourceTree = "<group>"; };
 		28A53A871DDDFC7100595F80 /* PatientDataFields.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatientDataFields.swift; sourceTree = "<group>"; };
 		28A6D0D01DCB552A003B9CDC /* ListedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListedViewController.swift; sourceTree = "<group>"; };
 		28CC5CAB1DC77625009A7BE9 /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
 		28E4862F1DB672A500C3C87E /* StatsStartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatsStartViewController.swift; sourceTree = "<group>"; };
+		28FEC5671E158DE50040EA96 /* Reminders.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Reminders.plist; sourceTree = "<group>"; };
 		2EAAC7C71E0D5A6300BE9B77 /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = Charts/Charts.xcodeproj; sourceTree = "<group>"; };
 		5B0DEF791DB8F1FC006ECFCE /* LearnTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LearnTableViewController.swift; sourceTree = "<group>"; };
+		5B1C00521E13CBC000C1F3D8 /* WellViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WellViewController.swift; sourceTree = "<group>"; };
+		5B1C00561E13CFE900C1F3D8 /* CriticalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CriticalViewController.swift; sourceTree = "<group>"; };
 		5B3A1DBC1E0D7A76009800B8 /* PlotBreathGraph.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PlotBreathGraph.storyboard; sourceTree = "<group>"; };
+		5B4AA88D1E15887600F162AF /* PulmonisAsthmaJournalUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PulmonisAsthmaJournalUITests.swift; sourceTree = "<group>"; };
+		5B4AA8991E15BA6900F162AF /* WorsePopoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorsePopoverViewController.swift; sourceTree = "<group>"; };
 		5B6B434E1DC38E770071AC66 /* Learn.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Learn.storyboard; sourceTree = "<group>"; };
 		5B6B43501DC38F6A0071AC66 /* Statistics.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Statistics.storyboard; sourceTree = "<group>"; };
 		5B6B43521DC390400071AC66 /* ActionPlan.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ActionPlan.storyboard; sourceTree = "<group>"; };
+		5B702FE81E0E9FEB0082B649 /* BluetoothUnitTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BluetoothUnitTests.swift; sourceTree = "<group>"; };
+		5B7DFE801E12FB7B0057D341 /* PulmonisDoctorInputUITest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PulmonisDoctorInputUITest.swift; sourceTree = "<group>"; };
 		5B82CA951DC8C14B003930FB /* PeakFlowViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeakFlowViewController.swift; sourceTree = "<group>"; };
 		5B82CAB91DC8CA85003930FB /* PeakFlowModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PeakFlowModel.xcdatamodel; sourceTree = "<group>"; };
 		5B82CABB1DC8CAF1003930FB /* PeakFlowTable+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PeakFlowTable+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -181,6 +207,9 @@
 		5B82CAD71DC91527003930FB /* TaskTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskTableViewCell.swift; sourceTree = "<group>"; };
 		5B82CAD91DC918C1003930FB /* PendingTasksTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PendingTasksTableViewController.swift; sourceTree = "<group>"; };
 		5B88A4E71DEB464800CDD946 /* BLE.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BLE.swift; sourceTree = "<group>"; };
+		5BA780751E1578FF00DAA367 /* AsthmaJournal.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AsthmaJournal.storyboard; sourceTree = "<group>"; };
+		5BA780771E157BAA00DAA367 /* AsthmaJournalTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsthmaJournalTableViewController.swift; sourceTree = "<group>"; };
+		5BA7807B1E157C4E00DAA367 /* BreathRecordTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BreathRecordTableViewCell.swift; path = ../BreathRecordTableViewCell.swift; sourceTree = "<group>"; };
 		5BAF07BE1DB11C1B00AF2FD0 /* Pulmonis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pulmonis.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BAF07C11DB11C1B00AF2FD0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5BAF07C31DB11C1B00AF2FD0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -194,11 +223,26 @@
 		5BAF07DD1DB11C1B00AF2FD0 /* PulmonisUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PulmonisUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BAF07E11DB11C1B00AF2FD0 /* PulmonisUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulmonisUITests.swift; sourceTree = "<group>"; };
 		5BAF07E31DB11C1B00AF2FD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5BB493901E0F2BB600C09719 /* Yellow7ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Yellow7ViewController.swift; sourceTree = "<group>"; };
+		5BB9E43F1E13FDAA00B5892A /* MorningReminderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MorningReminderTableViewCell.swift; path = ../MorningReminderTableViewCell.swift; sourceTree = "<group>"; };
+		5BB9E4411E13FFB800B5892A /* RemindersTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemindersTableViewController.swift; sourceTree = "<group>"; };
+		5BB9E4451E1402D000B5892A /* EveningReminderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EveningReminderTableViewCell.swift; path = ../EveningReminderTableViewCell.swift; sourceTree = "<group>"; };
+		5BB9E44B1E1441C800B5892A /* SettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
+		5BC2CD3B1E0F340600FBDEC9 /* HealthKit.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HealthKit.storyboard; sourceTree = "<group>"; };
+		5BC2CD3F1E0F343300FBDEC9 /* HealthKitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthKitViewController.swift; sourceTree = "<group>"; };
+		5BC2CD411E0F34DA00FBDEC9 /* Pulmonis.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Pulmonis.entitlements; sourceTree = "<group>"; };
+		5BC2CD471E0FD3E700FBDEC9 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		5BC5360E1DB6761C00231A50 /* LiberationSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LiberationSans-Bold.ttf"; sourceTree = "<group>"; };
 		5BC536121DB6762A00231A50 /* LiberationSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LiberationSans-BoldItalic.ttf"; sourceTree = "<group>"; };
 		5BC536131DB6762A00231A50 /* LiberationSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LiberationSans-Italic.ttf"; sourceTree = "<group>"; };
 		5BC536141DB6762A00231A50 /* LiberationSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LiberationSans-Regular.ttf"; sourceTree = "<group>"; };
 		5BC91B931E0D7F1E002D0879 /* PlotBreathGraphViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlotBreathGraphViewController.swift; sourceTree = "<group>"; };
+		5BD2AFAE1E0FF285008FA668 /* HealthKitTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthKitTests.swift; sourceTree = "<group>"; };
+		5BD2AFB21E11D010008FA668 /* Well.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Well.storyboard; sourceTree = "<group>"; };
+		5BD2AFB61E11D028008FA668 /* Worse.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Worse.storyboard; sourceTree = "<group>"; };
+		5BD2AFB81E11D036008FA668 /* Critical.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Critical.storyboard; sourceTree = "<group>"; };
+		5BE313141E1290D50094C7EF /* PushNotifications.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PushNotifications.storyboard; sourceTree = "<group>"; };
+		5BE3131A1E1295CE0094C7EF /* PushNotificationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushNotificationsViewController.swift; sourceTree = "<group>"; };
 		71987C5A1DB678B300248AE1 /* EmergencyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmergencyViewController.swift; sourceTree = "<group>"; };
 		719D0C7E1DBA2E66008F5F97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Pulmonis/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -209,6 +253,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2EAAC7D31E0D5A8200BE9B77 /* Charts.framework in Frameworks */,
+				5BC2CD481E0FD3E700FBDEC9 /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,18 +310,19 @@
 		5B1E3B831E0AAD9600901EF9 /* Miscellaneous */ = {
 			isa = PBXGroup;
 			children = (
-				5BAF07C51DB11C1B00AF2FD0 /* Emergency.storyboard */,
+				5BA780731E15744300DAA367 /* Push Notifications and Reminders */,
+				5BA780741E15747D00DAA367 /* Pending Tasks */,
+				5B4AA8911E158AAA00F162AF /* Asthma Journal */,
 				5B6B434E1DC38E770071AC66 /* Learn.storyboard */,
+				5BAF07C51DB11C1B00AF2FD0 /* Emergency.storyboard */,
 				28CC5CAB1DC77625009A7BE9 /* Settings.storyboard */,
-				5B82CAD51DC9139C003930FB /* PendingTasks.storyboard */,
+				5BC2CD3B1E0F340600FBDEC9 /* HealthKit.storyboard */,
 				5B6B43501DC38F6A0071AC66 /* Statistics.storyboard */,
+				5BB9E44B1E1441C800B5892A /* SettingsTableViewController.swift */,
+				5BC2CD3F1E0F343300FBDEC9 /* HealthKitViewController.swift */,
 				28E4862F1DB672A500C3C87E /* StatsStartViewController.swift */,
 				71987C5A1DB678B300248AE1 /* EmergencyViewController.swift */,
-				280C60861DCD531400089C08 /* SettingsViewController.swift */,
 				5B0DEF791DB8F1FC006ECFCE /* LearnTableViewController.swift */,
-				2899A93B1DB4FE03004306DF /* SymptomsViewController.swift */,
-				5B82CAD91DC918C1003930FB /* PendingTasksTableViewController.swift */,
-				5B82CAD71DC91527003930FB /* TaskTableViewCell.swift */,
 			);
 			name = Miscellaneous;
 			sourceTree = "<group>";
@@ -290,7 +336,7 @@
 				28A336D71DDB58EE005D8626 /* Yellow4ViewController.swift */,
 				28A336D91DDB58F4005D8626 /* Yellow5ViewController.swift */,
 				28A336DB1DDB58FF005D8626 /* Yellow6ViewController.swift */,
-				28A336E11DDB5C79005D8626 /* Yellow7ViewController.swift */,
+				5BB493901E0F2BB600C09719 /* Yellow7ViewController.swift */,
 			);
 			name = "Yellow Section";
 			sourceTree = "<group>";
@@ -336,12 +382,51 @@
 			isa = PBXGroup;
 			children = (
 				5B6B43521DC390400071AC66 /* ActionPlan.storyboard */,
+				5BD2AFB21E11D010008FA668 /* Well.storyboard */,
+				5BD2AFB61E11D028008FA668 /* Worse.storyboard */,
+				5BD2AFB81E11D036008FA668 /* Critical.storyboard */,
+				5B4AA8991E15BA6900F162AF /* WorsePopoverViewController.swift */,
+				5B1C00561E13CFE900C1F3D8 /* CriticalViewController.swift */,
+				5B1C00521E13CBC000C1F3D8 /* WellViewController.swift */,
 				2899A93F1DB519D6004306DF /* MedicineViewController.swift */,
 				5B88A4E71DEB464800CDD946 /* BLE.swift */,
 				5B82CABF1DC8ECE4003930FB /* SupportViewController.swift */,
 				5B82CA951DC8C14B003930FB /* PeakFlowViewController.swift */,
 			);
 			name = "Action Plan";
+			sourceTree = "<group>";
+		};
+		5B4AA8911E158AAA00F162AF /* Asthma Journal */ = {
+			isa = PBXGroup;
+			children = (
+				5BA780751E1578FF00DAA367 /* AsthmaJournal.storyboard */,
+				5BA780771E157BAA00DAA367 /* AsthmaJournalTableViewController.swift */,
+				5BA7807B1E157C4E00DAA367 /* BreathRecordTableViewCell.swift */,
+			);
+			name = "Asthma Journal";
+			sourceTree = "<group>";
+		};
+		5BA780731E15744300DAA367 /* Push Notifications and Reminders */ = {
+			isa = PBXGroup;
+			children = (
+				5BB9E4411E13FFB800B5892A /* RemindersTableViewController.swift */,
+				5BB9E43F1E13FDAA00B5892A /* MorningReminderTableViewCell.swift */,
+				5BB9E4451E1402D000B5892A /* EveningReminderTableViewCell.swift */,
+				5BE3131A1E1295CE0094C7EF /* PushNotificationsViewController.swift */,
+				5BE313141E1290D50094C7EF /* PushNotifications.storyboard */,
+				28FEC5671E158DE50040EA96 /* Reminders.plist */,
+			);
+			name = "Push Notifications and Reminders";
+			sourceTree = "<group>";
+		};
+		5BA780741E15747D00DAA367 /* Pending Tasks */ = {
+			isa = PBXGroup;
+			children = (
+				5B82CAD51DC9139C003930FB /* PendingTasks.storyboard */,
+				5B82CAD91DC918C1003930FB /* PendingTasksTableViewController.swift */,
+				5B82CAD71DC91527003930FB /* TaskTableViewCell.swift */,
+			);
+			name = "Pending Tasks";
 			sourceTree = "<group>";
 		};
 		5BAF07B51DB11C1B00AF2FD0 = {
@@ -353,6 +438,7 @@
 				5BAF07D51DB11C1B00AF2FD0 /* PulmonisTests */,
 				5BAF07E01DB11C1B00AF2FD0 /* PulmonisUITests */,
 				5BAF07BF1DB11C1B00AF2FD0 /* Products */,
+				5BC2CD421E0F34DA00FBDEC9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -369,6 +455,7 @@
 		5BAF07C01DB11C1B00AF2FD0 /* Pulmonis */ = {
 			isa = PBXGroup;
 			children = (
+				5BC2CD411E0F34DA00FBDEC9 /* Pulmonis.entitlements */,
 				2EAAC7C51E0D599600BE9B77 /* Plotting */,
 				5B1E3B811E0AAB9B00901EF9 /* Database Files */,
 				5B1E3B831E0AAD9600901EF9 /* Miscellaneous */,
@@ -389,6 +476,8 @@
 			isa = PBXGroup;
 			children = (
 				5BAF07D61DB11C1B00AF2FD0 /* PulmonisTests.swift */,
+				5B702FE81E0E9FEB0082B649 /* BluetoothUnitTests.swift */,
+				5BD2AFAE1E0FF285008FA668 /* HealthKitTests.swift */,
 				5BAF07D81DB11C1B00AF2FD0 /* Info.plist */,
 			);
 			path = PulmonisTests;
@@ -398,9 +487,19 @@
 			isa = PBXGroup;
 			children = (
 				5BAF07E11DB11C1B00AF2FD0 /* PulmonisUITests.swift */,
+				5B7DFE801E12FB7B0057D341 /* PulmonisDoctorInputUITest.swift */,
+				5B4AA88D1E15887600F162AF /* PulmonisAsthmaJournalUITests.swift */,
 				5BAF07E31DB11C1B00AF2FD0 /* Info.plist */,
 			);
 			path = PulmonisUITests;
+			sourceTree = "<group>";
+		};
+		5BC2CD421E0F34DA00FBDEC9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5BC2CD471E0FD3E700FBDEC9 /* HealthKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		5BC5360D1DB675AD00231A50 /* Resources */ = {
@@ -484,8 +583,13 @@
 				TargetAttributes = {
 					5BAF07BD1DB11C1B00AF2FD0 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = X2YRCXRG35;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = QJQGH9NF7F;
+						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.HealthKit = {
+								enabled = 1;
+							};
+						};
 					};
 					5BAF07D11DB11C1B00AF2FD0 = {
 						CreatedOnToolsVersion = 8.0;
@@ -556,15 +660,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28FEC5681E158DE50040EA96 /* Reminders.plist in Resources */,
+				5BC2CD3C1E0F340700FBDEC9 /* HealthKit.storyboard in Resources */,
+				5BD2AFB91E11D036008FA668 /* Critical.storyboard in Resources */,
 				5BC5361B1DB6762A00231A50 /* LiberationSans-Regular.ttf in Resources */,
+				5BD2AFB31E11D010008FA668 /* Well.storyboard in Resources */,
 				5B6B43531DC390400071AC66 /* ActionPlan.storyboard in Resources */,
 				5B6B434F1DC38E770071AC66 /* Learn.storyboard in Resources */,
+				5BE313151E1290D50094C7EF /* PushNotifications.storyboard in Resources */,
 				719D0C7F1DBA2E66008F5F97 /* Main.storyboard in Resources */,
 				5BAF07CC1DB11C1B00AF2FD0 /* LaunchScreen.storyboard in Resources */,
 				28787E121DDB6B38000439AD /* PatientData.plist in Resources */,
 				5BAF07C91DB11C1B00AF2FD0 /* Assets.xcassets in Resources */,
 				5B82CAD61DC9139C003930FB /* PendingTasks.storyboard in Resources */,
+				5BD2AFB71E11D028008FA668 /* Worse.storyboard in Resources */,
 				5B3A1DBD1E0D7A76009800B8 /* PlotBreathGraph.storyboard in Resources */,
+				5BA780761E1578FF00DAA367 /* AsthmaJournal.storyboard in Resources */,
 				28CC5CAD1DC777E4009A7BE9 /* Emergency.storyboard in Resources */,
 				280551A01DDB6262001E99C6 /* DoctorInput.storyboard in Resources */,
 				28CC5CAC1DC77625009A7BE9 /* Settings.storyboard in Resources */,
@@ -604,7 +715,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BB493911E0F2BB600C09719 /* Yellow7ViewController.swift in Sources */,
 				5BC91B941E0D7F1E002D0879 /* PlotBreathGraphViewController.swift in Sources */,
+				5BA7807C1E157C4E00DAA367 /* BreathRecordTableViewCell.swift in Sources */,
 				28A336CA1DDB585C005D8626 /* Green3ViewController.swift in Sources */,
 				5B82CADA1DC918C1003930FB /* PendingTasksTableViewController.swift in Sources */,
 				28A53A861DDDF64A00595F80 /* ColourFile.swift in Sources */,
@@ -622,24 +735,32 @@
 				28A336CE1DDB5877005D8626 /* Green5ViewController.swift in Sources */,
 				2834399E1DC2195900857437 /* Plist.swift in Sources */,
 				5B82CAC41DC8EE07003930FB /* SupportRecord+CoreDataProperties.swift in Sources */,
+				5BB9E4421E13FFB800B5892A /* RemindersTableViewController.swift in Sources */,
 				5B82CAD31DC912CB003930FB /* PendingTask+CoreDataClass.swift in Sources */,
 				28A336CC1DDB586C005D8626 /* Green4ViewController.swift in Sources */,
+				5BB9E4461E1402D000B5892A /* EveningReminderTableViewCell.swift in Sources */,
 				5BAF07C41DB11C1B00AF2FD0 /* ViewController.swift in Sources */,
 				5BAF07C21DB11C1B00AF2FD0 /* AppDelegate.swift in Sources */,
-				2899A93C1DB4FE03004306DF /* SymptomsViewController.swift in Sources */,
+				5BB9E4401E13FDAA00B5892A /* MorningReminderTableViewCell.swift in Sources */,
 				28A336DC1DDB58FF005D8626 /* Yellow6ViewController.swift in Sources */,
 				28A336D61DDB58E7005D8626 /* Yellow3ViewController.swift in Sources */,
 				28A336D41DDB58E0005D8626 /* Yellow2ViewController.swift in Sources */,
 				28A336DE1DDB590B005D8626 /* Red1ViewController.swift in Sources */,
 				28A336C61DDB582C005D8626 /* Green1ViewController.swift in Sources */,
-				280C60871DCD531400089C08 /* SettingsViewController.swift in Sources */,
 				28A336D81DDB58EE005D8626 /* Yellow4ViewController.swift in Sources */,
+				5BE3131B1E1295CE0094C7EF /* PushNotificationsViewController.swift in Sources */,
 				28A336C81DDB5850005D8626 /* Green2ViewController.swift in Sources */,
+				5BC2CD401E0F343300FBDEC9 /* HealthKitViewController.swift in Sources */,
 				5B0DEF7A1DB8F1FC006ECFCE /* LearnTableViewController.swift in Sources */,
+				5BA780781E157BAA00DAA367 /* AsthmaJournalTableViewController.swift in Sources */,
 				5B82CAD41DC912CB003930FB /* PendingTask+CoreDataProperties.swift in Sources */,
+				5B1C00531E13CBC000C1F3D8 /* WellViewController.swift in Sources */,
+				5B1C00571E13CFE900C1F3D8 /* CriticalViewController.swift in Sources */,
 				71987C5B1DB678B300248AE1 /* EmergencyViewController.swift in Sources */,
+				5B4AA89A1E15BA6900F162AF /* WorsePopoverViewController.swift in Sources */,
 				5B82CAC31DC8EE07003930FB /* SupportRecord+CoreDataClass.swift in Sources */,
 				5B82CABE1DC8CAF1003930FB /* PeakFlowTable+CoreDataProperties.swift in Sources */,
+				5BB9E44C1E1441C800B5892A /* SettingsTableViewController.swift in Sources */,
 				5B82CABD1DC8CAF1003930FB /* PeakFlowTable+CoreDataClass.swift in Sources */,
 				5B82CA961DC8C14B003930FB /* PeakFlowViewController.swift in Sources */,
 				28A336D01DDB5881005D8626 /* Green6ViewController.swift in Sources */,
@@ -650,6 +771,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BD2AFAF1E0FF285008FA668 /* HealthKitTests.swift in Sources */,
+				5B702FE91E0E9FEB0082B649 /* BluetoothUnitTests.swift in Sources */,
 				5BAF07D71DB11C1B00AF2FD0 /* PulmonisTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -658,7 +781,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B7DFE811E12FB7B0057D341 /* PulmonisDoctorInputUITest.swift in Sources */,
 				5BAF07E21DB11C1B00AF2FD0 /* PulmonisUITests.swift in Sources */,
+				5B4AA88E1E15887600F162AF /* PulmonisAsthmaJournalUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -752,7 +877,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -797,7 +922,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -811,13 +936,16 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Pulmonis/Pulmonis.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = X2YRCXRG35;
+				DEVELOPMENT_TEAM = QJQGH9NF7F;
 				INFOPLIST_FILE = Pulmonis/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = edu.stanford.msolan.Pulmonis;
+				PRODUCT_BUNDLE_IDENTIFIER = uk.ac.imperial.Pulmonis;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "36a2b486-9d85-464d-ba9e-32399f3fbfc3";
+				PROVISIONING_PROFILE_SPECIFIER = PulmonisApp;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -827,13 +955,16 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Pulmonis/Pulmonis.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = X2YRCXRG35;
+				DEVELOPMENT_TEAM = QJQGH9NF7F;
 				INFOPLIST_FILE = Pulmonis/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = edu.stanford.msolan.Pulmonis;
+				PRODUCT_BUNDLE_IDENTIFIER = uk.ac.imperial.Pulmonis;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "36a2b486-9d85-464d-ba9e-32399f3fbfc3";
+				PROVISIONING_PROFILE_SPECIFIER = PulmonisApp;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -845,6 +976,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = X2YRCXRG35;
 				INFOPLIST_FILE = PulmonisTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.stanford.msolan.PulmonisTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -860,6 +992,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = X2YRCXRG35;
 				INFOPLIST_FILE = PulmonisTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.stanford.msolan.PulmonisTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";

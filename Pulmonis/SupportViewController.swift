@@ -36,13 +36,31 @@ class SupportViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func saveSupportValue(_ sender: UIButton) {
+    @IBAction func confirmLogInhaler(_ sender: UIButton) {
+        let text = (supportTextField.text! as NSString).integerValue
+        let usage = Int16(text)
+        let refreshAlert = UIAlertController(title: "Please confirm inhaler usage:", message: "Are you sure \(usage)?", preferredStyle: UIAlertControllerStyle.alert)
         
-        print("INSIDE SAVESUPPORTVALUE METHOD")
+        refreshAlert.addAction(UIAlertAction(title: "Yes", style: .default, handler: { (action: UIAlertAction!) in
+            print("Handle Ok logic here")
+            self.dismiss(animated: true, completion: nil)
+            self.saveLogInhalerValue()
+        }))
+        
+        refreshAlert.addAction(UIAlertAction(title: "No", style: .cancel, handler: { (action: UIAlertAction!) in
+            print("Handle Cancel Logic here")
+        }))
+        
+        present(refreshAlert, animated: true, completion: nil)
+        
+    }
+    
+    func saveLogInhalerValue() {
+        print("[DEBUG] Inside saveLogInhalerValue")
+        let text = (supportTextField.text! as NSString).integerValue
+        let val = Int16(text)
         if let support_record = NSEntityDescription.insertNewObject(forEntityName: "SupportRecord", into: managedObjectContext!) as? SupportRecord {
             support_record.date = NSDate()
-            let text = (supportTextField.text! as NSString).integerValue
-            let val = Int16(text)
             support_record.value = val
         }
         do {
@@ -60,8 +78,42 @@ class SupportViewController: UIViewController {
             print(r.value)
         }
         
+        //variables to store threshold values from plist
+        var worseVal: Int16 = 2
+        var criticalVal: Int16 = 5
         
+        if let plist = Plist(name: "PatientData") {
+            let dict = plist.getMutablePlistFile()!
+            
+            if let yWeeklyRelieverUses = dict[yWeeklyRelieverUsesStr] {
+                if let yWeeklyRelieverUsesString = yWeeklyRelieverUses as? String {
+                    if yWeeklyRelieverUsesString != "" {
+                        worseVal = Int16(yWeeklyRelieverUsesString)!
+                    }
+                }
+            }
+            
+            if let rRelieverFrequencyLimit = dict[rRelieverFrequencyLimitStr] {
+                if let rRelieverFrequencyLimitString = rRelieverFrequencyLimit as? String {
+                    if rRelieverFrequencyLimitString != "" {
+                        criticalVal = Int16(rRelieverFrequencyLimitString)!
+                    }
+                }
+            }
+        } else {
+            //Error with opening the PList
+        }
+        
+        /* Karow and Ziyi need to access plist to get the correct threshold value for patient. */
+        if (val < worseVal) { //Action plan 'worse' value
+            performSegue(withIdentifier: "wellSegue", sender: self)
+        } else if (val < criticalVal) { // Action Plan 'critical' value
+            performSegue(withIdentifier: "worseSegue", sender: self)
+        } else {
+            performSegue(withIdentifier: "criticalSegue", sender: self)
+        }
     }
+    
 
     /*
     // MARK: - Navigation

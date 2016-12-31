@@ -21,23 +21,6 @@ class PulmonisTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
-    
-    func testAddition() {
-        XCTAssert(1 + 1 == 2)
-        XCTAssert(2+2 == 4)
-    }
-    
     //test accesses to property list
     func testPlistAccess() {
         
