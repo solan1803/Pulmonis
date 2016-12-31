@@ -1,24 +1,18 @@
 //
-//  SectionSelectionViewController.swift
+//  CriticalViewController.swift
 //  Pulmonis
 //
-//  Created by Karow Maruf on 04/11/2016.
+//  Created by Manivannan Solan on 28/12/2016.
 //  Copyright © 2016 Manivannan Solan. All rights reserved.
 //
 
 import UIKit
 
-class SettingsViewController: UIViewController {
+class CriticalViewController: UIViewController {
 
-    @IBOutlet weak var doctorButton: UIButton!
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        doctorButton.layer.cornerRadius = 10
-        doctorButton.clipsToBounds = true
-        
+
         // Do any additional setup after loading the view.
     }
 
@@ -27,6 +21,9 @@ class SettingsViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func backToMainPage(_ sender: UIButton) {
+        navigationController!.popToViewController(navigationController!.viewControllers[0], animated: true)
+    }
 
     /*
     // MARK: - Navigation

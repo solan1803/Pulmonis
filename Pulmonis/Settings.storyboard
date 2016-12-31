@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="jTH-zX-tr7">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="6ax-GV-XGh">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -9,63 +9,130 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Settings-->
-        <scene sceneID="7ZR-zY-BLc">
+        <!--HealthKit-->
+        <scene sceneID="zwq-UV-T3p">
             <objects>
-                <viewController storyboardIdentifier="Settings" id="jTH-zX-tr7" userLabel="Settings" customClass="SettingsViewController" customModule="Pulmonis" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Rsw-Lo-Qwf"/>
-                        <viewControllerLayoutGuide type="bottom" id="SHU-bi-ty1"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="mLk-LD-DWi">
+                <viewControllerPlaceholder storyboardName="HealthKit" id="EK8-rI-i5b" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RV7-de-Baz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4362" y="1213"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="yJx-wV-OPg">
+            <objects>
+                <tableViewController title="Settings" id="6ax-GV-XGh" customClass="SettingsTableViewController" customModule="Pulmonis" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" id="Q28-wr-G5d">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="FIa-ij-bZ1">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q0d-Ty-Z7p">
-                                <rect key="frame" x="135.5" y="40" width="104" height="31.5"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
-                                <color key="textColor" red="0.001422772068" green="0.4256876409" blue="0.55088329319999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fod-lN-gkh">
-                                <rect key="frame" x="75" y="121.5" width="225" height="88.5"/>
-                                <color key="backgroundColor" red="0.001422772068" green="0.4256876409" blue="0.55088329319999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="88.5" id="nPW-10-PPH"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
-                                <state key="normal" title="Doctor">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="PP4-85-Vn2" kind="show" id="MND-hb-dt4"/>
-                                </connections>
-                            </button>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="q0d-Ty-Z7p" firstAttribute="top" secondItem="Rsw-Lo-Qwf" secondAttribute="bottom" constant="20" id="BKt-49-cRf"/>
-                            <constraint firstItem="fod-lN-gkh" firstAttribute="top" secondItem="q0d-Ty-Z7p" secondAttribute="bottom" constant="50" id="Dpf-NN-25J"/>
-                            <constraint firstItem="q0d-Ty-Z7p" firstAttribute="centerX" secondItem="mLk-LD-DWi" secondAttribute="centerX" id="LrK-yI-iOd"/>
-                            <constraint firstItem="SHU-bi-ty1" firstAttribute="top" secondItem="FIa-ij-bZ1" secondAttribute="bottom" id="MtC-6S-4j9"/>
-                            <constraint firstItem="fod-lN-gkh" firstAttribute="leading" secondItem="mLk-LD-DWi" secondAttribute="leading" constant="75" id="Nqa-Ud-Y3I"/>
-                            <constraint firstItem="FIa-ij-bZ1" firstAttribute="leading" secondItem="mLk-LD-DWi" secondAttribute="leading" id="ZGV-ck-1R3"/>
-                            <constraint firstItem="fod-lN-gkh" firstAttribute="centerX" secondItem="mLk-LD-DWi" secondAttribute="centerX" id="dDr-Ia-7a4"/>
-                            <constraint firstItem="FIa-ij-bZ1" firstAttribute="top" secondItem="Rsw-Lo-Qwf" secondAttribute="bottom" id="g1z-Bf-5uV"/>
-                            <constraint firstAttribute="trailing" secondItem="FIa-ij-bZ1" secondAttribute="trailing" id="imA-IA-5qx"/>
-                            <constraint firstAttribute="trailing" secondItem="fod-lN-gkh" secondAttribute="trailing" constant="75" id="q2k-ab-RGA"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="doctorButton" destination="fod-lN-gkh" id="ADm-FU-uOI"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="c49-EO-sZq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="doctorsInputCell" textLabel="UoJ-xd-XCo" style="IBUITableViewCellStyleDefault" id="ioF-XC-CUD">
+                                <rect key="frame" x="0.0" y="28" width="375" height="100"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ioF-XC-CUD" id="w35-Mp-WJa">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="99"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Doctor's Input" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="UoJ-xd-XCo">
+                                            <rect key="frame" x="15" y="0.0" width="345" height="99"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="PP4-85-Vn2" kind="show" id="Dgg-F2-PUM"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="healthKitCell" textLabel="rNv-ln-9TO" style="IBUITableViewCellStyleDefault" id="JlQ-Jh-IG6">
+                                <rect key="frame" x="0.0" y="128" width="375" height="100"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="JlQ-Jh-IG6" id="Smi-Yz-cgS">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="99"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="HealthKit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="rNv-ln-9TO">
+                                            <rect key="frame" x="15" y="0.0" width="345" height="99"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="EK8-rI-i5b" kind="show" id="iHR-Qt-7wS"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="remindersCell" textLabel="1Xs-hb-JTt" style="IBUITableViewCellStyleDefault" id="QlO-9T-h9i">
+                                <rect key="frame" x="0.0" y="228" width="375" height="100"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="QlO-9T-h9i" id="gol-Lq-kUQ">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="99"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Reminders" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1Xs-hb-JTt">
+                                            <rect key="frame" x="15" y="0.0" width="345" height="99"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="Lov-Tj-N8P" kind="show" id="5dY-Wf-HTl"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="asthmaJournalCell" textLabel="0wc-Cm-L8K" style="IBUITableViewCellStyleDefault" id="LE5-So-7Bg">
+                                <rect key="frame" x="0.0" y="328" width="375" height="100"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LE5-So-7Bg" id="78I-nT-03a">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="99"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Asthma Journal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0wc-Cm-L8K">
+                                            <rect key="frame" x="15" y="0.0" width="345" height="99"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="CDK-Q1-zQ0" kind="show" id="vAK-Ec-56Q"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="6ax-GV-XGh" id="26R-Aa-Cn6"/>
+                            <outlet property="delegate" destination="6ax-GV-XGh" id="sD2-CG-Wb7"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E5Z-ao-OJ5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2279" y="897"/>
+            <point key="canvasLocation" x="3743" y="1255"/>
+        </scene>
+        <!--PushNotifications-->
+        <scene sceneID="9pF-j4-Nrx">
+            <objects>
+                <viewControllerPlaceholder storyboardName="PushNotifications" id="Lov-Tj-N8P" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dZk-PG-6l3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4403" y="1270"/>
+        </scene>
+        <!--AsthmaJournal-->
+        <scene sceneID="FYd-La-8Y6">
+            <objects>
+                <viewControllerPlaceholder storyboardName="AsthmaJournal" id="CDK-Q1-zQ0" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jJv-tA-rk9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4308" y="1340"/>
         </scene>
         <!--DoctorInput-->
         <scene sceneID="e3s-t5-6cY">
@@ -73,10 +140,7 @@
                 <viewControllerPlaceholder storyboardName="DoctorInput" id="PP4-85-Vn2" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W86-6l-ATF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2767" y="403"/>
+            <point key="canvasLocation" x="4329" y="1119"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="Background" width="750" height="1334"/>
-    </resources>
 </document>

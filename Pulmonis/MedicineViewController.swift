@@ -12,28 +12,47 @@ import CoreData
 class MedicineViewController: UIViewController, UIPopoverPresentationControllerDelegate {
     
     // MARK: Model
-    
-    // if this is nil, then we simply don't update the database
-    // having this default to the AppDelegate's context is a little bit of "demo cheat"
-    // probably it would be better to subclass TweetTableViewController
-    // and set this var in that subclass and then use that subclass in our storyboard
-    // (the only purpose of that subclass would be to pick what database we're using)
     var managedObjectContext: NSManagedObjectContext? =
         (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     
     @IBOutlet weak var takenButton: UIButton!
     @IBOutlet weak var notHaveButton: UIButton!
     
+    @IBOutlet weak var dosageLabel: UILabel!
+    
+    @IBOutlet weak var medicineAlertLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("[DEBUG] viewDidLoad of medicine view controller")
+        performSegue(withIdentifier: "notePopover", sender: self)
         notHaveButton.layer.cornerRadius = 10
         notHaveButton.clipsToBounds = true
         
         
         takenButton.layer.cornerRadius = 10
         takenButton.clipsToBounds = true
-        
+        addContactGPTask()
+        var dosageNumber = ""
+        var days = ""
+        if let plist = Plist(name: "PatientData") {
+            let dict = plist.getMutablePlistFile()!
+            
+            if let dosage = (dict[yTabletDosageStr]! as? String) {
+                if dosage != "" {
+                    dosageNumber = String(Int(dosage)!/5)
+                }
+            }
+            if let d = (dict[yTabletDurationStr]! as? String) {
+                if d != "" {
+                    days = d
+                }
+            }
+        } else {
+            //Error with opening the PList
+        }
+        dosageLabel.text = "\(dosageNumber) tablets"
+        medicineAlertLabel.text =  "Please take \(dosageNumber) x 5mg of prednisolone tablets immediately and again every morning for \(days) days or until you are fully better."
         /*
         let fixedWidth = textView.frame.size.width
         textView.sizeThatFits(CGSize(width: fixedWidth, height: CGFloat.greatestFiniteMagnitude))
@@ -53,6 +72,20 @@ class MedicineViewController: UIViewController, UIPopoverPresentationControllerD
         self.performSegue(withIdentifier: "notePopover", sender: self)
     }
 
+    func addContactGPTask() {
+        if let task = NSEntityDescription.insertNewObject(forEntityName: "PendingTask", into: managedObjectContext!) as? PendingTask {
+            task.date_created = NSDate()
+            task.message = "Your treatment may need to be reviewed."
+            task.type = "contactGP"
+            task.reminder_time = NSDate().addingTimeInterval(60.0 * 60.0)
+        }
+        do {
+            try managedObjectContext?.save()
+        } catch let error {
+            print(error)
+        }
+    }
+    
     @IBAction func addMedicineNotification(_ sender: UIButton) {
         print("INSIDE ADD_MEDICINE_NOTIFICATION METHOD")
         if let task = NSEntityDescription.insertNewObject(forEntityName: "PendingTask", into: managedObjectContext!) as? PendingTask {
@@ -80,6 +113,16 @@ class MedicineViewController: UIViewController, UIPopoverPresentationControllerD
             print("TYPE: ")
             print(r.type!)
         }
+        
+        backToMainPage()
+    }
+    
+    @IBAction func takenMedicine(_ sender: UIButton) {
+        backToMainPage()
+    }
+    
+    func backToMainPage() {
+        navigationController!.popToViewController(navigationController!.viewControllers[0], animated: true)
     }
     
     // MARK: - Navigation

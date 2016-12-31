@@ -48,7 +48,7 @@ class Red2ViewController: ListedViewController {
             print("Unable to get Plist")
         }
         
-        performSegue(withIdentifier: "save", sender: nil)
+        navigationController!.popToViewController(navigationController!.viewControllers[0], animated: true)
     }
     
     override func saveField() {

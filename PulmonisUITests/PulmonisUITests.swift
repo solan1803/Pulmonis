@@ -29,84 +29,75 @@ class PulmonisUITests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-    
-    func testMedicineUI() {
-        
-        let app = XCUIApplication()
-        app.buttons["ACTION PLAN"].tap()
-        app.buttons["Support"].tap()
-        // Need to be able to write tests for core data.
-//        app.buttons["Next"].tap()
-        
-    }
-    
     func testPendingTasksTable() {
         
         let app = XCUIApplication()
-        let tasksButton = app.buttons["tasks"]
-        tasksButton.tap()
+        XCUIApplication().buttons["No current pending tasks"].tap()
+        let cellCount = app.tables.cells.count + 2
         app.navigationBars["Pending Tasks"].children(matching: .button).matching(identifier: "Back").element(boundBy: 0).tap()
         app.buttons["ACTION PLAN"].tap()
         app.buttons["Support"].tap()
+        
+        let textField = app.otherElements.containing(.navigationBar, identifier:"Pulmonis.SupportView").children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element(boundBy: 1).children(matching: .other).element.children(matching: .textField).element
+        
+        textField.tap()
+        textField.typeText("3")
         app.buttons["Next"].tap()
+        app.alerts["Please confirm inhaler usage:"].buttons["Yes"].tap()
+        
+        XCUIApplication().buttons["Button"].tap()
+        
         app.buttons["I do not have this"].tap()
-        app.navigationBars["Medicine"].children(matching: .button).matching(identifier: "Back").element(boundBy: 0).tap()
-        app.navigationBars["Pulmonis.SupportView"].children(matching: .button).matching(identifier: "Back").element(boundBy: 0).tap()
-        app.navigationBars["UIView"].children(matching: .button).matching(identifier: "Back").element(boundBy: 0).tap()
-        tasksButton.tap()
+        app.buttons["Talk to your GP"].tap()
+        XCTAssertEqual(cellCount, app.tables.cells.count, "Number of pending tasks incorrect!")
+        
+        
+        let tablesQuery = app.tables
+        let talkToYourGpStaticText = tablesQuery.staticTexts["Talk to your GP"]
+        talkToYourGpStaticText.swipeLeft()
+        tablesQuery.buttons["Delete"].tap()
+        tablesQuery.staticTexts["No record of dosage, contact GP."].swipeLeft()
+        tablesQuery.buttons["Delete"].tap()
         
     }
     
-    func testPeakFlow() {
+    func testWellSegueFromSupport() {
         
         let app = XCUIApplication()
         app.buttons["ACTION PLAN"].tap()
-        app.buttons["Peak Flow"].tap()
-        app.otherElements.containing(.navigationBar, identifier:"Pulmonis.PeakFlowView").children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .textField).element.tap()
-        app.images["Shiny Blue"].tap()
+        app.buttons["Support"].tap()
+        
+        let textField = app.otherElements.containing(.navigationBar, identifier:"Pulmonis.SupportView").children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element(boundBy: 1).children(matching: .other).element.children(matching: .textField).element
+        textField.tap()
+        textField.typeText("1")
+        app.buttons["Next"].tap()
         
     }
     
-    //test transitions in doctor's input section
-    func testDoctorInputTransitions() {
+    func testCriticalSegueFromSupport() {
+        let app = XCUIApplication()
+        app.buttons["ACTION PLAN"].tap()
+        app.buttons["Support"].tap()
         
+        let textField = app.otherElements.containing(.navigationBar, identifier:"Pulmonis.SupportView").children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element(boundBy: 1).children(matching: .other).element.children(matching: .textField).element
+        textField.tap()
+        textField.typeText("6")
+        app.buttons["Next"].tap()
+    }
+    
+    func testEmergencyActionLoading() {
         
         let app = XCUIApplication()
-        app.navigationBars["Pulmonis.View"].buttons["⚙"].tap()
-        app.buttons["Doctor"].tap()
-        app.otherElements.containing(.navigationBar, identifier:"Pulmonis.Green1View").children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.swipeLeft()
-        app.otherElements.containing(.navigationBar, identifier:"Pulmonis.Green2View").children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.swipeLeft()
-        app.otherElements.containing(.navigationBar, identifier:"Pulmonis.Green3View").children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.swipeLeft()
-        app.otherElements.containing(.navigationBar, identifier:"Pulmonis.Green4View").children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.swipeLeft()
-        app.otherElements.containing(.navigationBar, identifier:"Pulmonis.Green5View").children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.swipeLeft()
-        app.otherElements.containing(.navigationBar, identifier:"Pulmonis.Green6View").children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.swipeLeft()
-        app.otherElements.containing(.navigationBar, identifier:"Pulmonis.Yellow1View").children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.swipeLeft()
-        app.otherElements.containing(.navigationBar, identifier:"Pulmonis.Yellow2View").children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.swipeLeft()
-        app.otherElements.containing(.navigationBar, identifier:"Pulmonis.Yellow3View").children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.swipeLeft()
-        app.otherElements.containing(.navigationBar, identifier:"Pulmonis.Yellow4View").children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.swipeLeft()
-        app.otherElements.containing(.navigationBar, identifier:"Pulmonis.Yellow5View").children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.swipeLeft()
-        app.otherElements.containing(.navigationBar, identifier:"Pulmonis.Yellow6View").children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.swipeLeft()
-        app.otherElements.containing(.navigationBar, identifier:"Pulmonis.Yellow7View").children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.swipeLeft()
-        app.otherElements.containing(.navigationBar, identifier:"Pulmonis.Red1View").children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.swipeLeft()
-        app.navigationBars["Pulmonis.Red2View"].children(matching: .button).matching(identifier: "Back").element(boundBy: 0).tap()
-        app.navigationBars["Pulmonis.Red1View"].children(matching: .button).matching(identifier: "Back").element(boundBy: 0).tap()
-        app.navigationBars["Pulmonis.Yellow7View"].children(matching: .button).matching(identifier: "Back").element(boundBy: 0).tap()
-        app.navigationBars["Pulmonis.Yellow6View"].children(matching: .button).matching(identifier: "Back").element(boundBy: 0).tap()
-        app.navigationBars["Pulmonis.Yellow5View"].children(matching: .button).matching(identifier: "Back").element(boundBy: 0).tap()
-        app.navigationBars["Pulmonis.Yellow4View"].children(matching: .button).matching(identifier: "Back").element(boundBy: 0).tap()
-        app.navigationBars["Pulmonis.Yellow3View"].children(matching: .button).matching(identifier: "Back").element(boundBy: 0).tap()
-        app.navigationBars["Pulmonis.Yellow2View"].children(matching: .button).matching(identifier: "Back").element(boundBy: 0).tap()
-        app.navigationBars["Pulmonis.Yellow1View"].children(matching: .button).matching(identifier: "Back").element(boundBy: 0).tap()
-        app.navigationBars["Pulmonis.Green6View"].children(matching: .button).matching(identifier: "Back").element(boundBy: 0).tap()
-        app.navigationBars["Pulmonis.Green5View"].children(matching: .button).matching(identifier: "Back").element(boundBy: 0).tap()
-        app.navigationBars["Pulmonis.Green4View"].children(matching: .button).matching(identifier: "Back").element(boundBy: 0).tap()
-        app.navigationBars["Pulmonis.Green3View"].children(matching: .button).matching(identifier: "Back").element(boundBy: 0).tap()
-        app.navigationBars["Pulmonis.Green2View"].children(matching: .button).matching(identifier: "Back").element(boundBy: 0).tap()
-
+        app.buttons["EMERGENCY ACTION"].tap()
+        
+        let nextButton = app.buttons[" Next "]
+        nextButton.tap()
+        nextButton.tap()
+        
     }
     
+    func testLearnTableLoading() {
+        XCUIApplication().buttons["LEARN"].tap()
+        
+    }
 }

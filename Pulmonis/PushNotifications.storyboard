@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="oSU-wt-Ee5">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Push Notifications View Controller-->
+        <scene sceneID="r0h-HY-uCa">
+            <objects>
+                <viewController id="oSU-wt-Ee5" customClass="PushNotificationsViewController" customModule="Pulmonis" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7te-Me-JPK"/>
+                        <viewControllerLayoutGuide type="bottom" id="5Ak-Dq-27q"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mBm-zP-9qG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x82-jt-o5S">
+                                <rect key="frame" x="78" y="98" width="219" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.1202454641" green="0.4030750394" blue="0.48271960019999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Add sample notification">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="addReminderNotification:" destination="oSU-wt-Ee5" eventType="touchUpInside" id="EHo-vQ-KiL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RVQ-1m-fE1">
+                                <rect key="frame" x="164" y="218" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="ArY-B3-QtO" kind="show" id="Qqm-zH-BGn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZXb-ut-joU">
+                                <rect key="frame" x="89" y="348" width="174" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Delete all notifications"/>
+                                <connections>
+                                    <action selector="deleteAllNotifications:" destination="oSU-wt-Ee5" eventType="touchUpInside" id="OmZ-T1-eGR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BBb-Ce-h0s">
+                                <rect key="frame" x="101" y="494" width="172" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Add Peak Flow Record"/>
+                                <connections>
+                                    <action selector="addPeakFlowRecord:" destination="oSU-wt-Ee5" eventType="touchUpInside" id="uvM-IZ-CBX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tZi-AQ-iJY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="168.80000000000001" y="191.1544227886057"/>
+        </scene>
+        <!--Reminders-->
+        <scene sceneID="Goe-H4-Ljh">
+            <objects>
+                <tableViewController title="Reminders" id="ArY-B3-QtO" customClass="RemindersTableViewController" customModule="Pulmonis" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" sectionIndexMinimumDisplayRowCount="2" rowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" id="Rxk-mM-KQE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="morningReminder" rowHeight="100" id="gm8-rv-QyG" customClass="MorningReminderTableViewCell" customModule="Pulmonis" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="100"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gm8-rv-QyG" id="2Vb-dk-Yhd">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="99"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="eFx-Jv-BVK">
+                                            <rect key="frame" x="20" y="0.0" width="335" height="99.5"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="5Yb-Lh-X3y">
+                                                    <rect key="frame" x="0.0" y="24.5" width="286" height="51"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Morning Reminder" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7id-T8-ZWI">
+                                                            <rect key="frame" x="0.0" y="0.0" width="286" height="20.5"/>
+                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QLa-Eo-yXr">
+                                                            <rect key="frame" x="0.0" y="30.5" width="286" height="20.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="2NF-fX-bnj">
+                                                    <rect key="frame" x="286" y="34.5" width="51" height="31"/>
+                                                    <connections>
+                                                        <action selector="morningReminderSwitchChanged:" destination="gm8-rv-QyG" eventType="valueChanged" id="uwA-ax-SU0"/>
+                                                    </connections>
+                                                </switch>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="eFx-Jv-BVK" secondAttribute="bottom" id="ID5-9h-ULX"/>
+                                        <constraint firstItem="eFx-Jv-BVK" firstAttribute="top" secondItem="2Vb-dk-Yhd" secondAttribute="top" id="O42-JD-Nyw"/>
+                                        <constraint firstItem="eFx-Jv-BVK" firstAttribute="leading" secondItem="2Vb-dk-Yhd" secondAttribute="leading" constant="20" id="XdS-UZ-ffQ"/>
+                                        <constraint firstAttribute="trailing" secondItem="eFx-Jv-BVK" secondAttribute="trailing" constant="20" id="utO-I6-qQW"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="dosageLabel" destination="QLa-Eo-yXr" id="jNi-Vd-hRO"/>
+                                    <outlet property="morningSwitch" destination="2NF-fX-bnj" id="iO1-Kc-d2r"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="eveningReminder" rowHeight="100" id="ULr-II-835" customClass="EveningReminderTableViewCell" customModule="Pulmonis" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="128" width="375" height="100"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ULr-II-835" id="dGn-ct-2eP">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="99"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Oxx-wt-uXy">
+                                            <rect key="frame" x="20" y="0.0" width="335" height="100"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Kk1-GG-naa">
+                                                    <rect key="frame" x="0.0" y="24.5" width="286" height="51"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Evening Reminder" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gk4-7I-nTc">
+                                                            <rect key="frame" x="0.0" y="0.0" width="286" height="20.5"/>
+                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bkq-jf-n7e">
+                                                            <rect key="frame" x="0.0" y="30.5" width="286" height="20.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Ogz-5K-AK1">
+                                                    <rect key="frame" x="286" y="34.5" width="51" height="31"/>
+                                                    <connections>
+                                                        <action selector="eveningReminderSwitchChanged:" destination="ULr-II-835" eventType="valueChanged" id="aHf-9y-1jW"/>
+                                                    </connections>
+                                                </switch>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="Oxx-wt-uXy" secondAttribute="bottom" id="CeW-Ta-wWZ"/>
+                                        <constraint firstItem="Oxx-wt-uXy" firstAttribute="leading" secondItem="dGn-ct-2eP" secondAttribute="leading" constant="20" id="aU8-4I-s4K"/>
+                                        <constraint firstAttribute="trailing" secondItem="Oxx-wt-uXy" secondAttribute="trailing" constant="20" id="c2Q-yA-nuZ"/>
+                                        <constraint firstItem="Oxx-wt-uXy" firstAttribute="top" secondItem="dGn-ct-2eP" secondAttribute="top" id="xdF-tZ-pfb"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="dosageLabel" destination="bkq-jf-n7e" id="43B-0Z-9JR"/>
+                                    <outlet property="eveningSwitch" destination="Ogz-5K-AK1" id="A9r-ex-b2S"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="ArY-B3-QtO" id="lrS-go-avM"/>
+                            <outlet property="delegate" destination="ArY-B3-QtO" id="RKW-ef-r3E"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XAa-b0-YCB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="989.60000000000002" y="116.49175412293854"/>
+        </scene>
+    </scenes>
+</document>

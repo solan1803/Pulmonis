@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="nbx-2D-bG2">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Asthma Journal-->
+        <scene sceneID="xTM-Ps-SiD">
+            <objects>
+                <tableViewController title="Asthma Journal" id="nbx-2D-bG2" customClass="AsthmaJournalTableViewController" customModule="Pulmonis" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="75" sectionHeaderHeight="28" sectionFooterHeight="28" id="ZDq-vi-V0n">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="breathRecord" rowHeight="75" id="vfx-0f-JIM" customClass="BreathRecordTableViewCell" customModule="Pulmonis" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="75"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vfx-0f-JIM" id="M6s-IJ-kEP">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="74"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="YL1-mO-NvS">
+                                            <rect key="frame" x="20" y="0.0" width="335" height="74.5"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Inhaler" translatesAutoresizingMaskIntoConstraints="NO" id="37w-GA-8aA">
+                                                    <rect key="frame" x="0.0" y="0.0" width="45" height="74.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="45" id="SiR-Ld-7o3"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="CX1-Dz-6Bz">
+                                                    <rect key="frame" x="75" y="12" width="260" height="51"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lva-r1-eo3">
+                                                            <rect key="frame" x="0.0" y="0.0" width="260" height="20.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WKK-Kb-K68">
+                                                            <rect key="frame" x="0.0" y="30.5" width="260" height="20.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="YL1-mO-NvS" secondAttribute="bottom" id="Jc0-yl-K5y"/>
+                                        <constraint firstItem="YL1-mO-NvS" firstAttribute="leading" secondItem="M6s-IJ-kEP" secondAttribute="leading" constant="20" id="MbW-Ab-ANf"/>
+                                        <constraint firstItem="YL1-mO-NvS" firstAttribute="top" secondItem="M6s-IJ-kEP" secondAttribute="top" id="P0m-tx-1vI"/>
+                                        <constraint firstAttribute="trailing" secondItem="YL1-mO-NvS" secondAttribute="trailing" constant="20" id="fTY-Ga-fac"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="dateLabel" destination="lva-r1-eo3" id="4BY-HY-b0W"/>
+                                    <outlet property="recordImage" destination="37w-GA-8aA" id="bIG-9W-MPH"/>
+                                    <outlet property="valueLabel" destination="WKK-Kb-K68" id="fG2-bS-47g"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="nbx-2D-bG2" id="JQS-iZ-SPB"/>
+                            <outlet property="delegate" destination="nbx-2D-bG2" id="C2T-o8-IkT"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S5F-ZW-7dC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="60" y="50"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Inhaler" width="250" height="201"/>
+    </resources>
+</document>
