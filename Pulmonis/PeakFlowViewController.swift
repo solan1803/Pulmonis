@@ -42,9 +42,21 @@ class PeakFlowViewController: UIViewController, BLEDelegate {
         self.hideKeyboardWhenTappedAround()
         NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillShow), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillHide), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
-        // Do any additional setup after loading the view.
+        
+        #if (arch(i386) || arch(x86_64)) && os(iOS)
+            let button = UIButton(frame: CGRect(x: 100, y: 100, width: 100, height: 50))
+            button.setTitle("Test Button", for: .normal)
+            button.backgroundColor = UIColor.blue
+            button.addTarget(self, action: #selector(segueToGraphForDebugging), for: .touchUpInside)
+            
+            self.view.addSubview(button)
+        #endif
+        
     }
     
+    func segueToGraphForDebugging() {
+        self.performSegue(withIdentifier: "plotBreath", sender: self)
+    }
    
 
 //    @IBAction func savePeakFlow(_ sender: UIButton) {
@@ -108,42 +120,41 @@ class PeakFlowViewController: UIViewController, BLEDelegate {
     }
     
     var maxPeakFlowValue : Float = 0.0
-    
+    var breathCount = 0
     var readings: [Double] = []
 
     func bleDidReceiveData(data: NSData?) {
-        let length = data?.length
-        print("LENGTH: \(length)")
-        let count = length!/MemoryLayout<UInt8>.size
-        
-        if (count == 1) {
-            print("COUNT WAS 1")
-            if let topController = UIApplication.topViewController() {
-                let graphController = topController as? PlotBreathGraphViewController
-                let times = [1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0,
-                            11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0]
-                let trimmedReadings = Array(readings[0...19])
-                graphController?.addSensorReadings(dataPoints: trimmedReadings, values: times )
-            }
-            readings = []
-        } else {
-        
-            var array = [UInt8](repeating: 0, count: count)
-            data!.getBytes(&array, length:count * MemoryLayout<UInt8>.size)
-        
-            for i in stride(from: 0, through: count-1, by: 4) {
-                let arr = Array(array[i...(i+3)])
-                let u32 = UnsafePointer(arr).withMemoryRebound(to: Float.self, capacity: 1) {
-                    $0.pointee
-                }
-                readings.append(Double(u32))
-                print(u32)
-    //            let f = String(format:"%02f", u32)
-    //            bluetoothValueLabel.text! = "Running Value: " + f
-    //            maxPeakFlowValue = max(maxPeakFlowValue, u32)
-    //            let m = String(format: "%02f", max(maxPeakFlowValue, u32))
-    //            maxBluetoothValueLabel.text! = "Max Value: " + m
+        if breathCount < 3 {
+            let length = data?.length
+            print("LENGTH: \(length)")
+            let count = length!/MemoryLayout<UInt8>.size
             
+            if (count == 1) {
+                print("COUNT WAS 1")
+                if let topController = UIApplication.topViewController() {
+                    let graphController = topController as? PlotBreathGraphViewController
+                    var times : [Double] = []
+                    for i in stride(from: 1, through: readings.count, by: 1) {
+                        times.append(Double(i))
+                    }
+
+                    graphController?.addSensorReadings(dataPoints: readings, values: times )
+                }
+                breathCount += 1
+                readings = []
+            } else if count % 4 == 0 {
+            
+                var array = [UInt8](repeating: 0, count: count)
+                data!.getBytes(&array, length:count * MemoryLayout<UInt8>.size)
+            
+                for i in stride(from: 0, through: count-1, by: 4) {
+                    let arr = Array(array[i...(i+3)])
+                    let u32 = UnsafePointer(arr).withMemoryRebound(to: Float.self, capacity: 1) {
+                        $0.pointee
+                    }
+                    readings.append(Double(u32)*60)
+                    print(u32)
+                }
             }
         }
     }
