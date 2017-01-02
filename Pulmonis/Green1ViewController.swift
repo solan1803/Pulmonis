@@ -38,6 +38,10 @@ class Green1ViewController: ListedViewController {
         super.didReceiveMemoryWarning()
     }
     
+    @IBAction func textFieldPrimaryActionTriggered(_ sender: Any) {
+        performSegue(withIdentifier: "segue1", sender: nil)
+    }
+    
     override func saveField() {
         if (gPreventerInhalerColour != nil) {
             ListedViewController.patientData[gPreventerInhalerColourStr] = gPreventerInhalerColour.text

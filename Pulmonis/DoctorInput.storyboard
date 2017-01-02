@@ -61,6 +61,9 @@
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="textFieldPrimaryActionTriggered:" destination="11L-OX-iYx" eventType="primaryActionTriggered" id="sIh-KW-ywJ"/>
+                                        </connections>
                                     </textField>
                                 </subviews>
                             </stackView>
@@ -86,7 +89,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ahn-43-6lC" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <swipeGestureRecognizer direction="left" id="V8a-Z6-b9g">
                     <connections>
-                        <segue destination="0LF-lO-Sr2" kind="show" id="0og-yB-4Pi"/>
+                        <segue destination="0LF-lO-Sr2" kind="show" identifier="segue1" id="0og-yB-4Pi"/>
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
@@ -175,7 +178,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nsm-wU-pNw" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <swipeGestureRecognizer direction="left" id="Vpf-KE-98g">
                     <connections>
-                        <segue destination="liN-wl-WIg" kind="show" id="Ahq-z6-ZPh"/>
+                        <segue destination="liN-wl-WIg" kind="show" identifier="segue2" id="Ahq-z6-ZPh"/>
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
@@ -265,7 +268,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CNG-CC-DVS" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <swipeGestureRecognizer direction="left" id="7aJ-dP-nYN">
                     <connections>
-                        <segue destination="XRk-EF-KgB" kind="show" id="b8K-lQ-alF"/>
+                        <segue destination="XRk-EF-KgB" kind="show" identifier="segue3" id="b8K-lQ-alF"/>
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
@@ -321,6 +324,9 @@
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="textFieldPrimaryActionTriggered:" destination="XRk-EF-KgB" eventType="primaryActionTriggered" id="sVu-v1-bqx"/>
+                                        </connections>
                                     </textField>
                                 </subviews>
                             </stackView>
@@ -346,7 +352,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eYf-sg-jTG" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <swipeGestureRecognizer direction="left" id="gOV-jV-caU">
                     <connections>
-                        <segue destination="17Z-pT-vec" kind="show" id="je6-g8-lYV"/>
+                        <segue destination="17Z-pT-vec" kind="show" identifier="segue4" id="je6-g8-lYV"/>
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
@@ -435,7 +441,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MMs-hc-aop" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <swipeGestureRecognizer direction="left" id="0Pt-cy-cWH">
                     <connections>
-                        <segue destination="pU1-Zx-zlr" kind="show" id="jm4-ja-6xk"/>
+                        <segue destination="pU1-Zx-zlr" kind="show" identifier="segue5" id="jm4-ja-6xk"/>
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
@@ -518,7 +524,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mp0-Wj-Gl1" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <swipeGestureRecognizer direction="left" id="F4s-ZR-84D">
                     <connections>
-                        <segue destination="WqO-zZ-NAn" kind="show" id="yiG-aK-fqn"/>
+                        <segue destination="WqO-zZ-NAn" kind="show" identifier="segue6" id="yiG-aK-fqn"/>
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
@@ -604,7 +610,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g0A-dm-q0o" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <swipeGestureRecognizer direction="left" id="RS0-2q-7FL">
                     <connections>
-                        <segue destination="fkb-Jf-hgu" kind="show" id="fwT-IC-KTX"/>
+                        <segue destination="fkb-Jf-hgu" kind="show" identifier="segue7" id="fwT-IC-KTX"/>
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
@@ -684,7 +690,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n12-NY-BbG" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <swipeGestureRecognizer direction="left" id="lgu-vP-rH4">
                     <connections>
-                        <segue destination="OCm-vL-rOP" kind="show" id="7I3-7i-TI0"/>
+                        <segue destination="OCm-vL-rOP" kind="show" identifier="segue8" id="7I3-7i-TI0"/>
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
@@ -777,7 +783,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lwa-Dc-15D" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <swipeGestureRecognizer direction="left" id="1jc-X7-3vt">
                     <connections>
-                        <segue destination="fUs-Xt-EzG" kind="show" id="2BX-hK-TGr"/>
+                        <segue destination="fUs-Xt-EzG" kind="show" identifier="segue9" id="2BX-hK-TGr"/>
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
@@ -872,7 +878,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1CN-6j-Ic6" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <swipeGestureRecognizer direction="left" id="tAI-cW-CAf">
                     <connections>
-                        <segue destination="q9O-jC-hFS" kind="show" id="Nke-Jb-yfk"/>
+                        <segue destination="q9O-jC-hFS" kind="show" identifier="segue10" id="Nke-Jb-yfk"/>
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
@@ -966,7 +972,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K6U-sH-t5R" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <swipeGestureRecognizer direction="left" id="mlT-Jx-e1i">
                     <connections>
-                        <segue destination="12g-N1-V3a" kind="show" id="pV9-qy-lII"/>
+                        <segue destination="12g-N1-V3a" kind="show" identifier="segue12" id="pV9-qy-lII"/>
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
@@ -1060,7 +1066,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Fb-DM-mj1" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <swipeGestureRecognizer direction="left" id="c0i-md-3Ay">
                     <connections>
-                        <segue destination="S2I-w7-rjb" kind="show" id="5if-gC-mpA"/>
+                        <segue destination="S2I-w7-rjb" kind="show" identifier="segue13" id="5if-gC-mpA"/>
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
@@ -1153,7 +1159,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TOd-db-G7I" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <swipeGestureRecognizer direction="left" id="mJC-oW-fRy">
                     <connections>
-                        <segue destination="cjU-eZ-0Nt" kind="show" id="EWg-Ql-BEG"/>
+                        <segue destination="cjU-eZ-0Nt" kind="show" identifier="segue14" id="EWg-Ql-BEG"/>
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
@@ -1332,7 +1338,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3rc-py-oLm" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <swipeGestureRecognizer direction="left" id="Qo1-Zp-kcl">
                     <connections>
-                        <segue destination="RG9-Ur-nHQ" kind="show" id="zvg-rj-lXb"/>
+                        <segue destination="RG9-Ur-nHQ" kind="show" identifier="segue11" id="zvg-rj-lXb"/>
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
