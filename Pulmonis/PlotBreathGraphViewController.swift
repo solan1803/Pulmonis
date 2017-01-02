@@ -25,13 +25,15 @@ class PlotBreathGraphViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        breathLineView.dragEnabled = false
-        breathLineView.pinchZoomEnabled = false
+        breathLineView.dragEnabled = true
+        breathLineView.pinchZoomEnabled = true
         
         breathLineView.noDataText = "No breaths recorded, please breathe into the spirometer"
         breathLineView.chartDescription?.text = ""
         breathLineView.legend.enabled = false
         breathLineView.xAxis.labelPosition = .bottom
+        breathLineView.backgroundColor = UIColor.clear
+        
         
         //var dataEntries: [ChartDataEntry] = []
         //
@@ -39,14 +41,14 @@ class PlotBreathGraphViewController: UIViewController {
         //let chartDataSet = LineChartDataSet(values: dataEntries, label: "Pressure")
         //let chartData = LineChartData(dataSet: chartDataSet)
         //breathLineView.data = chartData
-        
+        #if (arch(i386) || arch(x86_64)) && os(iOS)
         let button = UIButton(frame: CGRect(x: 100, y: 100, width: 100, height: 50))
         button.setTitle("Test Button", for: .normal)
         button.backgroundColor = UIColor.blue
         button.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
         
         self.view.addSubview(button)
-        
+        #endif
         // Do any additional setup after loading the view.
     }
     
@@ -141,6 +143,7 @@ class PlotBreathGraphViewController: UIViewController {
         breathLineView.setNeedsUpdateConstraints()
         //breathLineView.moveViewToX(0)
         breathLineView.fitScreen()
+        breathLineView.animate(xAxisDuration: 1.0, yAxisDuration: 1.0, easingOption: .easeInCubic)
     }
     
     override func didReceiveMemoryWarning() {
