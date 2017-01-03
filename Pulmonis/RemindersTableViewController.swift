@@ -10,12 +10,16 @@ import UIKit
 
 class RemindersTableViewController: UITableViewController {
 
+    var reminders : [String] = []
+    var puffTypes: [String] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.navigationBar.isTranslucent = false
         tableView.backgroundView = UIImageView(image: UIImage(named: "Background.png"))
         tableView.backgroundColor = UIColor.clear
-
+        reminders = ["morning", "evening"]
+        puffTypes = [gPuffsMorningStr, gPuffsNightStr]
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -42,20 +46,23 @@ class RemindersTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 2
+        return reminders.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell : UITableViewCell
+        let cell : ReminderTableViewCell
         
-        if indexPath.row == 1 {
-            cell = tableView.dequeueReusableCell(withIdentifier: "morningReminder", for: indexPath)
-            
-        } else {
-            cell = tableView.dequeueReusableCell(withIdentifier: "eveningReminder", for: indexPath)
-            
-        }
+        cell = tableView.dequeueReusableCell(withIdentifier: "reminderCell") as! ReminderTableViewCell
+        
+        cell.setReminderType(type: reminders[indexPath.row])
+        cell.setPuffType(type: puffTypes[indexPath.row])
+        cell.setUpCell()
+//        if indexPath.row == 1 {
+//            cell = tableView.dequeueReusableCell(withIdentifier: "morningReminder", for: indexPath)
+//        } else {
+//            cell = tableView.dequeueReusableCell(withIdentifier: "eveningReminder", for: indexPath)
+//        }
         cell.backgroundColor = UIColor.clear
         return cell
     }

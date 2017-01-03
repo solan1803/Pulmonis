@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="xUS-Tv-YEJ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="xUS-Tv-YEJ">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -67,22 +67,22 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YLy-tq-RVj">
-                                        <rect key="frame" x="0.0" y="35" width="335" height="37.5"/>
+                                        <rect key="frame" x="0.0" y="35" width="335" height="50"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="KpK-gM-vKf">
-                                                <rect key="frame" x="0.0" y="0.0" width="315" height="38"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="315" height="50.5"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="8fH-aj-X2j">
-                                                        <rect key="frame" x="0.0" y="0.0" width="315" height="19"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="315" height="25.5"/>
                                                         <subviews>
                                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pill" translatesAutoresizingMaskIntoConstraints="NO" id="DhD-WG-Kuu">
-                                                                <rect key="frame" x="0.0" y="0.0" width="30" height="19"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="30" height="25.5"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="30" id="b9C-w6-dL6"/>
                                                                 </constraints>
                                                             </imageView>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bAV-qI-qHl">
-                                                                <rect key="frame" x="30" y="0.0" width="255" height="19"/>
+                                                                <rect key="frame" x="30" y="0.0" width="255" height="25.5"/>
                                                                 <state key="normal" title="Button">
                                                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 </state>
@@ -91,7 +91,7 @@
                                                                 </connections>
                                                             </button>
                                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9ab-eI-32T">
-                                                                <rect key="frame" x="285" y="0.0" width="30" height="19"/>
+                                                                <rect key="frame" x="285" y="0.0" width="30" height="25.5"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="30" id="ARb-k3-O6v"/>
                                                                 </constraints>
@@ -99,16 +99,16 @@
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yjl-Ru-xw4">
-                                                        <rect key="frame" x="0.0" y="19" width="315" height="19"/>
+                                                        <rect key="frame" x="0.0" y="25.5" width="315" height="25"/>
                                                         <subviews>
                                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="call_button" translatesAutoresizingMaskIntoConstraints="NO" id="PWg-mR-D5U">
-                                                                <rect key="frame" x="0.0" y="0.0" width="30" height="19"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="30" height="25"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="30" id="sfc-8O-lWn"/>
                                                                 </constraints>
                                                             </imageView>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xKB-gc-Yaw">
-                                                                <rect key="frame" x="30" y="0.0" width="255" height="19"/>
+                                                                <rect key="frame" x="30" y="0.0" width="255" height="25"/>
                                                                 <state key="normal" title="Button">
                                                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 </state>
@@ -117,7 +117,7 @@
                                                                 </connections>
                                                             </button>
                                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YFI-dj-9Oz">
-                                                                <rect key="frame" x="285" y="0.0" width="30" height="19"/>
+                                                                <rect key="frame" x="285" y="0.0" width="30" height="25"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="30" id="uk4-qD-QWk"/>
                                                                 </constraints>
@@ -137,7 +137,7 @@
                                         </constraints>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9sC-XQ-nQ2">
-                                        <rect key="frame" x="0.0" y="72.5" width="335" height="335"/>
+                                        <rect key="frame" x="0.0" y="85" width="335" height="335"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="9sC-XQ-nQ2" secondAttribute="height" multiplier="300:300" id="hMi-D2-PSU"/>
                                         </constraints>
@@ -153,7 +153,7 @@
                                         </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="Hw1-sD-wAV">
-                                        <rect key="frame" x="0.0" y="407.5" width="335" height="219.5"/>
+                                        <rect key="frame" x="0.0" y="420" width="335" height="207"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="f1u-xL-GRZ">
                                                 <rect key="frame" x="0.0" y="0.0" width="335" height="90.5"/>
@@ -182,6 +182,9 @@
                                                         <state key="normal" title="MAP" backgroundImage="map">
                                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         </state>
+                                                        <connections>
+                                                            <segue destination="8O7-f4-5ek" kind="show" id="y5S-Tk-Hxf"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mFk-PA-nTh">
                                                         <rect key="frame" x="261" y="0.0" width="74" height="90.5"/>
@@ -201,7 +204,7 @@
                                                 </subviews>
                                             </stackView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WGh-nB-uBm">
-                                                <rect key="frame" x="0.0" y="140.5" width="335" height="79"/>
+                                                <rect key="frame" x="0.0" y="140.5" width="335" height="66.5"/>
                                                 <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <state key="normal" title="EMERGENCY ACTION">
@@ -252,7 +255,15 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KDB-bJ-FvQ" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="399" y="-1106"/>
+            <point key="canvasLocation" x="374" y="-1107"/>
+        </scene>
+        <!--pollen-->
+        <scene sceneID="TCl-l4-uQs">
+            <objects>
+                <viewControllerPlaceholder storyboardName="PollenChart" referencedIdentifier="pollen" id="8O7-f4-5ek" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="We3-as-njq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1138" y="-893"/>
         </scene>
         <!--PendingTaskTable-->
         <scene sceneID="nxH-1t-UWZ">
@@ -285,7 +296,7 @@
                     <toolbarItems/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="667"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gc7-QF-kan">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="gc7-QF-kan">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>

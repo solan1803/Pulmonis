@@ -157,7 +157,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Shiny Blue" translatesAutoresizingMaskIntoConstraints="NO" id="gnB-LJ-TE2">
-                                <rect key="frame" x="4" y="0.0" width="406" height="736"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PeakFlowMeter" translatesAutoresizingMaskIntoConstraints="NO" id="4YP-35-pkv">
                                 <rect key="frame" x="82" y="214" width="250" height="193"/>
@@ -204,32 +204,22 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D6E-24-akT">
-                                <rect key="frame" x="211" y="500" width="101" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.225386858" green="0.83328109979999998" blue="0.50258815290000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <state key="normal" title="Test"/>
-                                <connections>
-                                    <segue destination="Mha-qu-Zxg" kind="show" id="oPi-Lf-MmV"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="MTI-St-cBZ" firstAttribute="top" secondItem="RG3-BK-cG9" secondAttribute="bottom" constant="40" id="0Ob-td-1UE"/>
+                            <constraint firstItem="gnB-LJ-TE2" firstAttribute="leading" secondItem="SOm-OA-o9D" secondAttribute="leading" id="0mG-JR-y1Y"/>
+                            <constraint firstItem="gnB-LJ-TE2" firstAttribute="top" secondItem="SOm-OA-o9D" secondAttribute="top" id="37J-ik-56J"/>
                             <constraint firstItem="zZJ-cF-Ccb" firstAttribute="centerX" secondItem="SOm-OA-o9D" secondAttribute="centerX" id="46h-32-kpk"/>
                             <constraint firstItem="RG3-BK-cG9" firstAttribute="top" secondItem="zZJ-cF-Ccb" secondAttribute="bottom" constant="204" id="AGv-K5-ss6"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="gnB-LJ-TE2" secondAttribute="trailing" constant="-16" id="BfZ-6E-3Lg"/>
-                            <constraint firstItem="MTI-St-cBZ" firstAttribute="top" secondItem="gnB-LJ-TE2" secondAttribute="bottom" id="HWH-XF-SDY"/>
-                            <constraint firstItem="gnB-LJ-TE2" firstAttribute="top" secondItem="SOm-OA-o9D" secondAttribute="topMargin" id="OAe-T4-DVk"/>
+                            <constraint firstAttribute="trailing" secondItem="gnB-LJ-TE2" secondAttribute="trailing" id="Gp4-K5-LtU"/>
                             <constraint firstItem="3yI-6Q-ek5" firstAttribute="centerX" secondItem="SOm-OA-o9D" secondAttribute="centerX" id="ON0-VM-pAm"/>
                             <constraint firstItem="RG3-BK-cG9" firstAttribute="top" secondItem="3yI-6Q-ek5" secondAttribute="bottom" constant="117" id="P9d-lH-XYd"/>
                             <constraint firstItem="VqM-Os-ury" firstAttribute="leading" secondItem="SOm-OA-o9D" secondAttribute="leadingMargin" constant="35" id="TLj-nR-uwI"/>
                             <constraint firstItem="RG3-BK-cG9" firstAttribute="centerX" secondItem="SOm-OA-o9D" secondAttribute="centerX" id="ZMX-p1-fad"/>
                             <constraint firstAttribute="trailingMargin" secondItem="VqM-Os-ury" secondAttribute="trailing" constant="35" id="aSK-vy-B52"/>
                             <constraint firstItem="4YP-35-pkv" firstAttribute="top" secondItem="CCB-fH-3FO" secondAttribute="bottom" constant="150" id="iZV-6J-NAx"/>
-                            <constraint firstItem="gnB-LJ-TE2" firstAttribute="leading" secondItem="SOm-OA-o9D" secondAttribute="leadingMargin" constant="-16" id="lQl-AX-GOQ"/>
+                            <constraint firstAttribute="bottom" secondItem="gnB-LJ-TE2" secondAttribute="bottom" id="tTV-LY-DUB"/>
                             <constraint firstItem="VqM-Os-ury" firstAttribute="centerX" secondItem="SOm-OA-o9D" secondAttribute="centerX" id="tzR-BK-uV9"/>
                             <constraint firstItem="VqM-Os-ury" firstAttribute="top" secondItem="CCB-fH-3FO" secondAttribute="bottom" constant="50" id="vT8-Ge-ax5"/>
                             <constraint firstItem="4YP-35-pkv" firstAttribute="centerX" secondItem="SOm-OA-o9D" secondAttribute="centerX" id="vVZ-Fg-Csg"/>
@@ -252,7 +242,7 @@
                 <viewControllerPlaceholder storyboardName="PlotBreathGraph" id="Mha-qu-Zxg" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gVb-Tf-kGg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4054" y="-361"/>
+            <point key="canvasLocation" x="4752" y="-311"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="35B-Qo-uFf">
@@ -327,7 +317,7 @@
                     <toolbarItems/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="414" height="736"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="HG6-OJ-dWo">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="HG6-OJ-dWo">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -346,7 +336,4 @@
         <image name="PeakFlowMeter" width="399" height="193"/>
         <image name="Shiny Blue" width="750" height="1334"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="oPi-Lf-MmV"/>
-    </inferredMetricsTieBreakers>
 </document>

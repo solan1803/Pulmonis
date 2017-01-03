@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="xHW-hc-2Tz">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Pollen Chart View Controller-->
+        <scene sceneID="aCs-OG-f05">
+            <objects>
+                <viewController storyboardIdentifier="pollen" id="xHW-hc-2Tz" customClass="PollenChartViewController" customModule="Pulmonis" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NHH-Fn-l7x"/>
+                        <viewControllerLayoutGuide type="bottom" id="H5O-gg-fF4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="n8e-ht-phQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Shiny Blue" translatesAutoresizingMaskIntoConstraints="NO" id="fz9-Nw-m00">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="84k-i6-Rf4">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="y7O-3P-7us" userLabel="infoLabel">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="30"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="Bgy-sE-RxJ"/>
+                                        </constraints>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Waiting for data...">
+                                                <attributes>
+                                                    <font key="NSFont" metaFont="system" size="17"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="uWH-Sg-E8z">
+                                        <rect key="frame" x="0.0" y="30" width="375" height="20"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="juP-TF-llc" userLabel="day1">
+                                                <rect key="frame" x="0.0" y="0.0" width="75" height="20"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="vG4-LQ-aCO" userLabel="day2">
+                                                <rect key="frame" x="75" y="0.0" width="75" height="20"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="6DB-Pa-50T" userLabel="day3">
+                                                <rect key="frame" x="150" y="0.0" width="75" height="20"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="hY1-nN-uh3" userLabel="day4">
+                                                <rect key="frame" x="225" y="0.0" width="75" height="20"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="e2h-h3-KiM" userLabel="day5">
+                                                <rect key="frame" x="300" y="0.0" width="75" height="20"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="fxn-Cr-7vX"/>
+                                        </constraints>
+                                    </stackView>
+                                    <view contentMode="scaleAspectFit" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="zEd-ho-vL1" userLabel="Air Quality Bar Chart View" customClass="BarChartView" customModule="Charts">
+                                        <rect key="frame" x="0.0" y="50" width="375" height="200"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="200" id="mxf-Ty-CVa"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleAspectFit" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="3Ax-iI-Mm7" userLabel="Forecast Bar Line Chart View" customClass="CombinedChartView" customModule="Charts">
+                                        <rect key="frame" x="0.0" y="250" width="375" height="397"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="H5O-gg-fF4" firstAttribute="top" secondItem="fz9-Nw-m00" secondAttribute="bottom" id="CBw-oX-096"/>
+                            <constraint firstItem="84k-i6-Rf4" firstAttribute="leading" secondItem="n8e-ht-phQ" secondAttribute="leading" id="Mrf-ey-FOf"/>
+                            <constraint firstItem="84k-i6-Rf4" firstAttribute="top" secondItem="NHH-Fn-l7x" secondAttribute="bottom" id="NxF-n9-O1O"/>
+                            <constraint firstItem="fz9-Nw-m00" firstAttribute="top" secondItem="n8e-ht-phQ" secondAttribute="top" id="Sbe-lT-Lve"/>
+                            <constraint firstItem="H5O-gg-fF4" firstAttribute="top" secondItem="84k-i6-Rf4" secondAttribute="bottom" id="WsR-YI-EKo"/>
+                            <constraint firstAttribute="trailing" secondItem="84k-i6-Rf4" secondAttribute="trailing" id="fAY-wx-Ygu"/>
+                            <constraint firstAttribute="trailing" secondItem="fz9-Nw-m00" secondAttribute="trailing" id="rIr-At-AAV"/>
+                            <constraint firstItem="fz9-Nw-m00" firstAttribute="leading" secondItem="n8e-ht-phQ" secondAttribute="leading" id="tjm-ck-YyO"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="airQualityBarChartView" destination="zEd-ho-vL1" id="esg-vX-Wsd"/>
+                        <outlet property="day1" destination="juP-TF-llc" id="FC8-cG-jyM"/>
+                        <outlet property="day2" destination="vG4-LQ-aCO" id="evn-cw-1OF"/>
+                        <outlet property="day3" destination="6DB-Pa-50T" id="oms-Bz-sig"/>
+                        <outlet property="day4" destination="hY1-nN-uh3" id="8eL-LP-Yfa"/>
+                        <outlet property="day5" destination="e2h-h3-KiM" id="dtc-71-Yfd"/>
+                        <outlet property="forecastBarLineChartView" destination="3Ax-iI-Mm7" id="0ap-dZ-FHN"/>
+                        <outlet property="infoLabel" destination="y7O-3P-7us" id="0aw-X9-tqD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rB4-PU-gMq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="109.59999999999999" y="166.8665667166417"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Shiny Blue" width="750" height="1334"/>
+    </resources>
+</document>
