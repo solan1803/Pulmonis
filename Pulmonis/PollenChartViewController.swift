@@ -66,7 +66,7 @@ class PollenChartViewController: UIViewController, CLLocationManagerDelegate, IV
         
         let task = session.dataTask(with: request as URLRequest, completionHandler: {data, response, err -> Void in
             
-            if err != nil || (data as? NSNull) == nil {
+            if err != nil || (data == nil) {
 
             } else {
                 
