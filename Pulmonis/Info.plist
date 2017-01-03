@@ -20,6 +20,19 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
+	<key>NSHealthShareUsageDescription</key>
+	<string>Pulmonis: Peak Flow Respiratory Share</string>
+	<key>NSHealthUpdateUsageDescription</key>
+	<string>Pulmonis: Peak Flow Respiratory Update</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Meteorological data</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Meteorological data</string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>LiberationSans-Bold.ttf</string>
@@ -31,10 +44,6 @@
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
 	<string>Main</string>
-	<key>NSHealthShareUsageDescription</key>
-	<string>Pulmonis: Peak Flow Respiratory Share</string>
-	<key>NSHealthUpdateUsageDescription</key>
-	<string>Pulmonis: Peak Flow Respiratory Update</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>
