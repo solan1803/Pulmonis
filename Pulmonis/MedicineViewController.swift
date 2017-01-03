@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreData
+import UserNotifications
 
 class MedicineViewController: UIViewController, UIPopoverPresentationControllerDelegate {
     
@@ -71,13 +72,44 @@ class MedicineViewController: UIViewController, UIPopoverPresentationControllerD
     @IBAction func showNotePopover(_ sender: AnyObject) {
         self.performSegue(withIdentifier: "notePopover", sender: self)
     }
+    
+    func scheduleNotification(date: Date, title: String, body: String, identifier: String, image: String) {
+        let calendar = Calendar(identifier: .gregorian)
+        let components = calendar.dateComponents(in: .current, from: date)
+        let newComponents = DateComponents(calendar: calendar, timeZone: .current, month: components.month, day: components.day, hour: components.hour, minute: components.minute)
+        
+        let trigger = UNCalendarNotificationTrigger(dateMatching: newComponents, repeats: false)
+        
+        let content = UNMutableNotificationContent()
+        content.title = title
+        content.body = body
+        content.sound = UNNotificationSound.default()
+        if let path = Bundle.main.path(forResource: image, ofType: "png") {
+            let url = URL(fileURLWithPath: path)
+            do {
+                let attachment = try UNNotificationAttachment(identifier: image, url: url, options: nil)
+                content.attachments = [attachment]
+            } catch {
+                print("The attachment was not loaded.")
+            }
+        }
+        
+        let request = UNNotificationRequest(identifier: identifier, content: content, trigger: trigger)
+        
+        UNUserNotificationCenter.current().add(request) {(error) in
+            if let error = error {
+                print("Uh oh! We had an error: \(error)")
+            }
+        }
+    }
 
     func addContactGPTask() {
         if let task = NSEntityDescription.insertNewObject(forEntityName: "PendingTask", into: managedObjectContext!) as? PendingTask {
             task.date_created = NSDate()
             task.message = "Your treatment may need to be reviewed."
             task.type = "contactGP"
-            task.reminder_time = NSDate().addingTimeInterval(60.0 * 60.0)
+            task.reminder_time = NSDate().addingTimeInterval(60.0)
+            scheduleNotification(date: task.reminder_time as! Date, title: "Contact GP", body: task.message!, identifier: task.type!, image: "call_button")
         }
         do {
             try managedObjectContext?.save()
@@ -92,8 +124,8 @@ class MedicineViewController: UIViewController, UIPopoverPresentationControllerD
             task.date_created = NSDate()
             task.message = "Please remember to take your prednisolone tablets."
             task.type = "medicine"
-            task.reminder_time = NSDate().addingTimeInterval(60.0 * 60.0)
-            
+            task.reminder_time = NSDate().addingTimeInterval(60.0)
+            scheduleNotification(date: task.reminder_time as! Date, title: "Medication Reminder", body: task.message!, identifier: task.type!, image: "Pill")
         }
         do {
             try managedObjectContext?.save()

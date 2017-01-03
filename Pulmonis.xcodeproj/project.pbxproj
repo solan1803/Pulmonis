@@ -41,6 +41,8 @@
 		5B1CABAC1E1C004800DF8E7E /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1CABAB1E1C004800DF8E7E /* StringExtensions.swift */; };
 		5B1CABAF1E1C01F900DF8E7E /* PushNotificationsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1CABAE1E1C01F900DF8E7E /* PushNotificationsTests.swift */; };
 		5B1CABB31E1C210400DF8E7E /* PushNotificationCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1CABB21E1C210400DF8E7E /* PushNotificationCenter.swift */; };
+		5B1CABBA1E1C6F5F00DF8E7E /* call_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B1CABB91E1C6F5F00DF8E7E /* call_button.png */; };
+		5B1CABBE1E1C70BD00DF8E7E /* Pill.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B1CABBD1E1C70BD00DF8E7E /* Pill.png */; };
 		5B3A1DBD1E0D7A76009800B8 /* PlotBreathGraph.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B3A1DBC1E0D7A76009800B8 /* PlotBreathGraph.storyboard */; };
 		5B4AA88E1E15887600F162AF /* PulmonisAsthmaJournalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4AA88D1E15887600F162AF /* PulmonisAsthmaJournalUITests.swift */; };
 		5B4AA89A1E15BA6900F162AF /* WorsePopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4AA8991E15BA6900F162AF /* WorsePopoverViewController.swift */; };
@@ -194,6 +196,8 @@
 		5B1CABAB1E1C004800DF8E7E /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		5B1CABAE1E1C01F900DF8E7E /* PushNotificationsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushNotificationsTests.swift; sourceTree = "<group>"; };
 		5B1CABB21E1C210400DF8E7E /* PushNotificationCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushNotificationCenter.swift; sourceTree = "<group>"; };
+		5B1CABB91E1C6F5F00DF8E7E /* call_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = call_button.png; sourceTree = "<group>"; };
+		5B1CABBD1E1C70BD00DF8E7E /* Pill.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Pill.png; sourceTree = "<group>"; };
 		5B3A1DBC1E0D7A76009800B8 /* PlotBreathGraph.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PlotBreathGraph.storyboard; sourceTree = "<group>"; };
 		5B4AA88D1E15887600F162AF /* PulmonisAsthmaJournalUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PulmonisAsthmaJournalUITests.swift; sourceTree = "<group>"; };
 		5B4AA8991E15BA6900F162AF /* WorsePopoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorsePopoverViewController.swift; sourceTree = "<group>"; };
@@ -409,6 +413,8 @@
 				5B88A4E71DEB464800CDD946 /* BLE.swift */,
 				5B82CABF1DC8ECE4003930FB /* SupportViewController.swift */,
 				5B82CA951DC8C14B003930FB /* PeakFlowViewController.swift */,
+				5B1CABB91E1C6F5F00DF8E7E /* call_button.png */,
+				5B1CABBD1E1C70BD00DF8E7E /* Pill.png */,
 			);
 			name = "Action Plan";
 			sourceTree = "<group>";
@@ -681,6 +687,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				28FEC5681E158DE50040EA96 /* Reminders.plist in Resources */,
+				5B1CABBA1E1C6F5F00DF8E7E /* call_button.png in Resources */,
 				5BC2CD3C1E0F340700FBDEC9 /* HealthKit.storyboard in Resources */,
 				5BD2AFB91E11D036008FA668 /* Critical.storyboard in Resources */,
 				5BC5361B1DB6762A00231A50 /* LiberationSans-Regular.ttf in Resources */,
@@ -701,6 +708,7 @@
 				28CC5CAC1DC77625009A7BE9 /* Settings.storyboard in Resources */,
 				5BC536151DB6762A00231A50 /* LiberationSans-BoldItalic.ttf in Resources */,
 				5B6B43511DC38F6A0071AC66 /* Statistics.storyboard in Resources */,
+				5B1CABBE1E1C70BD00DF8E7E /* Pill.png in Resources */,
 				5BC536181DB6762A00231A50 /* LiberationSans-Italic.ttf in Resources */,
 				5BC5360F1DB6761C00231A50 /* LiberationSans-Bold.ttf in Resources */,
 			);

@@ -37,4 +37,21 @@ class PushNotificationsViewController: UIViewController {
             print(error)
         }
     }
+    
+    @IBAction func printPendingNotifications(_ sender: UIButton) {
+        UNUserNotificationCenter.current().getPendingNotificationRequests { (requests) in
+            for r in requests {
+                print(r.identifier)
+                print(r.trigger.debugDescription)
+            }
+        }
+    }
+    
+    @IBAction func printDeliveredNotifications(_ sender: UIButton) {
+        UNUserNotificationCenter.current().getDeliveredNotifications { (delivered) in
+            for d in delivered {
+                print(d.request.identifier)
+            }
+        }
+    }
 }
