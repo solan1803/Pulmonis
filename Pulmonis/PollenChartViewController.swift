@@ -179,7 +179,7 @@ class PollenChartViewController: UIViewController, CLLocationManagerDelegate, IV
         var ragweedData : [ChartDataEntry] = []
         var treeData : [ChartDataEntry] = []
         
-        let epochHalfOfDay  = (epochDates[0] as Double) / 2
+
         
         for i in 0..<FORECAST_LENGTH {
             airQualityData.append(BarChartDataEntry(x: Double(i) + 0.5, y: Double(forecasts[i].0)))
@@ -200,13 +200,9 @@ class PollenChartViewController: UIViewController, CLLocationManagerDelegate, IV
         ragweedDataSet.setColor(NSUIColor(red:1.00, green:0.80, blue:0.60, alpha:1.0))
         treeDataSet.setColor(NSUIColor(red:1.00, green:1.00, blue:0.60, alpha:1.0))
         
-        //let combinedDataSet : [ChartDataSet] = [airQualityDataSet, grassDataSet, moldDataSet, ragweedDataSet, treeDataSet]
-        
-        //let barChartData = BarChartData(dataSets: combinedDataSet)
-        
         let combinedChartData : CombinedChartData = CombinedChartData()
         
-        var barData : BarChartData = BarChartData(dataSet: grassDataSet)
+        let barData : BarChartData = BarChartData(dataSet: grassDataSet)
         barData.addDataSet(moldDataSet)
         barData.addDataSet(ragweedDataSet)
         barData.addDataSet(treeDataSet)
@@ -216,7 +212,7 @@ class PollenChartViewController: UIViewController, CLLocationManagerDelegate, IV
         barData.groupBars(fromX: 0, groupSpace: 0.04, barSpace: 0.015)
         combinedChartData.barData = barData
         
-        var airQualityBarChartData : BarChartData = BarChartData(dataSet: airQualityDataSet)
+        let airQualityBarChartData : BarChartData = BarChartData(dataSet: airQualityDataSet)
         airQualityBarChartData.setValueFormatter(self)
         
         //var lineData = LineChartData(dataSet: airQualityDataSet)
