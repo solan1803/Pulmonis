@@ -30,9 +30,9 @@
 	<key>NSHealthUpdateUsageDescription</key>
 	<string>Pulmonis: Peak Flow Respiratory Update</string>
 	<key>NSLocationAlwaysUsageDescription</key>
-	<string>Meteorological data</string>
+	<string>Needed to fetch pollen forecasts for your location</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>Meteorological data</string>
+	<string>Needed to fetch pollen forecasts for your location</string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>LiberationSans-Bold.ttf</string>
