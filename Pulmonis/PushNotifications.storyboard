@@ -67,13 +67,13 @@
         <!--Reminders-->
         <scene sceneID="Goe-H4-Ljh">
             <objects>
-                <tableViewController title="Reminders" id="ArY-B3-QtO" customClass="RemindersTableViewController" customModule="Pulmonis" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="reminders" title="Reminders" id="ArY-B3-QtO" customClass="RemindersTableViewController" customModule="Pulmonis" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" sectionIndexMinimumDisplayRowCount="2" rowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" id="Rxk-mM-KQE">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="morningReminder" rowHeight="100" id="gm8-rv-QyG" customClass="MorningReminderTableViewCell" customModule="Pulmonis" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="reminderCell" rowHeight="100" id="gm8-rv-QyG" customClass="ReminderTableViewCell" customModule="Pulmonis" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gm8-rv-QyG" id="2Vb-dk-Yhd">
@@ -103,7 +103,7 @@
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="2NF-fX-bnj">
                                                     <rect key="frame" x="286" y="34.5" width="51" height="31"/>
                                                     <connections>
-                                                        <action selector="morningReminderSwitchChanged:" destination="gm8-rv-QyG" eventType="valueChanged" id="uwA-ax-SU0"/>
+                                                        <action selector="switchValueChanged:" destination="gm8-rv-QyG" eventType="valueChanged" id="eT2-g1-Hs2"/>
                                                     </connections>
                                                 </switch>
                                             </subviews>
@@ -117,56 +117,9 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="dosageLabel" destination="QLa-Eo-yXr" id="jNi-Vd-hRO"/>
-                                    <outlet property="morningSwitch" destination="2NF-fX-bnj" id="iO1-Kc-d2r"/>
-                                </connections>
-                            </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="eveningReminder" rowHeight="100" id="ULr-II-835" customClass="EveningReminderTableViewCell" customModule="Pulmonis" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="128" width="375" height="100"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ULr-II-835" id="dGn-ct-2eP">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="99"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Oxx-wt-uXy">
-                                            <rect key="frame" x="20" y="0.0" width="335" height="100"/>
-                                            <subviews>
-                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Kk1-GG-naa">
-                                                    <rect key="frame" x="0.0" y="24.5" width="286" height="51"/>
-                                                    <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Evening Reminder" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gk4-7I-nTc">
-                                                            <rect key="frame" x="0.0" y="0.0" width="286" height="20.5"/>
-                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                                            <nil key="textColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bkq-jf-n7e">
-                                                            <rect key="frame" x="0.0" y="30.5" width="286" height="20.5"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                            <nil key="textColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                    </subviews>
-                                                </stackView>
-                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Ogz-5K-AK1">
-                                                    <rect key="frame" x="286" y="34.5" width="51" height="31"/>
-                                                    <connections>
-                                                        <action selector="eveningReminderSwitchChanged:" destination="ULr-II-835" eventType="valueChanged" id="aHf-9y-1jW"/>
-                                                    </connections>
-                                                </switch>
-                                            </subviews>
-                                        </stackView>
-                                    </subviews>
-                                    <constraints>
-                                        <constraint firstAttribute="bottom" secondItem="Oxx-wt-uXy" secondAttribute="bottom" id="CeW-Ta-wWZ"/>
-                                        <constraint firstItem="Oxx-wt-uXy" firstAttribute="leading" secondItem="dGn-ct-2eP" secondAttribute="leading" constant="20" id="aU8-4I-s4K"/>
-                                        <constraint firstAttribute="trailing" secondItem="Oxx-wt-uXy" secondAttribute="trailing" constant="20" id="c2Q-yA-nuZ"/>
-                                        <constraint firstItem="Oxx-wt-uXy" firstAttribute="top" secondItem="dGn-ct-2eP" secondAttribute="top" id="xdF-tZ-pfb"/>
-                                    </constraints>
-                                </tableViewCellContentView>
-                                <connections>
-                                    <outlet property="dosageLabel" destination="bkq-jf-n7e" id="43B-0Z-9JR"/>
-                                    <outlet property="eveningSwitch" destination="Ogz-5K-AK1" id="A9r-ex-b2S"/>
+                                    <outlet property="reminderSubTitle" destination="QLa-Eo-yXr" id="Nax-gk-gL0"/>
+                                    <outlet property="reminderSwitch" destination="2NF-fX-bnj" id="ofK-Gz-t1V"/>
+                                    <outlet property="reminderTitle" destination="7id-T8-ZWI" id="nNX-Z8-zV1"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
