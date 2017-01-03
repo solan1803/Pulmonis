@@ -41,7 +41,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZXb-ut-joU">
-                                <rect key="frame" x="89" y="348" width="174" height="30"/>
+                                <rect key="frame" x="101" y="358" width="174" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Delete all notifications"/>
                                 <connections>
@@ -54,6 +54,22 @@
                                 <state key="normal" title="Add Peak Flow Record"/>
                                 <connections>
                                     <action selector="addPeakFlowRecord:" destination="oSU-wt-Ee5" eventType="touchUpInside" id="uvM-IZ-CBX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vgO-ZP-cZB">
+                                <rect key="frame" x="74" y="294" width="228" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Print all pending notifications"/>
+                                <connections>
+                                    <action selector="printPendingNotifications:" destination="oSU-wt-Ee5" eventType="touchUpInside" id="2Xf-u7-67e"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3As-WV-9s7">
+                                <rect key="frame" x="41" y="332" width="293" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Print all delivered notifications"/>
+                                <connections>
+                                    <action selector="printDeliveredNotifications:" destination="oSU-wt-Ee5" eventType="touchUpInside" id="qr6-Y1-tb2"/>
                                 </connections>
                             </button>
                         </subviews>
