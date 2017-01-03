@@ -47,7 +47,7 @@ class BluetoothUnitTests: XCTestCase {
         data = NSData(bytes: bytes, length: bytes.count)
         pfc.bleDidReceiveData(data: data)
         XCTAssert(pfc.readings.count == 1)
-        XCTAssert(diff(first: pfc.readings[0],second: 2.2))
+        XCTAssert(diff(first: pfc.readings[0],second: 2.2*60))
     }
     
     /* Sending over 2.2 twice in one buffer send */
@@ -58,8 +58,8 @@ class BluetoothUnitTests: XCTestCase {
         data = NSData(bytes: bytes, length: bytes.count)
         pfc.bleDidReceiveData(data: data)
         XCTAssert(pfc.readings.count == 2)
-        XCTAssert(diff(first: pfc.readings[0],second: 2.2))
-        XCTAssert(diff(first: pfc.readings[1],second: 2.2))
+        XCTAssert(diff(first: pfc.readings[0],second: 2.2*60))
+        XCTAssert(diff(first: pfc.readings[1],second: 2.2*60))
     }
     
     /* Testing reading of floats sent one at a time by arduino */
@@ -70,7 +70,7 @@ class BluetoothUnitTests: XCTestCase {
             data = NSData(bytes: bytes, length: bytes.count)
             pfc.bleDidReceiveData(data: data)
             XCTAssert(pfc.readings.count == i+1)
-            XCTAssert(diff(first: pfc.readings[i],second: 1.5))
+            XCTAssert(diff(first: pfc.readings[i],second: 1.5*60))
         }
     }
     

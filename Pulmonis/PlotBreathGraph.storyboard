@@ -6,8 +6,14 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="LiberationSans-Regular.ttf">
+            <string>LiberationSans</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Plot Breath Graph View Controller-->
         <scene sceneID="ova-uh-fp6">
@@ -21,26 +27,151 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Shiny Blue" translatesAutoresizingMaskIntoConstraints="NO" id="yeP-Lb-veQ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="css-u2-WwB" customClass="LineChartView" customModule="Charts">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="bottom" secondItem="yeP-Lb-veQ" secondAttribute="bottom" id="6aX-x3-ykD"/>
                             <constraint firstItem="css-u2-WwB" firstAttribute="top" secondItem="P2a-7y-M4d" secondAttribute="bottom" id="MeE-Ma-4pw"/>
+                            <constraint firstAttribute="trailing" secondItem="yeP-Lb-veQ" secondAttribute="trailing" id="ZEa-aQ-ICp"/>
                             <constraint firstItem="Wka-oK-SPv" firstAttribute="top" secondItem="css-u2-WwB" secondAttribute="bottom" id="odU-1w-ust"/>
+                            <constraint firstItem="yeP-Lb-veQ" firstAttribute="leading" secondItem="9oG-yK-ARu" secondAttribute="leading" id="qCu-h6-L1p"/>
                             <constraint firstAttribute="trailing" secondItem="css-u2-WwB" secondAttribute="trailing" id="weX-1S-umQ"/>
                             <constraint firstItem="css-u2-WwB" firstAttribute="leading" secondItem="9oG-yK-ARu" secondAttribute="leading" id="xHw-13-IpJ"/>
+                            <constraint firstItem="yeP-Lb-veQ" firstAttribute="top" secondItem="9oG-yK-ARu" secondAttribute="top" id="yHC-r6-1tk"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="breathLineView" destination="css-u2-WwB" id="fLw-Qv-vbB"/>
+                        <segue destination="N9G-fh-cG7" kind="show" identifier="showAsthmaStatus" id="64u-5w-zYK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zCI-Ds-ek7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="86" y="174"/>
         </scene>
+        <!--Check Asthma Status View Controller-->
+        <scene sceneID="jmT-2u-2yv">
+            <objects>
+                <viewController id="N9G-fh-cG7" customClass="CheckAsthmaStatusViewController" customModule="Pulmonis" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6G5-fC-XSA"/>
+                        <viewControllerLayoutGuide type="bottom" id="fRW-Dk-cVP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="h25-ih-gOs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Shiny Blue" translatesAutoresizingMaskIntoConstraints="NO" id="xz7-4A-Xjp">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="XoP-Vr-ufh">
+                                <rect key="frame" x="20" y="20" width="335" height="627"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your highest peak flow reading was 100L/min." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ROq-dk-YdP">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="209"/>
+                                        <fontDescription key="fontDescription" name="LiberationSans" family="Liberation Sans" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yellow" translatesAutoresizingMaskIntoConstraints="NO" id="CaX-6J-vye">
+                                        <rect key="frame" x="0.0" y="209" width="335" height="209"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="According to your doctor, your asthma condition seems to be normal." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fAD-rj-P7p">
+                                        <rect key="frame" x="0.0" y="418" width="335" height="209"/>
+                                        <fontDescription key="fontDescription" name="LiberationSans" family="Liberation Sans" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Alh-b3-CmM">
+                                <rect key="frame" x="163" y="607" width="50" height="30"/>
+                                <color key="backgroundColor" red="0.1202454641" green="0.4030750394" blue="0.48271960019999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Uuk-H6-7I0"/>
+                                    <constraint firstAttribute="width" constant="50" id="aRw-Bo-SMU"/>
+                                </constraints>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qy4-H9-BQS">
+                                <rect key="frame" x="314" y="50" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="PA7-MF-4tH"/>
+                                    <constraint firstAttribute="width" constant="30" id="UBe-qu-cjc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <state key="normal" image="healthAppLogo"/>
+                                <connections>
+                                    <action selector="popupHealth:" destination="N9G-fh-cG7" eventType="touchUpInside" id="gXW-1W-3am"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xz7-4A-Xjp" firstAttribute="leading" secondItem="h25-ih-gOs" secondAttribute="leading" id="Ckn-Il-Tuq"/>
+                            <constraint firstItem="xz7-4A-Xjp" firstAttribute="top" secondItem="h25-ih-gOs" secondAttribute="top" id="FIo-hN-CIj"/>
+                            <constraint firstItem="qy4-H9-BQS" firstAttribute="top" secondItem="h25-ih-gOs" secondAttribute="top" constant="50" id="Fam-oC-Unu"/>
+                            <constraint firstAttribute="trailing" secondItem="XoP-Vr-ufh" secondAttribute="trailing" constant="20" symbolic="YES" id="HLE-7D-I2M"/>
+                            <constraint firstItem="XoP-Vr-ufh" firstAttribute="bottom" secondItem="Alh-b3-CmM" secondAttribute="bottom" constant="10" id="Q9p-YC-4ye"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="qy4-H9-BQS" secondAttribute="trailing" constant="15" id="TDG-M7-s99"/>
+                            <constraint firstAttribute="bottom" secondItem="XoP-Vr-ufh" secondAttribute="bottom" constant="20" symbolic="YES" id="TcJ-xx-yZ8"/>
+                            <constraint firstItem="XoP-Vr-ufh" firstAttribute="top" secondItem="h25-ih-gOs" secondAttribute="top" constant="20" symbolic="YES" id="UZX-X3-hM4"/>
+                            <constraint firstAttribute="bottom" secondItem="xz7-4A-Xjp" secondAttribute="bottom" id="ked-Rr-ba1"/>
+                            <constraint firstItem="Alh-b3-CmM" firstAttribute="centerX" secondItem="h25-ih-gOs" secondAttribute="centerX" id="rnV-El-9dj"/>
+                            <constraint firstAttribute="trailing" secondItem="xz7-4A-Xjp" secondAttribute="trailing" id="yfm-xl-4oJ"/>
+                            <constraint firstItem="XoP-Vr-ufh" firstAttribute="leading" secondItem="h25-ih-gOs" secondAttribute="leading" constant="20" symbolic="YES" id="zxK-Hz-58h"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="asthmaStatusLabel" destination="fAD-rj-P7p" id="HGV-JW-C39"/>
+                        <outlet property="nextButton" destination="Alh-b3-CmM" id="ZAP-yS-bo2"/>
+                        <outlet property="resultLabel" destination="ROq-dk-YdP" id="hJY-qc-iy2"/>
+                        <outlet property="statusImage" destination="CaX-6J-vye" id="8sy-ZI-nWu"/>
+                        <segue destination="eKo-k2-MRk" kind="show" identifier="showCritical" id="X2L-9U-mII"/>
+                        <segue destination="7ha-aJ-JP3" kind="show" identifier="showWorse" id="qps-p4-xl7"/>
+                        <segue destination="8HA-mz-CzC" kind="show" identifier="showWell" id="UwD-bp-GAv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ssu-kw-2Gg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="920.79999999999995" y="170.46476761619192"/>
+        </scene>
+        <!--Critical-->
+        <scene sceneID="foq-yr-t2K">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Critical" id="eKo-k2-MRk" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IyJ-rn-kv8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1526" y="47"/>
+        </scene>
+        <!--Worse-->
+        <scene sceneID="eDf-Wr-fEC">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Worse" id="7ha-aJ-JP3" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Mx-w4-EIR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1574" y="187"/>
+        </scene>
+        <!--Well-->
+        <scene sceneID="MUF-PS-JWK">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Well" id="8HA-mz-CzC" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U9D-l2-GVm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1564" y="318"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="Shiny Blue" width="750" height="1334"/>
+        <image name="healthAppLogo" width="428" height="413"/>
+        <image name="yellow" width="728" height="728"/>
+    </resources>
 </document>
