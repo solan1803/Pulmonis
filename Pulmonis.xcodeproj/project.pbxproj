@@ -32,6 +32,9 @@
 		28CC5CAD1DC777E4009A7BE9 /* Emergency.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BAF07C51DB11C1B00AF2FD0 /* Emergency.storyboard */; };
 		28E486301DB672A500C3C87E /* StatsStartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E4862F1DB672A500C3C87E /* StatsStartViewController.swift */; };
 		28FEC5681E158DE50040EA96 /* Reminders.plist in Resources */ = {isa = PBXBuildFile; fileRef = 28FEC5671E158DE50040EA96 /* Reminders.plist */; };
+		2E572E931E17EA3E00C9D1F9 /* PollenChart.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E572E921E17EA3E00C9D1F9 /* PollenChart.storyboard */; };
+		2E572E951E17EB2000C9D1F9 /* PollenChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E572E941E17EB2000C9D1F9 /* PollenChartViewController.swift */; };
+		2E572E971E17EB6D00C9D1F9 /* PollenGETRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E572E961E17EB6D00C9D1F9 /* PollenGETRequests.swift */; };
 		2EAAC7D31E0D5A8200BE9B77 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EAAC7CE1E0D5A6300BE9B77 /* Charts.framework */; };
 		2EAAC7D41E0D5A8200BE9B77 /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2EAAC7CE1E0D5A6300BE9B77 /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5B0DEF7A1DB8F1FC006ECFCE /* LearnTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0DEF791DB8F1FC006ECFCE /* LearnTableViewController.swift */; };
@@ -184,6 +187,9 @@
 		28CC5CAB1DC77625009A7BE9 /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
 		28E4862F1DB672A500C3C87E /* StatsStartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatsStartViewController.swift; sourceTree = "<group>"; };
 		28FEC5671E158DE50040EA96 /* Reminders.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Reminders.plist; sourceTree = "<group>"; };
+		2E572E921E17EA3E00C9D1F9 /* PollenChart.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PollenChart.storyboard; sourceTree = "<group>"; };
+		2E572E941E17EB2000C9D1F9 /* PollenChartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PollenChartViewController.swift; sourceTree = "<group>"; };
+		2E572E961E17EB6D00C9D1F9 /* PollenGETRequests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PollenGETRequests.swift; sourceTree = "<group>"; };
 		2EAAC7C71E0D5A6300BE9B77 /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = Charts/Charts.xcodeproj; sourceTree = "<group>"; };
 		5B0DEF791DB8F1FC006ECFCE /* LearnTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LearnTableViewController.swift; sourceTree = "<group>"; };
 		5B1C00521E13CBC000C1F3D8 /* WellViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WellViewController.swift; sourceTree = "<group>"; };
@@ -278,6 +284,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2E572E8F1E17E93700C9D1F9 /* Meteorological */ = {
+			isa = PBXGroup;
+			children = (
+				2E572E921E17EA3E00C9D1F9 /* PollenChart.storyboard */,
+				2E572E941E17EB2000C9D1F9 /* PollenChartViewController.swift */,
+				2E572E961E17EB6D00C9D1F9 /* PollenGETRequests.swift */,
+			);
+			name = Meteorological;
+			sourceTree = "<group>";
+		};
 		2EAAC7C51E0D599600BE9B77 /* Plotting */ = {
 			isa = PBXGroup;
 			children = (
@@ -460,6 +476,7 @@
 		5BAF07C01DB11C1B00AF2FD0 /* Pulmonis */ = {
 			isa = PBXGroup;
 			children = (
+				2E572E8F1E17E93700C9D1F9 /* Meteorological */,
 				5BC2CD411E0F34DA00FBDEC9 /* Pulmonis.entitlements */,
 				2EAAC7C51E0D599600BE9B77 /* Plotting */,
 				5B1E3B811E0AAB9B00901EF9 /* Database Files */,
@@ -675,6 +692,7 @@
 				5B6B434F1DC38E770071AC66 /* Learn.storyboard in Resources */,
 				5BE313151E1290D50094C7EF /* PushNotifications.storyboard in Resources */,
 				719D0C7F1DBA2E66008F5F97 /* Main.storyboard in Resources */,
+				2E572E931E17EA3E00C9D1F9 /* PollenChart.storyboard in Resources */,
 				5BAF07CC1DB11C1B00AF2FD0 /* LaunchScreen.storyboard in Resources */,
 				28787E121DDB6B38000439AD /* PatientData.plist in Resources */,
 				5BAF07C91DB11C1B00AF2FD0 /* Assets.xcassets in Resources */,
@@ -739,6 +757,7 @@
 				5B82CAC01DC8ECE4003930FB /* SupportViewController.swift in Sources */,
 				28A53A881DDDFC7100595F80 /* PatientDataFields.swift in Sources */,
 				2899A9411DB519D6004306DF /* MedicineViewController.swift in Sources */,
+				2E572E951E17EB2000C9D1F9 /* PollenChartViewController.swift in Sources */,
 				28A336CE1DDB5877005D8626 /* Green5ViewController.swift in Sources */,
 				2834399E1DC2195900857437 /* Plist.swift in Sources */,
 				5B82CAC41DC8EE07003930FB /* SupportRecord+CoreDataProperties.swift in Sources */,
@@ -753,6 +772,7 @@
 				28A336D61DDB58E7005D8626 /* Yellow3ViewController.swift in Sources */,
 				28A336D41DDB58E0005D8626 /* Yellow2ViewController.swift in Sources */,
 				28A336DE1DDB590B005D8626 /* Red1ViewController.swift in Sources */,
+				2E572E971E17EB6D00C9D1F9 /* PollenGETRequests.swift in Sources */,
 				28A336C61DDB582C005D8626 /* Green1ViewController.swift in Sources */,
 				28A336D81DDB58EE005D8626 /* Yellow4ViewController.swift in Sources */,
 				5BE3131B1E1295CE0094C7EF /* PushNotificationsViewController.swift in Sources */,
