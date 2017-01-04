@@ -618,7 +618,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0810;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Manivannan Solan";
 				TargetAttributes = {
 					5BAF07BD1DB11C1B00AF2FD0 = {
@@ -1013,7 +1013,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "36a2b486-9d85-464d-ba9e-32399f3fbfc3";
 				PROVISIONING_PROFILE_SPECIFIER = PulmonisApp;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
