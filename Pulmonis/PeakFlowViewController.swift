@@ -23,17 +23,6 @@ class PeakFlowViewController: UIViewController, BLEDelegate {
     
     var ble = BLE()
     
-    
-    @IBOutlet weak var maxBluetoothValueLabel: UILabel!
-    @IBOutlet weak var bluetoothValueLabel: UILabel!
-    
-    var bluetoothText : String = "" {
-        didSet(newValue) {
-            print("SETTING BLUETOOTH VALUE")
-            bluetoothValueLabel.text! = newValue
-        }
-    }
-    
     @IBOutlet weak var connectButton: UIButton!
     
     override func viewDidLoad() {
