@@ -95,6 +95,13 @@ class PulmonisUITests: XCTestCase {
         nextButton.tap()
         
     }
+  
+    func testPollenForecast() {
+        
+        let app = XCUIApplication()
+        app.buttons["MAP"].tap()
+        app.navigationBars["Pulmonis.PollenChartView"].children(matching: .button).matching(identifier: "Back").element(boundBy: 0).tap()
+    }
     
     func testLearnTableLoading() {
         XCUIApplication().buttons["LEARN"].tap()
