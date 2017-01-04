@@ -52,6 +52,7 @@ class PollenChartViewController: UIViewController, CLLocationManagerDelegate, IV
         let lat = locValue.latitude;
         if (!locationFound) {
             locationFound = true
+            print(String(lat) + "," + String(long))
             getLocationKey(latitude: lat, longitude: long)
         }
     }
@@ -66,8 +67,15 @@ class PollenChartViewController: UIViewController, CLLocationManagerDelegate, IV
         
         let task = session.dataTask(with: request as URLRequest, completionHandler: {data, response, err -> Void in
             
-            if err != nil || (data as? NSNull) == nil {
-
+            var keyCheck : String = ""
+            if let httpResponse = response as? HTTPURLResponse {
+                if let locationKey = httpResponse.allHeaderFields["X-Location-Key"] as? String {
+                    keyCheck = locationKey
+                }
+            }
+            
+            if err != nil || keyCheck == "-1"{
+                print("Error in JSON response")
             } else {
                 
                 do {
