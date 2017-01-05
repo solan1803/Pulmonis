@@ -28,10 +28,6 @@ class Yellow1ViewController: ListedViewController {
         yWeeklyRelieverUses.becomeFirstResponder()
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
-    
     override func saveField() {
         if (yWeeklyRelieverUses != nil) {
             ListedViewController.patientData[yWeeklyRelieverUsesStr] = yWeeklyRelieverUses.text

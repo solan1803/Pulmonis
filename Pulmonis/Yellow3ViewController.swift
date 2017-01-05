@@ -27,11 +27,6 @@ class Yellow3ViewController: ListedViewController {
         super.viewDidAppear(_ : animated)
         yIncreasedPreventerDosage.becomeFirstResponder()
     }
-    
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
 
     override func saveField() {
         if (yIncreasedPreventerDosage != nil) {

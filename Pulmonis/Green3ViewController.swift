@@ -27,11 +27,6 @@ class Green3ViewController: ListedViewController {
         super.viewDidAppear(_ : animated)
         gPuffsNight.becomeFirstResponder()
     }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
 
     override func saveField() {
         if (gPuffsNight != nil) {

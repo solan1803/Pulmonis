@@ -27,11 +27,6 @@ class Red2ViewController: ListedViewController {
         rMinimumPeakFlow.becomeFirstResponder()
     }
     
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
-
     @IBAction func save(_ sender: Any) {
         
         ListedViewController.patientData[rMinimumPeakFlowStr] = rMinimumPeakFlow.text

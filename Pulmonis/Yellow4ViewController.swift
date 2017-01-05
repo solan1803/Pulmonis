@@ -27,10 +27,6 @@ class Yellow4ViewController: ListedViewController {
         yIncreasedPreventerFrequency.becomeFirstResponder()
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
-    
     override func saveField() {
         if (yIncreasedPreventerFrequency != nil) {
             ListedViewController.patientData[yIncreasedPreventerFrequencyStr] = yIncreasedPreventerFrequency.text

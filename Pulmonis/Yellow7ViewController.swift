@@ -28,10 +28,6 @@ class Yellow7ViewController: ListedViewController {
         yTabletDuration.becomeFirstResponder()
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
-    
     override func saveField() {
         if (yTabletDuration != nil) {
             ListedViewController.patientData[yTabletDurationStr] = yTabletDuration.text

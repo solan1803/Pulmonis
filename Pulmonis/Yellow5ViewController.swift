@@ -27,10 +27,6 @@ class Yellow5ViewController: ListedViewController {
         super.viewDidAppear(_ : animated)
         yIncreasedRelieverFrequency.becomeFirstResponder()
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
     
     override func saveField() {
         if (yIncreasedRelieverFrequency != nil) {

@@ -105,6 +105,8 @@
 		5BE313151E1290D50094C7EF /* PushNotifications.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BE313141E1290D50094C7EF /* PushNotifications.storyboard */; };
 		5BE3131B1E1295CE0094C7EF /* PushNotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE3131A1E1295CE0094C7EF /* PushNotificationsViewController.swift */; };
 		5BFFCB0F1E1DC0AF001AE48A /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFFCB0E1E1DC0AF001AE48A /* DateExtensions.swift */; };
+		5BFFCB151E1DCB9C001AE48A /* KeyboardExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFFCB141E1DCB9C001AE48A /* KeyboardExtensions.swift */; };
+		5BFFCB191E1DCBD5001AE48A /* ApplicationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFFCB181E1DCBD4001AE48A /* ApplicationExtensions.swift */; };
 		71987C5B1DB678B300248AE1 /* EmergencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71987C5A1DB678B300248AE1 /* EmergencyViewController.swift */; };
 		719D0C7F1DBA2E66008F5F97 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 719D0C7D1DBA2E66008F5F97 /* Main.storyboard */; };
 /* End PBXBuildFile section */
@@ -265,6 +267,8 @@
 		5BE313141E1290D50094C7EF /* PushNotifications.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PushNotifications.storyboard; sourceTree = "<group>"; };
 		5BE3131A1E1295CE0094C7EF /* PushNotificationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushNotificationsViewController.swift; sourceTree = "<group>"; };
 		5BFFCB0E1E1DC0AF001AE48A /* DateExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtensions.swift; sourceTree = "<group>"; };
+		5BFFCB141E1DCB9C001AE48A /* KeyboardExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardExtensions.swift; sourceTree = "<group>"; };
+		5BFFCB181E1DCBD4001AE48A /* ApplicationExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationExtensions.swift; sourceTree = "<group>"; };
 		71987C5A1DB678B300248AE1 /* EmergencyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmergencyViewController.swift; sourceTree = "<group>"; };
 		719D0C7E1DBA2E66008F5F97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Pulmonis/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -331,6 +335,8 @@
 			children = (
 				5B1CABAB1E1C004800DF8E7E /* StringExtensions.swift */,
 				5BFFCB0E1E1DC0AF001AE48A /* DateExtensions.swift */,
+				5BFFCB141E1DCB9C001AE48A /* KeyboardExtensions.swift */,
+				5BFFCB181E1DCBD4001AE48A /* ApplicationExtensions.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -785,6 +791,7 @@
 				5B82CAD81DC91527003930FB /* TaskTableViewCell.swift in Sources */,
 				5B82CAC01DC8ECE4003930FB /* SupportViewController.swift in Sources */,
 				5B1CABA81E1BF19700DF8E7E /* ReminderTableViewCell.swift in Sources */,
+				5BFFCB191E1DCBD5001AE48A /* ApplicationExtensions.swift in Sources */,
 				28A53A881DDDFC7100595F80 /* PatientDataFields.swift in Sources */,
 				2899A9411DB519D6004306DF /* MedicineViewController.swift in Sources */,
 				2E572E951E17EB2000C9D1F9 /* PollenChartViewController.swift in Sources */,
@@ -792,6 +799,7 @@
 				2834399E1DC2195900857437 /* Plist.swift in Sources */,
 				5B82CAC41DC8EE07003930FB /* SupportRecord+CoreDataProperties.swift in Sources */,
 				5BB9E4421E13FFB800B5892A /* RemindersTableViewController.swift in Sources */,
+				5BFFCB151E1DCB9C001AE48A /* KeyboardExtensions.swift in Sources */,
 				5B82CAD31DC912CB003930FB /* PendingTask+CoreDataClass.swift in Sources */,
 				5B1CABAC1E1C004800DF8E7E /* StringExtensions.swift in Sources */,
 				28A336CC1DDB586C005D8626 /* Green4ViewController.swift in Sources */,

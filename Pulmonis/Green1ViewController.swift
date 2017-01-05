@@ -34,10 +34,6 @@ class Green1ViewController: ListedViewController {
         gPreventerInhalerColour.becomeFirstResponder()
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
-    
     @IBAction func textFieldPrimaryActionTriggered(_ sender: Any) {
         performSegue(withIdentifier: "segue1", sender: nil)
     }
