@@ -232,4 +232,36 @@ class PulmonisDoctorInputUITest: XCTestCase {
         
     }
     
+    func testDoctorInputUIReturnPerformsSegue() {
+        
+        
+        let app = XCUIApplication()
+        app.navigationBars["Pulmonis.View"].buttons["⚙"].tap()
+
+        app.tables.staticTexts["Doctor's Input"].tap()
+        
+        let returnButton = app.buttons["Return"]
+        returnButton.tap()
+        app.typeText("\n")
+        app.otherElements.containing(.navigationBar, identifier:"Page 2 of 15").children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.swipeLeft()
+        app.otherElements.containing(.navigationBar, identifier:"Page 3 of 15").children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.swipeLeft()
+        returnButton.tap()
+        app.typeText("\n")
+        app.otherElements.containing(.navigationBar, identifier:"Page 5 of 15").children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.swipeLeft()
+        app.otherElements.containing(.navigationBar, identifier:"Page 6 of 15").children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.swipeLeft()
+        app.otherElements.containing(.navigationBar, identifier:"Page 7 of 15").children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.swipeLeft()
+        app.otherElements.containing(.navigationBar, identifier:"Page 8 of 15").children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.swipeLeft()
+        app.otherElements.containing(.navigationBar, identifier:"Page 9 of 15").children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.swipeLeft()
+        app.otherElements.containing(.navigationBar, identifier:"Page 10 of 15").children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.swipeLeft()
+        app.otherElements.containing(.navigationBar, identifier:"Page 11 of 15").children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.swipeLeft()
+        app.otherElements.containing(.navigationBar, identifier:"Page 12 of 15").children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.swipeLeft()
+        app.otherElements.containing(.navigationBar, identifier:"Page 13 of 15").children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.swipeLeft()
+        app.otherElements.containing(.navigationBar, identifier:"Page 14 of 15").children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.swipeLeft()
+        app.buttons["Save"].tap()
+        
+        
+        
+        
+    }
+    
 }
