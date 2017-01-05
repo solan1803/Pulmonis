@@ -107,4 +107,42 @@ class PulmonisUITests: XCTestCase {
         XCUIApplication().buttons["LEARN"].tap()
         
     }
+    
+    func testStatsLoading() {
+        XCUIDevice.shared().orientation = .portrait
+        
+        let app = XCUIApplication()
+        app.buttons["STATS"].tap()
+        app.navigationBars["Statistics Selection"].children(matching: .button).matching(identifier: "Back").element(boundBy: 0).tap()
+        
+    }
+    
+    func testRemindersSettings() {
+        XCUIDevice.shared().orientation = .portrait
+        
+        let app = XCUIApplication()
+        app.navigationBars["Pulmonis.View"].buttons["⚙"].tap()
+        
+        let tablesQuery = app.tables
+        tablesQuery.staticTexts["Reminders"].tap()
+        
+        let button = app.buttons["Button"]
+        button.tap()
+        
+        let morningReminderNoRecordInDoctorSInputSwitch = tablesQuery.switches["Morning reminder, No record in doctor's input."]
+        morningReminderNoRecordInDoctorSInputSwitch.tap()
+        
+        let eveningReminderNoRecordInDoctorSInputSwitch = tablesQuery.switches["Evening reminder, No record in doctor's input."]
+        eveningReminderNoRecordInDoctorSInputSwitch.tap()
+        
+        let backButton = app.navigationBars["Reminders"].children(matching: .button).matching(identifier: "Back").element(boundBy: 0)
+        backButton.tap()
+        button.tap()
+        morningReminderNoRecordInDoctorSInputSwitch.tap()
+        eveningReminderNoRecordInDoctorSInputSwitch.tap()
+        backButton.tap()
+        app.navigationBars["Pulmonis.PushNotificationsView"].buttons["Settings"].tap()
+        app.navigationBars["Settings"].children(matching: .button).matching(identifier: "Back").element(boundBy: 0).tap()
+        
+    }
 }
