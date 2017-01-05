@@ -104,6 +104,7 @@
 		5BD2AFB91E11D036008FA668 /* Critical.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BD2AFB81E11D036008FA668 /* Critical.storyboard */; };
 		5BE313151E1290D50094C7EF /* PushNotifications.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BE313141E1290D50094C7EF /* PushNotifications.storyboard */; };
 		5BE3131B1E1295CE0094C7EF /* PushNotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE3131A1E1295CE0094C7EF /* PushNotificationsViewController.swift */; };
+		5BFFCB0F1E1DC0AF001AE48A /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFFCB0E1E1DC0AF001AE48A /* DateExtensions.swift */; };
 		71987C5B1DB678B300248AE1 /* EmergencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71987C5A1DB678B300248AE1 /* EmergencyViewController.swift */; };
 		719D0C7F1DBA2E66008F5F97 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 719D0C7D1DBA2E66008F5F97 /* Main.storyboard */; };
 /* End PBXBuildFile section */
@@ -263,6 +264,7 @@
 		5BD2AFB81E11D036008FA668 /* Critical.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Critical.storyboard; sourceTree = "<group>"; };
 		5BE313141E1290D50094C7EF /* PushNotifications.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PushNotifications.storyboard; sourceTree = "<group>"; };
 		5BE3131A1E1295CE0094C7EF /* PushNotificationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushNotificationsViewController.swift; sourceTree = "<group>"; };
+		5BFFCB0E1E1DC0AF001AE48A /* DateExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtensions.swift; sourceTree = "<group>"; };
 		71987C5A1DB678B300248AE1 /* EmergencyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmergencyViewController.swift; sourceTree = "<group>"; };
 		719D0C7E1DBA2E66008F5F97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Pulmonis/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -328,6 +330,7 @@
 			isa = PBXGroup;
 			children = (
 				5B1CABAB1E1C004800DF8E7E /* StringExtensions.swift */,
+				5BFFCB0E1E1DC0AF001AE48A /* DateExtensions.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -769,6 +772,7 @@
 				5BA7807C1E157C4E00DAA367 /* BreathRecordTableViewCell.swift in Sources */,
 				28A336CA1DDB585C005D8626 /* Green3ViewController.swift in Sources */,
 				5B82CADA1DC918C1003930FB /* PendingTasksTableViewController.swift in Sources */,
+				5BFFCB0F1E1DC0AF001AE48A /* DateExtensions.swift in Sources */,
 				28A53A861DDDF64A00595F80 /* ColourFile.swift in Sources */,
 				5B82CABA1DC8CA85003930FB /* PeakFlowModel.xcdatamodeld in Sources */,
 				28A336D21DDB58D6005D8626 /* Yellow1ViewController.swift in Sources */,
