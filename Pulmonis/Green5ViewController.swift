@@ -27,10 +27,6 @@ class Green5ViewController: ListedViewController {
         gPuffsReliever.becomeFirstResponder()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
-
     override func saveField() {
         if (gPuffsReliever != nil) {
             ListedViewController.patientData[gPuffsRelieverStr] = gPuffsReliever.text

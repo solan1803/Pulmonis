@@ -147,11 +147,6 @@ class PlotBreathGraphViewController: UIViewController {
         self.performSegue(withIdentifier: "showAsthmaStatus", sender: self)
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
     
     /*
      // MARK: - Navigation

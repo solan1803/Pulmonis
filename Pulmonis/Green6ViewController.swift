@@ -27,10 +27,6 @@ class Green6ViewController: ListedViewController {
         gOtherMedicine.becomeFirstResponder()
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
-    
     override func saveField() {
         if (gOtherMedicine != nil) {
             ListedViewController.patientData[gOtherMedicineStr] = gOtherMedicine.text

@@ -54,19 +54,7 @@ class MedicineViewController: UIViewController, UIPopoverPresentationControllerD
         }
         dosageLabel.text = "\(dosageNumber) tablets"
         medicineAlertLabel.text =  "Please take \(dosageNumber) x 5mg of prednisolone tablets immediately and again every morning for \(days) days or until you are fully better."
-        /*
-        let fixedWidth = textView.frame.size.width
-        textView.sizeThatFits(CGSize(width: fixedWidth, height: CGFloat.greatestFiniteMagnitude))
-        let newSize = textView.sizeThatFits(CGSize(width: fixedWidth, height: CGFloat.greatestFiniteMagnitude))
-        var newFrame = textView.frame
-        newFrame.size = CGSize(width: max(newSize.width, fixedWidth), height: newSize.height)
-        textView.frame = newFrame;
-        */
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
     }
     
     @IBAction func showNotePopover(_ sender: AnyObject) {

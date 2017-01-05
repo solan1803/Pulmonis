@@ -27,10 +27,6 @@ class Green2ViewController: ListedViewController {
         super.viewDidAppear(_ : animated)
         gPuffsMorning.becomeFirstResponder()
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
     
     override func saveField() {
         if (gPuffsMorning != nil) {

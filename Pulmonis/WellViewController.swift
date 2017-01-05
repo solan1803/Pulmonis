@@ -15,11 +15,6 @@ class WellViewController: UIViewController {
         super.viewDidLoad()
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
     
     @IBAction func backToMainPage(_ sender: Any) {
         navigationController!.popToViewController(navigationController!.viewControllers[0], animated: true)

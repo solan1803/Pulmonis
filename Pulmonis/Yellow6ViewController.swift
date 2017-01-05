@@ -26,10 +26,6 @@ class Yellow6ViewController: ListedViewController {
         super.viewDidAppear(_ : animated)
         yTabletDosage.becomeFirstResponder()
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
     
     override func saveField() {
         if (yTabletDosage != nil) {

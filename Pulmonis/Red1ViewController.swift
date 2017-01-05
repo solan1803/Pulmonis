@@ -27,10 +27,6 @@ class Red1ViewController: ListedViewController {
         rRelieverFrequencyLimit.becomeFirstResponder()
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
-    
     override func saveField() {
         if (rRelieverFrequencyLimit != nil) {
             ListedViewController.patientData[rRelieverFrequencyLimitStr] = rRelieverFrequencyLimit.text

@@ -28,11 +28,6 @@ class Yellow2ViewController: ListedViewController {
         yMinimumPeakFlow.becomeFirstResponder()
     }
     
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
-    
     override func saveField() {
         if (yMinimumPeakFlow != nil) {
             ListedViewController.patientData[yMinimumPeakFlowStr] = yMinimumPeakFlow.text
