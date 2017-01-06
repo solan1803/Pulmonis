@@ -32,9 +32,7 @@ class SupportViewController: UIViewController {
     }
     
     @IBAction func confirmLogInhaler(_ sender: UIButton) {
-        let text = (supportTextField.text! as NSString).integerValue
-        let usage = Int16(text)
-        let refreshAlert = UIAlertController(title: "Please confirm inhaler usage:", message: "Are you sure \(usage)?", preferredStyle: UIAlertControllerStyle.alert)
+        let refreshAlert = UIAlertController(title: "Please confirm reliever inhaler usage:", message: "Are you sure?", preferredStyle: UIAlertControllerStyle.alert)
         
         refreshAlert.addAction(UIAlertAction(title: "Yes", style: .default, handler: { (action: UIAlertAction!) in
             print("Handle Ok logic here")
@@ -52,8 +50,18 @@ class SupportViewController: UIViewController {
     
     func saveLogInhalerValue() {
         print("[DEBUG] Inside saveLogInhalerValue")
-        let text = (supportTextField.text! as NSString).integerValue
-        let val = Int16(text)
+        var val : Int16 = 3 // default 3 puffs
+        if let plist = Plist(name: "PatientData") {
+            let dict = plist.getMutablePlistFile()!
+            
+            if let gPuffsR = dict[gPuffsRelieverStr] {
+                if let gPuffsRString = gPuffsR as? String {
+                    if gPuffsRString != "" {
+                        val = Int16(gPuffsRString)!
+                    }
+                }
+            }
+        }
         if let support_record = NSEntityDescription.insertNewObject(forEntityName: "SupportRecord", into: managedObjectContext!) as? SupportRecord {
             support_record.date = NSDate()
             support_record.value = val
@@ -63,19 +71,24 @@ class SupportViewController: UIViewController {
         } catch let error {
             print(error)
         }
-        let request: NSFetchRequest<SupportRecord> = SupportRecord.fetchRequest()
-        let result = try? managedObjectContext!.fetch(request)
         
-        for r in result! {
-            print("DATE: ")
-            print(r.date!)
-            print("VALUE: ")
-            print(r.value)
-        }
+        checkCondition()
         
-        //variables to store threshold values from plist
-        var worseVal: Int16 = 2
-        var criticalVal: Int16 = 5
+    }
+    
+    func checkCondition() {
+        let yrequest: NSFetchRequest<SupportRecord> = SupportRecord.fetchRequest()
+        let sortDescriptor = NSSortDescriptor(key: "date", ascending: false)
+        yrequest.sortDescriptors = [sortDescriptor]
+        let calendar = NSCalendar.current
+        let sevenDaysAgo = Calendar.current.date(byAdding: .day, value: -7, to: Date())
+        var startDate = calendar.startOfDay(for: sevenDaysAgo!)
+        let predicate = NSPredicate(format:"(date >= %@)", startDate as NSDate)
+        yrequest.predicate = predicate
+        let yresult = try? managedObjectContext!.fetch(yrequest)
+        
+        var yWeeklyReliever: Int16 = 5
+        var rHoursReliever: Int16 = 2
         
         if let plist = Plist(name: "PatientData") {
             let dict = plist.getMutablePlistFile()!
@@ -83,7 +96,7 @@ class SupportViewController: UIViewController {
             if let yWeeklyRelieverUses = dict[yWeeklyRelieverUsesStr] {
                 if let yWeeklyRelieverUsesString = yWeeklyRelieverUses as? String {
                     if yWeeklyRelieverUsesString != "" {
-                        worseVal = Int16(yWeeklyRelieverUsesString)!
+                        yWeeklyReliever = Int16(yWeeklyRelieverUsesString)!
                     }
                 }
             }
@@ -91,7 +104,7 @@ class SupportViewController: UIViewController {
             if let rRelieverFrequencyLimit = dict[rRelieverFrequencyLimitStr] {
                 if let rRelieverFrequencyLimitString = rRelieverFrequencyLimit as? String {
                     if rRelieverFrequencyLimitString != "" {
-                        criticalVal = Int16(rRelieverFrequencyLimitString)!
+                        rHoursReliever = Int16(rRelieverFrequencyLimitString)!
                     }
                 }
             }
@@ -99,16 +112,23 @@ class SupportViewController: UIViewController {
             //Error with opening the PList
         }
         
+        let rRequest: NSFetchRequest<SupportRecord> = SupportRecord.fetchRequest()
+        rRequest.sortDescriptors = [sortDescriptor]
+        let backHours = Calendar.current.date(byAdding: .hour, value: -1 * Int(rHoursReliever), to: Date())
+        startDate = calendar.startOfDay(for: backHours!)
+        let rPredicate = NSPredicate(format:"(date >= %@)", startDate as NSDate)
+        rRequest.predicate = rPredicate
+        let rResult = try? managedObjectContext!.fetch(rRequest)
+        
         /* Karow and Ziyi need to access plist to get the correct threshold value for patient. */
-        if (val < worseVal) { //Action plan 'worse' value
-            performSegue(withIdentifier: "wellSegue", sender: self)
-        } else if (val < criticalVal) { // Action Plan 'critical' value
+        if (Int16(rResult!.count) > 1) { // Action Plan 'critical' value
+            performSegue(withIdentifier: "criticalSegue", sender: self)
+        } else if (Int16(yresult!.count) > yWeeklyReliever) {
             performSegue(withIdentifier: "worseSegue", sender: self)
         } else {
-            performSegue(withIdentifier: "criticalSegue", sender: self)
+            navigationController!.popToViewController(navigationController!.viewControllers[0], animated: true)
         }
     }
-    
 
     /*
     // MARK: - Navigation

@@ -20,69 +20,13 @@ class PulmonisUITests: XCTestCase {
         continueAfterFailure = false
         // UI tests must launch the application that they test. Doing this in setup will make sure it happens for each test method.
         XCUIApplication().launch()
-
+        
         // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
     }
     
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
-    }
-    
-    func testPendingTasksTable() {
-        
-        let app = XCUIApplication()
-        XCUIApplication().buttons["No current pending tasks"].tap()
-        let cellCount = app.tables.cells.count + 2
-        app.navigationBars["Pending Tasks"].children(matching: .button).matching(identifier: "Back").element(boundBy: 0).tap()
-        app.buttons["ACTION PLAN"].tap()
-        app.buttons["Support"].tap()
-        
-        let textField = app.otherElements.containing(.navigationBar, identifier:"Pulmonis.SupportView").children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element(boundBy: 1).children(matching: .other).element.children(matching: .textField).element
-        
-        textField.tap()
-        textField.typeText("3")
-        app.buttons["Next"].tap()
-        app.alerts["Please confirm inhaler usage:"].buttons["Yes"].tap()
-        
-        XCUIApplication().buttons["Button"].tap()
-        
-        app.buttons["I do not have this"].tap()
-        app.buttons["Talk to your GP"].tap()
-        XCTAssertEqual(cellCount, app.tables.cells.count, "Number of pending tasks incorrect!")
-        
-        
-        let tablesQuery = app.tables
-        let talkToYourGpStaticText = tablesQuery.staticTexts["Talk to your GP"]
-        talkToYourGpStaticText.swipeLeft()
-        tablesQuery.buttons["Delete"].tap()
-        tablesQuery.staticTexts["No record of dosage, contact GP."].swipeLeft()
-        tablesQuery.buttons["Delete"].tap()
-        
-    }
-    
-    func testWellSegueFromSupport() {
-        
-        let app = XCUIApplication()
-        app.buttons["ACTION PLAN"].tap()
-        app.buttons["Support"].tap()
-        
-        let textField = app.otherElements.containing(.navigationBar, identifier:"Pulmonis.SupportView").children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element(boundBy: 1).children(matching: .other).element.children(matching: .textField).element
-        textField.tap()
-        textField.typeText("1")
-        app.buttons["Next"].tap()
-        
-    }
-    
-    func testCriticalSegueFromSupport() {
-        let app = XCUIApplication()
-        app.buttons["ACTION PLAN"].tap()
-        app.buttons["Support"].tap()
-        
-        let textField = app.otherElements.containing(.navigationBar, identifier:"Pulmonis.SupportView").children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element(boundBy: 1).children(matching: .other).element.children(matching: .textField).element
-        textField.tap()
-        textField.typeText("6")
-        app.buttons["Next"].tap()
     }
     
     func testEmergencyActionLoading() {
@@ -118,16 +62,13 @@ class PulmonisUITests: XCTestCase {
     }
     
     func testRemindersSettings() {
-        XCUIDevice.shared().orientation = .portrait
         
         let app = XCUIApplication()
         app.navigationBars["Pulmonis.View"].buttons["⚙"].tap()
         
         let tablesQuery = app.tables
-        tablesQuery.staticTexts["Reminders"].tap()
-        
-        let button = app.buttons["Button"]
-        button.tap()
+        let remindersStaticText = tablesQuery.staticTexts["Reminders"]
+        remindersStaticText.tap()
         
         let morningReminderNoRecordInDoctorSInputSwitch = tablesQuery.switches["Morning reminder, No record in doctor's input."]
         morningReminderNoRecordInDoctorSInputSwitch.tap()
@@ -135,14 +76,14 @@ class PulmonisUITests: XCTestCase {
         let eveningReminderNoRecordInDoctorSInputSwitch = tablesQuery.switches["Evening reminder, No record in doctor's input."]
         eveningReminderNoRecordInDoctorSInputSwitch.tap()
         
-        let backButton = app.navigationBars["Reminders"].children(matching: .button).matching(identifier: "Back").element(boundBy: 0)
-        backButton.tap()
-        button.tap()
+        let settingsButton = app.navigationBars["Reminders"].buttons["Settings"]
+        settingsButton.tap()
+        remindersStaticText.tap()
         morningReminderNoRecordInDoctorSInputSwitch.tap()
         eveningReminderNoRecordInDoctorSInputSwitch.tap()
-        backButton.tap()
-        app.navigationBars["Pulmonis.PushNotificationsView"].buttons["Settings"].tap()
+        settingsButton.tap()
         app.navigationBars["Settings"].children(matching: .button).matching(identifier: "Back").element(boundBy: 0).tap()
+        
         
     }
 }

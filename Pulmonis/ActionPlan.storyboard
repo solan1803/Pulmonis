@@ -34,62 +34,57 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Shiny Blue" translatesAutoresizingMaskIntoConstraints="NO" id="feJ-0E-IVy">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="btD-m9-aQh">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="btD-m9-aQh">
                                 <rect key="frame" x="20" y="64" width="374" height="652"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="zSj-eV-ky9">
-                                        <rect key="frame" x="10" y="0.0" width="354" height="461"/>
+                                        <rect key="frame" x="20.666666666666657" y="0.0" width="332.66666666666663" height="409.33333333333331"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How many times are you using this inhaler?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vf9-4s-cAo">
-                                                <rect key="frame" x="0.0" y="0.0" width="354" height="249.33333333333331"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Did you use your reliever inhaler?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vf9-4s-cAo">
+                                                <rect key="frame" x="0.0" y="0.0" width="332.66666666666663" height="197.66666666666669"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
                                                 <color key="textColor" red="0.022888517010000001" green="0.293092519" blue="0.37249320749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Inhaler" translatesAutoresizingMaskIntoConstraints="NO" id="fYQ-JE-vnU">
-                                                <rect key="frame" x="52" y="259.33333333333326" width="250" height="201.66666666666669"/>
+                                                <rect key="frame" x="41.333333333333343" y="207.66666666666669" width="250.00000000000003" height="201.66666666666663"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="fYQ-JE-vnU" secondAttribute="height" multiplier="250:201" id="bpc-2K-qcw"/>
                                                 </constraints>
                                             </imageView>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="YSi-9A-CI7">
-                                        <rect key="frame" x="57.666666666666686" y="561" width="259" height="91"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="YSi-9A-CI7">
+                                        <rect key="frame" x="114.66666666666667" y="509.33333333333343" width="145" height="142.66666666666657"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="RZP-ad-Em3">
-                                                <rect key="frame" x="0.0" y="0.0" width="259" height="31"/>
-                                                <subviews>
-                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="y2N-qn-4hh">
-                                                        <rect key="frame" x="0.0" y="0.0" width="35" height="31"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="width" constant="35" id="Uu4-gg-B9E"/>
-                                                        </constraints>
-                                                        <nil key="textColor"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
-                                                    </textField>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="times a week or more" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="18S-qD-Ian">
-                                                        <rect key="frame" x="50" y="0.0" width="209" height="31"/>
-                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
-                                                        <color key="textColor" red="0.022888517010000001" green="0.293092519" blue="0.37249320749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                </subviews>
-                                            </stackView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BCQ-fl-bw2">
-                                                <rect key="frame" x="97" y="51" width="65" height="40"/>
+                                                <rect key="frame" x="0.0" y="51.333333333333258" width="65" height="40"/>
                                                 <color key="backgroundColor" red="0.1202454641" green="0.4030750394" blue="0.48271960019999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="jJE-1g-3hX"/>
                                                     <constraint firstAttribute="width" constant="65" id="wcd-CU-z58"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
-                                                <state key="normal" title="Next">
+                                                <state key="normal" title="Yes">
                                                     <color key="titleColor" red="0.225386858" green="0.83328109979999998" blue="0.50258815290000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="confirmLogInhaler:" destination="Z6G-0c-4j3" eventType="touchUpInside" id="393-Up-mHg"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hE6-0E-h4g">
+                                                <rect key="frame" x="85" y="51.333333333333258" width="60.000000000000028" height="40"/>
+                                                <color key="backgroundColor" red="0.1202454641" green="0.4030750394" blue="0.48271960019999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="60" id="2BN-74-yAc"/>
+                                                    <constraint firstAttribute="height" constant="40" id="iQE-GV-lHh"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                                <state key="normal" title="No">
+                                                    <color key="titleColor" red="0.225386858" green="0.83328109979999998" blue="0.50258815290000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="3Pd-7x-elx" kind="show" id="JRN-Kr-btC"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -110,15 +105,22 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="supportTextField" destination="y2N-qn-4hh" id="pqy-J2-jma"/>
                         <segue destination="Ue3-vz-oK5" kind="show" identifier="worseSegue" id="A2b-Kk-BBz"/>
-                        <segue destination="eJF-y6-mVT" kind="show" identifier="wellSegue" id="psB-pK-PBE"/>
                         <segue destination="8dP-tr-gyF" kind="show" identifier="criticalSegue" id="uQB-5x-OwP"/>
+                        <segue destination="3Pd-7x-elx" kind="show" identifier="mainSegue" id="pw2-fO-Y5C"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Imr-Mq-rlk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4223.1999999999998" y="599.55022488755628"/>
+        </scene>
+        <!--Main-->
+        <scene sceneID="hLv-33-d61">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" id="3Pd-7x-elx" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zGL-DS-vwD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4891" y="747"/>
         </scene>
         <!--Worse-->
         <scene sceneID="6sl-uN-6lK">
@@ -126,15 +128,7 @@
                 <viewControllerPlaceholder storyboardName="Worse" id="Ue3-vz-oK5" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hki-2a-3Bs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4800" y="573.91304347826087"/>
-        </scene>
-        <!--Well-->
-        <scene sceneID="5rn-Pc-dop">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Well" id="eJF-y6-mVT" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="eQo-V2-Aku" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4788.8000000000002" y="448.87556221889059"/>
+            <point key="canvasLocation" x="4797" y="547"/>
         </scene>
         <!--Critical-->
         <scene sceneID="U08-vE-BoR">
@@ -142,7 +136,7 @@
                 <viewControllerPlaceholder storyboardName="Critical" id="8dP-tr-gyF" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tHe-xA-lnC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4854" y="696"/>
+            <point key="canvasLocation" x="4801" y="599"/>
         </scene>
         <!--Peak Flow View Controller-->
         <scene sceneID="FhW-wY-3gO">
@@ -293,7 +287,7 @@
                     <toolbarItems/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="414" height="736"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="HG6-OJ-dWo">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="HG6-OJ-dWo">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -312,4 +306,7 @@
         <image name="PeakFlowMeter" width="399" height="193"/>
         <image name="Shiny Blue" width="750" height="1334"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="pw2-fO-Y5C"/>
+    </inferredMetricsTieBreakers>
 </document>
