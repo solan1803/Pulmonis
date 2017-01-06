@@ -90,7 +90,7 @@ class PulmonisSupportUITests: XCTestCase {
         tablesQuery.buttons["Delete"].tap()
         tablesQuery.staticTexts["No record of dosage, contact GP."].swipeLeft()
         tablesQuery.buttons["Delete"].tap()
-        
+        app.navigationBars["Pending Tasks"].children(matching: .button).matching(identifier: "Back").element(boundBy: 0).tap()
     }
     
     func testWorseSegueTaken() {
@@ -125,7 +125,7 @@ class PulmonisSupportUITests: XCTestCase {
         let talkToYourGpStaticText = tablesQuery.staticTexts["Talk to your GP"]
         talkToYourGpStaticText.swipeLeft()
         tablesQuery.buttons["Delete"].tap()
-        
+        app.navigationBars["Pending Tasks"].children(matching: .button).matching(identifier: "Back").element(boundBy: 0).tap()
     }
     
 }
