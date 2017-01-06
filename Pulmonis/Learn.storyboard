@@ -40,13 +40,13 @@
                                                     <rect key="frame" x="108" y="21" width="259" height="106.5"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="General Knowledge" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h8l-aU-MB3">
-                                                            <rect key="frame" x="0.0" y="0.0" width="259" height="29.5"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="259" height="30.5"/>
                                                             <fontDescription key="fontDescription" name="LiberationSans-Bold" family="Liberation Sans" pointSize="21"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Learn more about Asthma in general. Find out what it really is and what the treatment does." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K9K-kh-fSD">
-                                                            <rect key="frame" x="0.0" y="8.5" width="259" height="98"/>
+                                                            <rect key="frame" x="0.0" y="9.5" width="259" height="97"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -88,7 +88,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A few simple exercises to help you breathe correctly. Sit back, relax and aerate your lungs." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wee-5S-2Ad">
-                                                            <rect key="frame" x="0.0" y="10.5" width="259" height="96"/>
+                                                            <rect key="frame" x="0.0" y="10" width="259" height="96.5"/>
                                                             <fontDescription key="fontDescription" name="LiberationSans" family="Liberation Sans" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -118,13 +118,13 @@
                                                     <rect key="frame" x="108" y="21" width="259" height="106.5"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Inhaler Technique" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ebX-d6-KdP">
-                                                            <rect key="frame" x="0.0" y="0.0" width="178.5" height="31"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="165" height="31"/>
                                                             <fontDescription key="fontDescription" name="LiberationSans-Bold" family="Liberation Sans" pointSize="21"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Learn how to properly use your inhaler through this simple and illustrated tutorial." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hro-Kh-yoN">
-                                                            <rect key="frame" x="0.0" y="10.5" width="239.5" height="96"/>
+                                                            <rect key="frame" x="0.0" y="10" width="241.5" height="96.5"/>
                                                             <fontDescription key="fontDescription" name="LiberationSans" family="Liberation Sans" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -163,7 +163,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Learn how to use the app and all its useful functionalities to improve your asthma." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uSL-v0-Ufp">
-                                                            <rect key="frame" x="0.0" y="10.5" width="259" height="96"/>
+                                                            <rect key="frame" x="0.0" y="10" width="259" height="96.5"/>
                                                             <fontDescription key="fontDescription" name="LiberationSans" family="Liberation Sans" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -202,7 +202,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="As a doctor, learn how to use the app to help improve your patients asthma." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eqX-Zv-B2f">
-                                                            <rect key="frame" x="0.0" y="10.5" width="259" height="96"/>
+                                                            <rect key="frame" x="0.0" y="10" width="259" height="96.5"/>
                                                             <fontDescription key="fontDescription" name="LiberationSans" family="Liberation Sans" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -223,6 +223,9 @@
                                                 <constraint firstItem="7Pd-cY-FDT" firstAttribute="top" secondItem="4p7-QT-DHA" secondAttribute="topMargin" constant="13" id="ggZ-EH-hfz"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="gdA-WM-XeH" kind="show" id="W3x-oa-dwh"/>
+                                        </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -236,6 +239,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lgy-NG-Fcp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1596" y="1192"/>
+        </scene>
+        <!--easterEgg-->
+        <scene sceneID="aMQ-LC-Pel">
+            <objects>
+                <viewControllerPlaceholder storyboardName="PushNotifications" referencedIdentifier="easterEgg" id="gdA-WM-XeH" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s7K-hA-osN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2191" y="956"/>
         </scene>
     </scenes>
     <resources>

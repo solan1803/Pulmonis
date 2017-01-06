@@ -54,4 +54,36 @@ class PushNotificationsViewController: UIViewController {
             }
         }
     }
+    
+    @IBAction func setWorseRecords(_ sender: UIButton) {
+        let day = NSCalendar.current.date(byAdding: .day, value: -1, to: Date())
+        addSupportRecord(date: day! as NSDate)
+        addSupportRecord(date: day! as NSDate)
+        addSupportRecord(date: day! as NSDate)
+        addSupportRecord(date: day! as NSDate)
+        addSupportRecord(date: day! as NSDate)
+        addSupportRecord(date: day! as NSDate)
+    }
+    
+    func addSupportRecord(date: NSDate) {
+        if let support_record = NSEntityDescription.insertNewObject(forEntityName: "SupportRecord", into: managedObjectContext!) as? SupportRecord {
+            support_record.date = date
+            support_record.value = 3
+        }
+        do {
+            try managedObjectContext?.save()
+        } catch let error {
+            print(error)
+        }
+    }
+    
+    @IBAction func deleteAllSupportRecords(_ sender: UIButton) {
+        let fetch = NSFetchRequest<NSFetchRequestResult>(entityName: "SupportRecord")
+        let request = NSBatchDeleteRequest(fetchRequest: fetch)
+        do {
+            try managedObjectContext?.execute(request)
+        } catch {
+            
+        }
+    }
 }

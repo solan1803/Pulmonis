@@ -50,6 +50,7 @@
 		5B3A1DBD1E0D7A76009800B8 /* PlotBreathGraph.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B3A1DBC1E0D7A76009800B8 /* PlotBreathGraph.storyboard */; };
 		5B4AA88E1E15887600F162AF /* PulmonisAsthmaJournalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4AA88D1E15887600F162AF /* PulmonisAsthmaJournalUITests.swift */; };
 		5B4AA89A1E15BA6900F162AF /* WorsePopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4AA8991E15BA6900F162AF /* WorsePopoverViewController.swift */; };
+		5B4DAD371E2032F8003E708D /* PulmonisSupportUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4DAD361E2032F8003E708D /* PulmonisSupportUITests.swift */; };
 		5B5138EA1E1AFA1A00260638 /* CheckAsthmaStatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5138E91E1AFA1A00260638 /* CheckAsthmaStatusViewController.swift */; };
 		5B5138EE1E1B0CF400260638 /* PulmonisPeakFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5138ED1E1B0CF400260638 /* PulmonisPeakFlow.swift */; };
 		5B6B434F1DC38E770071AC66 /* Learn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B6B434E1DC38E770071AC66 /* Learn.storyboard */; };
@@ -212,6 +213,7 @@
 		5B3A1DBC1E0D7A76009800B8 /* PlotBreathGraph.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PlotBreathGraph.storyboard; sourceTree = "<group>"; };
 		5B4AA88D1E15887600F162AF /* PulmonisAsthmaJournalUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PulmonisAsthmaJournalUITests.swift; sourceTree = "<group>"; };
 		5B4AA8991E15BA6900F162AF /* WorsePopoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorsePopoverViewController.swift; sourceTree = "<group>"; };
+		5B4DAD361E2032F8003E708D /* PulmonisSupportUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PulmonisSupportUITests.swift; sourceTree = "<group>"; };
 		5B5138E91E1AFA1A00260638 /* CheckAsthmaStatusViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckAsthmaStatusViewController.swift; sourceTree = "<group>"; };
 		5B5138ED1E1B0CF400260638 /* PulmonisPeakFlow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PulmonisPeakFlow.swift; sourceTree = "<group>"; };
 		5B6B434E1DC38E770071AC66 /* Learn.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Learn.storyboard; sourceTree = "<group>"; };
@@ -541,6 +543,7 @@
 			isa = PBXGroup;
 			children = (
 				5BAF07E11DB11C1B00AF2FD0 /* PulmonisUITests.swift */,
+				5B4DAD361E2032F8003E708D /* PulmonisSupportUITests.swift */,
 				5B5138ED1E1B0CF400260638 /* PulmonisPeakFlow.swift */,
 				5B7DFE801E12FB7B0057D341 /* PulmonisDoctorInputUITest.swift */,
 				5B4AA88D1E15887600F162AF /* PulmonisAsthmaJournalUITests.swift */,
@@ -850,6 +853,7 @@
 			files = (
 				5B7DFE811E12FB7B0057D341 /* PulmonisDoctorInputUITest.swift in Sources */,
 				5B5138EE1E1B0CF400260638 /* PulmonisPeakFlow.swift in Sources */,
+				5B4DAD371E2032F8003E708D /* PulmonisSupportUITests.swift in Sources */,
 				5BAF07E21DB11C1B00AF2FD0 /* PulmonisUITests.swift in Sources */,
 				5B4AA88E1E15887600F162AF /* PulmonisAsthmaJournalUITests.swift in Sources */,
 			);
