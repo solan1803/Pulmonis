@@ -32,6 +32,7 @@
 		28CC5CAD1DC777E4009A7BE9 /* Emergency.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BAF07C51DB11C1B00AF2FD0 /* Emergency.storyboard */; };
 		28E486301DB672A500C3C87E /* StatsStartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E4862F1DB672A500C3C87E /* StatsStartViewController.swift */; };
 		28FEC5681E158DE50040EA96 /* Reminders.plist in Resources */ = {isa = PBXBuildFile; fileRef = 28FEC5671E158DE50040EA96 /* Reminders.plist */; };
+		2E1958551E27DF820050B34C /* Emergency1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1958541E27DF820050B34C /* Emergency1ViewController.swift */; };
 		2E572E931E17EA3E00C9D1F9 /* PollenChart.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E572E921E17EA3E00C9D1F9 /* PollenChart.storyboard */; };
 		2E572E951E17EB2000C9D1F9 /* PollenChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E572E941E17EB2000C9D1F9 /* PollenChartViewController.swift */; };
 		2E572E971E17EB6D00C9D1F9 /* PollenGETRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E572E961E17EB6D00C9D1F9 /* PollenGETRequests.swift */; };
@@ -196,6 +197,7 @@
 		28CC5CAB1DC77625009A7BE9 /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
 		28E4862F1DB672A500C3C87E /* StatsStartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatsStartViewController.swift; sourceTree = "<group>"; };
 		28FEC5671E158DE50040EA96 /* Reminders.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Reminders.plist; sourceTree = "<group>"; };
+		2E1958541E27DF820050B34C /* Emergency1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Emergency1ViewController.swift; sourceTree = "<group>"; };
 		2E572E921E17EA3E00C9D1F9 /* PollenChart.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PollenChart.storyboard; sourceTree = "<group>"; };
 		2E572E941E17EB2000C9D1F9 /* PollenChartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PollenChartViewController.swift; sourceTree = "<group>"; };
 		2E572E961E17EB6D00C9D1F9 /* PollenGETRequests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PollenGETRequests.swift; sourceTree = "<group>"; };
@@ -484,6 +486,7 @@
 		5BAF07B51DB11C1B00AF2FD0 = {
 			isa = PBXGroup;
 			children = (
+				2E1958541E27DF820050B34C /* Emergency1ViewController.swift */,
 				2EAAC7C71E0D5A6300BE9B77 /* Charts.xcodeproj */,
 				5BC5360D1DB675AD00231A50 /* Resources */,
 				5BAF07C01DB11C1B00AF2FD0 /* Pulmonis */,
@@ -777,6 +780,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5BB493911E0F2BB600C09719 /* Yellow7ViewController.swift in Sources */,
+				2E1958551E27DF820050B34C /* Emergency1ViewController.swift in Sources */,
 				5BC91B941E0D7F1E002D0879 /* PlotBreathGraphViewController.swift in Sources */,
 				5BA7807C1E157C4E00DAA367 /* BreathRecordTableViewCell.swift in Sources */,
 				28A336CA1DDB585C005D8626 /* Green3ViewController.swift in Sources */,
