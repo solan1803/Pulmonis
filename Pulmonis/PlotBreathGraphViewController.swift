@@ -13,6 +13,8 @@ import CoreData
 class PlotBreathGraphViewController: UIViewController {
     
     @IBOutlet weak var breathLineView: LineChartView!
+    @IBOutlet weak var timeLabel: UILabel!
+    @IBOutlet weak var PEFLabel: UILabel!
 
     var managedObjectContext: NSManagedObjectContext? =
         (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
@@ -25,7 +27,7 @@ class PlotBreathGraphViewController: UIViewController {
     var maxYPoint : Double = 0
     var i = 0
     var colourCounter = 0
-    var dataSetColours : [NSUIColor] = [NSUIColor.blue, NSUIColor.cyan, NSUIColor.green]
+    var dataSetColours : [NSUIColor] = [NSUIColor.blue, NSUIColor.yellow, NSUIColor(red:0.0, green:160/255, blue:18/255, alpha:1.0)]
     var peakFlowReading : Double = 0.0
     var breathCount = 0
     
@@ -34,11 +36,17 @@ class PlotBreathGraphViewController: UIViewController {
         
         breathLineView.dragEnabled = true
         breathLineView.pinchZoomEnabled = true
-        
+        //PEFLabel.transform = CGAffineTransform(rotationAngle: CGFloat(-M_PI_2))
+        //PEFLabel.frame = CGRect(x: 0, y: Int(view.bounds.height/2), width: 40, height: 20)
+        //PEFLabel.transform = CGAffineTransform(translationX: view.bounds.width, y: view.bounds.height)
         breathLineView.noDataText = "No breaths recorded, please breathe into the spirometer"
         breathLineView.chartDescription?.text = ""
         breathLineView.legend.enabled = false
         breathLineView.xAxis.labelPosition = .bottom
+        breathLineView.xAxis.drawLabelsEnabled = true
+        breathLineView.rightAxis.drawLabelsEnabled = true
+        breathLineView.leftAxis.drawLabelsEnabled = true
+
         breathLineView.backgroundColor = UIColor.clear
         
         #if (arch(i386) || arch(x86_64)) && os(iOS)
@@ -65,24 +73,27 @@ class PlotBreathGraphViewController: UIViewController {
     
     //For test purposes
     func buttonAction100() {
-        let dataPoints: [Double] = [1,2,3,4,5,6,7,8,9,10]
+        let dataPoints: [Double] = [0,1,2,3,4,5,6,7,8,9]
         let values: [Double] = [1,4,9,16,25,36,49,64,81,100]
         addSensorReadings(dataPoints: values, values: dataPoints)
     }
     
     func buttonAction300() {
-        let dataPoints: [Double] = [1,2,3,4,5,6,7,8,9,10]
+        let dataPoints: [Double] = [0,1,2,3,4,5,6,7,8,9]
         let values: [Double] = [1,4,9,16,25,36,49,64,81,300]
         addSensorReadings(dataPoints: values, values: dataPoints)
     }
     
     func buttonAction600() {
-        let dataPoints: [Double] = [1,2,3,4,5,6,7,8,9,10]
+        let dataPoints: [Double] = [0,1,2,3,4,5,6,7,8,9]
         let values: [Double] = [1,4,9,16,25,36,49,64,81,600]
         addSensorReadings(dataPoints: values, values: dataPoints)
     }
     
     func addSensorReadings(dataPoints: [Double], values: [Double]) {
+        
+        PEFLabel.textColor = NSUIColor.black
+        timeLabel.textColor = NSUIColor.black
         
         var dataEntries: [ChartDataEntry] = []
         
@@ -96,7 +107,7 @@ class PlotBreathGraphViewController: UIViewController {
                 maxIndex = i
             }
             dataEntries.append(dataEntry)
-            colours.append(dataSetColours[colourCounter])
+            colours.append(NSUIColor.clear)
         }
         peakFlowReading = max(peakFlowReading, maxVal)
         colours[maxIndex] = NSUIColor.red
@@ -107,6 +118,8 @@ class PlotBreathGraphViewController: UIViewController {
         chartDataSet.setColor(dataSetColours[colourCounter])
         chartDataSet.drawValuesEnabled = true
         chartDataSet.circleColors = colours
+        chartDataSet.circleHoleColor = NSUIColor.clear
+        chartDataSet.lineWidth = 5
         
         if (colourCounter == 0) {
             let chartData = LineChartData(dataSet: chartDataSet)
@@ -115,7 +128,7 @@ class PlotBreathGraphViewController: UIViewController {
             breathLineView.data?.addDataSet(chartDataSet)
         }
         colourCounter += 1
-        
+        breathLineView.xAxis.axisMinimum = 0
         breathLineView.notifyDataSetChanged()
         breathLineView.setNeedsLayout()
         breathLineView.setNeedsDisplay()

@@ -43,6 +43,11 @@ class PollenChartViewController: UIViewController, CLLocationManagerDelegate, IV
             locationManager.startUpdatingLocation()
         }
         
+        forecastBarLineChartView.pinchZoomEnabled = false
+        forecastBarLineChartView.doubleTapToZoomEnabled = false
+        airQualityBarChartView.doubleTapToZoomEnabled = false
+        airQualityBarChartView.pinchZoomEnabled = false
+        
         // Do any additional setup after loading the view.
     }
     

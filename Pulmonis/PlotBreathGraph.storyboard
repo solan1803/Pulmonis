@@ -31,23 +31,48 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="css-u2-WwB" customClass="LineChartView" customModule="Charts">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <rect key="frame" x="30" y="20" width="345" height="632"/>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Time (ms)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YEb-Bd-wSi">
+                                <rect key="frame" x="166" y="323" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aND-VB-Hl2">
+                                <rect key="frame" x="166" y="323" width="42" height="21"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="PEF (L/min)">
+                                        <attributes>
+                                            <color key="NSColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <font key="NSFont" size="14" name=".AppleSystemUIFont"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="yeP-Lb-veQ" secondAttribute="bottom" id="6aX-x3-ykD"/>
+                            <constraint firstItem="aND-VB-Hl2" firstAttribute="leading" secondItem="9oG-yK-ARu" secondAttribute="leading" id="FEo-i7-S7n"/>
                             <constraint firstItem="css-u2-WwB" firstAttribute="top" secondItem="P2a-7y-M4d" secondAttribute="bottom" id="MeE-Ma-4pw"/>
+                            <constraint firstItem="YEb-Bd-wSi" firstAttribute="leading" secondItem="9oG-yK-ARu" secondAttribute="leadingMargin" constant="150" id="NEE-ol-mzc"/>
+                            <constraint firstItem="css-u2-WwB" firstAttribute="leading" secondItem="9oG-yK-ARu" secondAttribute="leading" constant="30" id="ODx-9N-Fiw"/>
                             <constraint firstAttribute="trailing" secondItem="yeP-Lb-veQ" secondAttribute="trailing" id="ZEa-aQ-ICp"/>
-                            <constraint firstItem="Wka-oK-SPv" firstAttribute="top" secondItem="css-u2-WwB" secondAttribute="bottom" id="odU-1w-ust"/>
+                            <constraint firstItem="Wka-oK-SPv" firstAttribute="top" secondItem="YEb-Bd-wSi" secondAttribute="bottom" id="iv0-Ls-QeG"/>
+                            <constraint firstItem="Wka-oK-SPv" firstAttribute="top" secondItem="css-u2-WwB" secondAttribute="bottom" constant="15" id="l2x-X6-01X"/>
+                            <constraint firstItem="aND-VB-Hl2" firstAttribute="top" secondItem="P2a-7y-M4d" secondAttribute="bottom" constant="303" id="nL3-RY-afS"/>
                             <constraint firstItem="yeP-Lb-veQ" firstAttribute="leading" secondItem="9oG-yK-ARu" secondAttribute="leading" id="qCu-h6-L1p"/>
                             <constraint firstAttribute="trailing" secondItem="css-u2-WwB" secondAttribute="trailing" id="weX-1S-umQ"/>
-                            <constraint firstItem="css-u2-WwB" firstAttribute="leading" secondItem="9oG-yK-ARu" secondAttribute="leading" id="xHw-13-IpJ"/>
                             <constraint firstItem="yeP-Lb-veQ" firstAttribute="top" secondItem="9oG-yK-ARu" secondAttribute="top" id="yHC-r6-1tk"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="PEFLabel" destination="aND-VB-Hl2" id="yJD-8O-dRb"/>
                         <outlet property="breathLineView" destination="css-u2-WwB" id="fLw-Qv-vbB"/>
+                        <outlet property="timeLabel" destination="YEb-Bd-wSi" id="fZS-o3-u3h"/>
                         <segue destination="N9G-fh-cG7" kind="show" identifier="showAsthmaStatus" id="64u-5w-zYK"/>
                     </connections>
                 </viewController>
