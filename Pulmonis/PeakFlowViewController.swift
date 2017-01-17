@@ -123,10 +123,12 @@ class PeakFlowViewController: UIViewController, BLEDelegate {
                 if let topController = UIApplication.topViewController() {
                     let graphController = topController as? PlotBreathGraphViewController
                     var times : [Double] = []
-                    for i in stride(from: 1, through: readings.count, by: 1) {
-                        times.append(Double(i))
+                    
+                    var inc: Double = 0
+                    while (inc <= Double(readings.count)*0.02) {
+                        times.append(inc)
+                        inc += 0.02
                     }
-
                     graphController?.addSensorReadings(dataPoints: readings, values: times )
                 }
                 breathCount += 1

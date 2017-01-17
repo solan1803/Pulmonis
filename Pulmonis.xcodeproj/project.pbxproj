@@ -48,6 +48,7 @@
 		5B1CABBA1E1C6F5F00DF8E7E /* call_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B1CABB91E1C6F5F00DF8E7E /* call_button.png */; };
 		5B1CABBE1E1C70BD00DF8E7E /* Pill.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B1CABBD1E1C70BD00DF8E7E /* Pill.png */; };
 		5B3A1DBD1E0D7A76009800B8 /* PlotBreathGraph.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B3A1DBC1E0D7A76009800B8 /* PlotBreathGraph.storyboard */; };
+		5B4A8A3C1E2E38AD00E92623 /* ArduinoPEFBluetooth.c in Sources */ = {isa = PBXBuildFile; fileRef = 5B4A8A3B1E2E38AD00E92623 /* ArduinoPEFBluetooth.c */; };
 		5B4AA88E1E15887600F162AF /* PulmonisAsthmaJournalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4AA88D1E15887600F162AF /* PulmonisAsthmaJournalUITests.swift */; };
 		5B4AA89A1E15BA6900F162AF /* WorsePopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4AA8991E15BA6900F162AF /* WorsePopoverViewController.swift */; };
 		5B4DAD371E2032F8003E708D /* PulmonisSupportUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4DAD361E2032F8003E708D /* PulmonisSupportUITests.swift */; };
@@ -211,6 +212,7 @@
 		5B1CABB91E1C6F5F00DF8E7E /* call_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = call_button.png; sourceTree = "<group>"; };
 		5B1CABBD1E1C70BD00DF8E7E /* Pill.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Pill.png; sourceTree = "<group>"; };
 		5B3A1DBC1E0D7A76009800B8 /* PlotBreathGraph.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PlotBreathGraph.storyboard; sourceTree = "<group>"; };
+		5B4A8A3B1E2E38AD00E92623 /* ArduinoPEFBluetooth.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ArduinoPEFBluetooth.c; sourceTree = "<group>"; };
 		5B4AA88D1E15887600F162AF /* PulmonisAsthmaJournalUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PulmonisAsthmaJournalUITests.swift; sourceTree = "<group>"; };
 		5B4AA8991E15BA6900F162AF /* WorsePopoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorsePopoverViewController.swift; sourceTree = "<group>"; };
 		5B4DAD361E2032F8003E708D /* PulmonisSupportUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PulmonisSupportUITests.swift; sourceTree = "<group>"; };
@@ -444,6 +446,7 @@
 				5B82CA951DC8C14B003930FB /* PeakFlowViewController.swift */,
 				5B1CABB91E1C6F5F00DF8E7E /* call_button.png */,
 				5B1CABBD1E1C70BD00DF8E7E /* Pill.png */,
+				5B4A8A3B1E2E38AD00E92623 /* ArduinoPEFBluetooth.c */,
 			);
 			name = "Action Plan";
 			sourceTree = "<group>";
@@ -642,6 +645,7 @@
 					5BAF07BD1DB11C1B00AF2FD0 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = QJQGH9NF7F;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Manual;
 						SystemCapabilities = {
 							com.apple.HealthKit = {
@@ -830,6 +834,7 @@
 				5B82CABE1DC8CAF1003930FB /* PeakFlowTable+CoreDataProperties.swift in Sources */,
 				5BB9E44C1E1441C800B5892A /* SettingsTableViewController.swift in Sources */,
 				5B82CABD1DC8CAF1003930FB /* PeakFlowTable+CoreDataClass.swift in Sources */,
+				5B4A8A3C1E2E38AD00E92623 /* ArduinoPEFBluetooth.c in Sources */,
 				5B82CA961DC8C14B003930FB /* PeakFlowViewController.swift in Sources */,
 				28A336D01DDB5881005D8626 /* Green6ViewController.swift in Sources */,
 			);
@@ -1008,6 +1013,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Pulmonis/Pulmonis.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = QJQGH9NF7F;
@@ -1018,6 +1024,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "36a2b486-9d85-464d-ba9e-32399f3fbfc3";
 				PROVISIONING_PROFILE_SPECIFIER = PulmonisApp;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -1027,6 +1034,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Pulmonis/Pulmonis.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = QJQGH9NF7F;
