@@ -31,4 +31,40 @@ and project it onto a more accessible, practical platform for asthma patients.  
 an idea would work towards alleviating the unnecessary social and economic burden
 of asthma on the NHS in the UK.
 
-![alt tag](Pulmonis/Pill.png)
+![alt tag](Main.png)
+
+Doctor's Interface:
+![alt tag](Green.png)
+![alt tag](Yellow.png)
+![alt tag](Red.png)
+
+Asthma Action Plan Sections:
+![alt tag](Well_Done.png)
+![alt tag](Worse.png)
+![alt tag](Critical.png)
+
+Bluetooth Spirometer PEF Readings: 
+![alt tag](BT_Connect.png)
+![alt tag](PEF_Graph.png)
+![alt tag](PEF_Recorded.png)
+
+HealthKit Integration: 
+![alt tag](HealthKit_1.png)
+![alt tag](HealthKit_2.png)
+![alt tag](HealthKit_3.png)
+
+Pending Tasks: 
+![alt tag](Pending_Tasks.png)
+![alt tag](Pending_Tasks_Delete.png)
+
+Push Notifications: 
+![alt tag](Push_Notifications.png)
+![alt tag](Reminders_Settings.png)
+
+Asthma Journal: 
+![alt tag](Asthma_Journal.png)
+
+Meteorological Data: 
+![alt tag](Met_Data.png)
+
+
