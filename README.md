@@ -30,3 +30,5 @@ that would harness the effectiveness of the personalised asthma action plan (PAA
 and project it onto a more accessible, practical platform for asthma patients.  Such
 an idea would work towards alleviating the unnecessary social and economic burden
 of asthma on the NHS in the UK.
+
+![alt tag](Pulmonis/Pill.png)
