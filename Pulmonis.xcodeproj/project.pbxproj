@@ -82,6 +82,23 @@
 		5BAF07CC1DB11C1B00AF2FD0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BAF07CA1DB11C1B00AF2FD0 /* LaunchScreen.storyboard */; };
 		5BAF07D71DB11C1B00AF2FD0 /* PulmonisTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAF07D61DB11C1B00AF2FD0 /* PulmonisTests.swift */; };
 		5BAF07E21DB11C1B00AF2FD0 /* PulmonisUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAF07E11DB11C1B00AF2FD0 /* PulmonisUITests.swift */; };
+		5BB1A35A1E3DF8DF00600134 /* PEF_Graph.png in Resources */ = {isa = PBXBuildFile; fileRef = 5BB1A3591E3DF8DF00600134 /* PEF_Graph.png */; };
+		5BB1A35C1E3DF8F100600134 /* Push_Notifications.png in Resources */ = {isa = PBXBuildFile; fileRef = 5BB1A35B1E3DF8F100600134 /* Push_Notifications.png */; };
+		5BB1A35E1E3DF90500600134 /* Well_Done.png in Resources */ = {isa = PBXBuildFile; fileRef = 5BB1A35D1E3DF90500600134 /* Well_Done.png */; };
+		5BB1A3601E3DF91400600134 /* Worse.png in Resources */ = {isa = PBXBuildFile; fileRef = 5BB1A35F1E3DF91400600134 /* Worse.png */; };
+		5BB1A3621E3DF92700600134 /* Critical.png in Resources */ = {isa = PBXBuildFile; fileRef = 5BB1A3611E3DF92700600134 /* Critical.png */; };
+		5BB1A3641E3DF93000600134 /* Reminders_Settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 5BB1A3631E3DF93000600134 /* Reminders_Settings.png */; };
+		5BB1A3681E3DF96000600134 /* PEF_Recorded.png in Resources */ = {isa = PBXBuildFile; fileRef = 5BB1A3671E3DF96000600134 /* PEF_Recorded.png */; };
+		5BB1A36A1E3DF96900600134 /* HealthKit_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 5BB1A3691E3DF96900600134 /* HealthKit_1.png */; };
+		5BB1A36C1E3DF97200600134 /* HealthKit_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 5BB1A36B1E3DF97200600134 /* HealthKit_2.png */; };
+		5BB1A36E1E3DF97600600134 /* HealthKit_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 5BB1A36D1E3DF97600600134 /* HealthKit_3.png */; };
+		5BB1A3701E3DF97C00600134 /* Main.png in Resources */ = {isa = PBXBuildFile; fileRef = 5BB1A36F1E3DF97C00600134 /* Main.png */; };
+		5BB1A3721E3DF98100600134 /* Pending_Tasks.png in Resources */ = {isa = PBXBuildFile; fileRef = 5BB1A3711E3DF98100600134 /* Pending_Tasks.png */; };
+		5BB1A3741E3DF98900600134 /* Pending_Tasks_Delete.png in Resources */ = {isa = PBXBuildFile; fileRef = 5BB1A3731E3DF98900600134 /* Pending_Tasks_Delete.png */; };
+		5BB1A3781E3DF99500600134 /* Green.png in Resources */ = {isa = PBXBuildFile; fileRef = 5BB1A3771E3DF99500600134 /* Green.png */; };
+		5BB1A37A1E3DF99D00600134 /* Yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 5BB1A3791E3DF99D00600134 /* Yellow.png */; };
+		5BB1A37C1E3DF9A200600134 /* Red.png in Resources */ = {isa = PBXBuildFile; fileRef = 5BB1A37B1E3DF9A200600134 /* Red.png */; };
+		5BB1A37E1E3DF9AA00600134 /* Met_Data.png in Resources */ = {isa = PBXBuildFile; fileRef = 5BB1A37D1E3DF9AA00600134 /* Met_Data.png */; };
 		5BB493911E0F2BB600C09719 /* Yellow7ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB493901E0F2BB600C09719 /* Yellow7ViewController.swift */; };
 		5BB9E4421E13FFB800B5892A /* RemindersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB9E4411E13FFB800B5892A /* RemindersTableViewController.swift */; };
 		5BB9E44C1E1441C800B5892A /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB9E44B1E1441C800B5892A /* SettingsTableViewController.swift */; };
@@ -254,6 +271,23 @@
 		5BAF07DD1DB11C1B00AF2FD0 /* PulmonisUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PulmonisUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BAF07E11DB11C1B00AF2FD0 /* PulmonisUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulmonisUITests.swift; sourceTree = "<group>"; };
 		5BAF07E31DB11C1B00AF2FD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5BB1A3591E3DF8DF00600134 /* PEF_Graph.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PEF_Graph.png; sourceTree = "<group>"; };
+		5BB1A35B1E3DF8F100600134 /* Push_Notifications.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Push_Notifications.png; sourceTree = "<group>"; };
+		5BB1A35D1E3DF90500600134 /* Well_Done.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Well_Done.png; sourceTree = "<group>"; };
+		5BB1A35F1E3DF91400600134 /* Worse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Worse.png; sourceTree = "<group>"; };
+		5BB1A3611E3DF92700600134 /* Critical.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Critical.png; sourceTree = "<group>"; };
+		5BB1A3631E3DF93000600134 /* Reminders_Settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Reminders_Settings.png; sourceTree = "<group>"; };
+		5BB1A3671E3DF96000600134 /* PEF_Recorded.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PEF_Recorded.png; sourceTree = "<group>"; };
+		5BB1A3691E3DF96900600134 /* HealthKit_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HealthKit_1.png; sourceTree = "<group>"; };
+		5BB1A36B1E3DF97200600134 /* HealthKit_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HealthKit_2.png; sourceTree = "<group>"; };
+		5BB1A36D1E3DF97600600134 /* HealthKit_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HealthKit_3.png; sourceTree = "<group>"; };
+		5BB1A36F1E3DF97C00600134 /* Main.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Main.png; sourceTree = "<group>"; };
+		5BB1A3711E3DF98100600134 /* Pending_Tasks.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Pending_Tasks.png; sourceTree = "<group>"; };
+		5BB1A3731E3DF98900600134 /* Pending_Tasks_Delete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Pending_Tasks_Delete.png; sourceTree = "<group>"; };
+		5BB1A3771E3DF99500600134 /* Green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Green.png; sourceTree = "<group>"; };
+		5BB1A3791E3DF99D00600134 /* Yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Yellow.png; sourceTree = "<group>"; };
+		5BB1A37B1E3DF9A200600134 /* Red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Red.png; sourceTree = "<group>"; };
+		5BB1A37D1E3DF9AA00600134 /* Met_Data.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Met_Data.png; sourceTree = "<group>"; };
 		5BB493901E0F2BB600C09719 /* Yellow7ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Yellow7ViewController.swift; sourceTree = "<group>"; };
 		5BB9E4411E13FFB800B5892A /* RemindersTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemindersTableViewController.swift; sourceTree = "<group>"; };
 		5BB9E44B1E1441C800B5892A /* SettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
@@ -491,6 +525,7 @@
 			children = (
 				2E1958541E27DF820050B34C /* Emergency1ViewController.swift */,
 				2EAAC7C71E0D5A6300BE9B77 /* Charts.xcodeproj */,
+				5BB1A3561E3DF8C700600134 /* MockupImages */,
 				5BC5360D1DB675AD00231A50 /* Resources */,
 				5BAF07C01DB11C1B00AF2FD0 /* Pulmonis */,
 				5BAF07D51DB11C1B00AF2FD0 /* PulmonisTests */,
@@ -556,6 +591,30 @@
 				5BAF07E31DB11C1B00AF2FD0 /* Info.plist */,
 			);
 			path = PulmonisUITests;
+			sourceTree = "<group>";
+		};
+		5BB1A3561E3DF8C700600134 /* MockupImages */ = {
+			isa = PBXGroup;
+			children = (
+				5BB1A3591E3DF8DF00600134 /* PEF_Graph.png */,
+				5BB1A35B1E3DF8F100600134 /* Push_Notifications.png */,
+				5BB1A35D1E3DF90500600134 /* Well_Done.png */,
+				5BB1A35F1E3DF91400600134 /* Worse.png */,
+				5BB1A3611E3DF92700600134 /* Critical.png */,
+				5BB1A3631E3DF93000600134 /* Reminders_Settings.png */,
+				5BB1A3671E3DF96000600134 /* PEF_Recorded.png */,
+				5BB1A3691E3DF96900600134 /* HealthKit_1.png */,
+				5BB1A36B1E3DF97200600134 /* HealthKit_2.png */,
+				5BB1A36D1E3DF97600600134 /* HealthKit_3.png */,
+				5BB1A36F1E3DF97C00600134 /* Main.png */,
+				5BB1A3711E3DF98100600134 /* Pending_Tasks.png */,
+				5BB1A3731E3DF98900600134 /* Pending_Tasks_Delete.png */,
+				5BB1A3771E3DF99500600134 /* Green.png */,
+				5BB1A3791E3DF99D00600134 /* Yellow.png */,
+				5BB1A37B1E3DF9A200600134 /* Red.png */,
+				5BB1A37D1E3DF9AA00600134 /* Met_Data.png */,
+			);
+			name = MockupImages;
 			sourceTree = "<group>";
 		};
 		5BC2CD421E0F34DA00FBDEC9 /* Frameworks */ = {
@@ -727,29 +786,46 @@
 			files = (
 				28FEC5681E158DE50040EA96 /* Reminders.plist in Resources */,
 				5B1CABBA1E1C6F5F00DF8E7E /* call_button.png in Resources */,
+				5BB1A3741E3DF98900600134 /* Pending_Tasks_Delete.png in Resources */,
 				5BC2CD3C1E0F340700FBDEC9 /* HealthKit.storyboard in Resources */,
 				5BD2AFB91E11D036008FA668 /* Critical.storyboard in Resources */,
 				5BC5361B1DB6762A00231A50 /* LiberationSans-Regular.ttf in Resources */,
 				5BD2AFB31E11D010008FA668 /* Well.storyboard in Resources */,
+				5BB1A36A1E3DF96900600134 /* HealthKit_1.png in Resources */,
 				5B6B43531DC390400071AC66 /* ActionPlan.storyboard in Resources */,
 				5B6B434F1DC38E770071AC66 /* Learn.storyboard in Resources */,
 				5BE313151E1290D50094C7EF /* PushNotifications.storyboard in Resources */,
 				719D0C7F1DBA2E66008F5F97 /* Main.storyboard in Resources */,
+				5BB1A3621E3DF92700600134 /* Critical.png in Resources */,
+				5BB1A35E1E3DF90500600134 /* Well_Done.png in Resources */,
+				5BB1A37C1E3DF9A200600134 /* Red.png in Resources */,
 				2E572E931E17EA3E00C9D1F9 /* PollenChart.storyboard in Resources */,
 				5BAF07CC1DB11C1B00AF2FD0 /* LaunchScreen.storyboard in Resources */,
 				28787E121DDB6B38000439AD /* PatientData.plist in Resources */,
+				5BB1A35A1E3DF8DF00600134 /* PEF_Graph.png in Resources */,
+				5BB1A37A1E3DF99D00600134 /* Yellow.png in Resources */,
 				5BAF07C91DB11C1B00AF2FD0 /* Assets.xcassets in Resources */,
 				5B82CAD61DC9139C003930FB /* PendingTasks.storyboard in Resources */,
 				5BD2AFB71E11D028008FA668 /* Worse.storyboard in Resources */,
 				5B3A1DBD1E0D7A76009800B8 /* PlotBreathGraph.storyboard in Resources */,
+				5BB1A3681E3DF96000600134 /* PEF_Recorded.png in Resources */,
 				5BA780761E1578FF00DAA367 /* AsthmaJournal.storyboard in Resources */,
 				28CC5CAD1DC777E4009A7BE9 /* Emergency.storyboard in Resources */,
 				280551A01DDB6262001E99C6 /* DoctorInput.storyboard in Resources */,
+				5BB1A36C1E3DF97200600134 /* HealthKit_2.png in Resources */,
+				5BB1A36E1E3DF97600600134 /* HealthKit_3.png in Resources */,
+				5BB1A3781E3DF99500600134 /* Green.png in Resources */,
 				28CC5CAC1DC77625009A7BE9 /* Settings.storyboard in Resources */,
+				5BB1A35C1E3DF8F100600134 /* Push_Notifications.png in Resources */,
 				5BC536151DB6762A00231A50 /* LiberationSans-BoldItalic.ttf in Resources */,
 				5B6B43511DC38F6A0071AC66 /* Statistics.storyboard in Resources */,
 				5B1CABBE1E1C70BD00DF8E7E /* Pill.png in Resources */,
+				5BB1A3701E3DF97C00600134 /* Main.png in Resources */,
+				5BB1A3641E3DF93000600134 /* Reminders_Settings.png in Resources */,
+				5BB1A37E1E3DF9AA00600134 /* Met_Data.png in Resources */,
 				5BC536181DB6762A00231A50 /* LiberationSans-Italic.ttf in Resources */,
+				5BB1A3601E3DF91400600134 /* Worse.png in Resources */,
+				5BB1A3721E3DF98100600134 /* Pending_Tasks.png in Resources */,
 				5BC5360F1DB6761C00231A50 /* LiberationSans-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
