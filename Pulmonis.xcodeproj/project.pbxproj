@@ -99,6 +99,8 @@
 		5BB1A37A1E3DF99D00600134 /* Yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 5BB1A3791E3DF99D00600134 /* Yellow.png */; };
 		5BB1A37C1E3DF9A200600134 /* Red.png in Resources */ = {isa = PBXBuildFile; fileRef = 5BB1A37B1E3DF9A200600134 /* Red.png */; };
 		5BB1A37E1E3DF9AA00600134 /* Met_Data.png in Resources */ = {isa = PBXBuildFile; fileRef = 5BB1A37D1E3DF9AA00600134 /* Met_Data.png */; };
+		5BB1A3841E3DFABD00600134 /* BT_Connect.png in Resources */ = {isa = PBXBuildFile; fileRef = 5BB1A3831E3DFABD00600134 /* BT_Connect.png */; };
+		5BB1A3861E3DFAE200600134 /* Asthma_Journal.png in Resources */ = {isa = PBXBuildFile; fileRef = 5BB1A3851E3DFAE200600134 /* Asthma_Journal.png */; };
 		5BB493911E0F2BB600C09719 /* Yellow7ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB493901E0F2BB600C09719 /* Yellow7ViewController.swift */; };
 		5BB9E4421E13FFB800B5892A /* RemindersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB9E4411E13FFB800B5892A /* RemindersTableViewController.swift */; };
 		5BB9E44C1E1441C800B5892A /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB9E44B1E1441C800B5892A /* SettingsTableViewController.swift */; };
@@ -288,6 +290,8 @@
 		5BB1A3791E3DF99D00600134 /* Yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Yellow.png; sourceTree = "<group>"; };
 		5BB1A37B1E3DF9A200600134 /* Red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Red.png; sourceTree = "<group>"; };
 		5BB1A37D1E3DF9AA00600134 /* Met_Data.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Met_Data.png; sourceTree = "<group>"; };
+		5BB1A3831E3DFABD00600134 /* BT_Connect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BT_Connect.png; sourceTree = "<group>"; };
+		5BB1A3851E3DFAE200600134 /* Asthma_Journal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Asthma_Journal.png; sourceTree = "<group>"; };
 		5BB493901E0F2BB600C09719 /* Yellow7ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Yellow7ViewController.swift; sourceTree = "<group>"; };
 		5BB9E4411E13FFB800B5892A /* RemindersTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemindersTableViewController.swift; sourceTree = "<group>"; };
 		5BB9E44B1E1441C800B5892A /* SettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
@@ -596,6 +600,8 @@
 		5BB1A3561E3DF8C700600134 /* MockupImages */ = {
 			isa = PBXGroup;
 			children = (
+				5BB1A3831E3DFABD00600134 /* BT_Connect.png */,
+				5BB1A3851E3DFAE200600134 /* Asthma_Journal.png */,
 				5BB1A3591E3DF8DF00600134 /* PEF_Graph.png */,
 				5BB1A35B1E3DF8F100600134 /* Push_Notifications.png */,
 				5BB1A35D1E3DF90500600134 /* Well_Done.png */,
@@ -790,6 +796,7 @@
 				5BC2CD3C1E0F340700FBDEC9 /* HealthKit.storyboard in Resources */,
 				5BD2AFB91E11D036008FA668 /* Critical.storyboard in Resources */,
 				5BC5361B1DB6762A00231A50 /* LiberationSans-Regular.ttf in Resources */,
+				5BB1A3841E3DFABD00600134 /* BT_Connect.png in Resources */,
 				5BD2AFB31E11D010008FA668 /* Well.storyboard in Resources */,
 				5BB1A36A1E3DF96900600134 /* HealthKit_1.png in Resources */,
 				5B6B43531DC390400071AC66 /* ActionPlan.storyboard in Resources */,
@@ -818,6 +825,7 @@
 				28CC5CAC1DC77625009A7BE9 /* Settings.storyboard in Resources */,
 				5BB1A35C1E3DF8F100600134 /* Push_Notifications.png in Resources */,
 				5BC536151DB6762A00231A50 /* LiberationSans-BoldItalic.ttf in Resources */,
+				5BB1A3861E3DFAE200600134 /* Asthma_Journal.png in Resources */,
 				5B6B43511DC38F6A0071AC66 /* Statistics.storyboard in Resources */,
 				5B1CABBE1E1C70BD00DF8E7E /* Pill.png in Resources */,
 				5BB1A3701E3DF97C00600134 /* Main.png in Resources */,
